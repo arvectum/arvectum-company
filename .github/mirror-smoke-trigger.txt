@@ -1,1 +1,2 @@
 Temporary branch-only trigger for GitVerse mirror verification on 2026-08-18.
+Secret configured; rerun against current main mirror state.
