@@ -34,18 +34,25 @@ jobs:
           git remote add gitverse \
             "https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git"
 
+          # Preserve GitVerse's bootstrap default branch as a compatibility alias.
+          git update-ref refs/heads/master "$(git rev-parse refs/heads/main)"
+
           git push --force --prune gitverse \
             'refs/heads/*:refs/heads/*' \
             'refs/tags/*:refs/tags/*'
 
-          actual_sha="$(git ls-remote \
-            "https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git" \
-            refs/heads/main | awk '{print $1}')"
+          remote_url="https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git"
+          actual_main_sha="$(git ls-remote "$remote_url" refs/heads/main | awk '{print $1}')"
+          actual_master_sha="$(git ls-remote "$remote_url" refs/heads/master | awk '{print $1}')"
 
-          test -n "$actual_sha" || { echo "::error::GitVerse main is missing after mirror push"; exit 1; }
-          test "$actual_sha" = "$expected_sha" || {
-            echo "::error::GitVerse main mismatch: expected $expected_sha, got $actual_sha"
+          test -n "$actual_main_sha" || { echo "::error::GitVerse main is missing after mirror push"; exit 1; }
+          test "$actual_main_sha" = "$expected_sha" || {
+            echo "::error::GitVerse main mismatch: expected $expected_sha, got $actual_main_sha"
+            exit 1
+          }
+          test "$actual_master_sha" = "$expected_sha" || {
+            echo "::error::GitVerse master compatibility alias mismatch: expected $expected_sha, got $actual_master_sha"
             exit 1
           }
 
-          echo "GitVerse main verified at $expected_sha"
+          echo "GitVerse main/master verified at $expected_sha"
