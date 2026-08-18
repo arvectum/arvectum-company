@@ -8,31 +8,44 @@ permissions:
 
 jobs:
   verify:
-    name: Verify GitVerse main mirror
+    name: Push and verify GitVerse mirror
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
-      - name: Compare GitVerse main to GitHub base SHA
+      - name: Mirror current GitHub refs to GitVerse and verify main
         env:
           GITVERSE_TOKEN: ${{ secrets.GITVERSE_TOKEN }}
-          EXPECTED_SHA: ${{ github.event.pull_request.base.sha }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
         run: |
           set -euo pipefail
           test -n "$GITVERSE_TOKEN" || { echo "::error::GITVERSE_TOKEN is missing"; exit 1; }
 
-          for attempt in $(seq 1 12); do
-            actual_sha="$(git ls-remote \
-              "https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git" \
-              refs/heads/main | awk '{print $1}')"
+          expected_sha="$(git ls-remote \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPOSITORY}.git" \
+            refs/heads/main | awk '{print $1}')"
+          test -n "$expected_sha" || { echo "::error::GitHub main could not be resolved"; exit 1; }
 
-            if [ "$actual_sha" = "$EXPECTED_SHA" ]; then
-              echo "GitVerse main matches GitHub base SHA: $EXPECTED_SHA"
-              exit 0
-            fi
+          git clone --mirror \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPOSITORY}.git" \
+            repository.git
+          cd repository.git
 
-            echo "Mirror not converged yet (attempt ${attempt}/12)."
-            sleep 5
-          done
+          git remote add gitverse \
+            "https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git"
 
-          echo "::error::GitVerse main did not converge to GitHub base SHA ${EXPECTED_SHA}."
-          exit 1
+          git push --force --prune gitverse \
+            'refs/heads/*:refs/heads/*' \
+            'refs/tags/*:refs/tags/*'
+
+          actual_sha="$(git ls-remote \
+            "https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git" \
+            refs/heads/main | awk '{print $1}')"
+
+          test -n "$actual_sha" || { echo "::error::GitVerse main is missing after mirror push"; exit 1; }
+          test "$actual_sha" = "$expected_sha" || {
+            echo "::error::GitVerse main mismatch: expected $expected_sha, got $actual_sha"
+            exit 1
+          }
+
+          echo "GitVerse main verified at $expected_sha"
