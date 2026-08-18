@@ -1,0 +1,38 @@
+name: GitVerse Mirror Smoke
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify GitVerse main mirror
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Compare GitVerse main to GitHub base SHA
+        env:
+          GITVERSE_TOKEN: ${{ secrets.GITVERSE_TOKEN }}
+          EXPECTED_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          test -n "$GITVERSE_TOKEN" || { echo "::error::GITVERSE_TOKEN is missing"; exit 1; }
+
+          for attempt in $(seq 1 12); do
+            actual_sha="$(git ls-remote \
+              "https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git" \
+              refs/heads/main | awk '{print $1}')"
+
+            if [ "$actual_sha" = "$EXPECTED_SHA" ]; then
+              echo "GitVerse main matches GitHub base SHA: $EXPECTED_SHA"
+              exit 0
+            fi
+
+            echo "Mirror not converged yet (attempt ${attempt}/12)."
+            sleep 5
+          done
+
+          echo "::error::GitVerse main did not converge to GitHub base SHA ${EXPECTED_SHA}."
+          exit 1
