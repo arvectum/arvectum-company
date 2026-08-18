@@ -1,0 +1,46 @@
+name: GitVerse Mirror Health
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify GitVerse main mirror
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Compare GitVerse main/master to current GitHub main
+        env:
+          GITVERSE_TOKEN: ${{ secrets.GITVERSE_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          test -n "$GITVERSE_TOKEN" || { echo "::error::GITVERSE_TOKEN is missing"; exit 1; }
+
+          expected_sha="$(git ls-remote \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPOSITORY}.git" \
+            refs/heads/main | awk '{print $1}')"
+          test -n "$expected_sha" || { echo "::error::GitHub main could not be resolved"; exit 1; }
+
+          remote_url="https://arvectum:${GITVERSE_TOKEN}@gitverse.ru/arvectum/arvectum-company.git"
+
+          for attempt in $(seq 1 12); do
+            actual_main_sha="$(git ls-remote "$remote_url" refs/heads/main | awk '{print $1}')"
+            actual_master_sha="$(git ls-remote "$remote_url" refs/heads/master | awk '{print $1}')"
+
+            if [ "$actual_main_sha" = "$expected_sha" ] && [ "$actual_master_sha" = "$expected_sha" ]; then
+              echo "GitVerse main/master match current GitHub main: $expected_sha"
+              exit 0
+            fi
+
+            echo "Mirror not converged yet (attempt ${attempt}/12)."
+            sleep 5
+          done
+
+          echo "::error::GitVerse mirror did not converge to current GitHub main ${expected_sha}."
+          exit 1
