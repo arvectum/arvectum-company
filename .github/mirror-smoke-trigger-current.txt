@@ -1,2 +1,2 @@
 Temporary branch-only trigger for current GitVerse mirror verification on 2026-08-18.
-Rerun with GitVerse default-master compatibility alias handling.
+Final branch-local smoke after cleanup of main.
