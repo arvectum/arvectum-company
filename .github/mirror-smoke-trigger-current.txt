@@ -1,1 +1,2 @@
 Temporary branch-only trigger for current GitVerse mirror verification on 2026-08-18.
+Strengthened smoke rerun after secret setup and main workflow update.
