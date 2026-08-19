@@ -38,8 +38,8 @@ Canonical repository: `arvectum/arvectum-os`.
 
 Snapshot used to generate the current Project Source pack:
 - branch: `main`;
-- commit: `fbab170ab337c1631b40d0d36ea58a02f6512f6e`;
-- commit timestamp: `2026-08-19T20:38:20+03:00`.
+- commit: `de59771281ce1b4c58d943bd003560384e332270`;
+- commit timestamp: `2026-08-19T21:12:03+03:00`.
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
 
