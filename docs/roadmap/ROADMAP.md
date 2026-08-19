@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.1.0`
+Version: `0.2.0`
 Created: `2026-08-19`
 Updated: `2026-08-19`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
-Current canonical action: `AC-001 — Company Constitution / Founding Charter`
+Current canonical action: `AC-002 — Company ↔ Arvectum OS authority and responsibility boundary`
 
 ## 1. Purpose
 
@@ -83,11 +83,17 @@ Purpose: establish the minimum authoritative foundation before detailed organiza
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-001` | Company Constitution / Founding Charter | `Current` |
-| `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Planned` |
+| `AC-001` | Company Constitution / Founding Charter | `Complete / PASS` |
+| `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Current` |
 | `AC-003` | Canonical repository structure and artifact map | `Planned` |
 | `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Planned` |
 | `AC-005` | Founding baseline cross-review and closure | `Planned` |
+
+AC-001 completion evidence:
+
+- `docs/constitution/COMPANY-CONSTITUTION.md` — `Ratified 1.0.0`;
+- `docs/reviews/AC-001-COMPANY-CONSTITUTION-CROSS-REVIEW.md` — `PASS`, 6/10 iterations, material consensus reached;
+- `docs/governance/decisions/DECISION-2026-08-19-AC-001-RATIFICATION.md` — explicit Owner approval and amendment reservation.
 
 ### M0 exit criteria
 
@@ -297,35 +303,22 @@ This roadmap records Company-level dependencies and decisions only. It must not 
 
 A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
 
-## 16. Current action — AC-001
+## 16. Current action — AC-002
 
-### AC-001 — Company Constitution / Founding Charter
+### AC-002 — Company ↔ Arvectum OS authority and responsibility boundary
 
 Status: `Current`.
 
-Objective: establish the first approved internal governance foundation for Arvectum Company without duplicating or modifying the Arvectum OS Constitution and without pretending to replace the legal charter of ООО «Арвектум».
+Objective: make the Company/OS boundary explicit enough that future Company organizational design can use Arvectum OS without treating the platform as a source of corporate authority and without pushing Company-specific semantics into the domain-neutral platform.
 
 Minimum scope:
 
-- Company identity, mission and business purpose;
-- ownership and ultimate owner authority;
-- relationship between corporate/legal authority and internal organizational governance;
-- principles for delegation, Positions, Assignments and AI/software execution;
-- business-first, proportional governance and evidence principles;
-- technology sovereignty and organizational continuity;
-- high-level Company ↔ OS boundary without duplicating detailed OS contracts;
-- amendment/approval mechanism for the Company founding artifact.
+- identify Company-owned organizational semantics and authority sources;
+- identify OS-owned domain-neutral platform contracts/capabilities;
+- distinguish legal/corporate authority, Company Organizational Authority, OS governance authority and technical authorization;
+- define what Company may rely on from OS and under which Product Contract/Governed Execution boundaries;
+- define conflict/reconciliation and cross-repository change paths;
+- preserve product-specific ownership and prevent hidden Company→OS or OS→Company commitments;
+- identify any unresolved boundary questions that must be escalated before AC-003.
 
-Acceptance requires role-based cross-review, reconciliation with current applicable Arvectum OS canonical state, explicit owner approval and canonical repository publication.
-
-## 17. Bootstrap review record
-
-Roadmap `0.1.0` was produced through seven role-based cross-review iterations covering Owner/CEO, COO, CFO, CTO/CIO and OS architecture, CISO, Legal/Compliance, Product/Commercial and HR/Organizational Design perspectives.
-
-The review converged when remaining changes were editorial or belonged in downstream canonical artifacts rather than this roadmap.
-
-This review method is design evidence only; it does not represent independent legal, financial, security or regulatory professional approval.
-
-## Guiding principle
-
-**First build a viable, profitable and governable company. The organizational model and Arvectum OS serve the business; AI, software and runtimes are replaceable means of execution.**
+Acceptance requires reconciliation with the Ratified Company Constitution `1.0.0`, current canonical Arvectum OS Constitution/RFC state, applicable Company legal/corporate authority, role-based cross-review proportionate to consequence, explicit Owner approval where the resulting boundary creates or reserves material Company authority, and canonical repository publication.
