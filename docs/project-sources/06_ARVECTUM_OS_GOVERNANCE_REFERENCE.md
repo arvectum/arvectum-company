@@ -1,0 +1,516 @@
+# Arvectum OS Governance Reference
+
+Project Source Status: `Convenience Snapshot / Non-Canonical Copy`
+Canonical repository: `arvectum/arvectum-os`
+Canonical branch sampled: `main`
+Snapshot commit: `fbab170ab337c1631b40d0d36ea58a02f6512f6e`
+Source commit timestamp: `2026-08-19T20:38:20+03:00`
+
+> Authority rule: this file is optimized for ChatGPT Project retrieval. It is not an independent source of truth. If this snapshot conflicts with the current canonical Arvectum OS repository, applicable Company governance, or applicable legal/corporate authority, the higher-authority canonical source wins.
+
+## Included canonical sources
+
+- `docs/rfc/README.md` — git blob `f920aac1b8b60cc0698df506ae3751202e343270`, SHA-256 `e342845711a3375e7094b047f2f6f2e7eaf7c0d66f350eb75fe734b63c842c7f`
+- `docs/governance/DECISION-AUTHORITY-POLICY.md` — git blob `3bcdc82b2289d9676ec52e9f23e3e1cb129fba44`, SHA-256 `a506de4eecdb95c8ddfc206f340fef83f55d422363e20175634063b576f4d3e8`
+
+---
+
+# Source Document 1: `docs/rfc/README.md`
+
+Canonical git blob: `f920aac1b8b60cc0698df506ae3751202e343270`  
+Content SHA-256: `e342845711a3375e7094b047f2f6f2e7eaf7c0d66f350eb75fe734b63c842c7f`
+
+# Arvectum OS RFC Index
+
+RFCs define major architectural, governance and product-contract decisions for Arvectum OS.
+
+The Constitution has higher authority than every RFC. Accepted RFCs have higher authority than ADRs and implementation details.
+
+## Statuses
+
+- `Draft` — incomplete working document;
+- `Proposed` — complete proposal awaiting approval;
+- `Accepted` — approved and binding;
+- `Rejected` — considered and not accepted;
+- `Superseded` — replaced by a later accepted RFC;
+- `Withdrawn` — removed by its proposer before decision.
+
+## RFCs
+
+| RFC | Title | Category | Status | Version |
+|---|---|---|---|---|
+| [RFC-0001](RFC-0001-arvectum-os-architecture.md) | Arvectum OS Architecture | platform | Accepted | 1.0.0 |
+| [RFC-0002](RFC-0002-canonical-record-kernel-metamodel.md) | Canonical Record, Kernel Metamodel, Authority, Relationship and Organizational Asset Model | platform | Accepted | 1.0.0 |
+| [RFC-0003](RFC-0003-identity-security-privacy-tenant-sovereignty-portability.md) | Identity, Security, Privacy, Tenant Sovereignty and Portability | platform | Accepted | 1.0.0 |
+| [RFC-0004](RFC-0004-product-contract-product-experiment-extension-model-v1.0.0.md) | Product Contract, Product Experiment and Extension Model | product_contract | Accepted | 1.0.0 |
+| [RFC-0005](RFC-0005-governed-execution-workflow-model-v1.0.0.md) | Governed Execution and Workflow Model | platform | Accepted | 1.0.0 |
+| [RFC-0006](RFC-0006-event-provenance-observability-model-v1.0.0.md) | Event, Provenance and Observability Model | platform | Accepted | 1.0.0 |
+| [RFC-0007](RFC-0007-memory-knowledge-governed-learning-lifecycle-v1.0.0.md) | Memory, Knowledge and Governed Learning Lifecycle | platform | Accepted | 1.0.0 |
+| [RFC-0008](RFC-0008-document-artifact-architecture-v1.0.0.md) | Document and Artifact Architecture | platform | Accepted | 1.0.0 |
+
+## Acceptance Integrity
+
+An RFC is validly `Accepted` only when:
+
+1. its canonical Approval Record references an owner-approved decision that already exists independently of the acceptance commit;
+2. the canonical RFC and this index are updated consistently as part of the acceptance publication;
+3. the resulting repository commit or release tag is preserved as external repository evidence.
+
+A status label without the required approval evidence does not constitute acceptance.
+
+An RFC must not require its acceptance commit hash to be embedded inside the same commit as a self-reference.
+
+## RFC-0001 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0001-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0001-ACCEPTANCE.md) — `Approved`.
+
+Accepted RFC publication commit:
+
+- `214faf049990a9475da66ca52f7327728c9a49eb`.
+
+## RFC-0002 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0002-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0002-ACCEPTANCE.md) — `Approved`.
+
+Approved proposal:
+
+- RFC-0002 `0.10.0`.
+
+Accepted RFC publication commit on the acceptance branch:
+
+- `ed936fcaa118368f81d2329b8f1ffa70d219ec4f`.
+
+Accepted RFC publication merge commit on `main`:
+
+- `8d247402db1b869fcca7bc1dc634cbb2f585c89a`.
+
+The merge commit preserves the independent approval commit and subsequent acceptance publication commits in repository history.
+
+## RFC-0003 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0003-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0003-ACCEPTANCE.md) — `Approved`.
+
+Approved proposal:
+
+- RFC-0003 `0.2.0`.
+
+Accepted RFC publication commit:
+
+- `1552970e2107bf1c3bbbe20353747f3b9a4361ce`.
+
+RFC-0003 `1.0.0` is binding architecture within its declared scope.
+
+## RFC-0004 Approval Evidence
+
+Canonical owner approval repair record:
+
+- [`DECISION-2026-08-07-RFC-0004-OWNER-APPROVAL-REPAIR`](../governance/decisions/DECISION-2026-08-07-RFC-0004-OWNER-APPROVAL-REPAIR.md) — `Approved`.
+
+Approved reviewed proposal:
+
+- RFC-0004 `0.3.0`;
+- immutable proposal blob SHA `5a413a240588677211ad56f3a23b30a65d1c4334`.
+
+Compatibility re-check against Accepted RFC-0003 `1.0.0`:
+
+- [`RFC-0004 compatibility re-check`](../reviews/RFC-0004-accepted-rfc0003-compatibility-review.md) — `Complete`, review iteration 4 of maximum 7;
+- result: no material conflict; stale RFC-0003 lifecycle wording reconciled for acceptance publication.
+
+Accepted RFC publication:
+
+- [`RFC-0004 v1.0.0`](RFC-0004-product-contract-product-experiment-extension-model-v1.0.0.md) — `Accepted`;
+- publication commit: `3b3f72a01bd76d9cfb6a1ef78e7ec6a627173ee2`.
+
+RFC-0004 `1.0.0` is binding architecture within its declared product-contract scope.
+
+## RFC-0005 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0005-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0005-ACCEPTANCE.md) — `Approved`;
+- approval commit: `634feebe6837987599c507e9f9430591185a599c`.
+
+Approved reviewed proposal:
+
+- [`RFC-0005 v0.3.0`](RFC-0005-governed-execution-workflow-model-v0.3.0.md);
+- immutable proposal blob SHA `5a4b347dc39e88eeacf49a39861e37326beb7234`;
+- incorporated RFC-0005 `0.2.0` semantic baseline blob SHA `67e739ceacdbd308618f4fdfffd914dc65e99f09`.
+
+Review evidence:
+
+- [`RFC-0005 functional cross-review`](../reviews/RFC-0005-functional-cross-review.md) — `Complete`, iterations 1–3;
+- [`RFC-0005 iteration 4`](../reviews/RFC-0005-cross-review-iteration-4.md) — `Complete`;
+- total review iterations: 4 of maximum 7;
+- iteration 4 result: `Pass with bounded reconciliation`.
+
+Accepted RFC publication:
+
+- [`RFC-0005 v1.0.0`](RFC-0005-governed-execution-workflow-model-v1.0.0.md) — `Accepted`;
+- publication commit: `fcb4f93edbd6062b7ba1e4abbb21972fe4a64575`.
+
+RFC-0005 `1.0.0` is binding architecture within its declared Governed Execution and Workflow scope.
+
+## RFC-0006 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0006-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0006-ACCEPTANCE.md) — `Approved`;
+- approval commit: `26a92a6663083cc2923bc25e5ccf920b61c17387`.
+
+Approved reviewed proposal:
+
+- [`RFC-0006 v0.2.0`](RFC-0006-event-provenance-observability-model.md);
+- immutable proposal blob SHA `5468001d2a0ff13fb16b7f88f7a3bc26f6bc6225`;
+- reviewed proposal publication commit: `eb6f7f5778cd8afe78f7988d00b95623423cb81d`.
+
+Review evidence:
+
+- [`RFC-0006 functional cross-review`](../reviews/RFC-0006-functional-cross-review.md) — `Complete`;
+- iterations completed: 4 of maximum 7;
+- result: `Pass after bounded reconciliation`.
+
+Accepted RFC publication:
+
+- [`RFC-0006 v1.0.0`](RFC-0006-event-provenance-observability-model-v1.0.0.md) — `Accepted`;
+- publication commit: `49f88d04f6440dcbeedb860ccbf7b5f43a2b7b2a`.
+
+RFC-0006 `1.0.0` is binding architecture within its declared Event, Provenance and Observability scope.
+
+## RFC-0007 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0007-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0007-ACCEPTANCE.md) — `Approved`;
+- approval commit: `0de3fc2a85f5b567e28cae2eed95f67838b66b4e`.
+
+Approved reviewed proposal:
+
+- [`RFC-0007 v0.2.0`](RFC-0007-memory-knowledge-governed-learning-lifecycle.md);
+- immutable proposal blob SHA `06dc706c3f717a159c0d9495a3c9ae3f29fbdf11`;
+- reviewed proposal publication commit: `afe3c5169c702c27fd8210f879120cc9ce6803b8`.
+
+Review evidence:
+
+- [`RFC-0007 functional cross-review`](../reviews/RFC-0007-functional-cross-review.md) — `Complete`;
+- iterations completed: 4 of maximum 7;
+- result: `Pass after bounded reconciliation`.
+
+Accepted RFC publication:
+
+- [`RFC-0007 v1.0.0`](RFC-0007-memory-knowledge-governed-learning-lifecycle-v1.0.0.md) — `Accepted`;
+- publication commit: `45eb9f08f3d039b6642379e5dd7bc762b9289927`.
+
+RFC-0007 `1.0.0` is binding architecture within its declared Memory, Knowledge and Governed Learning scope.
+
+## RFC-0008 Approval Evidence
+
+Canonical owner approval:
+
+- [`DECISION-2026-08-07-RFC-0008-ACCEPTANCE`](../governance/decisions/DECISION-2026-08-07-RFC-0008-ACCEPTANCE.md) — `Approved`;
+- approval commit: `9b104307dc1ee2e04ac65146b6beb73db0d13019`.
+
+Approved reviewed proposal:
+
+- [`RFC-0008 v0.2.0`](RFC-0008-document-artifact-architecture.md);
+- immutable proposal blob SHA `0de6a1dead4e06605d72d0781505bb44598d752a`;
+- reviewed proposal publication commit: `1e385ab73499a209da9a1bfad980902eef364d61`.
+
+Review evidence:
+
+- [`RFC-0008 functional cross-review`](../reviews/RFC-0008-functional-cross-review.md) — `Complete`;
+- iterations completed: 4 of maximum 7;
+- result: `Pass after bounded reconciliation`;
+- review publication commit: `3a5a52d6d6daa1e44386eb4b46ef095fab2c8ab2`.
+
+Accepted RFC publication:
+
+- [`RFC-0008 v1.0.0`](RFC-0008-document-artifact-architecture-v1.0.0.md) — `Accepted`;
+- publication commit: `230fb452f5aa8688950056cf1c4965840803c835`.
+
+RFC-0008 `1.0.0` is binding architecture within its declared Document and Artifact scope. Acceptance does not itself activate a document/artifact Platform Capability or establish production, operational, SLA, support, archival, legal-signature or product-specific commitments.
+
+## Historical Constitutional Amendment Provenance
+
+The current canonical RFC namespace is the table above under `docs/rfc/`. Historical repository evidence predating finalization of this index used a legacy `docs/rfcs/` namespace for constitutional amendments.
+
+Confirmed historical amendment chain:
+
+| Historical reference | Purpose | Result | Immutable evidence |
+|---|---|---|---|
+| `legacy RFC-0000 constitutional amendment` | Amend Constitution `1.0.0 → 1.1.0` | `1.1.0` | commit `611278850e2af5e159332650858574a3c647330b`; blob `835425ca01705adf07da724389038ea2228f15ce` |
+| `legacy constitutional amendment RFC-0001` | Amend Constitution `1.1.0 → 1.2.0` | `1.2.0` | commit `bd012cc435461fe903d6f9420282a0f906ca5bbd`; blob `85b3cc9895dc4a398a0e30428926fe486f62062a` |
+
+Both historical artifacts record status `Accepted` and explicit owner approval on `2026-08-06`.
+
+The legacy `RFC-0001` identifier was later reused when the current canonical RFC index assigned `RFC-0001` to `Arvectum OS Architecture`. This is recorded as a historical governance migration defect rather than hidden or retroactively rewritten.
+
+Canonical reference rule:
+
+- historical Constitution `1.0.0 → 1.1.0` evidence is referenced as `legacy RFC-0000 constitutional amendment` plus immutable commit/blob evidence;
+- historical Constitution `1.1.0 → 1.2.0` evidence is referenced as `legacy constitutional amendment RFC-0001` plus immutable commit/blob evidence;
+- unqualified `RFC-0001` refers to the current Accepted [`RFC-0001 — Arvectum OS Architecture`](RFC-0001-arvectum-os-architecture.md);
+- current RFC-0001 through RFC-0008 identifiers are not renumbered.
+
+The repair and interpretation are approved in [`DECISION-2026-08-07-CONSTITUTION-1.2-PROVENANCE-REPAIR`](../governance/decisions/DECISION-2026-08-07-CONSTITUTION-1.2-PROVENANCE-REPAIR.md).
+
+The Constitution provenance record is [`Closed`](../governance/CONSTITUTION-PROVENANCE.md).
+
+## Related Governance
+
+RFC-0001 v1.0.0 requires an approved decision-authority policy before the first `Active` capability or external production conformance claim.
+
+It also requires operational-readiness approval before a capability becomes `Active`, and requires externally relied-upon commercial claims to remain within approved lifecycle, contract and conformance scope.
+
+Current proposed policy:
+
+- [`Decision Authority Policy`](../governance/DECISION-AUTHORITY-POLICY.md) — `Proposed` v0.2.1.
+
+Until that policy or a replacement is approved, the owner of Arvectum OS retains residual decision authority.
+
+## Governance Notes
+
+The canonical Constitution is version `1.2.0`, `Ratified` and frozen.
+
+The historical amendment provenance for Constitution `1.0.0 → 1.1.0 → 1.2.0` is confirmed and indexed above. The former Constitution `1.2.0` provenance gap is closed through [`DECISION-2026-08-07-CONSTITUTION-1.2-PROVENANCE-REPAIR`](../governance/decisions/DECISION-2026-08-07-CONSTITUTION-1.2-PROVENANCE-REPAIR.md).
+
+The approved [`RFC State Transition Procedure`](../governance/RFC-STATE-TRANSITION-PROCEDURE.md) requires owner approval, canonical publication, RFC Index synchronization, roadmap synchronization and read-after-write consistency verification to close each RFC status transition before substantive work proceeds to the next RFC.
+
+
+---
+
+# Source Document 2: `docs/governance/DECISION-AUTHORITY-POLICY.md`
+
+Canonical git blob: `3bcdc82b2289d9676ec52e9f23e3e1cb129fba44`  
+Content SHA-256: `a506de4eecdb95c8ddfc206f340fef83f55d422363e20175634063b576f4d3e8`
+
+# Arvectum OS Decision Authority Policy
+
+Status: `Proposed`
+Version: `0.2.1`
+Created: `2026-08-07`
+Updated: `2026-08-07`
+Category: `governance`
+Constitution basis: `1.2.0`
+Architecture basis: `RFC-0001 v1.0.0 Accepted`
+Policy owner: `ООО «Арвектум»`
+
+## Purpose
+
+This policy defines the initial decision-authority matrix for Arvectum OS.
+
+It prevents three failure modes:
+
+- every material decision escalating to the founder or owner;
+- proposers approving their own material risks or shared-platform obligations;
+- commercial or operational commitments becoming binding without authority over the affected platform scope.
+
+This policy is `Proposed`. Until it is approved, the owner of Arvectum OS retains residual decision authority.
+
+## Principles
+
+1. Decision authority follows affected scope, consequence and reversibility.
+2. Material decisions require an approver with sufficient independence from the proposer.
+3. Low-risk reversible decisions should be delegated close to the work.
+4. No delegation may weaken the Constitution or an accepted RFC.
+5. Every governed decision must have a canonical reference.
+6. Authority may be delegated to a person, role or governance body, but delegation scope and limits must be explicit.
+7. A customer-facing commitment cannot create authority that the proposer does not already hold.
+
+## Decision Classes
+
+### Class A — Fundamental Governance
+
+Includes:
+
+- constitutional amendments;
+- acceptance or supersession of foundational platform RFCs;
+- irreversible changes to the fundamental platform model;
+- changes to owner authority.
+
+Decision authority: `Owner of Arvectum OS`.
+
+Proposer may not be the sole approver.
+
+### Class B — Shared Platform, Material Risk and External Commitment
+
+Includes:
+
+- promotion of a capability to `Active`;
+- approval of operational readiness for an `Active` capability where material customer or shared-platform obligations exist;
+- backward-incompatible stable public-contract changes;
+- material shared-platform exceptions;
+- production exceptions affecting multiple products or tenants;
+- commercial commitments that create new stable platform obligations, conformance claims, portability promises, support guarantees or material customer-facing operational commitments;
+- cross-organization data access or knowledge reuse;
+- acceptance of material security, privacy, legal, financial, safety or reputational gaps.
+
+Decision authority: `Owner` or explicitly delegated `Platform Decision Authority` with authority over the affected scope.
+
+Required consultation where applicable:
+
+- architecture;
+- technology and operations;
+- security or privacy;
+- legal or commercial owner;
+- finance or risk owner;
+- affected product owners.
+
+Proposer may not be the sole approver.
+
+### Class C — Capability Incubation and Product-Platform Boundary
+
+Includes:
+
+- creation of a lifecycle `Candidate`;
+- promotion from `Candidate` to `Incubating`;
+- approval of a Provisional domain-neutral contract;
+- bounded exception affecting one incubating capability;
+- return of an incubating capability to a product.
+
+Decision authority: delegated `Platform Decision Authority` or owner.
+
+The proposer may participate but may not solely approve when the decision creates shared obligations or material risk.
+
+### Class D — Product-local Reversible Decisions
+
+Includes:
+
+- bounded Product Experiments;
+- product-local implementation choices;
+- manual controls within an approved scope;
+- accurately scoped pilot commitments that do not represent the subject as an Active capability or create undeclared stable platform obligations;
+- low-risk reversible exceptions that do not alter shared contracts, cross tenant boundaries or create material external commitments.
+
+Decision authority: delegated `Product Decision Authority` within approved budget, data, risk, commercial and time limits.
+
+Self-approval may be allowed only when delegation explicitly permits it and the decision remains low-risk, reversible and product-local.
+
+### Class E — Operational Changes
+
+Includes routine operational, deployment and maintenance decisions within approved contracts, operational-readiness boundaries and policies.
+
+Decision authority: delegated operational owner.
+
+Material incidents, customer-impacting commitments, exceptions or changes outside approved boundaries escalate to the applicable higher class.
+
+## Initial Authority Matrix
+
+Until named roles or governance bodies are approved, the following temporary matrix applies:
+
+| Decision class | Proposer | Decision authority | Required independence |
+|---|---|---|---|
+| A | Any authorized proposer | Owner | Owner approval explicit |
+| B | Product, platform, commercial, operational or governance owner | Owner | Proposer may not solely approve |
+| C | Product or platform owner | Owner | Proposer may not solely approve shared obligation or material risk |
+| D | Product owner or delegated operator | Owner or explicit product delegation | Self-approval only if explicitly delegated and low-risk |
+| E | Operational owner | Owner or explicit operational delegation | Separation required when material risk, exception or external commitment arises |
+
+This temporary matrix intentionally preserves owner control while the organization is small. It should be replaced by named delegations as soon as qualified accountable roles exist.
+
+## Required Decision Record
+
+Every governed decision must record:
+
+- decision class;
+- subject and scope;
+- proposer;
+- decision authority;
+- consulted parties where applicable;
+- alternatives considered;
+- rationale and evidence;
+- consequences and accepted risks;
+- affected customer-facing commitments where applicable;
+- operational-readiness evidence where applicable;
+- effective date;
+- expiry, review or supersession condition;
+- canonical approval reference.
+
+## Commercial Commitment Approval
+
+A commercial proposal, statement of work, service description or customer commitment that materially changes supported platform obligations, conformance scope, stable compatibility, portability, security or operational commitments must be approved by an authority with responsibility for the affected scope before it becomes binding.
+
+Sales, marketing, product or delivery ownership does not by itself authorize representation of a Product Experiment, Candidate or Incubating capability as Active.
+
+A delegated product authority may approve a bounded pilot commitment only within explicit lifecycle, support, risk, budget and time limits.
+
+## Operational Readiness Approval
+
+Promotion to `Active` requires approved operational-readiness evidence proportionate to scope, consequence and customer commitments.
+
+The approving authority must verify, where applicable:
+
+- accountable support ownership;
+- observability and health evidence;
+- incident and recovery path;
+- continuity and dependency assumptions;
+- backup, restoration or reconstruction path;
+- customer-facing support and operational commitments;
+- migration, deprecation and communication responsibilities.
+
+Operational readiness may rely on manual or bounded controls when proportionate and explicitly approved, but the limitations and review trigger must be recorded.
+
+## Conformance Approval
+
+A Conformance Statement may be approved by a person or body with authority over the assessed scope and accepted risk.
+
+The conformance approver must not approve a material exception they proposed unless a higher authority explicitly approves that exception.
+
+A limited product or pilot approver may not claim full-platform conformance.
+
+## Delegation
+
+A delegation must identify:
+
+- delegating authority;
+- delegate;
+- decision classes and scope;
+- budget or financial limits where relevant;
+- customer or commercial commitment limits where relevant;
+- data classification and tenant limits;
+- maximum risk or consequence;
+- duration and review date;
+- excluded decisions;
+- escalation path;
+- canonical delegation reference.
+
+Delegation may be revoked or narrowed at any time by the delegating authority.
+
+## Conflicts and Escalation
+
+A decision must escalate when:
+
+- authority is unclear;
+- proposer and approver independence is inadequate;
+- the impact crosses products, tenants or organizations;
+- a decision changes stable shared contracts;
+- a commercial commitment exceeds approved platform lifecycle, conformance or operational readiness;
+- risk exceeds delegated limits;
+- legal, contractual or security obligations are uncertain;
+- an exception would weaken a constitutional invariant.
+
+Constitutional conflicts must stop the decision until resolved.
+
+## Review
+
+This policy must be approved before:
+
+- the first capability becomes `Active`;
+- the first external production conformance claim;
+- the first material customer commitment that depends on an Active platform capability;
+- material authority is delegated away from the owner.
+
+Review triggers include organizational growth, appointment of CTO or Chief Architect roles, first external production deployment, a material incident, material commercial overcommitment or repeated decision bottlenecks.
+
+## Approval Record
+
+Decision: `Pending`
+Decision authority: `ООО «Арвектум»`
+Approved by: `Pending`
+Decision date: `Pending`
+Canonical approval reference: `Pending`
