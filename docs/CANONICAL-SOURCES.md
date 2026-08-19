@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `0.2.0`
+Version: `0.3.0`
 Updated: `2026-08-19`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -26,10 +26,11 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 
 | Source | Status | Role |
 |---|---|---|
+| `docs/constitution/COMPANY-CONSTITUTION.md` | Ratified `1.0.0` | Company Constitution / Founding Charter; highest approved Company-specific internal governance artifact below applicable legal/corporate authority |
+| `docs/governance/decisions/DECISION-2026-08-19-AC-001-RATIFICATION.md` | Approved | Owner ratification record for AC-001 and exact approved proposal reference |
 | `docs/roadmap/ROADMAP.md` | Active | Canonical Company planning source |
-| `docs/constitution/...` | Pending `AC-001` | Company Constitution / Founding Charter |
 | Company ↔ Arvectum OS authority artifact | Pending `AC-002` | Explicit Company/OS authority and responsibility boundary |
-| `docs/portfolio/PORTFOLIO.md` | Pending `AC-005` | Company portfolio map |
+| `docs/portfolio/PORTFOLIO.md` | Pending `AC-004` | Company portfolio map |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
 ## 4. External canonical Arvectum OS dependencies
