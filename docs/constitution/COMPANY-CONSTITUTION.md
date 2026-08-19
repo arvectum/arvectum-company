@@ -1,14 +1,16 @@
 # Конституция Arvectum Company / Founding Charter
 
-Status: `Proposed`
-Version: `0.9.0`
+Status: `Ratified`
+Version: `1.0.0`
 Created: `2026-08-19`
 Updated: `2026-08-19`
+Ratified: `2026-08-19`
 Owner: `ООО «Арвектум»`
 Canonical language: `Russian`
 Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-001 — Company Constitution / Founding Charter`
-Ratification: `Pending explicit Owner approval`
+Approval: `docs/governance/decisions/DECISION-2026-08-19-AC-001-RATIFICATION.md`
+Approved proposal: `Proposed 0.9.0`, blob `6849d01e857817e54ce29ff05fd11dc119e8fdd2`
 
 ## Преамбула
 
