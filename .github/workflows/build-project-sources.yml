@@ -1,0 +1,74 @@
+name: Build ChatGPT Project Sources
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tools/build_project_sources.py'
+      - '.github/workflows/build-project-sources.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-project-sources
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and publish source pack
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Arvectum Company
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout canonical Arvectum OS
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch main https://github.com/arvectum/arvectum-os.git /tmp/arvectum-os
+
+      - name: Build Project Source bundles and registry
+        run: |
+          set -euo pipefail
+          python3 tools/build_project_sources.py \
+            --os-repo /tmp/arvectum-os \
+            --output docs/project-sources \
+            --registry docs/CANONICAL-SOURCES.md
+
+      - name: Validate generated set
+        run: |
+          set -euo pipefail
+          test -f docs/CANONICAL-SOURCES.md
+          test "$(find docs/project-sources -maxdepth 1 -type f -name '*_ARVECTUM_OS_*.md' | wc -l | tr -d ' ')" = "7"
+          grep -q 'Convenience Snapshot / Non-Canonical Copy' docs/project-sources/01_ARVECTUM_OS_CONSTITUTION.md
+          grep -q 'Proposed `0.2.1`' docs/CANONICAL-SOURCES.md
+
+      - name: Commit generated sources when changed
+        run: |
+          set -euo pipefail
+          git add docs/project-sources docs/CANONICAL-SOURCES.md
+          if git diff --cached --quiet; then
+            echo "Project Source pack is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          os_sha="$(git -C /tmp/arvectum-os rev-parse HEAD)"
+          git commit -m "docs: refresh project source pack from Arvectum OS ${os_sha:0:12}"
+          git push origin HEAD:main
+
+      - name: Summary
+        run: |
+          os_sha="$(git -C /tmp/arvectum-os rev-parse HEAD)"
+          echo "### Arvectum Company Project Source pack" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Canonical OS commit: \`$os_sha\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Generated bundles: \`7\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Registry: \`docs/CANONICAL-SOURCES.md\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Generated files are non-canonical convenience snapshots." >> "$GITHUB_STEP_SUMMARY"
