@@ -131,6 +131,7 @@ No authority domain above automatically substitutes for another.
 In particular:
 
 - legal capacity does not automatically create an approved internal workflow or technical permission;
+- an internal Owner decision does not replace a legally required participant decision, General Director act, power of attorney, signature or other required corporate/legal form;
 - Company Organizational Authority does not automatically create OS authorization or change an OS contract;
 - OS governance approval does not authorize a Company business decision;
 - technical authorization does not create legal, corporate or Organizational Authority;
@@ -214,14 +215,15 @@ These modes must not be misread as corporate or organizational power.
 
 ### 5.1 Company governance record represented as `Native`
 
-A Company-specific governance object may be stored as a `Native` Arvectum OS Canonical Record when the Company has deliberately chosen OS as the canonical system for that governed record type/scope.
+A Company-specific governance object may be stored as a `Native` Arvectum OS Canonical Record only when the Company has deliberately designated OS as the canonical system for that governed record type/scope **and** an applicable OS contract admits that representation.
 
 In that case:
 
 - OS is authoritative for the admitted canonical record/version, identity, provenance and lifecycle semantics within the declared scope;
 - the Company remains the source of the organizational meaning and authority represented by that record;
 - the record must preserve the attributable Company Principal/decision/delegation/policy that authorized the state;
-- OS `Native` status does not create new legal or Organizational Authority.
+- OS `Native` status does not create new legal or Organizational Authority;
+- OS may reject a non-conforming mutation under its contracts, but it must not unilaterally rewrite the Company policy, delegation or decision semantics to make the record conform.
 
 Example: a Company delegation approved by the competent Company authority may later be stored as a Native OS governance record. The delegation exists because the Company authority approved it, not because OS persisted it.
 
@@ -299,13 +301,13 @@ The Product Contract must remain product/platform scope. It does not grant Compa
 
 ### 7.2 Direct Company organizational reliance
 
-A Company workflow may eventually use a platform-native capability directly rather than through a separately marketed product.
+AC-002 does **not** presume that an arbitrary internal Company workflow may bypass the RFC-0004 client/product/extension boundary merely because the Company owns Arvectum OS.
 
-In that case, the Company must rely only on a **declared OS capability/operation boundary** whose contract, Organization scope, authority inputs, data-handling rules, compatibility and failure semantics are explicit enough for the intended consequence.
+Direct Company use is permitted only where the current canonical OS contract explicitly admits the applicable platform-native administrative/governance operation for an Organization or authorized platform operator without requiring a Product Contract.
 
-A Product Contract must be used when RFC-0004 says the concrete client/product/extension relationship requires one. AC-002 does **not** invent a generic “Company Product Contract” merely to force every internal OS use through product semantics.
+For ordinary Company operational workflows that consume a Platform Capability, emit governed shared history or read/change OS canonical state through a product, extension or other client boundary, the applicable RFC-0004 Product Contract requirement remains the default when triggered.
 
-If a planned Company use cannot fit an existing declared OS contract boundary and no applicable Product Contract/extension contract exists, the Company must stop the governed reliance and open the minimum necessary OS governance/contract path before consequential use.
+AC-002 does **not** invent a generic “Company Product Contract” or a new contract type. If the first real Company workflow cannot be expressed through an existing declared OS capability/operation boundary or an applicable Product Contract/extension contract, the Company must stop the governed reliance and open the minimum necessary OS governance/contract path before consequential use.
 
 ### 7.3 No private coupling
 
@@ -414,6 +416,18 @@ A cross-repository change may require separate durable decisions in more than on
 
 Approval in one scope does not silently approve another scope. Where both Company and OS commitments change, each repository must preserve its own applicable decision/contract evidence and cross-reference the other where useful.
 
+### 9.6 Commercial and lifecycle integrity across the boundary
+
+A Company commercial commitment that relies on Arvectum OS must remain truthful about the current OS lifecycle, conformance, compatibility, support and operational-readiness state.
+
+The Company must not:
+
+- market an OS Product Experiment, `Candidate` or `Incubating` capability as an `Active` supported platform capability;
+- create a stable OS compatibility, portability, support or operational obligation that OS governance has not approved;
+- use a Company contract or sales promise to bypass an OS Product Contract or lifecycle boundary.
+
+The Company may choose to accept its own business risk around a bounded internal or customer pilot only within competent Company authority and accurate external representation. That acceptance does not create a new OS obligation unless the applicable OS authority separately approves it.
+
 ## 10. Conflict and reconciliation rules
 
 ### 10.1 Legal/corporate conflict
@@ -475,7 +489,8 @@ At minimum:
 - secrets and reusable credentials must not be stored in ordinary canonical history, prompts or repositories merely for convenience;
 - OS administrator capability must not imply unrestricted business-content authority;
 - derived data and AI context inherit applicable handling constraints;
-- failure must not silently broaden access or cross Organization boundaries.
+- failure must not silently broaden access or cross Organization boundaries;
+- emergency/break-glass technical access may bypass ordinary authorization only through an explicitly governed, attributable, time-bounded and reviewable mechanism and must not create permanent Company delegation or Organizational Authority by implication.
 
 Technology sovereignty remains a Company responsibility as an adoption/investment decision even where OS provides portability/security mechanisms.
 
@@ -551,7 +566,7 @@ AC-002 only establishes that OS must represent/enforce the effective Company aut
 
 The first real direct Company workflow may reveal whether current OS capability contracts are sufficient for a non-product internal Company client or whether a minimal explicit extension/Product Contract-equivalent pattern is needed.
 
-No new generic contract type is created by AC-002. If the first real reliance cannot be expressed through accepted OS contracts, the issue must be resolved through the OS governance path before consequential execution.
+No new generic contract type is created by AC-002. Until canonical OS contracts explicitly admit such a non-product operational client, ordinary consequential Company use must not assume that path exists; it should use an admitted product/extension/client boundary or wait for the applicable OS governance decision.
 
 ### 15.4 Concrete identity/tenant/IAM implementation
 
@@ -575,6 +590,7 @@ The following invariants summarize AC-002:
 10. **OS reliance is justified by business value and remains reversible where practicable.**
 11. **AI, software, models and runtimes remain executors, not authority sources.**
 12. **When authority or outcome is uncertain, consequential execution fails closed or escalates rather than inferring permission.**
+13. **Company commercial commitments cannot silently create unsupported OS lifecycle, compatibility, support or conformance obligations.**
 
 ## 17. Acceptance criteria
 
