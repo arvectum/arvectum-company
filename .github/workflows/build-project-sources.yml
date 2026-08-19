@@ -49,30 +49,10 @@ jobs:
           grep -q 'Convenience Snapshot / Non-Canonical Copy' docs/project-sources/01_ARVECTUM_OS_CONSTITUTION.md
           grep -q 'Proposed `0.2.1`' docs/CANONICAL-SOURCES.md
 
-      - name: Build temporary downloadable bundle
-        run: |
-          set -euo pipefail
-          rm -rf .tmp-project-source-bundle
-          mkdir -p .tmp-project-source-bundle
-          python3 - <<'PY'
-          from pathlib import Path
-          from zipfile import ZipFile, ZIP_DEFLATED
-
-          source_dir = Path('docs/project-sources')
-          out_dir = Path('.tmp-project-source-bundle')
-          zip_path = out_dir / 'arvectum_company_project_sources.zip'
-          files = sorted(source_dir.glob('*.md'))
-          assert len(files) == 7, len(files)
-          with ZipFile(zip_path, 'w', ZIP_DEFLATED) as zf:
-              for path in files:
-                  zf.write(path, arcname=path.name)
-          PY
-          base64 -w 0 .tmp-project-source-bundle/arvectum_company_project_sources.zip > .tmp-project-source-bundle/arvectum_company_project_sources.zip.b64
-
       - name: Commit generated sources when changed
         run: |
           set -euo pipefail
-          git add docs/project-sources docs/CANONICAL-SOURCES.md .tmp-project-source-bundle/arvectum_company_project_sources.zip.b64
+          git add docs/project-sources docs/CANONICAL-SOURCES.md
           if git diff --cached --quiet; then
             echo "Project Source pack is already current."
             exit 0
@@ -91,4 +71,4 @@ jobs:
           echo "- Canonical OS commit: \`$os_sha\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- Generated bundles: \`7\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- Registry: \`docs/CANONICAL-SOURCES.md\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Temporary downloadable bundle materialized for ChatGPT handoff." >> "$GITHUB_STEP_SUMMARY"
+          echo "- Generated files are non-canonical convenience snapshots." >> "$GITHUB_STEP_SUMMARY"
