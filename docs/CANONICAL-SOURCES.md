@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `0.1.0`
+Version: `0.2.0`
 Updated: `2026-08-19`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -29,14 +29,14 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/roadmap/ROADMAP.md` | Active | Canonical Company planning source |
 | `docs/constitution/...` | Pending `AC-001` | Company Constitution / Founding Charter |
 | Company ↔ Arvectum OS authority artifact | Pending `AC-002` | Explicit Company/OS authority and responsibility boundary |
-| `docs/portfolio/PORTFOLIO.md` | Pending `AC-004` | Company portfolio map |
+| `docs/portfolio/PORTFOLIO.md` | Pending `AC-005` | Company portfolio map |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
 ## 4. External canonical Arvectum OS dependencies
 
 Canonical repository: `arvectum/arvectum-os`.
 
-Snapshot used to generate the current Project Source pack:
+Snapshot used to generate the current repository Project Source pack:
 - branch: `main`;
 - commit: `de59771281ce1b4c58d943bd003560384e332270`;
 - commit timestamp: `2026-08-19T21:12:03+03:00`.
@@ -75,20 +75,31 @@ Generated files live under `docs/project-sources/`. They are intentionally group
 
 Recommended upload set: all seven generated files. This leaves Project Source capacity for private legal/corporate documents and future Company founding artifacts.
 
+A repository source-pack refresh is not required merely because the Arvectum OS HEAD advances. Refresh is required when an included source changes materially. For example, the OS commits between `fbab170ab337c1631b40d0d36ea58a02f6512f6e` and `de59771281ce1b4c58d943bd003560384e332270` changed only P7.10 implementation/review/test evidence and did not modify the bundled Constitution, RFCs, governance reference or Product Contracts.
+
 ## 6. Legal and corporate authority sources
 
-The owner maintains the applicable legal originals. They should be added privately to the ChatGPT Project when useful, but **should not be copied into this public repository by default**, especially where they contain personal data, signatures, identifiers or other unnecessary sensitive information.
+Legal/corporate originals are owner-managed external authorities. They are available privately as ChatGPT Project Sources where useful and **must not be copied into this public repository by default**, especially where they contain personal data, signatures, tax identifiers, addresses, bank details or other unnecessary sensitive information.
 
-Expected categories include, as applicable:
-- current charter / Устав ООО «Арвектум»;
-- founding / sole participant decisions;
-- appointment and authority of the General Director;
-- current ЕГРЮЛ evidence;
-- material powers of attorney or other standing legal delegations.
+Current verified source set:
 
-Status: `Owner-managed / pending Project Source addition`.
+| Private source | Status / date | Authority or evidentiary role |
+|---|---|---|
+| Типовой устав №23, утверждённый приказом Минэкономразвития России от 01.08.2018 №411 | Current governing charter form | Corporate governance framework of the Company within applicable law |
+| Решение единственного учредителя №1 о создании ООО «Арвектум» | `2026-06-07` | Founding decision; establishes Company creation, charter choice, capital allocation and initial General Director appointment |
+| Лист записи ЕГРЮЛ о создании ООО «Арвектум» | `2026-06-24` | State-registry evidence of creation and registered corporate facts |
+| Выписка из ЕГРН о постановке российской организации на налоговый учёт | `2026-06-24` | Tax-registration evidence |
+| Банковские реквизиты ООО «Арвектум» | Current owner-managed operational reference | Operational payment reference; not a source of corporate governance authority |
 
-If these sources conflict with internal Company documentation, the conflict must be reconciled rather than hidden. Internal governance cannot create legal or contractual authority that the Company or Principal does not possess.
+Verified corporate baseline relevant to Company governance:
+- ООО «Арвектум» operates under Типовой устав №23;
+- the Company has one participant holding 100% of the charter capital;
+- the founding decision appoints the General Director for a five-year term;
+- the ЕГРЮЛ creation record identifies one person entitled to act for the Company without a power of attorney and records the Company as active at issuance.
+
+The registry does **not** require repeated procurement of a fresh ЕГРЮЛ extract solely for internal documentation freshness when there is no known corporate change or conflicting evidence. Re-verification is triggered when a consequential decision depends on a potentially changed registry fact, a corporate event occurs, existing evidence becomes inconsistent, or applicable law/contract requires a current extract.
+
+If legal/corporate sources conflict with internal Company documentation, the conflict must be reconciled rather than hidden. Internal governance cannot create legal or contractual authority that the Company or Principal does not possess.
 
 ## 7. Refresh rule
 
@@ -99,7 +110,7 @@ The Project Source pack is a snapshot, not a mirror. Refresh it when:
 - an included Product Contract changes materially;
 - a material Company decision depends on source text newer than the current snapshot.
 
-Routine OS roadmap movement alone does not require a refresh because the OS roadmap is intentionally not bundled as a static Project Source.
+Routine OS roadmap or implementation movement alone does not require a refresh because those materials are intentionally not bundled as stable Project Sources.
 
 ## 8. Exclusions
 
