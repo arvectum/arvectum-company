@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.5.0`
+Version: `1.6.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -47,7 +47,9 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/reviews/AC-105-MATERIAL-RISK-CONTINUITY-CROSS-REVIEW.md` | Complete / PASS | AC-105 cross-review closed at 9 of maximum 10 after separating legitimate control gates from single points of failure and bounding legal, data, OS, credential, vendor and market-risk scope |
 | `docs/business/FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-HYPOTHESES.md` | Complete / PASS `0.1.0` | AC-107 falsifiable flagship market-hypothesis baseline: behavior-based owner-led B2B ICP, primary buyer/JTBD, one-function deployment wedge, measurable operating outcomes, guardrails, economic logic and anti-ICP/falsification signals |
 | `docs/reviews/AC-107-FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-CROSS-REVIEW.md` | Complete / PASS | AC-107 cross-review closed at 9 of maximum 10 after narrowing the segment, separating buyer/champion roles, bounding the first proof, pairing outcome metrics with control guardrails and preserving market-validation uncertainty |
-| `docs/roadmap/ROADMAP.md` | Active `0.11.0` | Canonical Company planning source; AC-107 Complete / PASS and AC-108 Current |
+| `docs/business/DESIGN-PARTNER-DISCOVERY-AND-MARKET-VALIDATION-PLAN.md` | Complete / PASS `0.1.0` | AC-108 executable design-partner discovery plan: hard qualification gates, candidate scoring, Russia-first sourcing, bounded 8–12 conversation loop, non-leading Russian-first script, evidence schema, hypothesis mapping, continue/change/stop logic and diagnostic/pilot boundary |
+| `docs/reviews/AC-108-DESIGN-PARTNER-MARKET-VALIDATION-CROSS-REVIEW.md` | Complete / PASS | AC-108 cross-review closed at 9 of maximum 10 after separating AI interest from fit, bounding sample interpretation, protecting negative evidence, separating value/buyer intent/Arvectum economics and preserving customer authority/data/OS boundaries |
+| `docs/roadmap/ROADMAP.md` | Active `0.12.0` | Canonical Company planning source; AC-108 Complete / PASS and AC-106 Current |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
@@ -61,7 +63,9 @@ AC-104 establishes the Owner-workload evidence boundary: current Owner concentra
 
 AC-105 establishes the continuity evidence boundary: it records material dependency/failure consequences and minimum recovery/degraded-mode expectations, but does not claim tested Company-wide continuity, invent legal representation mechanisms, publish a credential inventory, assign RTO/RPO/SLA values or replace product-specific recovery evidence. Detailed access and tested continuity remain AC-206/AC-207 and product/OS responsibilities in their proper scopes.
 
-AC-107 establishes the market-hypothesis boundary: the first plausible ICP is defined by a senior-management coordination/exception bottleneck and a measurable recurring workflow rather than by a fabricated demographic cutoff. The primary buyer, JTBD, one-function wedge, operating outcomes and falsification signals are now explicit, but demand, willingness to pay, price, ROI, implementation duration, support economics and repeatability remain unvalidated. AC-108 owns real design-partner discovery and market-validation planning.
+AC-107 establishes the market-hypothesis boundary: the first plausible ICP is defined by a senior-management coordination/exception bottleneck and a measurable recurring workflow rather than by a fabricated demographic cutoff. The primary buyer, JTBD, one-function wedge, operating outcomes and falsification signals are explicit, but demand, willingness to pay, price, ROI, implementation duration, support economics and repeatability remain unvalidated.
+
+AC-108 establishes the market-validation-instrument boundary: the Company now has explicit design-partner gates, sourcing/prioritization, a non-leading Russian-first discovery script, evidence/confidence fields and continue/change/stop criteria. The `8–12` first-loop conversation target is an operational qualitative bound, not statistical market proof. AC-108 does not claim that real interviews, design-partner commitments, willingness to pay, price, ROI or production readiness already exist. Raw customer/interview evidence remains outside the public repository by default; future Company decisions should use anonymized/aggregated evidence where repository persistence is useful.
 
 ## 4. External canonical Arvectum OS dependencies
 
@@ -74,7 +78,7 @@ Snapshot used to generate the current repository Project Source pack:
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
 
-AC-107 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 is active for bounded external-integration validation and the last checked OS roadmap/current-action state does not create a Stable Product Contract, Active capability or external production/SLA claim. No Project Source pack refresh is required solely for AC-107 market-hypothesis work.
+AC-108 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 is active for bounded external-integration validation and the last checked OS roadmap/current-action state does not create a Stable Product Contract, Active capability or external production/SLA claim. No Project Source pack refresh is required solely for AC-108 market-validation planning.
 
 | Canonical source | Known status at pack generation | Company relevance |
 |---|---|---|
