@@ -1,331 +1,368 @@
 # AC-101 — Current Business Model and Value Proposition Baseline
 
 Status: `Active`
-Version: `0.1.0`
+Version: `0.2.0`
 Created: `2026-08-20`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-101 — Current business model and value proposition baseline`
 Review: `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md`
+Supersedes: `0.1.0` procurement-centered interpretation
 
-## 1. Purpose and completion boundary
+## 1. Purpose and correction record
 
 This document records the current Company-level business model and value-proposition baseline of ООО «Арвектум» before the Company designs departments, Positions or AI Workforce around assumptions.
 
-It answers a bounded question:
+Version `0.2.0` materially corrects the initial `0.1.0` interpretation. The Owner clarified that procurement is **not** the center of the Company business model. The primary commercial product direction is a configurable **AI-native company / «ИИ-компания под ключ»** offering built from the same organizational principles being proven inside Arvectum Company and executed on top of Arvectum OS.
 
-> What business is Arvectum currently building and operating, for whom does it intend or already attempt to create value, through which evidenced offers/product lines, and by which value-capture mechanisms?
+The corrected question is:
 
-This is a **business baseline**, not a profitability, revenue, market-size, legal-compliance, product-readiness or capital-allocation decision.
+> How does Arvectum turn its own AI-native organizational model, Arvectum OS and reusable functional modules into a configurable customer solution that can be adapted to the customer's business model, authority, workflows, data and operating needs?
 
-`AC-101` intentionally does not determine:
-
-- booked revenue, cash receipts or current bank balances;
-- gross margin, contribution margin, tax burden or recurring cost;
-- payment terms, cash gaps, guarantees, credit or working-capital needs;
-- current contractual obligations or customer concentration;
-- sales funnel, conversion, CAC, retention or market share;
-- owner workload and operational bottlenecks;
-- a final portfolio priority or stop/continue decision;
-- departments, Positions, delegations or AI Assignments.
-
-Those questions belong primarily to `AC-102` through `AC-106`, then to later organizational and portfolio-governance phases.
+This remains a **business baseline**, not a profitability, pricing, market-size, legal-compliance, product-readiness or capital-allocation decision.
 
 ## 2. Authority, evidence classes and promotion rule
 
 This baseline is subordinate to applicable legal/corporate authority, the Ratified Company Constitution, approved Company governance and the canonical Company roadmap.
 
-Product repositories remain authoritative for product implementation and current product status. `docs/portfolio/PORTFOLIO.md` remains the Company-level portfolio map. Arvectum OS remains authoritative for its own platform contracts and lifecycle state.
+Product repositories remain authoritative for product implementation and current product status. `docs/portfolio/PORTFOLIO.md` remains the Company-level portfolio map. Arvectum OS remains authoritative for its own platform architecture, Product Contracts and capability lifecycle.
 
-Because the business model had previously been discussed partly in owner conversations rather than in a durable Company artifact, AC-101 deliberately promotes only the business statements that are consistent with current canonical evidence and the Owner's previously explicit directions.
-
-Statements in this document use four evidence classes:
+Statements use four evidence classes:
 
 - **Canonical current fact** — directly supported by current Company/product/platform canonical sources;
-- **Owner-confirmed business direction** — explicitly stated or confirmed by the Owner in prior Company/product work and promoted here because it is consistent with the current canonical baseline;
-- **Working hypothesis** — plausible intended economics or positioning that still requires real business evidence;
+- **Owner-confirmed business direction** — explicitly stated or corrected by the Owner and promoted here because it is consistent with the current Company/OS architecture;
+- **Working hypothesis** — plausible packaging/economics still requiring real market or financial evidence;
 - **Unknown / deferred** — insufficiently evidenced and assigned to a later roadmap item.
 
-Historical chat remains non-canonical after promotion. The promoted statement in this file becomes the current Company representation within the narrow scope of this baseline; later contradictory real evidence requires explicit refresh rather than silent reinterpretation.
+Historical chat remains non-canonical after promotion. The promoted statement in this file becomes the current Company representation within AC-101 scope.
 
-## 3. Current Company business-model statement
+## 3. Corrected current Company business-model statement
 
-Arvectum is currently best represented as a **procurement-centered AI/software company with a mixed operator/productization model and an adjacent portfolio of productized automation products**.
+Arvectum is currently best represented as an **AI-native company builder**.
 
-The model has four distinct layers:
+Its flagship commercial direction is:
 
-1. **procurement supplier/contractor economic engine** — Arvectum participates in procurement as a commercial operator and supplier/contractor, using software and AI to reduce the amount of manual tender-office work required to source, evaluate and execute opportunities;
-2. **procurement software/SaaS productization engine** — successful internal procurement workflows are intended to become reusable decision-support and automated-tender-office software for suppliers/tender companies;
-3. **productized client automation and standalone software** — the Company builds focused automation products/solutions outside the core procurement loop when real client work or standalone product value justifies them;
-4. **internal capability compounding** — Arvectum OS and other shared initiatives may reduce future marginal delivery/governance cost and preserve organizational intelligence, but they are not treated as direct revenue products without a separate evidenced decision.
+> **Design, deploy and adapt an AI-native corporate operating model for a customer — organizational structure, Positions, authority boundaries, workflows, knowledge, controls and AI/software executors — on top of Arvectum OS, using reusable functional modules where they fit the customer's business model.**
 
-The current evidence does **not** justify describing Arvectum as a pure SaaS company, a pure consulting/freelance company, a software holding company with seven equally important businesses, or an autonomous tender-execution agent.
+The Company is building Arvectum Company itself as the first concrete reference implementation and proving ground for that offer.
 
-## 4. Layer 1 — Procurement supplier/contractor economic engine
+The model is therefore not:
 
-**Evidence class:** `Owner-confirmed business direction`, with product/portfolio evidence supporting the operating concept but not yet proving current revenue.
+- “sell Tender Agent as the main Company business”;
+- “sell Arvectum OS as a generic empty platform and leave the customer to assemble the organization”;
+- “clone the literal org chart of ООО «Арвектум» into every customer”;
+- “deploy a swarm of agents and call it a company”.
 
-### 4.1 Business role
-
-The starting procurement model is a supplier/contractor model in which ООО «Арвектум» may become the commercial counterparty to the procurement customer and separately source required goods from suppliers.
-
-The intended operating chain is:
+The intended transformation is:
 
 ```text
-Procurement opportunity
-→ documentation / requirements / risk analysis
-→ supplier search and questions
-→ RFQ / collection of TKP and market prices
-→ normalization and comparison
-→ economics / margin / cash-gap / contract-risk review
-→ human GO / NO-GO decision
-→ bid / contracting within actual authority
-→ supplier contracting / fulfilment / delivery
-→ payment collection and case evidence
+Customer business model
+→ functions / obligations / value streams
+→ organizational Positions and authority
+→ workflows / knowledge / evidence
+→ reusable modules + customer-specific modules
+→ human / AI / software Assignments
+→ governed execution on Arvectum OS
+→ measurable operating value and continuous improvement
 ```
 
-The workflow is **RFQ-first**. The starting assumption is not an owned product catalog with pre-known prices. Supplier search and current quotations are part of the value-creation process.
+The core design law remains:
 
-### 4.2 Initial market focus
+`Position → Principal → Assignment → Runtime → Governed Execution`
 
-The Owner-confirmed starting direction is:
+The customer receives an organization-specific operating model. Arvectum Company is the reference pattern and implementation evidence, not a template whose exact departments, authority or data are copied blindly.
 
-- primary market: Russia;
-- procurement emphasis: `223-ФЗ` and private industrial procurement;
-- initial commercial object: goods rather than a general works/services business;
-- starting domain advantage: standard and complex goods, with electrical equipment as the strongest previously evidenced procurement domain.
+## 4. Flagship offer — «ИИ-компания под ключ»
 
-Current Tender Agent product validation also contains a bounded `44-ФЗ` pre-bid contour. That product evidence does **not** by itself change the Company commercial focus from the Owner-confirmed `223-ФЗ + private industrial` starting direction.
+**Evidence class:** `Owner-confirmed business direction`.
 
-### 4.3 Customer, supplier and value capture
+### 4.1 Customer job
 
-In this economic engine:
+A target organization may have fragmented manual work, isolated SaaS tools, individual AI assistants and undocumented decision processes, but lack one governed organizational model that connects responsibility, authority, workflows, knowledge and execution.
 
-- the procurement customer/buyer is the revenue-side contractual counterparty when Arvectum wins and executes a supply contract;
-- suppliers are source-side counterparties from whom Arvectum obtains TKP/quotes and goods;
-- the intended value-capture mechanism is commercial gross margin between the customer-side contract economics and the full cost of fulfilment, subject to financing, tax, logistics, risk and other real costs.
+The flagship Arvectum offer is intended to solve that problem end-to-end.
 
-The existence, amount and quality of current revenue, margin and cash conversion are **Unknown / deferred to AC-102**. This document does not claim that the procurement engine is currently profitable or that a specific contract has been booked by ООО «Арвектум».
+### 4.2 What the customer is buying
 
-## 5. Layer 2 — Procurement software / SaaS productization engine
+The customer is not primarily buying “some agents”. The intended offer is a configurable organizational solution that may include:
 
-**Evidence class:** `Owner-confirmed business direction` for productization/SaaS; `Canonical current fact` for the existence of the Tender Agent/Tender Operator product line; monetization remains partly unproven.
+1. **business and operating-model discovery** — identify real value streams, obligations, bottlenecks, risk and repetitive work;
+2. **organizational modeling** — define functions and durable Positions based on actual business need;
+3. **authority and control design** — distinguish reserved human/owner decisions, delegated authority, automatic bounded execution and escalation;
+4. **workflow design** — represent recurring business processes as explicit versioned workflows;
+5. **knowledge/data/tool boundary design** — define what each function needs and what it is allowed to access;
+6. **module selection/adaptation** — use existing Arvectum functional modules where applicable and create customer-specific ones where justified;
+7. **executor assignment** — assign human, AI, software or hybrid executors without making the executor the source of organizational authority;
+8. **deployment on Arvectum OS** — use the domain-neutral platform contracts/capabilities where admitted and appropriate;
+9. **quality, evidence and fallback controls** — define validation, observability, approval, continuity and replacement paths;
+10. **operating transfer and improvement loop** — enable the customer's organization to retain its own governed history, knowledge and operating meaning rather than remain dependent on one consultant/model/vendor.
 
-The second engine converts validated procurement operating practice into reusable software for external suppliers and tender operators.
+### 4.3 Adaptation principle
 
-### 5.1 Intended external users/customers
+The solution must be adapted to the customer's actual business model.
 
-The relevant software customer/user group is not the same as the demand-side procurement customer in Layer 1.
+Examples:
 
-Target users include:
+- a supplier/tender company may need a procurement/tender function;
+- a marketing organization may need creative-testing and campaign-analysis functions;
+- an e-commerce/data-intensive organization may need extraction, normalization and monitoring modules;
+- another customer may require completely different functions not present inside Arvectum Company.
 
-- suppliers participating in public or corporate procurement;
-- tender companies / outsourced tender departments;
-- operators who must repeatedly analyze procurement documentation, source suppliers, collect TKP, calculate economics and prepare a controlled bid decision.
+Therefore Arvectum sells a **method + governed organizational substrate + configurable module system**, not a fixed set of departments.
 
-Earlier product work explicitly used tender companies as initial design-partner/client context and did not assume that those customers were manufacturers with a ready internal catalog and fixed prices.
+## 5. Arvectum Company as reference implementation
 
-### 5.2 Value proposition
+**Evidence class:** `Canonical current fact` for the Company governance/roadmap; `Owner-confirmed business direction` for its commercial reference role.
 
-The procurement software is intended to turn a fragmented manual tender-office process into a controlled decision-support workflow that can:
+Arvectum Company has two simultaneous roles:
 
-- structure tender documentation and requirements;
-- identify material restrictions and risks;
-- prepare supplier questions and RFQ material;
-- collect/normalize TKP for comparison;
-- calculate economics through deterministic rules where appropriate;
-- assemble evidence and client/operator-ready reports;
-- preserve human review and final consequential decision authority.
+1. it is the real operating organization of ООО «Арвектум» and must be economically viable on its own terms;
+2. it is the first reference implementation through which the Company proves how an AI-native organization should be modeled, governed and progressively automated.
 
-This is decision support and governed workflow automation, not an autonomous authority to submit bids, sign contracts, spend money or create binding commitments merely because software or AI can technically perform an action.
-
-### 5.3 Value capture
-
-The Owner-confirmed long-term direction includes `SaaS` / productized automated-tender-office revenue after internal and design-partner cases justify it.
-
-The exact packaging — subscription, license, usage-based, managed service or a combination — is not canonically fixed by AC-101. Current recurring SaaS revenue is therefore **not claimed** and must be tested against AC-102/AC-103 evidence.
-
-## 6. Layer 3 — Productized client automation and standalone software
-
-**Evidence class:** `Canonical current fact` for the mapped product/initiative nodes and their purposes; individual revenue contribution is `Unknown / deferred` unless later financial evidence proves it.
-
-The current portfolio shows that Arvectum does more than the procurement core. It has repeatedly built bounded automation products around real workflow problems.
-
-Current portfolio evidence includes:
-
-- **Discount Parser** — productized client solution/product for collecting, normalizing, deduplicating and classifying discount/promo data with controlled publication;
-- **Doors Parser** — mature client-delivery/reusable parsing solution for structured catalog extraction from manufacturer sites;
-- **Creative Test Agent** — local-first controlled-pilot solution for pre-testing marketing creatives before client presentation;
-- **Arvectum Proxy Launcher** — owned local proxy-routing utility with a productized Windows track and potential standalone commercial/internal value;
-- **Tender App / Small-Volume Procurement Calculator** — procurement experiment/product adjacent to the main Tender Agent line;
-- **Data Platform** — internal/shared initiative whose external business role is not yet sufficiently evidenced.
-
-These nodes demonstrate a repeatable Company pattern:
+This creates a deliberate dogfooding loop:
 
 ```text
-Real manual/client problem
-→ bounded software solution
-→ delivery and evidence
-→ reusable product component or product candidate
-→ continue / productize / contain / retire based on economics
+Build Arvectum Company for real work
+→ observe what functions/controls/modules actually create value
+→ retain validated organizational assets
+→ generalize only reusable/domain-neutral parts
+→ package suitable functional modules
+→ deploy adapted customer organizations
+→ use customer evidence to improve methods/modules where rights allow
 ```
 
-AC-101 does **not** infer that every repository is a separate durable business, that every product is monetized, or that all productized client work is legally invoiced through ООО «Арвектум». Actual revenue attribution belongs to AC-102.
+Customer organizations remain separate sovereignty and authority domains. Customer data, decisions, knowledge or Organizational Authority do not become Arvectum Company assets merely because Arvectum deploys or operates the solution.
 
-## 7. Layer 4 — Internal capability compounding
+## 6. Arvectum OS role in the commercial model
 
-**Evidence class:** `Canonical current fact` for the existence and governance role of Arvectum OS; `Working hypothesis` for the magnitude of economic leverage until measured.
+**Evidence class:** `Canonical current fact` for OS architecture/boundaries; commercial packaging remains partly a `Working hypothesis`.
 
-Arvectum OS is the shared domain-neutral platform and Executable Organizational Model foundation used to preserve governance, organizational meaning, records, workflows, evidence and history where an applicable governed boundary exists.
+Arvectum OS is the domain-neutral platform and Executable Organizational Model foundation beneath the flagship offer.
 
-At the current Company baseline:
+Its role is to provide reusable architecture for concepts such as:
 
-- Arvectum OS is **not** an ordinary portfolio product in `PORTFOLIO.md`;
-- Company ownership of Arvectum OS does not let products bypass OS Product Contracts or lifecycle rules;
-- current OS Product Contracts relevant to the Company remain Provisional where so recorded;
-- no external Arvectum OS SaaS, SLA or production-platform revenue is inferred by AC-101.
+- Identity;
+- Organization scope;
+- Canonical Records;
+- Relationships;
+- Authority representation;
+- Governed Execution;
+- Events/provenance;
+- Documents/artifacts;
+- Memory/knowledge;
+- security, sovereignty and portability boundaries.
 
-The intended internal economic value of shared platform/capability work is lower marginal cost, less repeated implementation, stronger continuity, safer delegation and accumulated organizational intelligence. The actual return on that investment is not yet measured.
+Arvectum OS does **not** define the customer's business departments, tender rules, marketing methods or other domain-specific organizational semantics.
 
-## 8. Customer / beneficiary map
+The Company-level commercial offer may rely on Arvectum OS, but this baseline does not yet decide whether the customer commercially sees OS as:
 
-| Segment | Current job/problem | Current or intended Arvectum offer | Value-capture status | Evidence class |
-|---|---|---|---|---|
-| procurement customers / contracting authorities / large industrial buyers | obtain required goods under procurement/contract terms | Arvectum as supplier/contractor using internal tender and sourcing automation | commercial supply margin is the intended mechanism; actual revenue/margin not yet baselined | Owner-confirmed direction |
-| suppliers and tender companies | repeatedly analyze tenders, source market prices, compare TKP, assess risks/economics and prepare a bid decision | Tender Agent / automated tender-office decision support | SaaS/productized revenue direction confirmed; exact packaging and current recurring revenue not yet proven | Owner-confirmed direction + canonical product fact |
-| businesses/agencies with bounded repetitive data/marketing/operational work | replace manual collection, normalization, analysis, reporting or controlled publication | productized automation such as Discount Parser, Doors Parser, Creative Test Agent | project/product revenue mechanism plausible and client-delivery products exist; current LLC revenue attribution requires AC-102 | Canonical product fact + deferred financial evidence |
-| standalone software users | solve a narrow local software/infrastructure problem | products such as Arvectum Proxy Launcher | commercial packaging/revenue model not yet established at Company level | Working hypothesis |
-| Arvectum Company itself | reduce repeated implementation, preserve organizational knowledge and control AI/software execution | Arvectum OS and shared internal capabilities | internal cost/risk/productivity leverage, not external revenue by default | Canonical internal capability fact + economic hypothesis |
+- bundled infrastructure inside a turnkey implementation;
+- a separately licensed/subscribed platform;
+- a managed/self-hosted runtime;
+- or a combination of these.
 
-## 9. Current value proposition
+That packaging and its economics require later evidence and an explicit commercial/Product Contract path.
 
-The Company-level value proposition supported by current evidence is:
+## 7. Functional modules and product portfolio
 
-> **Arvectum turns repetitive, information-heavy commercial work into controlled software and AI-assisted workflows that move from raw opportunity/data to a reviewable decision or deliverable while preserving human/company authority over consequential commitments.**
+**Evidence class:** `Canonical current fact` for existing portfolio nodes; `Owner-confirmed business direction` that reusable products may become modules; exact module admission remains later product/portfolio work.
 
-This proposition has different concrete expressions by business layer.
+Existing Arvectum products are now best interpreted as a mix of:
 
-### 9.1 For procurement customers
+- standalone products/client solutions;
+- reference implementations of business functions;
+- candidates for reusable modules inside the flagship AI-company offer.
 
-Arvectum's intended value is reliable commercial fulfilment of required goods, with internal automation used to source, evaluate and execute opportunities more systematically than an ad hoc manual process.
+They are **not automatically modules** merely because this strategy exists. Reuse/admission must be validated.
 
-The customer buys the supply result, not Arvectum OS or the internal agent architecture.
+Current examples:
 
-### 9.2 For suppliers and tender operators
+| Existing node | Potential role in AI-company model | Current boundary |
+|---|---|---|
+| Tender Agent / Tender Operator | procurement/tender department or procurement decision-support module | mature domain evidence; not the Company business center; current OS Product Contract remains bounded |
+| Tender App | procurement sub-module/experiment or overlap candidate | relation to Tender Agent still requires reconciliation |
+| Creative Test Agent | marketing/creative-analysis function/module candidate | current product scope remains product-owned |
+| Discount Parser | monitoring/data-acquisition/publication workflow module candidate | client/domain logic remains product-owned |
+| Doors Parser | source-specific extraction/data-acquisition capability evidence | not automatically a universal parser module |
+| Data Platform | possible shared customer/internal data capability | business boundary and consumers remain insufficiently specified |
+| Arvectum Proxy Launcher | infrastructure/connectivity utility or supporting module | standalone product value and module role both remain to be proven |
 
-Arvectum's intended value is a controlled tender-office workflow that reduces fragmentation between documentation analysis, supplier/RFQ work, TKP comparison, economics, risk review and human GO/NO-GO decision.
+A future module catalog should be derived from real customer functions and reuse evidence rather than from repository count.
 
-Time savings, error reduction, win-rate improvement or ROI must be measured before being stated as proven market outcomes.
+## 8. Commercial product architecture
 
-### 9.3 For automation clients
+The corrected business model has the following product architecture:
 
-Arvectum's value is to convert a specific repeated manual workflow into a bounded software tool with explicit inputs, outputs, QA and a path to repeatable operation rather than leaving the client with one-off manual labor.
+```text
+                    Arvectum commercial offer
+                            │
+             «AI-native company under turnkey»
+                            │
+        ┌───────────────────┼────────────────────┐
+        │                   │                    │
+ Organizational design   Arvectum OS       Functional modules
+ & governance method     substrate         & integrations
+        │                   │                    │
+ Business model →       identity/records/   procurement / marketing /
+ Positions → authority  workflows/evidence  data / customer-specific
+        │                   │                    │
+        └───────────────────┼────────────────────┘
+                            │
+                    Customer-specific
+                    operating organization
+                            │
+                 Human | AI | Software
+```
 
-### 9.4 For standalone-product users
+Arvectum Company itself is the first reference organization built through the same logic.
 
-The product-level value proposition must remain product-specific. AC-101 does not create a single marketing promise for Proxy Launcher, parsers, marketing tools and procurement products merely because they share a Company owner.
+## 9. Customer / beneficiary map
 
-## 10. Current differentiators — evidence-bounded
+| Segment | Customer problem/job | Arvectum offer | Evidence class |
+|---|---|---|---|
+| SMEs and owner-operated companies with high manual/coordination load | owner is bottleneck; processes are fragmented; AI use is ad hoc | design and deploy an adapted AI-native organization with explicit roles, authority, workflows and modules | Owner-confirmed flagship direction |
+| larger organizations / business units seeking controlled AI adoption | need AI productivity without losing governance, auditability or organizational meaning | bounded organizational transformation and deployment on Arvectum OS with controlled modules/integrations | Working target-segment hypothesis |
+| suppliers / tender companies | tender-office work is repetitive, information-heavy and fragmented | procurement/tender module or standalone Tender Agent product | canonical product fact + module strategy |
+| marketing/creative teams | need controlled pre-testing and analysis before external delivery | Creative Test Agent or later marketing function module | canonical product fact + module hypothesis |
+| businesses with repetitive data collection/normalization | manual monitoring/parsing creates cost and inconsistency | parser/data modules or productized automation | canonical product fact + module hypothesis |
+| standalone software users | need a narrow utility without a full organizational deployment | individual Arvectum products where separately justified | working/standalone product path |
+| Arvectum Company itself | must prove the model works in a real owner-operated company | internal reference implementation / dogfooding organization | canonical Company fact + Owner-confirmed commercial role |
 
-The following are current differentiator hypotheses supported by operating/product evidence, not yet proven market superiority claims:
+## 10. Corrected Company-level value proposition
 
-1. **RFQ-first procurement logic.** The system is designed for cases where there is no owned catalog or known market price and supplier discovery/TKP collection are first-class workflow steps.
-2. **Human control over consequential decisions.** AI/software may analyze, draft, calculate and execute bounded pre-authorized work, while final material commitments remain with the applicable authorized Principal.
-3. **Local-first / controlled processing where the product requires it.** Tender and creative-testing work has been designed around controlled/local execution rather than mandatory dependence on public cloud LLMs.
-4. **Russia-first technology-sovereignty discipline.** Critical dependencies should remain replaceable, with a preference for operation that does not surrender Company authority, canonical history or the only copy of critical data to an external vendor.
-5. **Productization from real work.** Client/internal workflows can become reusable products only after actual implementation evidence rather than speculative platform generalization.
-6. **Organizational learning as an asset.** Validated methods, workflows and evidence can be retained through Company/OS governance instead of disappearing in chats or a single runtime.
+The Company-level value proposition is:
 
-None of these statements proves superior price, performance, compliance, security, market fit or customer preference without separate evidence.
+> **Arvectum helps an organization become AI-native as an organization, not merely add AI tools: we model its real business functions, responsibilities, authority and workflows, deploy them on Arvectum OS, assign appropriate human/AI/software executors, and adapt reusable modules to the customer's business while preserving organizational control, history and replaceability.**
 
-## 11. Value-creation and value-capture map
+A shorter commercial formulation is:
+
+> **«ИИ-компания под ключ»: корпоративная структура, процессы и AI-исполнители под вашу бизнес-модель — на базе Arvectum OS.**
+
+These statements describe the intended product direction. They do not yet prove market demand, ROI, implementation duration or customer outcomes.
+
+## 11. Evidence-bounded differentiators
+
+The most important current differentiator hypotheses are:
+
+1. **Organization-first, not agent-first.** Arvectum starts from business function, Position, authority and workflow before choosing an executor/model.
+2. **A real reference company.** Arvectum Company is intended to prove the same organizational approach on the vendor's own real business rather than selling only a slideware transformation concept.
+3. **Governed authority boundary.** AI/software execution is separated from organizational decision authority and consequential approval.
+4. **Modular adaptation.** Reusable functional modules can be composed according to the customer's business model rather than forcing one universal agent stack.
+5. **Executable Organizational Model.** Arvectum OS provides a domain-neutral substrate for identities, governed state, workflows, evidence and history rather than only chat interfaces.
+6. **Portability and sovereignty.** Critical organizational meaning and history should survive replacement of models, runtimes, vendors and infrastructure.
+7. **Learning from real execution.** Validated workflows/modules can become reusable organizational assets, subject to rights and governance.
+
+These remain positioning hypotheses until customer evidence demonstrates actual superiority or measurable economic value.
+
+## 12. Value-creation and value-capture map
 
 | Business engine | Value created | Intended value capture | Current proof boundary |
 |---|---|---|---|
-| procurement supplier/contractor | sourcing, bid decision support, contracting and fulfilment of goods | gross commercial margin after full fulfilment costs | mechanism Owner-confirmed; current revenue/margin/cash not baselined |
-| procurement software / automated tender office | reusable tender analysis, RFQ/TKP/economics/risk workflow | recurring SaaS/productized software/service revenue | direction confirmed; current recurring revenue and pricing not proven |
-| productized client automation | reduction/replacement of a bounded manual workflow through software | project fee, productized delivery or later recurring support/product revenue | product/delivery evidence exists; current LLC cash attribution deferred |
-| standalone owned software | focused user utility | license/subscription/other product monetization | Company-level monetization model not yet fixed |
-| internal shared platform/capabilities | lower future delivery/governance duplication and higher continuity/control | cost avoidance, reduced owner effort/risk, faster future product delivery | strategic/economic hypothesis until AC-102/AC-104 and later real evidence |
+| flagship AI-company implementation | organizational diagnosis, design, deployment, configuration, integration and operating transfer | implementation/project fee is a plausible primary mechanism | Owner confirms product direction; actual pricing/revenue not yet baselined |
+| recurring Arvectum OS/runtime/operations | continued platform/runtime/support capability | subscription/license/managed-service revenue are hypotheses | commercial packaging not yet approved |
+| reusable functional modules | faster deployment and domain capability for customer functions | module license/subscription/service or bundle uplift | module catalog and pricing not yet established |
+| custom module/integration work | customer-specific functionality unavailable in reusable catalog | project/customization/integration fee | mechanism plausible; actual LLC revenue deferred |
+| standalone products | narrow product value outside full Company deployment | product-specific license/subscription/project revenue | must remain product-specific |
+| Arvectum Company's own operating businesses, including procurement/client work | real cash-generating operation and internal proof environment | business-specific margin/project revenue | actual current economics deferred to AC-102 |
 
-## 12. What AC-101 explicitly does not claim
+AC-101 does not choose one final pricing architecture among implementation fee, subscription, license, managed service or module pricing. That would exceed current evidence.
+
+## 13. Role of procurement after correction
+
+Procurement remains strategically useful but is no longer the organizing center of the Company business model.
+
+Its correct role is currently threefold:
+
+1. a real business domain in which Arvectum can create revenue and operating evidence;
+2. one of the more mature domains for proving a reusable AI-enabled organizational function;
+3. a potential flagship functional module — an AI-enabled tender/procurement department — inside the broader AI-company offer.
+
+The Owner-confirmed `223-ФЗ + private industrial` direction and the current bounded `44-ФЗ` product/platform validation contour remain relevant within that procurement domain. Neither defines the whole Company strategy.
+
+## 14. What AC-101 explicitly does not claim
 
 This baseline does **not** claim that:
 
-- ООО «Арвектум» is already profitable;
-- every current portfolio node generates revenue;
-- current client-delivery revenue is already booked to the LLC rather than another historical operating context;
-- SaaS recurring revenue is live;
-- a specific pricing model has been approved;
-- `44-ФЗ` is the primary Company commercial focus merely because a current OS Product Contract validates a bounded `44-ФЗ` workflow;
-- Arvectum OS is a customer-facing commercial product or Active production platform;
-- Data Platform is already a separate product;
-- Tender Agent and Tender App have been merged or rationalized;
-- the parsers form a universal parser product/platform;
-- AI may autonomously make final bid, legal, financial or contractual commitments;
-- technical product PASS proves customer value, legal compliance, security readiness or business readiness.
+- a turnkey AI-company product is already market-validated or generating revenue;
+- a standard customer org chart already exists;
+- every customer should copy Arvectum Company's internal structure;
+- every existing Arvectum repository is a reusable module;
+- every module must run through Arvectum OS immediately;
+- Arvectum OS currently has a Stable external commercial Product Contract or Active customer-facing capability merely because it is the intended substrate;
+- customer Organizational Authority belongs to Arvectum or Arvectum OS;
+- customer data/knowledge may be reused across organizations without explicit rights and governance;
+- AI agents receive independent authority to spend, sign, approve or bind the customer;
+- current implementation pricing, subscription levels or unit economics are known;
+- procurement ceases to exist as a Company business line simply because it is not the flagship corporate product.
 
-## 13. Material unknowns carried into M1
+## 15. Material unknowns carried into M1 and later phases
 
-### AC-102 — finance / obligations
-
-Must establish from authoritative financial/operational sources:
-
-- actual LLC revenue and cash receipts by business engine;
-- accounts receivable/payable and payment timing;
-- recurring software/infrastructure/admin costs;
-- taxes and mandatory payments relevant to management cash view;
-- procurement working-capital requirements, guarantees, financing and cash gaps where applicable;
-- outstanding contractual/financial obligations;
-- actual gross/contribution economics where supportable.
-
-### AC-103 — customer/value stream
+### AC-102 — financial reality
 
 Must establish:
 
-- which customer segments are actually active versus target-only;
-- how leads/opportunities enter;
-- who decides, buys, uses and pays in each model;
-- current sales/delivery lifecycle and handoffs;
-- where measurable customer value is created or lost.
+- what revenue/cash currently exists inside ООО «Арвектум» and from which business lines;
+- current cost base and obligations;
+- how much internal investment is currently going into Arvectum Company, Arvectum OS and modules;
+- whether any current activity funds the flagship-product build;
+- working capital and procurement economics where relevant.
+
+### AC-103 — customer/value-stream reality
+
+Must establish:
+
+- who is the first credible buyer of «ИИ-компания под ключ»;
+- whether the initial ICP is owner-operated SME, a functional department in a larger company, or another segment;
+- how discovery → design → deployment → acceptance → support should actually work;
+- which concrete customer outcome will justify purchase.
 
 ### AC-104 — owner workload
 
-Must establish where the Owner currently spends time across sales, tender operations, product delivery, development, administration, approvals and exception handling.
+Must determine which current owner bottlenecks inside Arvectum itself should become the first proof points for the reference implementation.
 
 ### AC-105 — risk/continuity
 
-Must establish material dependencies and failure modes across procurement obligations, products, local infrastructure, third-party services, data, signing, banking/accounting and key-person concentration.
+Must establish the risks of customer dependency on Arvectum OS, module quality, customer data, model/runtime suppliers, support burden and cross-customer isolation.
 
-## 14. Current business-model baseline conclusion
+### Phase 3 — portfolio/module governance
 
-The current Company is not one monolithic software product. Its most coherent current model is a **procurement-centered mixed business** that uses owned software/AI capabilities to create commercial operating leverage, while deliberately productizing validated workflows into software and maintaining adjacent automation products where real client or standalone value exists.
+Must explicitly decide:
 
-The strongest currently promoted economic thesis is:
+- which current products remain standalone;
+- which become module candidates;
+- which are merged/contained/retired;
+- who owns each module/product;
+- investment and stop/continue criteria;
+- Product Contract and cross-repository boundaries.
+
+## 16. Current business-model baseline conclusion
+
+The corrected Company thesis is:
 
 ```text
-Real procurement / client work
-→ owned automation and operating evidence
-→ better/repeatable internal execution
-→ productized reusable software
-→ recurring or scalable revenue where customers validate it
-→ organizational knowledge/capabilities retained for the next product and workflow
+Build a real AI-native Arvectum Company
+→ prove organization-first governance and execution on real work
+→ identify reusable organizational patterns and functional modules
+→ package an «AI-company under turnkey» implementation method
+→ deploy customer-specific organizations on Arvectum OS
+→ adapt modules to each customer's business model
+→ retain measurable evidence and improve the product under governed rights
 ```
 
-The model remains intentionally evidence-bounded. AC-101 fixes **what business the Company is in and how value is intended to move through it**; AC-102 must now establish whether and where that model is producing real revenue, cash, costs and obligations.
+Procurement, marketing, parsers, data and infrastructure products are important because they can supply real operating evidence and reusable modules. They do not define the Company's highest-level commercial identity.
 
-## 15. AC-101 completion result
+## 17. AC-101 completion result
 
-AC-101 is complete when this artifact and its cross-review are canonical and the roadmap advances to AC-102.
+AC-101 is complete when this corrected artifact and the reopened cross-review are canonical and the roadmap reflects the corrected flagship direction.
 
-Completion means the Company now has a durable current answer to:
+Completion means the Company has a durable current answer to:
 
-- what its principal business model is;
-- which materially different value-creation/value-capture engines exist;
-- which customer/beneficiary groups correspond to each engine;
-- what value proposition is supported without marketing overclaim;
-- which business-model statements are facts, Owner-confirmed directions, hypotheses or unknowns;
-- what financial evidence AC-102 must obtain next.
+- what the flagship Company product is;
+- why Arvectum Company itself is being built as a reference organization;
+- how Arvectum OS relates to the commercial offer without becoming the source of customer authority;
+- how existing products may relate to a future functional module catalog;
+- what is customer-specific versus reusable;
+- which monetization mechanisms remain hypotheses requiring AC-102/AC-103 evidence.
 
-It does **not** constitute approval of pricing, budget, investment, contracts, external claims, portfolio prioritization, delegation or organizational design.
+It does **not** constitute approval of pricing, budget, product/module lifecycle, customer commitments, delegation or external production readiness.
