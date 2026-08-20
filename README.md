@@ -16,11 +16,13 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - AC-103 customer lifecycle/value-stream baseline: `docs/business/CURRENT-CUSTOMER-LIFECYCLE-AND-VALUE-STREAM.md`
 - AC-104 Owner workload/bottleneck baseline: `docs/business/OWNER-WORKLOAD-MANUAL-WORK-BOTTLENECK-MAP.md`
 - AC-105 material risk/continuity baseline: `docs/business/MATERIAL-RISK-DEPENDENCY-CONTINUITY-FALLBACK-BASELINE.md`
+- AC-107 flagship ICP/buyer/JTBD/outcome hypothesis baseline: `docs/business/FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-HYPOTHESES.md`
 - AC-101 business-model cross-review: `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md`
 - AC-102 financial baseline cross-review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md`
 - AC-103 customer lifecycle cross-review: `docs/reviews/AC-103-CUSTOMER-LIFECYCLE-CROSS-REVIEW.md`
 - AC-104 Owner workload cross-review: `docs/reviews/AC-104-OWNER-WORKLOAD-CROSS-REVIEW.md`
 - AC-105 material risk/continuity cross-review: `docs/reviews/AC-105-MATERIAL-RISK-CONTINUITY-CROSS-REVIEW.md`
+- AC-107 flagship market-hypothesis cross-review: `docs/reviews/AC-107-FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-CROSS-REVIEW.md`
 - Initial Company portfolio map: `docs/portfolio/PORTFOLIO.md`
 - Repository structure and artifact map: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`
 - Founding baseline cross-review: `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md`
@@ -43,9 +45,11 @@ The current flagship business direction is **«ИИ-компания под кл
 
 `AC-105 — Material risk, dependency, continuity and fallback baseline` is `Complete / PASS`. Publication `0.1.0` identifies material Owner/corporate-authority, credential, local-device, repository, customer-data, external-source/service, supplier, banking/accounting, Arvectum OS and runtime/vendor dependencies. It distinguishes deliberate authority/security gates from accidental single points of failure and defines minimum fail-closed, degraded-mode, recovery and replacement expectations without inventing RTO/RPO, legal instruments or credential holders. Its cross-review closed at `9 of maximum 10` and explicitly does **not** claim that the Company is already continuity-ready.
 
+`AC-107 — Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses` is `Complete / PASS`. Publication `0.1.0` defines a behavior-based first ICP: an owner-led B2B company with a recurring information/coordination-heavy function where the Owner/CEO or another scarce senior manager remains a material interpretation/exception bottleneck. The primary buyer hypothesis is the Owner/Founder/CEO/General Director or equivalent executive; the first proof is one bounded function, and the north-star outcome hypothesis is less scarce management attention per accepted business output with quality, authority, sovereignty and fallback guardrails intact. Procurement/tender businesses remain one strong subsegment/wedge candidate rather than the Company identity. Its cross-review closed at `9 of maximum 10`; demand, willingness to pay, price, ROI, implementation duration and repeatability remain unvalidated.
+
 The Company does not recreate bookkeeping, bank reconciliation or tax administration in this repository. Outsourced accounting and banking/accounting systems retain transaction/statutory truth; Arvectum Company consumes management summaries, budgets, commitments and exceptions when needed for decisions.
 
-The canonical roadmap `0.10.0` now advances to `AC-107 — Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses` as the current Company action.
+The canonical roadmap `0.11.0` now advances to `AC-108 — First design-partner criteria, discovery script and market-validation plan` as the current Company action.
 
 ## Repository boundary
 
