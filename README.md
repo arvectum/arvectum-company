@@ -8,6 +8,7 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 - Company Constitution / Founding Charter: `docs/constitution/COMPANY-CONSTITUTION.md`
 - Company ↔ Arvectum OS authority boundary: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md`
+- Flagship strategy decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 - Canonical source registry: `docs/CANONICAL-SOURCES.md`
 - Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
 - Current business model / value proposition baseline: `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md`
@@ -22,11 +23,13 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 `M0 — Company canonically founded` is `Complete / PASS`.
 
-`AC-101 — Current business model and value proposition baseline` is `Complete / PASS` after reaching the maximum `10/10` cross-review iterations, including a material Owner correction of the initial procurement-centered interpretation.
+`AC-101 — Current business model and value proposition baseline` is `Complete / PASS` after reaching the maximum `10/10` cross-review iterations, including the material Owner correction of the initial procurement-centered interpretation.
 
-The current flagship business direction is **«ИИ-компания под ключ»**: design and deploy a customer-specific AI-native organizational model on Arvectum OS, adapting functions, Positions, authority, workflows and reusable/customer-specific modules to the customer's business model. Arvectum Company is the first real reference implementation of that organization-first approach; procurement remains one important business/domain/module line rather than the Company's highest-level product identity.
+The current flagship business direction is **«ИИ-компания под ключ»**: design and deploy a customer-specific AI-native organizational model on Arvectum OS, adapting functions, Positions, authority, workflows and reusable/customer-specific modules to the customer's business model. Arvectum Company is the first real reference implementation of that organization-first approach.
 
-The current canonical Company action is `AC-102 — Revenue, cash, recurring cost and obligation baseline`. The canonical roadmap remains the source for sequencing and does not itself grant legal, organizational or external-effect authority.
+The canonical roadmap `0.8.0` now couples internal Company development with early market discovery, reusable-module governance, a first external design-partner deployment and later multi-customer repeatability. Procurement remains one important business/domain/module line rather than the Company's highest-level product identity.
+
+The current canonical Company action is `AC-102 — Revenue, cash, recurring cost and obligation baseline`.
 
 ## Repository boundary
 
