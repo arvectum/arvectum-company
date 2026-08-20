@@ -2,13 +2,13 @@
 
 Status: `Complete / PASS for Owner approval`
 Review date: `2026-08-20`
-Iterations completed: `9 of maximum 10`
-Result: `PASS — the proposal defines five evidence-backed executor-neutral Company Positions that cover all eight AC-201 functions while preserving AC-202 Reserved Owner Decisions, AC-203 delegation semantics, legal/corporate/customer/Product/OS boundaries and current-scale minimality without turning Positions into employees, AI-agent slots or conventional departments`
+Iterations completed: `10 of maximum 10`
+Result: `PASS — after the Owner rejected the initial Finance+Security/Assurance bundle, the proposal now defines six evidence-backed executor-neutral Company Positions, separates finance/obligation control from security/risk/continuity assurance, places organizational state/evidence with Company Executive, covers all eight AC-201 functions, and preserves AC-202 Reserved Owner Decisions, AC-203 delegation semantics and legal/corporate/customer/Product/OS boundaries without creating fake headcount`
 Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-204 — Initial Position Registry`
 Reviewed artifact: `docs/organization/INITIAL-POSITION-REGISTRY.md`
-Reviewed publication: `Proposed 0.9.0`
-Reviewed blob SHA: `623a3b407d99dad8244629307a57b41bb423e8fa`
+Reviewed publication: `Proposed 0.9.1`
+Reviewed blob SHA: `9804a57a6cee027712e0c95bbf95bd428f848410`
 Maximum review iterations: `10`
 Approval status: `Pending explicit Owner approval of the exact reviewed proposal`
 Arvectum OS main re-checked: `dff9591a9897743c48c56bbe2320260c2e0a071c`
@@ -23,59 +23,30 @@ This review tests whether AC-204 creates the **minimum useful Position structure
 - confusing Owner/participant/General Director legal capacities with an internal Position;
 - making AI agents, products, repositories or runtimes into Positions;
 - granting authority that AC-202/AC-203 do not support;
-- or over-bundling responsibilities until accountability becomes meaningless.
+- over-bundling responsibilities until accountability/control domains lose meaning;
+- or creating separation that exists only on paper while current-scale execution can no longer be practical.
 
-Review lenses:
-
-1. Owner / Founder;
-2. legal/corporate authority / General Director;
-3. Company Executive / operating integration;
-4. Commercial / market discovery;
-5. Customer Delivery / acceptance;
-6. Portfolio / Product;
-7. Engineering / QA / Release;
-8. Finance / obligations;
-9. Organizational Operations / evidence;
-10. Security / Data / Customer Sovereignty;
-11. Risk / Continuity;
-12. Organizational Design;
-13. Product-repository boundary;
-14. Arvectum OS boundary;
-15. Flagship transferability / customer organization design.
+Review lenses include Owner/legal authority, Company operating integration, Commercial/Customer, Portfolio/Product, Engineering/Release, Finance/Obligations, Organizational State/Evidence, Security/Data, Risk/Continuity, organizational design, Product/OS boundaries and flagship transferability.
 
 These are review perspectives only and do not create extra Positions.
 
 ## 2. Iteration 1 — reject one-function-one-Position modeling
 
-**Criticism:** AC-201 contains eight functions. The easiest AC-204 implementation would create eight Positions, but that would convert an analytical function map into headcount-shaped organization without evidence.
+**Criticism:** AC-201 contains eight functions. Creating eight Positions would convert the analytical function map directly into headcount-shaped organization without evidence.
 
-**Reconciliation:** the proposal applies a separate Position admission test and bundles functions only where current scale and shared accountability make the bundle more useful than extra handoffs.
+**Reconciliation:** the proposal applies a separate Position admission test. Functions may be bundled where current accountability/context supports it, while distinct Positions require a real responsibility, control or continuity reason.
 
-The resulting initial registry contains five Positions:
+The initial draft admitted five Positions rather than eight.
 
-1. `POS-001 — Company Executive`;
-2. `POS-002 — Commercial & Customer Lead`;
-3. `POS-003 — Portfolio & Product Lead`;
-4. `POS-004 — Engineering & Release Lead`;
-5. `POS-005 — Company Operations & Assurance Lead`.
-
-All eight AC-201 functions are covered, but Sales, Customer Success, CFO, CISO, PMO and other familiar labels are not created merely for completeness.
-
-**Result:** PASS after minimality test.
+**Result:** PASS as a modeling principle. The exact Position count remained reviewable and was later changed by iteration 10.
 
 ## 3. Iteration 2 — Owner, participant, General Director and Company Executive must not collapse into one authority source
 
 **Criticism:** `POS-001 — Company Executive` could be read as equivalent to Owner or General Director and accidentally manufacture legal/corporate authority from an internal Position.
 
-**Reconciliation:** the proposal explicitly records Owner, participant/general-meeting competence and General Director legal office as **non-Position authority anchors**. `POS-001` owns delegated operating integration only.
+**Reconciliation:** Owner, participant/general-meeting competence and General Director legal office are explicit **non-Position authority anchors**. `POS-001` owns delegated operating integration only.
 
-The Position title does not create:
-
-- General Director powers;
-- participant competence;
-- bank/signature authority;
-- `ROD-*` authority;
-- or external representation rights.
+Its title creates no General Director power, participant competence, bank/signature authority, `ROD-*` authority or external representation right.
 
 A later AC-205 Assignment may place the same natural person in several capacities, but the authority sources remain distinct.
 
@@ -83,194 +54,163 @@ A later AC-205 Assignment may place the same natural person in several capacitie
 
 ## 4. Iteration 3 — Commercial and Customer Delivery: split or bundle?
 
-**Criticism:** `F-02` Commercial Discovery and `F-03` Customer Delivery have different lifecycle stages and could be represented by separate Sales and Delivery/Customer Success Positions. Combining them might blur commitment and acceptance.
+**Criticism:** `F-02` Commercial Discovery and `F-03` Customer Delivery are different lifecycle stages and could be separate Sales and Delivery/Customer Success Positions.
 
-**Counter-criticism:** current evidence shows that customer context itself is a major single point: discovery meaning, scope, defect-vs-change classification and acceptance live in one fragile context. Creating a handoff before there is a repeatable acquisition engine would add coordination overhead and risk.
+**Counter-evidence:** current evidence identifies customer-context continuity itself as a material bottleneck. Discovery meaning, scope, defect-vs-change classification and acceptance are still tightly coupled, while a repeatable acquisition engine is not proven.
 
-**Reconciliation:** `POS-002 — Commercial & Customer Lead` combines `F-02` and `F-03` for the current scale but is bounded by authority rather than by title:
-
-- it may prepare scope, qualify and coordinate accepted delivery;
-- it cannot create material/non-standard commitments (`ROD-03`);
-- it cannot accept customer/data/risk exceptions (`ROD-06`/`ROD-07`);
-- it cannot approve on behalf of the customer.
-
-Explicit split triggers are recorded for repeatable acquisition volume, customer concurrency, incentive conflict and support becoming a distinct capability.
+**Reconciliation:** `POS-002 — Commercial & Customer Lead` keeps `F-02` and `F-03` together for now, with explicit authority exclusions and split triggers for scale, incentive conflict, customer concurrency and independent support workload.
 
 **Result:** PASS.
 
 ## 5. Iteration 4 — Portfolio/Product accountability must be distinct from Engineering
 
-**Criticism:** at current scale the same executor often decides what to build and then builds it. A minimal model could merge `F-04` and `F-05` into one Product/Engineering Position.
+**Criticism:** current-scale execution often combines deciding what to build with building it, so a minimal model could merge `F-04` and `F-05`.
 
-**Risk:** that would preserve two major AC-104 failure modes: the Owner/universal interpreter remains the shared product-priority context, and implementation sunk cost can silently become portfolio priority.
+**Risk:** that would preserve the Owner/universal-interpreter priority bottleneck and allow implementation sunk cost to influence portfolio authority.
 
-**Reconciliation:** the proposal creates separate `POS-003 — Portfolio & Product Lead` and `POS-004 — Engineering & Release Lead`.
-
-The first owns Company-level purpose/status/priority/reuse evidence; the second owns technical production and verification. Product repositories remain canonical for detailed implementation.
-
-Major investment/start/stop/reclassification remains `ROD-02`/`ROD-04`; technical success does not become portfolio authority.
+**Reconciliation:** separate `POS-003 — Portfolio & Product Lead` and `POS-004 — Engineering & Release Lead` are retained. Product repositories remain canonical for detailed implementation, while major investment/start/stop/reclassification remains under AC-202.
 
 **Result:** PASS.
 
-## 6. Iteration 5 — bundling Finance, Organizational State and Security/Risk could create an oversized control Position
+## 6. Iteration 5 — initial Finance + Organizational State + Security/Risk bundle
 
-**Criticism:** `POS-005 — Company Operations & Assurance Lead` combines `F-06`, `F-07` and `F-08`. Finance, governance/evidence and security/risk are materially different disciplines; combining them can create weak independence or a future bottleneck.
+**Criticism:** the initial `POS-005 — Company Operations & Assurance Lead` combined `F-06`, `F-07` and `F-08`. Finance, organizational evidence and security/risk are materially different domains and could eventually create independence conflicts or a control bottleneck.
 
-**Counter-evidence:** current Company evidence does not justify separate CFO, PMO/Governance, CISO or Risk Positions. Transaction/statutory accounting is already external. The immediate durable need is preparation/visibility/exception-routing and continuity/access assurance, not three management departments.
+**Initial reconciliation:** because current evidence did not justify CFO/CISO/PMO headcount, the first proposal bundled them and denied `AM-3` self-approval, with future split triggers.
 
-**Reconciliation:** the bundle is admitted with four controls:
+**Initial result:** provisional PASS at iteration 5.
 
-1. the Position has no initial `AM-3` material approval authority;
-2. material finance/risk/data/sovereignty decisions remain `ROD-*` or other competent approval;
-3. external accounting/banking truth remains external;
-4. explicit split triggers require separation if independent approval, regulatory specialization, workload or assurance conflict becomes material.
-
-Thus one Position gathers/maintains control evidence but cannot become the sole approver of its own material exception.
-
-**Result:** PASS after independence rule.
+**Later status:** **superseded by the Owner's iteration-10 correction.** The Owner explicitly judged Finance and Security better represented as separate authority/accountability boundaries. That correction is accepted as a material organizational-design improvement rather than treated as a staffing request.
 
 ## 7. Iteration 6 — authority model must not outrun available evidence
 
-**Criticism:** AC-203 defines `AM-0` through `AM-4`. A Position Registry that immediately grants delegated approvals or automatic consequential execution would pre-empt AC-205 Principal eligibility, AC-206 access and concrete workflow evidence.
+**Criticism:** AC-203 defines `AM-0` through `AM-4`. Immediately granting delegated approval or consequential automation would pre-empt AC-205 Principal eligibility, AC-206 access and concrete workflow evidence.
 
-**Reconciliation:** all five initial Positions receive only an initial **design ceiling** of `AM-0`, `AM-1` and `AM-2` by declared action classes.
+**Reconciliation:** the initial design ceiling for every Position remains `AM-0`, `AM-1` and `AM-2` only. No Position receives `AM-3` or `AM-4` initially.
 
-No Position receives `AM-3` or `AM-4` initially.
-
-This does not negate AC-203. It means the Company has not yet produced evidence for:
-
-- concrete consequential delegated approval classes;
-- eligible approver Principal classes;
-- automatic consequential workflows with approved limits/data/failure/rollback semantics.
-
-`AM-3`/`AM-4` may be added later through explicit approved changes rather than inferred from Assignment or capability.
+This remains true after the Finance/Security split.
 
 **Result:** PASS.
 
 ## 8. Iteration 7 — product, customer, external service and Arvectum OS boundaries
 
-**Criticism:** Positions spanning products and Company controls could accidentally pull external authority into the Company organization. In particular, a Portfolio/Product Lead could become product implementation authority, an Engineering Lead could become OS governance authority, or a Company Operations Lead could become accounting/customer-data authority.
+**Criticism:** cross-company Positions could accidentally internalize authority that belongs to product repositories, customers, accounting/banking systems, legal/corporate actors or Arvectum OS governance.
 
-**Reconciliation:** the proposal explicitly preserves:
+**Reconciliation:** the proposal explicitly preserves all of those boundaries. The Position Registry creates no Product Contract, OS Position, customer authority, statutory-accounting authority, legal office or cross-repository commitment.
 
-- product repositories as canonical for product implementation/domain truth;
-- customer Principals as customer authority;
-- outsourced accounting/banking systems as transaction/statutory authority;
-- legal/corporate actors as legal authority;
-- Arvectum OS as separate platform governance.
-
-The registry creates no Product Contract, OS Position, customer role, accounting department or cross-repository commitment.
-
-Current Arvectum OS `main` was re-checked at `dff9591a9897743c48c56bbe2320260c2e0a071c`; the OS Constitution remains `1.2.0` Ratified and the Decision Authority Policy remains Proposed `0.2.1`. No AC-204 design depends on treating that Proposed policy as binding.
+Current Arvectum OS `main` was re-checked at `dff9591a9897743c48c56bbe2320260c2e0a071c`; the OS Constitution remains Ratified `1.2.0`, while the OS Decision Authority Policy remains Proposed `0.2.1` and is not treated as binding Company authority.
 
 **Result:** PASS.
 
-## 9. Iteration 8 — Positions must not become AI-agent slots or a five-person staffing plan
+## 9. Iteration 8 — Positions must not become AI-agent slots or a staffing plan
 
-**Criticism:** once five Positions are named, later AI Workforce work could mechanically create one agent per Position, or the registry could be read as requiring five employees.
+**Criticism:** named Positions can be mistaken for required employees or mechanically translated into one AI agent per Position.
 
-**Reconciliation:** the proposal makes the executor-neutral rule explicit:
+**Reconciliation:** Position count is explicitly separate from executor count. One Principal may hold several Assignments; one Position may use human/AI/software hybrid execution; external services may provide inputs; and executor replacement does not change Position meaning.
 
-- five Positions are five durable accountability boundaries, not five people;
-- one Principal may hold several Assignments initially;
-- one Position may be realized by a human/AI/software hybrid;
-- AI/software may execute permitted work but do not become authority sources;
-- external services may provide inputs without becoming Positions;
-- executor replacement does not change Position meaning.
-
-The proposal also records conflict-of-context cautions when the same Principal holds several Positions so temporary concentration does not erase organizational boundaries.
+This remains true after the registry grows from five to six Positions: the split creates **two accountability/authority contexts**, not an extra mandatory employee.
 
 **Result:** PASS.
 
-## 10. Iteration 9 — end-to-end completeness, handoffs and future adaptability
+## 10. Iteration 9 — end-to-end completeness before Owner review
 
-**Criticism:** after aggressive minimality, the model could still fail by leaving one function ownerless, preserving a hidden universal coordinator, or becoming too rigid for future scale.
+**Criticism:** after aggressive minimality, the model could leave a function ownerless, preserve a hidden universal coordinator or become too rigid for future scale.
 
-**Reconciliation:** the review traced all eight functions and the end-to-end current value/control loop.
+**Initial reconciliation:** the five-Position draft covered all eight functions and recorded major handoffs/split triggers. It therefore reached PASS-for-Owner-review at 9/10.
 
-Coverage:
+**Important limitation discovered by Owner review:** coverage completeness did not prove that every bundle was the correct durable authority boundary. In particular, Finance and Security/Assurance were covered but insufficiently separated.
 
-- `F-01` → `POS-001`;
-- `F-02` + `F-03` → `POS-002`;
-- `F-04` → `POS-003`;
-- `F-05` → `POS-004`;
-- `F-06` + `F-07` + `F-08` → `POS-005`.
+**Result:** PASS for completeness, but not final after Owner correction.
 
-The major handoffs are explicit:
+## 11. Iteration 10 — Owner correction: separate Finance from Security/Risk/Continuity
 
-```text
-customer/market need
-→ POS-002 scope/customer state
-→ POS-005 economics/risk/data evidence
-→ POS-001 routine integration or Owner/legal gate
-→ POS-003 portfolio/product context
-↔ POS-004 technical production
-→ POS-002 validation/acceptance state
-→ POS-005 closure/evidence/assurance
-→ POS-003 recommendation
-→ POS-001 / Owner as authority requires
-```
+**Owner criticism:** Finance and Security are better represented as **two authority/accountability boundaries**, rather than one `Company Operations & Assurance` Position.
 
-No Position is allowed to convert a handoff into ambient authority.
+**Cross-review of the correction:** the change is materially justified for four reasons:
 
-Each Position also contains evidence-based split/merge triggers, so the registry is a current operating design rather than a permanent five-box org chart.
+1. **different controlled objects:** finance controls cash, commitments, economics and obligations; security/continuity controls access, data, risk, critical dependencies and safe operation;
+2. **different evidence and escalation:** a finance exception and a security/data/continuity exception require different inputs, expertise and future delegation limits;
+3. **independence and challenge:** security/risk may need to constrain commercial, engineering or financial action independently; combining it with finance makes future assurance separation harder;
+4. **Position ≠ headcount:** separate Positions do not require separate people now. AC-205 may assign the same Principal to both while preserving separate capacities, evidence and authority.
 
-**Result:** PASS.
+**Secondary design question:** where should `F-07 — Organizational State / Evidence / Improvement` move after the bundle is removed?
 
-## 11. Acceptance test
+**Reconciliation:** `F-07` moves to `POS-001 — Company Executive`, because current organizational-state synchronization, decision routing, roadmap/evidence reconstruction and governed improvement are part of Company operating integration. They are not naturally a Security/Risk responsibility, and present evidence does not justify a separate Governance/Knowledge/PMO Position.
+
+**Revised six-Position coverage:**
+
+- `F-01` + `F-07` → `POS-001 — Company Executive`;
+- `F-02` + `F-03` → `POS-002 — Commercial & Customer Lead`;
+- `F-04` → `POS-003 — Portfolio & Product Lead`;
+- `F-05` → `POS-004 — Engineering & Release Lead`;
+- `F-06` → `POS-005 — Finance & Obligation Control Lead`;
+- `F-08` → `POS-006 — Security, Risk & Continuity Lead`.
+
+Both new control Positions retain only `AM-0`/`AM-1`/`AM-2` initial ceilings. Material financial decisions remain excluded by `ROD-02`/`ROD-03`/applicable `ROD-06`; material security/data/risk/sovereignty decisions remain excluded by `ROD-06`/`ROD-07`/`ROD-08`/applicable `ROD-09`.
+
+The revised proposal explicitly states that the same Principal may initially occupy both Positions, but executor consolidation cannot merge the two authority contexts.
+
+**Result:** PASS. The Owner correction improves durable accountability without creating fake headcount.
+
+## 12. Final acceptance test
 
 | Test | Result |
 |---|---|
 | Positions derived from real AC-201 functions/workload/control needs | PASS |
 | one-function-one-Position rule rejected | PASS |
 | all eight AC-201 functions have primary Position accountability | PASS |
-| five Positions are the current minimum after bundling review | PASS |
+| six Positions are justified after Owner control-boundary correction | PASS |
 | Owner is not modeled as a Position | PASS |
-| participant/general meeting and General Director legal competence remain separate | PASS |
+| participant/general meeting and General Director competence remain separate | PASS |
 | Company Executive title creates no legal/corporate authority | PASS |
-| Commercial + Customer bundle justified by current context continuity | PASS |
-| no invented Sales/Marketing/Customer Success departments | PASS |
-| Portfolio/Product separated from Engineering | PASS |
-| product implementation remains product-repository canonical | PASS |
-| Operations/Assurance bundle has explicit no-self-material-approval control | PASS |
-| no internal Accounting/CFO/CISO/PMO fake headcount | PASS |
+| Commercial + Customer bundle remains justified by current context continuity | PASS |
+| Portfolio/Product remains separated from Engineering | PASS |
+| Finance/Obligation Control is separate from Security/Risk/Continuity | PASS |
+| F-07 Organizational State/Evidence is coherently placed with Company Executive | PASS |
+| Finance does not duplicate statutory accounting/banking truth | PASS |
+| Security/Risk Position cannot approve its own material exceptions | PASS |
+| same Principal may hold Finance + Security without merging Position authority | PASS |
+| no fake CFO/CISO/PMO headcount created | PASS |
 | AC-202 `ROD-*` remains hard negative boundary | PASS |
 | AC-203 `AM-*` semantics preserved | PASS |
-| initial modes limited to AM-0/AM-1/AM-2 | PASS |
-| AM-3/AM-4 not fabricated without downstream evidence | PASS |
+| initial modes limited to `AM-0`/`AM-1`/`AM-2` | PASS |
+| `AM-3`/`AM-4` not fabricated without downstream evidence | PASS |
 | no named human/AI/software Principal assigned | PASS |
 | Position count not treated as employee/agent count | PASS |
-| customer authority/data rights remain external/customer-scoped | PASS |
+| product implementation remains product-repository canonical | PASS |
+| customer authority/data rights remain customer-scoped | PASS |
 | legal/accounting/banking authority not internalized | PASS |
 | Arvectum OS governance remains separate | PASS |
 | no Product Contract/capability lifecycle effect created | PASS |
 | split/merge/retirement triggers explicit | PASS |
-| AC-205 handoff is concrete without pre-assigning executors/access | PASS |
+| AC-205 handoff preserves separate Position capacities | PASS |
 | flagship transferability remains method-level, not a fixed customer org chart | PASS |
 
-## 12. Why the review closes at iteration 9 of 10
+## 13. Maximum-iteration boundary
 
-The remaining material questions belong to downstream work or operating evidence:
+The authorized cross-review budget is now fully used: **10 of maximum 10 iterations**.
 
-- which current Principal(s) should hold each Position Assignment;
-- where one human should temporarily carry multiple Positions;
-- which work is best executed by AI, software or hybrid Assignments;
-- Assignment-specific narrowing of Position authority;
+The remaining questions are explicitly downstream or empirical:
+
+- which Principal(s) currently hold the six Position Assignments;
+- whether one human temporarily carries several Positions;
+- which work is executed by AI/software/hybrid Assignments;
+- Assignment-specific narrowing of authority;
 - concrete data/tool/credential access;
-- exact workflow-level `AM-4` automation eligibility;
-- tested continuity and replacement behavior;
-- whether live workload later justifies splitting Commercial/Customer, Operations/Assurance or product-specific accountability;
-- actual escalation and cross-Position conflict frequency.
+- workflow-specific `AM-4` eligibility;
+- tested continuity/replacement behavior;
+- whether observed workload later justifies further Position splits/merges;
+- actual escalation and conflict frequency.
 
-A tenth AC-204 desk-review iteration cannot answer those questions without pre-empting AC-205–AC-207 or fabricating operating evidence.
+These belong to AC-205–AC-207 and operating evidence. They must not be fabricated inside AC-204.
 
-Stopping at iteration 9 is therefore the evidence-disciplined result.
+Because the maximum review count has been reached, any **new material redesign** beyond the reviewed proposal would require a new explicit review cycle/version rather than an eleventh iteration silently exceeding the Owner's limit.
 
-## 13. Final conclusion
+## 14. Final conclusion
 
-`PASS — material consensus reached at 9 of maximum 10 iterations.`
+`PASS — material consensus reached at 10 of maximum 10 iterations after the Owner's Finance/Security boundary correction.`
 
-AC-204 `Proposed 0.9.0`, blob `623a3b407d99dad8244629307a57b41bb423e8fa`, is ready for explicit Owner approval.
+AC-204 `Proposed 0.9.1`, blob `9804a57a6cee027712e0c95bbf95bd428f848410`, is ready for explicit Owner approval.
 
 Approval is required because the registry creates material Company accountability structure under AC-202 `ROD-05`.
 
