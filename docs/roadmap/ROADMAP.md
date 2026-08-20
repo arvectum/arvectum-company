@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.6.0`
+Version: `0.7.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
-Current canonical action: `AC-101 — Current business model and value proposition baseline`
+Current canonical action: `AC-102 — Revenue, cash, recurring cost and obligation baseline`
 
 ## 1. Purpose
 
@@ -146,12 +146,24 @@ Purpose: model the Company that actually exists before designing departments or 
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-101` | Current business model and value proposition baseline | `Current` |
-| `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Planned` |
+| `AC-101` | Current business model and value proposition baseline | `Complete / PASS` |
+| `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Current` |
 | `AC-103` | Customer/client lifecycle and real value-stream map | `Planned` |
 | `AC-104` | Owner workload, manual work and bottleneck map | `Planned` |
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Planned` |
 | `AC-106` | Business baseline review and owner priority decision | `Planned` |
+
+AC-101 completion evidence:
+
+- `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` — `Active 0.1.0` Company-level current business/value baseline;
+- the baseline separates canonical current facts, Owner-confirmed business directions, working hypotheses and unknown/deferred evidence instead of treating historical chat as independent authority;
+- the Company is represented as a procurement-centered mixed supplier/contractor + software-productization business with adjacent productized automation and internal capability-compounding layers, without claiming that every portfolio node is a separate business;
+- the `223-ФЗ + private industrial` starting commercial direction is distinguished from the current bounded `44-ФЗ` product/platform validation contour;
+- procurement gross margin, SaaS/productized software, client automation, standalone product monetization and internal capability leverage are separated as different value-capture mechanisms with their actual proof boundaries;
+- no current revenue, margin, cash, pricing, profitability or obligation fact is invented; those are explicitly handed to AC-102;
+- `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached across all eleven management lenses.
+
+AC-101 completion does not approve pricing, capital allocation, customer commitments, product readiness, organizational Positions/delegation or Arvectum OS lifecycle changes.
 
 ### M1 exit criteria
 
@@ -337,28 +349,29 @@ This roadmap records Company-level dependencies and decisions only. It must not 
 
 A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
 
-## 16. Current action — AC-101
+## 16. Current action — AC-102
 
-### AC-101 — Current business model and value proposition baseline
+### AC-102 — Revenue, cash, recurring cost and obligation baseline
 
 Status: `Current`.
 
-Objective: capture the business that actually exists now — how Arvectum creates value, for whom, through which current offers/product lines, and by what current or evidenced value-capture mechanisms — before designing the organization around assumptions.
+Objective: establish the first evidence-backed financial/commitment baseline for the business model fixed by AC-101, using authoritative financial, accounting, banking, contract and operational sources without turning this public repository into the store for sensitive live financial data.
 
 Minimum scope:
 
-- distinguish **current fact**, **observed operating practice**, **approved direction** and **future hypothesis** rather than blending them;
-- identify the currently material customer/client/beneficiary groups and the concrete problems/jobs the Company is solving for them;
-- identify current offers, product/service lines and portfolio nodes involved in delivering that value without copying product roadmaps;
-- describe how value is currently captured or intended to be captured where the mechanism is already approved/evidenced, while leaving amounts, cash timing, recurring costs and obligation detail to `AC-102`;
-- distinguish current revenue/client work from product experiments, internal platform work and future SaaS/scale hypotheses;
-- identify the Company's current differentiators or value proposition only to the level supported by evidence, not marketing aspiration;
-- record material contradictions, missing evidence and business-model questions instead of silently resolving them from chat memory;
-- use owner input and the applicable canonical product/legal/business sources while preserving confidentiality and public-repository safety;
-- avoid creating departments, Positions, delegation or AI Workforce structure before the later M2 evidence path.
+- trace actual LLC revenue/cash receipts to the AC-101 business engines where evidence permits, distinguishing invoiced/accrued/contracted value from cash actually received;
+- distinguish current ООО «Арвектум» financial activity from historical/client work that may have occurred before incorporation or outside the LLC and must not be attributed by assumption;
+- identify current recurring and material non-recurring operating costs relevant to management decisions, including external software/infrastructure/admin costs where evidence exists;
+- identify known tax, supplier, contractor, customer, financing, guarantee, subscription and other material payment/obligation classes without copying restricted payloads into the public repository;
+- capture procurement working-capital/cash-gap exposure where the supplier/contractor model creates a timing difference between outgoing supplier/fulfilment cash and incoming customer cash;
+- record due dates, recurring cadence, uncertainty and authoritative source locators at a level safe for the repository, while keeping bank/accounting/contract originals in their proper canonical systems;
+- separate actual figures, estimates and unknowns; do not fabricate numbers to make the model complete;
+- identify which business engines currently produce cash, consume cash or remain pre-revenue where evidence supports that classification;
+- produce enough management-level evidence for AC-103/AC-106 without prematurely deciding product investment/stop-continue criteria that belong to Phase 3;
+- preserve the public-repository safety boundary from AC-003: no bank account details, personal data, confidential contract payloads, credentials or unnecessarily sensitive transaction detail in Git.
 
-Expected artifact home: `docs/business/`, created only with the first real AC-101 artifact in accordance with AC-003.
+Expected artifact home: `docs/business/`. Sensitive live financial evidence may remain in owner-controlled banking/accounting/contract systems or another explicitly approved private authoritative store, with this repository containing only safe summaries, models and locators.
 
-Acceptance requires a canonical current-business/value-proposition baseline from which AC-102 can trace revenue, cash, recurring cost and obligations without first reconstructing what business the Company is actually in.
+Acceptance requires a coherent current revenue/cash/cost/obligation baseline that is sufficient for the Owner to distinguish real economic activity from business-model intent and to continue M1 without inventing financial truth.
 
-When AC-101 is complete, advance to `AC-102 — Revenue, cash, recurring cost and obligation baseline` unless an explicit higher-priority business obligation requires a recorded sequencing change.
+When AC-102 is complete, advance to `AC-103 — Customer/client lifecycle and real value-stream map` unless an explicit higher-priority business obligation requires a recorded sequencing change.
