@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.7.0`
+Version: `1.8.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -51,8 +51,10 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/reviews/AC-108-DESIGN-PARTNER-MARKET-VALIDATION-CROSS-REVIEW.md` | Complete / PASS | AC-108 cross-review closed at 9 of maximum 10 after separating AI interest from fit, bounding sample interpretation, protecting negative evidence, separating value/buyer intent/Arvectum economics and preserving customer authority/data/OS boundaries |
 | `docs/business/M1-BUSINESS-BASELINE-REVIEW-AND-PRIORITY.md` | Complete / PASS `0.1.0` | AC-106 synthesis of the full M1 baseline, M1 exit-criteria review, P0–P3 priority model, bounded-discovery decision boundary, empirical tracking questions and blocker review |
 | `docs/reviews/AC-106-M1-BUSINESS-BASELINE-CROSS-REVIEW.md` | Complete / PASS | AC-106 cross-review closed at 9 of maximum 10; establishes that remaining M1 uncertainties are empirical rather than documentation defects and recommends M1 closure plus AC-201 transition |
-| `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md` | Approved | Owner closure decision for M1/AC-106; approves P0–P3 sequencing, bounded parallel AC-108 discovery and AC-201 as Current without approving customer/pilot/price/SLA/product/OS lifecycle effects by implication |
-| `docs/roadmap/ROADMAP.md` | Active `0.13.0` | Canonical Company planning source; M1/AC-106 Complete / PASS and AC-201 Current; bounded AC-108 discovery runs in parallel under the M1 priority decision |
+| `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md` | Approved | Owner closure decision for M1/AC-106; approves P0–P3 sequencing, bounded parallel AC-108 discovery and AC-201 as the first Phase 2 action without approving customer/pilot/price/SLA/product/OS lifecycle effects by implication |
+| `docs/organization/MINIMAL-REAL-ORGANIZATIONAL-FUNCTION-MODEL.md` | Complete / PASS `0.1.0` | AC-201 minimal real Company-level function model with eight executor-neutral responsibility domains derived from M1 value streams, obligations, workload, bottlenecks and control needs; creates no Positions, delegations, Assignments, headcount, access grants, module admission or OS lifecycle effect |
+| `docs/reviews/AC-201-MINIMAL-ORGANIZATIONAL-FUNCTION-MODEL-CROSS-REVIEW.md` | Complete / PASS | AC-201 cross-review closed at 9 of maximum 10 after testing minimality, authority and repository boundaries, the full current value/control loop and the rule that the reusable flagship asset is the derivation method rather than a literal customer template |
+| `docs/roadmap/ROADMAP.md` | Active `0.14.0` | Canonical Company planning source; AC-201 Complete / PASS and AC-202 Reserved Owner Decisions Current; bounded AC-108 discovery continues in parallel under the M1 priority decision |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
@@ -72,6 +74,8 @@ AC-108 establishes the market-validation-instrument boundary: the Company now ha
 
 AC-106 establishes the M1 closure and priority boundary: M1 is complete because the declared milestone requires a coherent business/economic baseline and a ready-to-run first market-validation plan, not validated demand. Current material obligations/cash/risk remain P0 exceptions; the default P1 loop runs bounded AC-108 discovery and Phase 2 reference-model work in parallel; product/OS work is prioritized when tied to real obligations/revenue/evidence; speculative expansion remains lower priority. Discovery authorization is non-binding and does not approve a design partner, diagnostic/pilot, price, SLA, privileged access or production commitment. Remaining market, economics, repeatability, Owner-workload and continuity questions are tracked as empirical evidence needs.
 
+AC-201 establishes the minimal-function boundary: the current reference organization is represented through eight durable Company-level function domains, not departments or Positions. The model separates Company responsibility from product-domain implementation, external professional/legal/accounting authority, customer authority/data and Arvectum OS platform responsibility. It does not reserve whole functions to the Owner, create delegated authority, choose human/AI/software Assignments or establish a customer template. The transferable flagship evidence is the derivation sequence from value streams/obligations/bottlenecks/control needs to functions and only later to authority, Positions and executors.
+
 ## 4. External canonical Arvectum OS dependencies
 
 Canonical repository: `arvectum/arvectum-os`.
@@ -83,7 +87,7 @@ Snapshot used to generate the current repository Project Source pack:
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
 
-AC-106 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; current Phase 8 progress does not create a Stable Product Contract, Active capability or external production/SLA claim. No Project Source pack refresh is required solely for AC-106 M1 closure or AC-201 planning.
+AC-201 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; current Phase 8 progress does not create a Stable Product Contract, Active capability or external production/SLA claim. No Project Source pack refresh is required solely for AC-201 completion or AC-202 planning.
 
 | Canonical source | Known status at pack generation | Company relevance |
 |---|---|---|
