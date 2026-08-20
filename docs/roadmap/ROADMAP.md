@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.4.0`
+Version: `0.5.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
-Current canonical action: `AC-004 — Initial docs/portfolio/PORTFOLIO.md`
+Current canonical action: `AC-005 — Founding baseline cross-review and closure`
 
 ## 1. Purpose
 
@@ -86,8 +86,8 @@ Purpose: establish the minimum authoritative foundation before detailed organiza
 | `AC-001` | Company Constitution / Founding Charter | `Complete / PASS` |
 | `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Complete / PASS` |
 | `AC-003` | Canonical repository structure and artifact map | `Complete / PASS` |
-| `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Current` |
-| `AC-005` | Founding baseline cross-review and closure | `Planned` |
+| `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Complete / PASS` |
+| `AC-005` | Founding baseline cross-review and closure | `Current` |
 
 AC-001 completion evidence:
 
@@ -106,6 +106,14 @@ AC-003 completion evidence:
 - `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md` — `Approved 1.0.0`;
 - `docs/reviews/AC-003-CANONICAL-REPOSITORY-STRUCTURE-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached;
 - `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md` — explicit Owner approval of exact Proposed `0.9.0` blob and publication authority for `1.0.0`.
+
+AC-004 completion evidence:
+
+- `docs/portfolio/PORTFOLIO.md` — `Active 0.1.0` initial Company portfolio map;
+- seven evidence-backed material product/initiative nodes are mapped without copying their implementation roadmaps into the Company repository;
+- Arvectum OS is mapped separately as a shared platform dependency rather than treated as an ordinary Company product;
+- the two currently evidenced OS Product Contracts are referenced with their actual Provisional status and no Stable/Active inference;
+- repository/product identity conflicts, stale product status pointers, product-family overlaps, missing Positions and missing investment/stop-continue criteria are exposed explicitly for later reconciliation rather than silently resolved.
 
 ### M0 exit criteria
 
@@ -315,22 +323,23 @@ This roadmap records Company-level dependencies and decisions only. It must not 
 
 A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
 
-## 16. Current action — AC-004
+## 16. Current action — AC-005
 
-### AC-004 — Initial `docs/portfolio/PORTFOLIO.md`
+### AC-005 — Founding baseline cross-review and closure
 
 Status: `Current`.
 
-Objective: create the initial Company portfolio map so active products and initiatives have explicit Company-level identity, strategic role, accountable ownership, dependencies and current canonical implementation sources without copying product roadmaps into this repository.
+Objective: review the complete Phase 0 founding baseline as one coherent system before declaring `M0 — Company canonically founded` achieved and moving to the business/economic baseline.
 
 Minimum scope:
 
-- identify the active material product/initiative nodes currently owned or sponsored by Arvectum Company;
-- record each node's business purpose and portfolio role at the Company level;
-- identify its canonical product repository and roadmap/decision source where one exists;
-- record known Company↔Product↔Arvectum OS dependencies without inventing new cross-repository commitments;
-- distinguish current products, experiments and infrastructure/platform initiatives where materially relevant;
-- record accountable ownership at the level currently justified, without prematurely creating Positions that belong to AC-204;
-- expose known gaps, unresolved identities or portfolio ambiguities for later reconciliation.
+- cross-review AC-001 through AC-004 together rather than as isolated artifacts;
+- test the baseline from Owner, executive-management, governance/authority, finance/risk, operations, product/portfolio, technology/security and continuity lenses proportionate to the Company's current scale;
+- verify that legal/corporate authority, Company Organizational Authority, product authority and Arvectum OS governance remain separated correctly;
+- verify that repository structure, source registry and portfolio map do not create competing sources of truth or hidden cross-repository commitments;
+- verify that the initial portfolio is sufficient for founding closure while unresolved Phase 1–3 questions remain explicitly deferred rather than falsely solved;
+- reconcile any material conflict found across the Company Constitution, Company↔OS boundary, repository map, portfolio map and roadmap;
+- preserve formal review evidence in `docs/reviews/` and record any approval/closure decision required by consequence;
+- if no material founding conflict remains, declare M0 achieved and advance the current Company action to `AC-101 — Current business model and value proposition baseline`.
 
-Acceptance requires an initial `docs/portfolio/PORTFOLIO.md` sufficient to support AC-005 and later portfolio-governance work while keeping product implementation authority in the corresponding product repositories.
+Acceptance requires a documented founding-baseline cross-review, resolution or explicit containment of every material issue found, and a clear M0 close/hold decision. Technical or documentary completeness alone does not force M0 closure if a material governance or business-boundary conflict remains.
