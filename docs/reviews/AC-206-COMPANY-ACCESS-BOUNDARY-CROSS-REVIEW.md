@@ -8,7 +8,7 @@ Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-206 — Company data/tool/credential access boundary baseline`
 Reviewed artifact: `docs/security/COMPANY-DATA-TOOL-CREDENTIAL-ACCESS-BOUNDARY.md`
 Reviewed publication: `Proposed 0.9.0`
-Reviewed blob SHA: `TO_BE_VERIFIED_AFTER_READBACK`
+Reviewed blob SHA: `0588ab2736e5aa5c2782c572f8e10adf4c65de1e`
 Maximum review iterations: `10`
 Approval status: `Pending explicit Owner approval of the exact reviewed proposal`
 Arvectum OS main re-checked: `608a796be255f2b2d350f75fb2a72af411cb615d`
@@ -209,7 +209,7 @@ Stopping at iteration 9 is therefore evidence-disciplined.
 
 `PASS — material consensus reached at 9 of maximum 10 iterations.`
 
-AC-206 `Proposed 0.9.0` is ready for explicit Owner approval after read-back verification of the reviewed blob SHA.
+AC-206 `Proposed 0.9.0`, blob `0588ab2736e5aa5c2782c572f8e10adf4c65de1e`, is ready for explicit Owner approval.
 
 Approval is required because the baseline materially constrains Company access and future Principal provisioning, while the actual account/credential grants remain separate implementation records.
 
