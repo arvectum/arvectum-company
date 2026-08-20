@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.8.2`
+Version: `0.8.3`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-103 — Current customer/client lifecycle and real value-stream map`
+Current canonical action: `AC-104 — Owner workload, manual work and bottleneck map`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
@@ -172,8 +172,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 |---|---|---|
 | `AC-101` | Current business model and value proposition baseline | `Complete / PASS` |
 | `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Complete / PASS` |
-| `AC-103` | Current customer/client lifecycle and real value-stream map | `Current` |
-| `AC-104` | Owner workload, manual work and bottleneck map | `Planned` |
+| `AC-103` | Current customer/client lifecycle and real value-stream map | `Complete / PASS` |
+| `AC-104` | Owner workload, manual work and bottleneck map | `Current` |
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Planned` |
 | `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Planned` |
 | `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Planned` |
@@ -182,6 +182,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER` and `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` `0.2.0`.
 
 AC-102 publication `0.3.0` establishes the Company-level revenue/cash/cost/obligation architecture and the boundary between management finance and outsourced accounting. Its cross-review closed at `7 of maximum 10` after the Owner corrected the task scope: transaction-level bookkeeping, bank reconciliation, tax calculation and receipt inspection are not Company-design work and do not block progression.
+
+AC-103 publication `0.1.0` establishes the current Company-level customer lifecycle and five value streams, separating real bespoke client delivery and controlled-pilot evidence from the future flagship lifecycle. Its cross-review closed at `7 of maximum 10`; the key handoff is that acquisition/scoping/commitment, customer iteration and acceptance are strongly Owner-dependent and must be measured rather than assumed in AC-104.
 
 ### M1 exit criteria
 
@@ -425,14 +427,14 @@ This roadmap records Company-level dependencies and decisions only. Product/OS i
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-103
+## 18. Current action — AC-104
 
-### AC-103 — Current customer/client lifecycle and real value-stream map
+### AC-104 — Owner workload, manual work and bottleneck map
 
 Status: `Current`.
 
-Objective: map how Arvectum currently acquires, accepts, delivers and supports real client/customer work across its current business lines, and identify the business value streams that should shape the later operating model.
+Objective: map where the Owner currently performs, reviews, approves, coordinates or reconstructs work across the real Company lifecycle and portfolio, distinguish genuinely reserved authority from avoidable execution load, and identify the highest-value delegation/automation candidates without designing Positions prematurely.
 
-AC-103 should remain at Company/business-process level. It should not recreate product-specific workflow detail already canonical in product repositories, and it should not invent a future sales organization before current client/value-stream evidence is understood.
+AC-103 provides the customer/value-stream skeleton for this analysis. AC-104 should test actual Owner concentration across opportunity judgment, discovery/scoping, commitment, delivery coordination, exception handling, acceptance, support and productization/reuse decisions.
 
-AC-102 is complete at Company-management level. Detailed bookkeeping, bank reconciliation, tax calculations and transaction-level accounting remain with the outsourced accounting/banking contour and are not prerequisites for AC-103.
+The output must distinguish work that should remain Owner-reserved from work that can later move to an accountable Position, AI/software Assignment or simpler process control.
