@@ -1,14 +1,15 @@
 # AC-003 — Canonical Repository Structure and Artifact Map
 
-Status: `Proposed`
-Version: `0.9.0`
+Status: `Approved`
+Version: `1.0.0`
 Created: `2026-08-20`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-003 — Canonical repository structure and artifact map`
 Review: `docs/reviews/AC-003-CANONICAL-REPOSITORY-STRUCTURE-CROSS-REVIEW.md`
-Approval: `Pending explicit Owner decision`
+Approval: `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md`
+Approved proposal: `Proposed 0.9.0`, blob `2e6c70848beb3adcf9856a23fae2d26c0e20ff0e`
 Canonical remote: `GitHub / arvectum/arvectum-company`
 Mirror: `GitVerse — non-authoritative mirror unless a later approved decision changes this rule`
 
@@ -415,13 +416,15 @@ These are later decisions triggered by actual business and operational evidence.
 
 ## 17. Approval status
 
-Cross-review may establish proposal quality but cannot supply Owner approval.
+Cross-review established proposal quality but did not itself supply Owner approval.
 
-This `Proposed 0.9.0` becomes binding only after an explicit decision by the competent Company authority against this exact proposal/version/blob or equivalent immutable reference.
+The Owner subsequently approved the exact `Proposed 0.9.0` blob `2e6c70848beb3adcf9856a23fae2d26c0e20ff0e` through `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md`.
 
-Until then:
+This publication is therefore `Approved 1.0.0`. Its approved normative substance is the exact proposal identified above; publication changes record status, approval provenance and effective-state metadata only.
 
-- the existing repository structure remains valid;
-- this proposal may guide review and implementation planning but is not yet binding governance;
-- `AC-003` remains `Current` in the canonical roadmap;
-- `AC-004` must not be advanced merely by this draft.
+Effective state:
+
+- this repository/artifact map is binding Company governance within its declared scope and below applicable higher authority;
+- `AC-003` may close after canonical source/roadmap synchronization and read-after-write verification;
+- `AC-004 — Initial docs/portfolio/PORTFOLIO.md` becomes the next canonical Company action after that closure;
+- later changes remain subject to the change, migration and approval rules in this artifact.
