@@ -1,7 +1,7 @@
 # AC-204 — Initial Position Registry
 
 Status: `Proposed`
-Version: `0.9.0`
+Version: `0.9.1`
 Created: `2026-08-20`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
@@ -66,6 +66,8 @@ A separate Position is admitted only when all of the following are satisfied:
 
 A function does not automatically become a Position. Several functions may be bundled when current scale, context continuity and control design make one accountability boundary more useful than multiple handoffs.
 
+A separate Position is also justified when combining two real control domains would create a durable conflict of duties, blur distinct authority/evidence boundaries or make later independent assignment difficult even if the same Principal may temporarily hold both Positions.
+
 ## 4. Non-Position authority and service anchors
 
 The following are important to Company operation but are **not created as Positions by AC-204**:
@@ -84,27 +86,30 @@ This separation is particularly important because the same natural person may cu
 
 ## 5. Initial Position Registry
 
-AC-204 admits **five** current Company Positions.
+AC-204 admits **six** current Company Positions.
 
 They cover the eight AC-201 functions without creating eight jobs or conventional departments.
 
 | ID | Position | Current lifecycle state | Primary AC-201 coverage | Why a distinct Position exists |
 |---|---|---|---|---|
-| `POS-001` | Company Executive | `Required / Defined — Unassigned` | `F-01`, with integration interfaces to `F-04`, `F-06`, `F-07`, `F-08` | the Company needs one durable operating integration/accountability boundary that converts valid Owner/corporate decisions into coordinated Company action, resolves non-reserved cross-function conflicts and escalates material decisions without making the Owner the scheduler of every routine action |
+| `POS-001` | Company Executive | `Required / Defined — Unassigned` | `F-01` + `F-07`, with integration interfaces to all other functions | the Company needs one durable operating integration and organizational-state boundary that converts valid Owner/corporate decisions into coordinated action, preserves current Company state/evidence and prevents the Owner from becoming the scheduler and memory layer for routine work |
 | `POS-002` | Commercial & Customer Lead | `Required / Defined — Unassigned` | `F-02` + `F-03` | discovery/scoping and delivery/acceptance currently depend on the same fragile customer context; at present scale one end-to-end customer accountability boundary reduces context loss better than separate Sales/Customer Success Positions |
 | `POS-003` | Portfolio & Product Lead | `Required / Defined — Unassigned` | `F-04` | multiple products/workstreams compete for priority and reuse/productization interpretation; this responsibility must be separated from both Owner-reserved portfolio decisions and raw engineering execution |
 | `POS-004` | Engineering & Release Lead | `Required / Defined — Unassigned` | `F-05` | technical decomposition, implementation, QA, packaging and release evidence form a durable production accountability boundary that is already highly automatable but must remain subordinate to business scope and acceptance |
-| `POS-005` | Company Operations & Assurance Lead | `Required / Defined — Unassigned` | `F-06` + `F-07` + `F-08` | management finance evidence, organizational state, access/risk/continuity assurance are real but individually do not yet justify CFO/CISO/PMO/Governance headcount; one control/evidence Position is the minimum current boundary so long as it does not receive self-approving material authority |
+| `POS-005` | Finance & Obligation Control Lead | `Required / Defined — Unassigned` | `F-06` | management finance, cash/commitment visibility and obligation control form a distinct economic-control domain with different evidence, escalation and future approval needs from security/risk assurance; keeping it separate prevents one generic assurance Position from becoming the control point for unrelated financial and security decisions |
+| `POS-006` | Security, Risk & Continuity Lead | `Required / Defined — Unassigned` | `F-08` | access, data sovereignty, security risk, dependency and continuity form a distinct assurance domain that may need to challenge or constrain commercial, engineering and financial action independently; its meaning should survive future separation of executors and should not be fused with finance merely because the Company is small |
 
 `Unassigned` means AC-205 has not yet mapped Principals/executor classes. It does **not** mean the work is currently undone; it means current execution concentration is intentionally not converted into canonical Assignment until AC-205.
+
+The split between `POS-005` and `POS-006` is an organizational-boundary decision, not a headcount decision. AC-205 may still assign the same Principal to both initially, but their responsibilities, evidence and authority remain separately reconstructable.
 
 ## 6. `POS-001 — Company Executive`
 
 ### 6.1 Purpose
 
-Provide the durable Company-level operating integration boundary between Owner/corporate authority and the Company's delegated routine work.
+Provide the durable Company-level operating integration and organizational-state boundary between Owner/corporate authority and the Company's delegated routine work.
 
-This Position exists so that preserving Owner control does not require the Owner personally to perform every coordination, evidence-routing, publication or non-reserved sequencing action.
+This Position exists so that preserving Owner control does not require the Owner personally to perform every coordination, evidence-routing, publication, state-reconstruction or non-reserved sequencing action.
 
 ### 6.2 Accountable outcomes
 
@@ -115,7 +120,8 @@ The Position is accountable for ensuring that:
 - non-reserved cross-Position conflicts are resolved within approved bounds or escalated;
 - approved decisions are converted into explicit accountable next actions and state changes;
 - material external/corporate actions are routed to the proper legally authorized Principal rather than inferred from Position title;
-- Company-level priorities and material exceptions remain reconstructable.
+- Company roadmap/decision/review/Position/evidence state remains reconstructable and synchronized with its canonical sources;
+- validated organizational improvements are proposed and promoted only through the proper governance path rather than silently inferred from observations or AI output.
 
 ### 6.3 Boundary
 
@@ -126,15 +132,16 @@ The Position does not own:
 - product implementation truth;
 - customer authority;
 - OS governance;
-- accounting transaction truth.
+- accounting transaction truth;
+- security/risk acceptance merely because organizational evidence is coordinated here.
 
 ### 6.4 Initial authority envelope
 
 Permitted Position modes after approval and valid Assignment:
 
-- `AM-0` — prepare/recommend Company decisions and options;
-- `AM-1` — execute/publish/synchronize already approved Company decisions and routine governance mechanics;
-- `AM-2` — make routine internal sequencing/coordination decisions inside already approved strategy, workstream, budget/risk/commitment boundaries.
+- `AM-0` — prepare/recommend Company decisions and options; assemble organizational-state/evidence packages;
+- `AM-1` — execute/publish/synchronize already approved Company decisions and routine governance/state mechanics;
+- `AM-2` — make routine internal sequencing/coordination and canonical-state maintenance decisions inside already approved strategy, workstream, budget/risk/commitment boundaries.
 
 Not admitted initially:
 
@@ -145,16 +152,16 @@ Those modes require later explicit evidence, eligibility/workflow and authority 
 
 ### 6.5 Escalation
 
-Escalate to the Owner for any `ROD-*`, material exception or absent/ambiguous envelope; to the legally competent actor for corporate/legal acts; and to customer/Product/OS authority where the affected scope belongs there.
+Escalate to the Owner for any `ROD-*`, material exception or absent/ambiguous envelope; to the legally competent actor for corporate/legal acts; to `POS-005` for decision-relevant financial/obligation evidence; to `POS-006` for material security/data/risk/continuity constraints; and to customer/Product/OS authority where the affected scope belongs there.
 
 ### 6.6 Split/merge evidence triggers
 
 Review this Position if:
 
 - routine Company operations become large enough for a separate COO-like Position;
-- portfolio stewardship becomes a full operating load independent of Company integration;
-- management finance/control volume requires a separate finance-control Position;
-- the Position becomes a new universal-interpreter bottleneck rather than an integration boundary.
+- organizational-state/evidence work becomes a sustained specialist workload rather than part of operating integration;
+- the Position becomes a new universal-interpreter bottleneck rather than an integration boundary;
+- governance/evidence independence requirements later justify a separate organizational-state or internal-control Position.
 
 ## 7. `POS-002 — Commercial & Customer Lead`
 
@@ -201,7 +208,8 @@ The Position cannot approve on behalf of a customer.
 - to `POS-001` / Owner for material commitment or exception;
 - to `POS-003` when customer evidence raises productization/reuse/portfolio questions;
 - to `POS-004` for technical decomposition and delivery;
-- to `POS-005` for management-finance, data, access, risk or continuity constraints.
+- to `POS-005` for economics/cash/obligation evidence;
+- to `POS-006` for data, access, security, risk or continuity constraints.
 
 ### 7.6 Split evidence triggers
 
@@ -250,7 +258,8 @@ The Position does not grant product-local implementation authority merely becaus
 - `POS-001` / Owner for material investment, stop/continue or cross-boundary decision;
 - `POS-002` for market/customer evidence;
 - `POS-004` for technical/release feasibility and evidence;
-- `POS-005` for economics, dependency, risk and continuity evidence.
+- `POS-005` for economics/cash/obligation evidence;
+- `POS-006` for dependency/security/risk/continuity evidence.
 
 ### 8.5 Split evidence triggers
 
@@ -296,80 +305,125 @@ This Position does not make the Company repository canonical for product code or
 
 - `POS-002` for exact customer scope, validation and acceptance meaning;
 - `POS-003` for product/workstream priority and reuse decisions;
-- `POS-005` for security/access/dependency/continuity constraints;
+- `POS-005` for cost/economic/obligation implications;
+- `POS-006` for security/access/dependency/continuity constraints;
 - `POS-001` / Owner where a technical option changes material business/risk/commitment state.
 
 ### 9.6 Split evidence triggers
 
 Review for product/domain-specific engineering Positions when technical workload, independent release accountability, specialized risk or product scale makes one Company technical boundary a bottleneck or obscures product ownership.
 
-## 10. `POS-005 — Company Operations & Assurance Lead`
+## 10. `POS-005 — Finance & Obligation Control Lead`
 
 ### 10.1 Purpose
 
-Provide the minimum current control/evidence Position for management economics, organizational state, access/risk/continuity assurance without prematurely creating separate Finance, PMO/Governance, Security or Risk departments.
+Own the Company management-finance, cash/commitment and obligation-control boundary without duplicating statutory accounting and without combining economic control with security/risk assurance.
 
-This Position combines `F-06`, `F-07` and `F-08` because each is real today, but current evidence supports one shared preparation/monitoring/control boundary rather than three separate executive positions.
+The Position carries `F-06` because material decisions need current decision-relevant economics while transaction/statutory truth remains in the professional accounting/banking contour.
 
 ### 10.2 Accountable outcomes
 
-- decision-makers receive decision-relevant cash/cost/obligation/economic evidence without duplicating statutory accounting;
-- material due/receivable/payable/mandatory-payment exceptions are surfaced to the appropriate authority;
-- Company roadmap/decision/review/organizational state remains reconstructable and synchronized with canonical sources;
-- access/data/risk/continuity requirements are explicit for material work;
-- incident, dependency and continuity exceptions are classified/escalated;
-- approved safe containment/recovery mechanics can be executed without inventing risk-acceptance authority;
-- external accounting/banking/customer/product/OS source authority is preserved rather than copied into Company truth.
+- decision-makers receive sufficient current cash/cost/commitment/economic evidence for material choices;
+- material receivable/payable/mandatory-payment and recurring-cost exceptions are surfaced to the competent authority;
+- product/customer/workstream decisions receive relevant economics/working-capital evidence without inventing accounting truth;
+- approved obligations can be tracked to decision-relevant closure/exception state;
+- outsourced accounting/banking sources remain authoritative for transaction/statutory facts.
 
 ### 10.3 Initial authority envelope
 
 Permitted after valid Assignment:
 
-- `AM-0` — management reporting, risk/dependency analysis, evidence/review preparation;
-- `AM-1` — execute approved state synchronization, reporting mechanics, access revocation/rotation or continuity procedures where a valid policy/workflow exists;
-- `AM-2` — routine classification, exception routing and reversible control/operational choices within approved policy/data/risk boundaries.
+- `AM-0` — management-finance analysis, forecasts, obligation/economics evidence and recommendations;
+- `AM-1` — execute approved reporting/state-synchronization/payment-preparation mechanics where the actual payment/legal authorization remains separate;
+- `AM-2` — routine classification, exception routing and bounded management-finance decisions inside an explicitly approved budget/obligation envelope.
 
 Not admitted initially:
 
-- `AM-3` material finance/risk/security approval;
+- `AM-3` material spending, financing, liability or economics approval;
+- `AM-4` automatic consequential financial execution.
+
+Hard exclusions include `ROD-02`, material commitment cases under `ROD-03`, material risk acceptance under `ROD-06`, and any legal/corporate financial act requiring separate authority.
+
+### 10.4 Boundary and independence rule
+
+This Position does not own bookkeeping, tax calculation, statutory reporting, bank authorization or the legal power to sign/commit merely because it prepares financial evidence.
+
+It must not become the sole approver of material spending/exposure it analyzed. Future `AM-3` finance approval would require a separate explicit delegation and conflict-of-duty review.
+
+### 10.5 Split/merge evidence triggers
+
+Review this Position if:
+
+- transaction/statutory work is intentionally internalized through a competent later decision;
+- sustained finance workload justifies separate planning/control versus treasury/payment responsibilities;
+- delegated financial approval becomes material enough to require independent preparation and approval roles;
+- product/customer economics become sufficiently specialized for product-local finance responsibility.
+
+## 11. `POS-006 — Security, Risk & Continuity Lead`
+
+### 11.1 Purpose
+
+Own the Company-level assurance boundary for access, data/customer sovereignty, security/privacy risk, critical dependencies and continuity/recovery without combining it with management-finance authority.
+
+The Position carries `F-08` and exists as a separate accountability unit because security/risk controls may need to constrain or challenge commercial, engineering, finance or operating action independently.
+
+### 11.2 Accountable outcomes
+
+- material work has explicit data/access/security/risk/continuity requirements before execution where applicable;
+- privileged access and credential requirements are bounded without storing secret values in the public repository;
+- customer/data sovereignty and purpose constraints are surfaced and preserved;
+- material security, dependency and continuity exceptions are classified and escalated;
+- approved safe containment/recovery mechanics can be executed without inventing risk-acceptance authority;
+- technology-sovereignty/replacement concerns for critical dependencies are visible to the competent decision authority.
+
+### 11.3 Initial authority envelope
+
+Permitted after valid Assignment:
+
+- `AM-0` — security/risk/dependency/continuity analysis, evidence and recommendations;
+- `AM-1` — execute approved access revocation/rotation, safe-shutdown, evidence-preservation, restore or other deterministic control mechanics where a valid policy/runbook exists;
+- `AM-2` — routine classification, exception routing and reversible containment/control choices inside approved security/data/risk/continuity boundaries.
+
+Not admitted initially:
+
+- `AM-3` material security/risk/data exception approval;
 - `AM-4` Company-level automatic consequential effect.
 
 Pre-authorized monitoring/containment/recovery automation may later be admitted through a concrete `AM-4` workflow after AC-206/AC-207 evidence.
 
-Hard exclusions include `ROD-02`, `ROD-05`, `ROD-06`, `ROD-07`, `ROD-08` and material `ROD-09` cases.
+Hard exclusions include `ROD-05`, `ROD-06`, `ROD-07`, `ROD-08` and material `ROD-09` cases.
 
-### 10.4 Independence rule
+### 11.4 Independence rule
 
-Because this Position combines preparation/monitoring across finance, evidence, security and continuity, it must not become the sole approver of its own material exceptions.
+This Position prepares and enforces assurance boundaries but does not approve its own material exceptions. A material risk acceptance, data-sovereignty exception, critical dependency exception or control waiver remains with the applicable AC-202 authority.
 
-The initial absence of `AM-3` is an intentional control. If future scale requires independent assurance or delegated consequential approval, the Company should split the relevant responsibility or introduce an independent approval path rather than grant self-review authority for convenience.
+Where the same Principal is assigned to `POS-006` and another Position, AC-205 must preserve distinct Position capacities and evidence; combining executor identity does not merge authority.
 
-### 10.5 Split evidence triggers
+### 11.5 Split/merge evidence triggers
 
-Review for separate Positions if:
+Review this Position if:
 
-- management finance becomes a sustained independent workload with delegated spending/approval needs;
-- security/privacy/customer-data exposure requires independent assurance or regulated specialization;
-- organizational state/work coordination becomes a large operating function rather than lightweight evidence management;
-- continuity/incident workload becomes independently material;
-- combining preparation and assurance creates repeated independence conflicts.
+- security/privacy/customer-data exposure requires regulated or specialist independent assurance;
+- continuity/incident workload becomes independently material enough to split Security from Continuity/Resilience;
+- access administration becomes a high-volume operating responsibility distinct from assurance;
+- risk management expands beyond security/continuity into a separately justified enterprise-control function.
 
-## 11. Function-to-Position coverage matrix
+## 12. Function-to-Position coverage matrix
 
 | AC-201 function | Primary Position | Secondary interfaces | Coverage decision |
 |---|---|---|---|
-| `F-01` Company Direction / Governance / Material Control | `POS-001` | `POS-003`, `POS-005` | non-reserved operating integration is a Position; Owner/corporate reserved authority stays outside the Position |
-| `F-02` Commercial Discovery / Qualification / Commitment Preparation | `POS-002` | `POS-001`, `POS-005` | bundled with F-03 to preserve customer context at current scale |
-| `F-03` Customer Delivery / Acceptance / Support | `POS-002` | `POS-004`, `POS-003`, `POS-005` | bundled with F-02 until workload/control evidence justifies a customer handoff split |
-| `F-04` Portfolio / Product / Workstream Stewardship / Reuse | `POS-003` | `POS-001`, `POS-002`, `POS-004`, `POS-005` | separate Position because portfolio switching/reuse interpretation is a distinct Owner bottleneck and should not be fused into engineering |
-| `F-05` Engineering / Automation / QA / Release | `POS-004` | `POS-002`, `POS-003`, `POS-005` | separate production accountability because execution is high-volume/automatable and must remain distinct from acceptance/investment authority |
-| `F-06` Management Finance / Cash / Obligation Control | `POS-005` | `POS-001`, `POS-003` | bundled into Operations & Assurance; no internal Accounting Position |
-| `F-07` Organizational State / Evidence / Improvement | `POS-005` | all Positions | bundled into Operations & Assurance to eliminate state reconstruction without creating a PMO/governance department |
-| `F-08` Security / Access / Risk / Continuity Assurance | `POS-005` | all Positions | bundled into Operations & Assurance with no material self-approval; detailed access/continuity remains AC-206/AC-207 |
+| `F-01` Company Direction / Governance / Material Control | `POS-001` | `POS-003`, `POS-005`, `POS-006` | non-reserved operating integration is a Position; Owner/corporate reserved authority stays outside the Position |
+| `F-02` Commercial Discovery / Qualification / Commitment Preparation | `POS-002` | `POS-001`, `POS-005`, `POS-006` | bundled with F-03 to preserve customer context at current scale |
+| `F-03` Customer Delivery / Acceptance / Support | `POS-002` | `POS-004`, `POS-003`, `POS-005`, `POS-006` | bundled with F-02 until workload/control evidence justifies a customer handoff split |
+| `F-04` Portfolio / Product / Workstream Stewardship / Reuse | `POS-003` | `POS-001`, `POS-002`, `POS-004`, `POS-005`, `POS-006` | separate Position because portfolio switching/reuse interpretation is a distinct Owner bottleneck and should not be fused into engineering |
+| `F-05` Engineering / Automation / QA / Release | `POS-004` | `POS-002`, `POS-003`, `POS-005`, `POS-006` | separate production accountability because execution is high-volume/automatable and must remain distinct from acceptance/investment authority |
+| `F-06` Management Finance / Cash / Obligation Control | `POS-005` | `POS-001`, `POS-003` | separate Finance & Obligation Control Position; statutory accounting remains external |
+| `F-07` Organizational State / Evidence / Improvement | `POS-001` | all Positions | kept with Company Executive because canonical state, decision routing and governed improvement are part of operating integration rather than security assurance |
+| `F-08` Security / Access / Risk / Continuity Assurance | `POS-006` | all Positions | separate Security/Risk/Continuity Position so assurance can remain distinct from finance and future executor/approval separation is possible |
 
 All eight functions have one primary Position accountability boundary; no function is left ownerless and no Position is created merely to mirror a function label.
 
-## 12. Initial authority-mode matrix
+## 13. Initial authority-mode matrix
 
 This matrix defines the **Position design ceiling** for the initial registry. Actual executable authority still requires valid AC-205 Assignment, AC-206 technical access where needed and all current workflow/data/risk conditions.
 
@@ -379,22 +433,24 @@ This matrix defines the **Position design ceiling** for the initial registry. Ac
 | `POS-002` Commercial & Customer Lead | yes | yes | yes | no | no |
 | `POS-003` Portfolio & Product Lead | yes | yes | yes | no | no |
 | `POS-004` Engineering & Release Lead | yes | yes | yes | no | no |
-| `POS-005` Company Operations & Assurance Lead | yes | yes | yes | no | no |
+| `POS-005` Finance & Obligation Control Lead | yes | yes | yes | no | no |
+| `POS-006` Security, Risk & Continuity Lead | yes | yes | yes | no | no |
 
 This is intentionally conservative. AC-203 makes `AM-3` and `AM-4` possible, but current AC-204 evidence does not yet identify Principal eligibility, concrete consequential approval classes or sufficiently specified automatic workflows to activate them safely.
 
 A future amendment may add them with evidence; title or Assignment alone cannot.
 
-## 13. Company value/control flow through Positions
+## 14. Company value/control flow through Positions
 
 ```text
 external need / current obligation
         ↓
 POS-002 Commercial & Customer Lead
         ↓ qualified scope / commitment preparation
-POS-005 economics / risk / data evidence
+POS-005 finance / cash / obligation evidence
+POS-006 security / data / risk / continuity evidence
         ↓
-POS-001 Company Executive
+POS-001 Company Executive + organizational state/evidence
         ↓ routine delegated coordination
         └→ Owner / legal-corporate gate when ROD/material act required
         ↓ accepted bounded work
@@ -406,18 +462,20 @@ POS-004 engineering / QA / release
         ↓
 customer validation / acceptance state
         ↓
-POS-005 economic closure / evidence / risk / organizational state
+POS-005 economic / obligation closure evidence
+POS-006 risk / security / continuity exception state
+POS-001 canonical organizational-state synchronization
         ↓
 POS-003 continue/change/stop/reuse recommendation
         ↓
 POS-001 / Owner as required by authority class
 ```
 
-`POS-005` also constrains material paths with access/data/risk/continuity requirements.
+`POS-006` constrains material paths with access/data/security/risk/continuity requirements. `POS-005` supplies economic/obligation constraints. Neither role can convert its analysis or technical control into a Reserved Owner Decision.
 
 The flow deliberately prevents `POS-004` technical success from becoming customer acceptance, portfolio investment or Owner approval by implication.
 
-## 14. Positions deliberately not admitted now
+## 15. Positions deliberately not admitted now
 
 The initial registry does **not** create separate Positions for:
 
@@ -425,12 +483,12 @@ The initial registry does **not** create separate Positions for:
 - Marketing;
 - Customer Success / Support;
 - Project Manager / PMO;
-- CFO / internal Accountant;
+- internal Accountant / Tax specialist / Treasurer;
+- CFO executive office beyond the bounded `POS-005` responsibility actually evidenced now;
 - Legal Counsel;
 - HR / People;
-- CISO / Security Officer;
-- Risk Officer;
-- Knowledge Manager / Governance Officer;
+- CISO executive office, separate Security Officer or separate Risk Officer beyond the bounded `POS-006` responsibility evidenced now;
+- separate Knowledge Manager / Governance Officer;
 - AI Workforce Manager / Agent Manager;
 - Arvectum OS Operator;
 - Procurement Director as a Company-wide role;
@@ -438,13 +496,13 @@ The initial registry does **not** create separate Positions for:
 
 Some may become justified later. Their familiar corporate labels are not evidence of current business need.
 
-## 15. One Position is not one person or one agent
+## 16. One Position is not one person or one agent
 
-This registry contains five Positions, not a five-person staffing plan.
+This registry contains six Positions, not a six-person staffing plan.
 
 AC-205 may find that:
 
-- one human Principal temporarily holds several Position Assignments;
+- one human Principal temporarily holds several Position Assignments, including both `POS-005` and `POS-006` where necessary at current scale;
 - one Position is executed by a hybrid human + AI/software Assignment pattern;
 - AI/software performs substantial `AM-0`/`AM-1`/`AM-2` work while a human remains responsible for bounded approval/escalation;
 - an external professional service provides inputs to a Position without becoming the Position or Company authority;
@@ -452,7 +510,7 @@ AC-205 may find that:
 
 The important invariant is that Position meaning, accountable outputs, authority boundary and history survive executor replacement.
 
-## 16. Position conflict and separation rules
+## 17. Position conflict and separation rules
 
 AC-205 may assign the same Principal to several Positions initially, but the Company should preserve their distinct decision contexts and evidence where conflicts matter.
 
@@ -460,12 +518,14 @@ The following combinations require explicit caution if held by one Principal:
 
 - `POS-002` commercial/customer commitment preparation + `POS-004` technical readiness: technical optimism must not silently broaden customer scope;
 - `POS-003` investment/priority recommendation + `POS-004` engineering execution: implementation sunk cost must not become portfolio authority;
-- `POS-005` assurance evidence + any Position whose exception is being reviewed: no material self-approval;
+- `POS-005` financial/economic evidence + a Position proposing the relevant spend/commitment: no material self-approval or silent expansion of budget/exposure;
+- `POS-006` assurance evidence + any Position whose security/risk/data/continuity exception is being reviewed: no material self-approval;
+- `POS-005` + `POS-006` held by the same Principal: separate financial and assurance records/authority contexts remain mandatory even if the executor is temporarily shared;
 - `POS-001` operating integration + Owner capacity: routine Company Executive work should not be reclassified as Owner-reserved merely because the same person currently holds both capacities.
 
 These are separation-of-context rules, not mandatory current headcount separation.
 
-## 17. Position lifecycle and change triggers
+## 18. Position lifecycle and change triggers
 
 Position lifecycle states are:
 
@@ -489,7 +549,7 @@ A Position should be reviewed for split, merge or retirement when operating evid
 
 Changing the executor does not by itself justify changing the Position.
 
-## 18. Handoff to AC-205
+## 19. Handoff to AC-205
 
 AC-205 must classify the current/future executor realization for each approved Position without changing the Position merely to fit a preferred model or agent.
 
@@ -505,13 +565,16 @@ For each Position AC-205 should determine:
 
 AC-205 MUST NOT infer technical access from Assignment. AC-206 owns the actual data/tool/credential access boundary.
 
-## 19. Completion and approval boundary
+For `POS-005` and `POS-006`, AC-205 must preserve separate Position capacities even if the same Principal is initially assigned to both. Executor consolidation must not reverse the organizational boundary approved by AC-204.
+
+## 20. Completion and approval boundary
 
 AC-204 is substantively complete when the Company can explain:
 
 - why each initial Position exists from real business evidence;
-- why five Positions are enough to cover the current eight functions without fake headcount;
-- why some functions are bundled and others separated;
+- why six Positions are enough to cover the current eight functions without fake headcount;
+- why customer discovery/delivery remain bundled while finance and security/risk/continuity are separated;
+- why `F-07` organizational state/evidence belongs with Company Executive at the current scale;
 - which outcomes each Position owns;
 - the initial AC-203 authority-mode ceiling and AC-202 exclusions;
 - the principal handoffs/escalation paths;
@@ -520,6 +583,6 @@ AC-204 is substantively complete when the Company can explain:
 - what evidence would cause split, merge or retirement;
 - how AC-205 can assign executors without redesigning the organization around technology.
 
-This `0.9.0` publication is a **proposal only**.
+This `0.9.1` publication is a **proposal only**.
 
 Because approving the initial Position Registry materially changes Company organizational accountability under `ROD-05`, it requires an explicit Owner approval of the exact reviewed proposal before the Positions become binding Company state.
