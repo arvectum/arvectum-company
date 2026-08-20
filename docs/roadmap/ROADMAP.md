@@ -1,14 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.8.1`
+Version: `0.8.2`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-102 — Revenue, cash, recurring cost and obligation baseline`
-Current action state: `Blocked pending authoritative financial evidence intake`
+Current canonical action: `AC-103 — Current customer/client lifecycle and real value-stream map`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
@@ -172,8 +171,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 | ID | Work item | Status |
 |---|---|---|
 | `AC-101` | Current business model and value proposition baseline | `Complete / PASS` |
-| `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Blocked` |
-| `AC-103` | Current customer/client lifecycle and real value-stream map | `Planned` |
+| `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Complete / PASS` |
+| `AC-103` | Current customer/client lifecycle and real value-stream map | `Current` |
 | `AC-104` | Owner workload, manual work and bottleneck map | `Planned` |
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Planned` |
 | `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Planned` |
@@ -182,17 +181,17 @@ Purpose: understand the real Company, economic runway and first credible market 
 
 AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER` and `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` `0.2.0`.
 
-AC-102 publication `0.2.0` and `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` establish a reviewed financial evidence model but do not fabricate missing economics. Cross-review reached material convergence at `6 of maximum 10` iterations and stopped because current bank/accounting/contract evidence is insufficient to determine the LLC's revenue, cash balance, complete recurring run-rate, receivables/payables and settlement of the charter-capital contribution. The resume condition is authoritative financial intake; review then continues from iteration `7` with no more than four further iterations.
+AC-102 publication `0.3.0` establishes the Company-level revenue/cash/cost/obligation architecture and the boundary between management finance and outsourced accounting. Its cross-review closed at `7 of maximum 10` after the Owner corrected the task scope: transaction-level bookkeeping, bank reconciliation, tax calculation and receipt inspection are not Company-design work and do not block progression.
 
 ### M1 exit criteria
 
 The Owner can answer from evidence:
 
 - what business Arvectum is building and how current business lines create/capture value;
-- where real revenue/cash enters and material cost/cash commitments arise;
-- what obligations and continuity risks exist;
+- where structurally revenue/cash enters and material cost/cash commitments arise;
+- what obligation classes and continuity risks exist;
 - where Owner time is consumed or blocks scale;
-- what investment burden the flagship direction currently creates;
+- what investment burden the flagship direction structurally creates;
 - who the first plausible flagship buyer/ICP is and what measurable outcome the offer should create;
 - what evidence would make a first external design-partner engagement worth pursuing;
 - which near-term improvements and productization work have the strongest business case.
@@ -426,47 +425,14 @@ This roadmap records Company-level dependencies and decisions only. Product/OS i
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-102
+## 18. Current action — AC-103
 
-### AC-102 — Revenue, cash, recurring cost and obligation baseline
+### AC-103 — Current customer/client lifecycle and real value-stream map
 
-Status: `Blocked`.
+Status: `Current`.
 
-Objective: establish the first evidence-backed financial/commitment baseline for the corrected flagship direction and current business lines, without inventing financial truth or turning this public repository into the store for sensitive live financial data.
+Objective: map how Arvectum currently acquires, accepts, delivers and supports real client/customer work across its current business lines, and identify the business value streams that should shape the later operating model.
 
-Minimum scope:
+AC-103 should remain at Company/business-process level. It should not recreate product-specific workflow detail already canonical in product repositories, and it should not invent a future sales organization before current client/value-stream evidence is understood.
 
-- trace actual ООО «Арвектум» revenue/cash receipts to current business lines where evidence permits;
-- distinguish contracted/invoiced/accrued value from cash actually received;
-- distinguish current LLC activity from historical/client work before incorporation or outside the LLC;
-- identify current recurring and material non-recurring costs across Company, OS, product/module development, software/infrastructure and administration;
-- identify known tax, supplier, contractor, customer, financing, guarantee, subscription and other material obligation classes;
-- capture procurement working-capital/cash-gap exposure where applicable without treating procurement as the Company center;
-- identify current investment burden behind «ИИ-компания под ключ», including currently pre-revenue internal work where evidence supports that classification;
-- distinguish real figures, estimates and unknowns;
-- identify which current activities produce cash, consume cash or are pre-revenue;
-- preserve the AC-003 public-repository safety boundary: no bank account details, confidential transaction/contract payloads, personal data, credentials or unnecessary sensitive figures in Git;
-- preserve authoritative banking/accounting/contract sources as external systems of record, using safe summaries/locators in this repository.
-
-Expected artifact home: `docs/business/`.
-
-Current reviewed artifact: `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md` `0.2.0`.
-
-Cross-review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` — `6 of maximum 10`, result `BLOCKED`.
-
-### Current blocker and resume condition
-
-The artifact model and repository-safety boundary pass review, but the Company evidence set does not contain authoritative current banking/accounting data sufficient to establish actual LLC revenue/cash, current cash balance, complete LLC-paid recurring run-rate, receivables/payables or charter-capital settlement status.
-
-Resume requires the smallest sufficient private evidence intake:
-
-- ООО «Арвектум» business-account transaction export or bank statement from `2026-06-24` through the current export date;
-- only where required, a compact supplement for contracts/orders/invoices, unpaid obligations, recurring services and charter-capital payment status not clear from bank transactions.
-
-Raw evidence remains private and must not be committed to this public repository by default.
-
-After intake, populate the material financial fields and resume cross-review at iteration `7`, with no more than four additional iterations under the Owner-set maximum of ten.
-
-Acceptance requires a coherent current revenue/cash/cost/obligation baseline sufficient for the Owner to distinguish economic reality from strategic product intent and to continue M1 without guessing.
-
-AC-102 MUST NOT advance to `Complete / PASS`, and AC-103 MUST NOT become the next canonical action automatically, until the blocker is resolved or the Owner records an explicit sequencing decision.
+AC-102 is complete at Company-management level. Detailed bookkeeping, bank reconciliation, tax calculations and transaction-level accounting remain with the outsourced accounting/banking contour and are not prerequisites for AC-103.
