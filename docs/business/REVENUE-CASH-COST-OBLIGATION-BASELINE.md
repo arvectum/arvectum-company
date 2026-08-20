@@ -1,282 +1,185 @@
 # AC-102 — Revenue, Cash, Recurring Cost and Obligation Baseline
 
-Status: `Blocked / Financial evidence intake required`
-Version: `0.2.0`
+Status: `Complete / PASS`
+Version: `0.3.0`
 Created: `2026-08-20`
 Updated: `2026-08-20`
-Evidence cutoff: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-102 — Revenue, cash, recurring cost and obligation baseline`
 Depends on: `AC-101 — Current business model and value proposition baseline`
 Review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md`
 
-## 1. Purpose
+## 1. Purpose and scope correction
 
-This artifact establishes the first evidence-backed Company financial and commitment baseline for ООО «Арвектум».
+AC-102 defines the Company-level economic structure needed to design and govern Arvectum as a business.
 
-Its purpose is to let the Owner distinguish:
+It is **not** a bookkeeping task, transaction audit, bank-reconciliation exercise, tax calculation or substitute for the Company's outsourced accounting function.
 
-- real ООО «Арвектум» revenue from intended monetization;
-- contracted/invoiced value from cash actually received;
-- current LLC activity from historical or personally contracted work outside the LLC;
-- Company-use cost from cost demonstrably paid by the LLC;
-- recurring run-rate from one-time or sunk investment;
-- current cash-producing work from pre-revenue investment;
-- known obligations from possible future obligations;
-- actual figures from estimates and unknowns.
-
-This is a management baseline, not an accounting ledger, tax return, bank statement, legal opinion or customer contract register.
-
-## 2. Source hierarchy and repository-safety boundary
-
-Financial truth remains with the applicable authoritative source.
+The Owner has clarified the operating boundary:
 
-Examples:
+- accounting, tax records, bank reconciliation, statutory reporting and transaction-level financial administration are handled by the Company's professional accounting contour;
+- Arvectum Company governance needs only the management/business model: where money can come from, where it structurally goes, which obligation classes matter, which costs are fixed/recurring versus variable/project-driven, and which economic information must reach the Owner for decisions.
 
-1. bank statement / bank transaction record for actual cash movement;
-2. accounting and tax records for accounting/tax treatment and accrued obligations;
-3. signed contract, accepted order, invoice or other applicable source for contractual commitment;
-4. provider receipt for the fact and amount of a provider-side charge;
-5. Company repository records for repository-safe management conclusions only.
+Detailed receipts, individual subscriptions and account movements are deliberately outside this artifact unless a later management decision specifically requires them.
 
-A provider receipt or operational email does **not** by itself prove that the LLC bank account was the payer. A product repository, delivered feature, client conversation or strategic decision does **not** by itself prove revenue.
+## 2. Financial operating boundary
 
-This public repository MUST NOT become the canonical store for:
+The Company financial model has three distinct layers:
 
-- bank account numbers or raw bank statements;
-- confidential transaction descriptions;
-- non-public customer/supplier contracts or payment details;
-- tax payloads beyond safe management conclusions;
-- personal payment details;
-- secrets, tokens, signatures or unnecessary personal data.
+| Layer | Responsibility | Company-repository role |
+|---|---|---|
+| statutory/accounting layer | outsourced accounting, bank/accounting systems, tax and legal records | external source of truth; not duplicated here |
+| management-finance layer | economic interpretation for Owner decisions, budgets, commitments, portfolio and risk | Company-level models and summaries |
+| product/project economics | product revenue model, direct cost, implementation/support burden, unit economics | product/portfolio evidence feeding Company decisions |
 
-Private source documents may be used for reconciliation while this file retains only the minimum safe conclusion needed to manage the Company.
+Arvectum Company therefore needs **management visibility**, not a parallel accounting system.
 
-## 3. Evidence states
+## 3. Revenue architecture
 
-AC-102 uses the following states:
+Current and intended Company revenue is organized into the following business engines.
 
-- `Actual / authoritative` — supported by the source that is authoritative for the stated fact;
-- `Actual provider evidence / payer attribution unknown` — a real provider-side charge or service fact is evidenced, but payment by ООО «Арвектум» is not established;
-- `Estimate` — explicit management estimate with basis and uncertainty;
-- `Known obligation` — committed corporate/contractual/operational obligation with an identified source;
-- `Potential obligation` — plausible future cash or performance burden not yet established as committed;
-- `Unknown` — insufficient evidence;
-- `Not applicable` — explicitly outside the current Company scope.
+| Revenue engine | Value sold | Primary capture mechanisms | Current strategic role |
+|---|---|---|---|
+| flagship «ИИ-компания под ключ» | discovery, organizational design, deployment, configuration and transformation of a customer into an AI-native operating organization | implementation/project fee; later recurring support/runtime/module revenue | flagship commercial direction |
+| reusable functional modules | reusable business-function capability embedded in customer organizations | module/license/subscription/service uplift or bundle | module candidates; admission requires evidence |
+| Arvectum OS commercial reliance | domain-neutral organizational runtime/substrate where commercially exposed | bundled implementation, subscription/license or managed runtime are later packaging choices | enabling substrate, not a separate Company by itself |
+| standalone software products | narrow software value outside a full AI-company deployment | license, subscription, project fee or service model per product | portfolio-specific |
+| client automation/custom development | customer-specific automation, parsers, integrations and implementation work | project/customization fee | near-term cash/revenue line and market evidence |
+| procurement supplier/contractor activity | delivery of goods and tender/procurement execution | contract/project margin | real business/domain line and proof environment |
 
-`No evidence located` is not equivalent to `0`.
+No revenue engine is assumed profitable merely because it exists. Pricing and measured unit economics remain product/portfolio decisions where evidence is required.
 
-## 4. Established corporate and financial-context facts
+## 4. Cash architecture
 
-The current evidence supports the following safe facts:
+For Company-design purposes, cash movements are classified by business meaning rather than individual transaction.
 
-1. ООО «Арвектум» was registered on `2026-06-24` and was recorded as active at issuance of the registry evidence.
-2. The Company has an operational business banking relationship. Account existence does not establish current balance, turnover or revenue.
-3. The founding decision established charter capital of `10,000 RUB`, payable in money within four months from state registration. The actual payment status and payment date are not established by the evidence currently available to AC-102.
-4. The document-derived four-month boundary from the `2026-06-24` registration date is `2026-10-24`. This is a management date derived from the founding decision and does not substitute for confirmation of actual payment or applicable accounting/legal treatment.
-5. The registration package records submission of a notification to transition to the simplified taxation system. AC-102 does not infer from that filing the current tax object, rate, accrued tax amount or filing calendar.
-6. A Company accounting-policy approval order exists with an effective date from `2026-06-24`; the appendices containing detailed accounting/tax methods are not available in the current evidence set and their substance is therefore not inferred here.
-7. The current flagship direction remains «ИИ-компания под ключ», but a strategic direction is not a revenue fact.
+### Cash inflows
 
-## 5. Revenue and cash baseline
+- customer receipts from implementation/project work;
+- product/license/subscription receipts;
+- procurement contract receipts;
+- owner capital/funding where applicable;
+- financing or other non-revenue funding where explicitly approved.
 
-### 5.1 Business-line view
+### Cash outflows
 
-| Business line / source | Contracted / invoiced by LLC | Cash received by LLC | Evidence result |
-|---|---:|---:|---|
-| flagship «ИИ-компания под ключ» | Unknown | Unknown | no authoritative contract/invoice/bank evidence available in current AC-102 evidence set |
-| procurement supplier/contractor activity | Unknown | Unknown | business/domain direction exists; LLC economics not established |
-| Tender Agent / procurement software | Unknown | Unknown | product existence and pilot/productization status do not establish paid LLC revenue |
-| Discount Parser / client automation | Unknown | Unknown | delivery/client-solution evidence exists outside this financial baseline; LLC attribution and payment are unverified |
-| Doors Parser / client automation | Unknown | Unknown | mature delivery history exists; current LLC attribution/payment are unverified |
-| Creative Test Agent | Unknown | Unknown | product/pilot evidence does not establish paid LLC revenue |
-| Arvectum Proxy Launcher | Unknown | Unknown | productization work does not establish sales or license revenue |
-| other Company revenue | Unknown | Unknown | no complete authoritative LLC revenue/cash register is available |
+- shared Company operating costs;
+- product/module development and operation;
+- project-specific delivery costs;
+- procurement working capital and supplier payments;
+- contractors/personnel;
+- infrastructure/software/tools;
+- legal, accounting, compliance and administrative costs;
+- taxes and mandatory payments;
+- financing/security/guarantee costs where applicable;
+- approved capital expenditure.
 
-### 5.2 Cash position
+The accounting contour determines actual balances and transaction treatment. Company governance uses these categories for decision-making and later management reporting.
 
-| Measure | Current result | Reason |
-|---|---:|---|
-| opening funded cash after registration | Unknown | no authoritative transaction export available |
-| cash received from customers | Unknown | no authoritative bank/accounting evidence available |
-| other cash inflows / owner funding | Unknown | no authoritative bank/accounting evidence available |
-| current bank cash balance | Unknown | account existence is not balance evidence |
-| accounts receivable | Unknown | no receivables register / contract reconciliation available |
-| accounts payable | Unknown | no payables register / contract reconciliation available |
+## 5. Cost architecture
 
-**Management conclusion:** AC-102 has no evidence basis to classify any current business line as `0 revenue`, `revenue-producing`, `profitable` or `pre-revenue` at the LLC level solely from repository or email absence. Those classifications remain unresolved until banking/accounting/contract evidence is reconciled.
+Costs are separated along two axes.
 
-## 6. Cost and recurring run-rate baseline
+### 5.1 Behaviour
 
-The evidence set contains some real Company-use service evidence, but it does not yet establish the complete LLC-paid run-rate.
+- **recurring/fixed or semi-fixed** — accounting service, core infrastructure, domains/mail, necessary software, repository/CI services where paid, baseline security/signing and other continuing Company operation;
+- **variable/project-direct** — supplier purchases, logistics, customer-specific infrastructure, external contractors, integrations and project-specific services;
+- **one-time/capital/investment** — incorporation, equipment, initial infrastructure, product creation and other non-recurring investment;
+- **non-cash Owner investment** — Owner time and resources relevant to management economics but not treated here as accounting expenses.
 
-| Cost / service class | Evidenced amount / state | Attribution state | Current conclusion |
-|---|---:|---|---|
-| Company-use web hosting | `494 RUB` provider receipt dated `2026-07-03` | `Actual provider evidence / payer attribution unknown` | real provider-side renewal cost is evidenced; do not classify as LLC cash outflow until payer is reconciled |
-| Company-use mail hosting | amount Unknown; service renewal/prolongation evidenced | payer and current continuation Unknown | operational service exists in the evidence set; monthly/annual run-rate not established |
-| domain/support add-on service | amount Unknown; short-period prolongation evidenced | payer and current continuation Unknown | service existence does not establish a durable recurring obligation or run-rate |
-| DomainSSL for `arvectum.com` | free certificate evidenced for the then-current issuance period | pre-incorporation acquisition context / future renewal Unknown | current zero-price certificate evidence does not imply future certificate cost is zero |
-| banking/account services | Unknown | Unknown | bank tariff/statement required |
-| accounting/tax administration | proposal/service information exists; accepted service/payment not evidenced | Unknown | treat as potential service only; do not create a recurring obligation from an offer |
-| AI/model/software subscriptions | Unknown | Unknown | personal versus Company-funded usage must be separated |
-| Git/repository/CI services | Unknown | Unknown | repository existence is not cost evidence |
-| servers/VPS/storage beyond the hosting evidence above | Unknown | Unknown | provider/payment evidence required |
-| signing/certificates/tokens beyond the free certificate fact above | Unknown | Unknown | actual acquisition/renewal evidence required |
-| hardware/equipment | Unknown | Unknown | existing personal assets must be separated from Company purchase/capital expenditure |
-| contractors/freelancers | Unknown | Unknown | contract/invoice/payment evidence required |
-| customer/project direct costs | Unknown | Unknown | supplier/logistics/API/project spend requires reconciliation |
-| legal/compliance/registrations | Unknown | Unknown | actual paid fee/service evidence required |
+### 5.2 Economic ownership
 
-**Verified current LLC cash-paid recurring run-rate:** `Unknown`.
+- shared Company cost;
+- Arvectum OS/shared platform investment;
+- product/module-specific cost;
+- customer/project-direct cost;
+- procurement working-capital cost.
 
-**Repository-safe provider-side cost evidence:** at least one `494 RUB` Company-use web-hosting renewal is evidenced privately, but payer/legal-entity attribution remains unresolved. It is therefore not counted as an ООО «Арвектум» cash outflow in this baseline.
+Exact cost allocation is not required at this phase. The important baseline is that these classes remain distinguishable so one product is not accidentally credited with shared costs or burdened with unrelated Company expenditure.
 
-## 7. Obligations baseline
+## 6. Obligation architecture
 
-### 7.1 Known corporate obligation
+Material Company obligations fall into six management classes:
 
-| Obligation | Amount / boundary | Status | Evidence result |
-|---|---:|---|---|
-| charter-capital monetary contribution | `10,000 RUB`; founding decision states payment within four months from state registration | `Known obligation / settlement Unknown` | actual payment status/date must be reconciled from banking/accounting evidence |
+1. **corporate/statutory** — legal, tax, accounting and other mandatory obligations handled in the professional accounting/legal contour;
+2. **customer** — signed delivery, acceptance, support, warranty, confidentiality, data/security and other commitments;
+3. **supplier/contractor** — payments, acceptance and dependencies created by external performers/providers;
+4. **recurring operating** — infrastructure, software, domains, services and renewals needed for continuity;
+5. **procurement/financing** — working-capital commitments, supplier prepayment, contract/bid security, guarantees or financing;
+6. **product/support** — commitments created by selling, licensing, hosting or supporting Arvectum products/modules.
 
-The management date derived from the founding decision is `2026-10-24`. AC-102 does not claim the obligation remains unpaid; it records that settlement cannot currently be verified.
+A strategic idea, roadmap item or technical capability does not create an obligation by itself. External obligations require the appropriate contract/authority path.
 
-### 7.2 Tax and accounting obligations
+## 7. Procurement cash-gap model
 
-The evidence establishes that a simplified-tax-system transition notification was submitted at registration and that an accounting-policy approval order exists. It does **not** establish, for this AC-102 baseline:
+Procurement remains one business line rather than the Company center, but it has a structurally distinct financial profile.
 
-- the currently applicable tax object/rate;
-- accrued tax payable;
-- insurance or payroll obligations;
-- reporting deadlines that have already become payable obligations;
-- accounting-service fees.
+A procurement deal can create:
 
-Those facts must be taken from current accounting/tax records or an authoritative accounting-service confirmation rather than inferred from registration filings.
+`customer payment timing → supplier payment timing → working-capital gap → financing/security cost → delivery/direct cost → realized project margin`
 
-### 7.3 Other obligation classes
+Therefore procurement decisions must consider cash-gap size/duration, supplier terms, customer payment terms, guarantees/security and downside exposure before commitment. The exact calculation belongs to the deal/product workflow, not this Company baseline.
 
-Current status is `Unknown` unless separately evidenced:
+## 8. Flagship investment model
 
-- signed customer delivery obligations;
-- supplier or contractor payables;
-- refunds, warranties or support commitments;
-- financing, credit, leasing or guarantee obligations;
-- procurement bid/security/guarantee commitments;
-- employee/contractor compensation;
-- software/infrastructure subscriptions with binding renewal terms;
-- domain/certificate renewal obligations;
-- external product/support commitments;
-- first-design-partner obligations for the flagship offer.
+The flagship «ИИ-компания под ключ» is supported by four investment pools:
 
-The evidence of a service existing or an offer being received is not converted automatically into a contractual or recurring obligation.
+- Arvectum Company as the internal reference implementation;
+- Arvectum OS as the domain-neutral substrate;
+- reusable module/product candidates;
+- customer-discovery, implementation and commercial work.
 
-## 8. Procurement working-capital boundary
+For management decisions, future reviews should distinguish:
 
-Procurement remains a Company business/domain line but is not the Company strategic center.
+- shared capability investment versus customer-specific work;
+- reusable module investment versus standalone-product investment;
+- recurring operating burden versus one-time development;
+- Owner workload versus external cash cost;
+- customer implementation cost versus recurring support cost.
 
-AC-102 must eventually capture for any live procurement deal, if one exists:
+This is enough for current business-structure design. Detailed capitalization, reimbursement or accounting treatment belongs to the accounting/legal contour.
 
-- supplier payment timing;
-- customer advance/payment timing;
-- cash-gap amount and duration;
-- bid/contract security and guarantee requirements;
-- logistics/direct cost;
-- margin before financing and risk cost;
-- committed versus merely quoted amounts.
+## 9. Accounting and management interface
 
-No live procurement cash gap is invented in the absence of current contract, supplier and bank evidence.
+Outsourced accounting is treated as a professional external operating function, not something Arvectum Company should recreate internally.
 
-## 9. Flagship investment burden
+The Company operating model needs a simple interface from that contour into Owner management:
 
-The flagship «ИИ-компания под ключ» is supported by material internal work across:
+- current available cash / material liquidity issue;
+- taxes or mandatory payments requiring attention;
+- material receivables/payables;
+- material new or overdue obligations;
+- unusual or high-value cash movement requiring management context;
+- periodic management summary sufficient for budget and portfolio decisions.
 
-- Arvectum Company governance and operating-model development;
-- Arvectum OS;
-- product/module candidates;
-- development/infrastructure tooling;
-- Owner time.
+The exact report format/cadence belongs later in `AC-404 — Cash, commitment and management reporting baseline` and the operating model. It does not block AC-102.
 
-The existence of that work is evidenced, but current monetary investment is not yet sufficiently measured.
+## 10. Management rules derived from the baseline
 
-AC-102 therefore separates:
+1. Do not build a parallel bookkeeping system inside Arvectum Company.
+2. Do not require the Owner to manually classify routine receipts and bank transactions when professional accounting already owns that function.
+3. Company governance works with economic classes, commitments, budgets and exceptions; accounting systems retain transaction truth.
+4. A new initiative should identify its plausible revenue mechanism, recurring burden, direct-cost class and material obligation boundary before meaningful investment.
+5. A customer project must distinguish implementation revenue from recurring support/runtime burden.
+6. A reusable module must eventually demonstrate economics independently from the fact that its underlying product/repository exists.
+7. Procurement deals require explicit working-capital/risk treatment because revenue and cash timing can diverge materially.
+8. Owner attention should be pulled by exceptions and decisions, not routine bookkeeping.
 
-1. **LLC cash cost** — actual external cash paid by ООО «Арвектум»;
-2. **Owner-funded Company-use resources** — Company-relevant resources personally paid or contributed without LLC cash payment;
-3. **Owner time investment** — material non-cash input, to be measured more fully by AC-104;
-4. **one-time / sunk experiment cost** versus **recurring run-rate**;
-5. **product/module-specific cost** versus **shared Company/Arvectum OS cost**.
+## 11. AC-102 result
 
-The `494 RUB` web-hosting receipt demonstrates why this distinction matters: the Company-use service and amount are evidenced, while the LLC-payer fact is not.
+AC-102 establishes a sufficient Company-level baseline for:
 
-No accounting, transfer-pricing, reimbursement or capitalization treatment is established by this management distinction.
+- revenue architecture;
+- cash-flow categories;
+- recurring/variable/investment cost structure;
+- obligation classes;
+- procurement working-capital boundary;
+- flagship investment structure;
+- the boundary between outsourced accounting and Company management.
 
-## 10. Current management baseline
+Transaction-level amounts are intentionally **not an AC-102 completion criterion**. They may be consumed later through accounting/management reporting when an actual business decision needs them.
 
-| Question | AC-102 current answer |
-|---|---|
-| How much revenue has ООО «Арвектум» earned? | `Unknown` — no authoritative revenue/accounting reconciliation available |
-| How much customer cash has the LLC received? | `Unknown` |
-| What is the current cash balance? | `Unknown` |
-| What are current receivables/payables? | `Unknown` |
-| What is the verified LLC-paid recurring monthly run-rate? | `Unknown` |
-| Is there real Company-use external spending? | `Yes` — at least one `494 RUB` hosting renewal is provider-evidenced, but LLC payer attribution is unknown |
-| Is the charter-capital requirement known? | `Yes` — `10,000 RUB`; settlement status/date Unknown |
-| Are current tax amounts known? | `No` — registration filing evidence is insufficient to calculate current liability |
-| Is flagship cash investment known? | `No` — internal work is evidenced, monetary attribution is incomplete |
-| Can AC-102 support a profitability/runway conclusion? | `No` — not without authoritative banking/accounting evidence |
+Cross-review result: `PASS at iteration 7 of maximum 10` after the Owner corrected the task boundary from transaction-level financial evidence collection to business/economic structure.
 
-This is intentionally an evidence baseline rather than a fabricated P&L.
-
-## 11. Completion gate and minimum Owner-local evidence intake
-
-The smallest sufficient next input is an authoritative export for the ООО «Арвектум» business account covering:
-
-`2026-06-24 → current date at time of export`.
-
-Accepted practical forms:
-
-- CSV/XLSX transaction export;
-- PDF bank statement;
-- or an Owner-prepared aggregate derived from the bank statement if every material inflow/outflow is categorized and traceable to the original source.
-
-Raw financial data may remain private and MUST NOT be committed to this public repository.
-
-If the bank export alone does not explain economic meaning, add only the smallest necessary supplements:
-
-1. list of LLC contracts/orders/invoices with amount, date, business line and paid/unpaid state;
-2. unpaid supplier/contractor/customer obligations not visible from bank movements;
-3. recurring services/subscriptions not inferable from transaction history;
-4. confirmation of charter-capital payment status/date;
-5. any material owner-paid Company-use resources that the Owner wants included in management economics, clearly separated from LLC accounting facts.
-
-Counterparty names may be replaced by stable aliases such as `client-A`, `supplier-B`, `hosting` or `software-subscription` in repository-safe outputs.
-
-## 12. Cross-review result and current blocker
-
-The AC-102 cross-review reached material convergence after `6 of maximum 10` iterations.
-
-Result:
-
-`BLOCKED — evidence model, source hierarchy and privacy boundary pass; the financial baseline cannot be closed without authoritative current banking/accounting evidence.`
-
-Further review iterations were not consumed merely to reach the numerical maximum because the unresolved questions are evidence gaps rather than contradictory design choices. Cross-review resumes at iteration `7` after the authoritative financial intake, leaving at most four additional iterations under the Owner-set maximum of ten.
-
-AC-102 MUST NOT be marked `Complete / PASS` and AC-103 MUST NOT be activated automatically while material revenue, cash, run-rate and obligation fields remain unresolved.
-
-## 13. Resume and completion criteria
-
-After the evidence intake, AC-102 must:
-
-1. reconcile every material LLC inflow to a business line or explicitly classify it as non-revenue funding/other inflow;
-2. reconcile material LLC outflows into recurring cost, one-time investment, project direct cost, tax/mandatory payment or other explicit class;
-3. separate LLC-paid from Owner-paid Company-use resources;
-4. establish current cash balance and material receivables/payables as of the chosen cutoff;
-5. confirm charter-capital settlement status;
-6. identify material known obligations and renewal/commitment dates;
-7. calculate a repository-safe current recurring run-rate or explain why a cadence cannot yet be established;
-8. identify which activities are evidenced cash-generating, cash-consuming or pre-revenue without using absence as zero;
-9. update the flagship investment-burden view;
-10. resume cross-review at iteration 7 and close only if no material financial-evidence gap remains for the declared AC-102 scope.
-
-Until those criteria are met, the correct roadmap status is `Blocked`, not `Complete / PASS`.
+Next canonical action: `AC-103 — Current customer/client lifecycle and real value-stream map`.
