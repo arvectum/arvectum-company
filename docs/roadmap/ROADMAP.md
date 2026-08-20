@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.7.0`
+Version: `0.7.1`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
@@ -155,15 +155,16 @@ Purpose: model the Company that actually exists before designing departments or 
 
 AC-101 completion evidence:
 
-- `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` — `Active 0.1.0` Company-level current business/value baseline;
-- the baseline separates canonical current facts, Owner-confirmed business directions, working hypotheses and unknown/deferred evidence instead of treating historical chat as independent authority;
-- the Company is represented as a procurement-centered mixed supplier/contractor + software-productization business with adjacent productized automation and internal capability-compounding layers, without claiming that every portfolio node is a separate business;
-- the `223-ФЗ + private industrial` starting commercial direction is distinguished from the current bounded `44-ФЗ` product/platform validation contour;
-- procurement gross margin, SaaS/productized software, client automation, standalone product monetization and internal capability leverage are separated as different value-capture mechanisms with their actual proof boundaries;
-- no current revenue, margin, cash, pricing, profitability or obligation fact is invented; those are explicitly handed to AC-102;
-- `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached across all eleven management lenses.
+- `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` — corrected `Active 0.2.0` baseline; the initial procurement-centered `0.1.0` interpretation is superseded after explicit Owner correction;
+- the flagship commercial direction is **customer-specific AI-native company / «ИИ-компания под ключ»**: organizational design, Positions/authority/workflows, Arvectum OS substrate, reusable/customer-specific functional modules and governed human/AI/software execution adapted to the customer's business model;
+- Arvectum Company is the first real reference implementation/dogfooding organization for the same organization-first approach rather than a literal org-chart template for customers;
+- Arvectum OS remains the domain-neutral Executable Organizational Model substrate and does not become the source of customer Organizational Authority or customer-specific domain semantics;
+- current products are treated as standalone products, reference implementations and **module candidates**, not automatically admitted modules or platform capabilities;
+- procurement remains a real business/domain line and possible tender/procurement module, but no longer defines the Company's highest-level commercial identity;
+- pricing, implementation economics, ICP, market validation and actual revenue remain unknown/evidence tasks for AC-102/AC-103 rather than being invented;
+- `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` — `PASS`, `10/10` maximum iterations reached; iterations 8–10 explicitly reopened and reconciled the material Owner strategy correction.
 
-AC-101 completion does not approve pricing, capital allocation, customer commitments, product readiness, organizational Positions/delegation or Arvectum OS lifecycle changes.
+AC-101 completion does not approve pricing, capital allocation, module admission, customer commitments, product readiness, organizational Positions/delegation or Arvectum OS lifecycle changes.
 
 ### M1 exit criteria
 
@@ -355,23 +356,24 @@ A cross-repository dependency becomes a commitment only through the applicable r
 
 Status: `Current`.
 
-Objective: establish the first evidence-backed financial/commitment baseline for the business model fixed by AC-101, using authoritative financial, accounting, banking, contract and operational sources without turning this public repository into the store for sensitive live financial data.
+Objective: establish the first evidence-backed financial/commitment baseline for the corrected business model fixed by AC-101, using authoritative financial, accounting, banking, contract and operational sources without turning this public repository into the store for sensitive live financial data.
 
 Minimum scope:
 
-- trace actual LLC revenue/cash receipts to the AC-101 business engines where evidence permits, distinguishing invoiced/accrued/contracted value from cash actually received;
+- trace actual LLC revenue/cash receipts to current business lines where evidence permits, distinguishing invoiced/accrued/contracted value from cash actually received;
 - distinguish current ООО «Арвектум» financial activity from historical/client work that may have occurred before incorporation or outside the LLC and must not be attributed by assumption;
-- identify current recurring and material non-recurring operating costs relevant to management decisions, including external software/infrastructure/admin costs where evidence exists;
+- identify current recurring and material non-recurring operating costs relevant to management decisions, including Arvectum Company, Arvectum OS, module/product development, software/infrastructure and administration where evidence exists;
 - identify known tax, supplier, contractor, customer, financing, guarantee, subscription and other material payment/obligation classes without copying restricted payloads into the public repository;
-- capture procurement working-capital/cash-gap exposure where the supplier/contractor model creates a timing difference between outgoing supplier/fulfilment cash and incoming customer cash;
+- capture procurement working-capital/cash-gap exposure where that business line creates a timing difference between outgoing supplier/fulfilment cash and incoming customer cash;
+- identify current investment burden behind the flagship «ИИ-компания под ключ» direction without assuming it is already revenue-producing;
 - record due dates, recurring cadence, uncertainty and authoritative source locators at a level safe for the repository, while keeping bank/accounting/contract originals in their proper canonical systems;
 - separate actual figures, estimates and unknowns; do not fabricate numbers to make the model complete;
-- identify which business engines currently produce cash, consume cash or remain pre-revenue where evidence supports that classification;
-- produce enough management-level evidence for AC-103/AC-106 without prematurely deciding product investment/stop-continue criteria that belong to Phase 3;
+- identify which current business lines produce cash, consume cash or remain pre-revenue where evidence supports that classification;
+- produce enough management-level evidence for AC-103/AC-106 without prematurely deciding product/module investment and stop/continue criteria that belong to Phase 3;
 - preserve the public-repository safety boundary from AC-003: no bank account details, personal data, confidential contract payloads, credentials or unnecessarily sensitive transaction detail in Git.
 
 Expected artifact home: `docs/business/`. Sensitive live financial evidence may remain in owner-controlled banking/accounting/contract systems or another explicitly approved private authoritative store, with this repository containing only safe summaries, models and locators.
 
-Acceptance requires a coherent current revenue/cash/cost/obligation baseline that is sufficient for the Owner to distinguish real economic activity from business-model intent and to continue M1 without inventing financial truth.
+Acceptance requires a coherent current revenue/cash/cost/obligation baseline that is sufficient for the Owner to distinguish real economic activity from the flagship product direction and to continue M1 without inventing financial truth.
 
 When AC-102 is complete, advance to `AC-103 — Customer/client lifecycle and real value-stream map` unless an explicit higher-priority business obligation requires a recorded sequencing change.
