@@ -3,11 +3,11 @@
 Status: `Complete`
 Review date: `2026-08-20`
 Iterations completed: `7 of maximum 10`
-Result: `PASS — material consensus reached; explicit Owner approval still required`
+Result: `PASS — material consensus reached; Owner approval subsequently recorded`
 Reviewed artifact: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md` — Proposed `0.9.0`
 Reviewed proposal blob SHA: `2e6c70848beb3adcf9856a23fae2d26c0e20ff0e`
 Repository branch: `ac-003-canonical-repository-map`
-Owner decision: `Pending`
+Owner decision: `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md`
 
 ## 1. Review purpose
 
@@ -265,17 +265,18 @@ Cross-review result:
 
 `PASS — MATERIAL CONSENSUS REACHED AT ITERATION 7/10`
 
-No Owner approval is inferred from this review.
+Owner approval was not inferred from the review; it was subsequently supplied explicitly and is recorded separately.
 
 ## 8. Required next decision
 
-To close AC-003, the Owner must explicitly approve the exact proposal:
+The required Owner decision was subsequently supplied against the exact proposal:
 
 - `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`;
 - status/version: `Proposed 0.9.0`;
-- blob SHA: `2e6c70848beb3adcf9856a23fae2d26c0e20ff0e`.
+- blob SHA: `2e6c70848beb3adcf9856a23fae2d26c0e20ff0e`;
+- decision: `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md`.
 
-If approved, the publication sequence should:
+The authorized publication sequence is:
 
 1. create the Owner decision record referencing the exact approved proposal blob;
 2. publish the artifact as `Approved 1.0.0` without changing approved normative substance;
