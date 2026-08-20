@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.3.0`
+Version: `1.4.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -41,7 +41,11 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` | Complete / PASS | AC-102 cross-review closed at 7 of maximum 10 after Owner scope correction. Transaction-level bookkeeping is outside Company-design scope and remains with professional accounting/banking systems |
 | `docs/business/CURRENT-CUSTOMER-LIFECYCLE-AND-VALUE-STREAM.md` | Complete / PASS `0.1.0` | AC-103 current customer/client lifecycle and real value-stream baseline: bespoke automation, iterative correction, controlled pilots, productization and explicit separation of the future flagship lifecycle |
 | `docs/reviews/AC-103-CUSTOMER-LIFECYCLE-CROSS-REVIEW.md` | Complete / PASS | AC-103 cross-review closed at 7 of maximum 10 after separating current delivery from future flagship assumptions and exposing qualification, commitment, acceptance, customer-outcome and Owner-bottleneck gaps |
-| `docs/roadmap/ROADMAP.md` | Active `0.8.3` | Canonical Company planning source; AC-103 Complete / PASS and AC-104 Current |
+| `docs/business/OWNER-WORKLOAD-MANUAL-WORK-BOTTLENECK-MAP.md` | Complete / PASS `0.1.0` | AC-104 Owner workload/manual-work/bottleneck baseline separating reserved authority from Owner-dependent/executed/gated work and exposing interpretation, priority, exception, local-execution and state-reconstruction bottlenecks |
+| `docs/reviews/AC-104-OWNER-WORKLOAD-CROSS-REVIEW.md` | Complete / PASS | AC-104 cross-review closed at 8 of maximum 10 without inventing time-sheet data, future Positions or AI Assignments |
+| `docs/business/MATERIAL-RISK-DEPENDENCY-CONTINUITY-FALLBACK-BASELINE.md` | Complete / PASS `0.1.0` | AC-105 material risk/dependency/continuity baseline across Owner/corporate authority, credentials, local environments, repositories, customer data, external systems, suppliers, financial providers, Arvectum OS and replaceable runtimes; defines minimum fallback/fail-closed expectations without claiming continuity readiness |
+| `docs/reviews/AC-105-MATERIAL-RISK-CONTINUITY-CROSS-REVIEW.md` | Complete / PASS | AC-105 cross-review closed at 9 of maximum 10 after separating legitimate control gates from single points of failure and bounding legal, data, OS, credential, vendor and market-risk scope |
+| `docs/roadmap/ROADMAP.md` | Active `0.10.0` | Canonical Company planning source; AC-105 Complete / PASS and AC-107 Current |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
@@ -50,6 +54,10 @@ Historical chat remains context/evidence and is not converted wholesale into can
 AC-102 establishes an explicit accounting boundary: transaction-level banking, bookkeeping, tax administration and statutory records remain with the Company's outsourced accounting/banking contour. The Company repository owns the management/business structure and consumes only decision-relevant summaries, budgets, commitments and exceptions when required.
 
 AC-103 establishes an explicit customer-lifecycle evidence boundary: current bespoke client delivery and controlled-pilot evidence are canonical Company planning inputs, while repeatable flagship acquisition/onboarding/deployment remains unproven and is deferred to AC-107/AC-108 and later milestones. Customer-specific data, knowledge, authority and confidential payloads are not admitted into this public registry merely because the engagement creates reusable learning.
+
+AC-104 establishes the Owner-workload evidence boundary: current Owner concentration is described qualitatively as reserved, Owner-dependent, Owner-executed or Owner-gated work. It does not fabricate hours, utilization or automation ROI and does not create future Positions or Assignments.
+
+AC-105 establishes the continuity evidence boundary: it records material dependency/failure consequences and minimum recovery/degraded-mode expectations, but does not claim tested Company-wide continuity, invent legal representation mechanisms, publish a credential inventory, assign RTO/RPO/SLA values or replace product-specific recovery evidence. Detailed access and tested continuity remain AC-206/AC-207 and product/OS responsibilities in their proper scopes.
 
 ## 4. External canonical Arvectum OS dependencies
 
@@ -62,7 +70,7 @@ Snapshot used to generate the current repository Project Source pack:
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
 
-AC-101 re-checked current Arvectum OS `main` on `2026-08-20` at `f4028cd8d84a1cdc81ae366c59dc4fb15d6a134c`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 remains `Draft / Exploratory` while P8.00 performs pre-activation revalidation. No Project Source pack refresh is required solely for that roadmap movement.
+AC-105 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 is active for bounded external-integration validation and the OS roadmap is `2.60.0` with `P8.04` current. No Stable Product Contract, Active capability or external production/SLA claim follows, and no Project Source pack refresh is required solely for this roadmap movement.
 
 | Canonical source | Known status at pack generation | Company relevance |
 |---|---|---|
