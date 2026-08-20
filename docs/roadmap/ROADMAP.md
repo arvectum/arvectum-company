@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.11.0`
+Version: `0.12.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-108 — First design-partner criteria, discovery script and market-validation plan`
+Current canonical action: `AC-106 — M1 business baseline review and Owner priority decision`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
@@ -176,8 +176,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 | `AC-104` | Owner workload, manual work and bottleneck map | `Complete / PASS` |
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Complete / PASS` |
 | `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Complete / PASS` |
-| `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Current` |
-| `AC-106` | M1 business baseline review and Owner priority decision | `Planned` |
+| `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Complete / PASS` |
+| `AC-106` | M1 business baseline review and Owner priority decision | `Current` |
 
 AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER` and `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` `0.2.0`.
 
@@ -189,7 +189,9 @@ AC-104 publication `0.1.0` separates Owner control from Owner execution and maps
 
 AC-105 publication `0.1.0` establishes the material risk/dependency/continuity baseline across Owner/corporate authority, customer context, credentials, local devices, repositories, customer data, external sources/services, suppliers, banking/accounting, Arvectum OS and replaceable AI/runtime dependencies. Its cross-review closed at `9 of maximum 10`; the baseline distinguishes deliberate authority/security gates from accidental single points of failure, records one-day/one-week/extended Owner-unavailability scenarios, and defines minimum fail-closed/degraded/recovery expectations without inventing RTO/RPO, legal instruments, credential holders or future Positions. The next M1 question is who the first plausible flagship buyer is, what job they need done and what measurable outcome would justify a design-partner engagement.
 
-AC-107 publication `0.1.0` establishes the first falsifiable flagship market hypothesis: start with an owner-led B2B company where one recurring information/coordination-heavy function materially depends on owner/senior-manager interpretation and exception handling; treat the Owner/CEO/General Director or equivalent executive as the primary buyer hypothesis; and test whether one bounded function can produce the same or better accepted outcome with materially less scarce management attention while preserving quality, authority, customer sovereignty and fallback. Procurement/tender companies remain one strong subsegment/wedge candidate rather than the Company's strategic identity. The cross-review closed at `9 of maximum 10`; demand, willingness to pay, pricing, implementation duration, ROI and repeatability remain explicitly unvalidated and now pass to AC-108.
+AC-107 publication `0.1.0` establishes the first falsifiable flagship market hypothesis: start with an owner-led B2B company where one recurring information/coordination-heavy function materially depends on owner/senior-manager interpretation and exception handling; treat the Owner/CEO/General Director or equivalent executive as the primary buyer hypothesis; and test whether one bounded function can produce the same or better accepted outcome with materially less scarce management attention while preserving quality, authority, customer sovereignty and fallback. Procurement/tender companies remain one strong subsegment/wedge candidate rather than the Company's strategic identity. The cross-review closed at `9 of maximum 10`; demand, willingness to pay, pricing, implementation duration, ROI and repeatability remain explicitly unvalidated and pass to AC-108.
+
+AC-108 publication `0.1.0` converts those hypotheses into an executable first design-partner market-validation instrument. It defines ten hard qualification gates, an eight-dimension candidate-priority heuristic, Russia-first evidence-oriented sourcing, an `8–12` high-information first discovery loop, a non-leading Russian-first interview script, structured evidence/confidence fields, mapping back to all nine AC-107 hypotheses, confirmation-bias controls, explicit continue/change/stop logic and a two-stage diagnostic/supervised-pilot concept. Its cross-review closed at `9 of maximum 10`. AC-108 deliberately does not claim that any market conversation, willingness to pay, price, ROI, production readiness or design-partner commitment has already occurred. AC-106 must review M1 as a **ready-to-run market-validation baseline**, not as validated demand.
 
 ### M1 exit criteria
 
@@ -433,12 +435,20 @@ This roadmap records Company-level dependencies and decisions only. Product/OS i
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-108
+## 18. Current action — AC-106
 
-### AC-108 — First design-partner criteria, discovery script and market-validation plan
+### AC-106 — M1 business baseline review and Owner priority decision
 
 Status: `Current`.
 
-Objective: convert the AC-107 ICP/buyer/JTBD/outcome hypotheses into a bounded market-evidence plan for identifying plausible design partners, conducting non-leading discovery, capturing workflow/authority/outcome/economic evidence and deciding whether the first segment hypothesis should continue, change or stop.
+Objective: review AC-101 through AC-108 as one coherent M1 business/economic/market-planning baseline and obtain an explicit Owner decision on the near-term Company sequence.
 
-AC-108 must preserve the distinction between discovery and commitment. It may define candidate criteria, questions, evidence fields, prioritization, outreach/discovery preparation and a bounded first-engagement concept, but it does not by roadmap status alone authorize a customer promise, production deployment, price/SLA, unsafe data access or autonomous consequential action. Its output should make AC-106 capable of reviewing M1 with real market-validation evidence rather than architecture assumptions.
+AC-106 should determine, from the current evidence rather than architecture preference alone:
+
+- whether M1 is complete within its declared scope;
+- what the Owner's highest near-term priority is among flagship discovery, current client/revenue obligations, Phase 2 operating-model work and other active portfolio demands;
+- how aggressively the AC-108 discovery instrument should be run in parallel with internal Company development;
+- which M1 assumptions require explicit tracking rather than further desk analysis;
+- whether any material risk, cash/commitment or authority issue blocks progression.
+
+AC-106 is an Owner decision point. Analysis and recommendation may be prepared by AI/software, but milestone closure, priority choice, material commitments and any external-action authorization require an explicit action by the authorized Owner/Principal. AC-106 must not describe the AC-108 plan as validated market demand merely because the instrument is complete.
