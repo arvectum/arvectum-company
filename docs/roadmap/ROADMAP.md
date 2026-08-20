@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.13.0`
+Version: `0.14.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-201 — Minimal real organizational/function model`
+Current canonical action: `AC-202 — Reserved Owner Decisions`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 M1 closure decision: `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md`
 
@@ -223,14 +223,16 @@ Purpose: derive the minimum real organization from M1 evidence and make it usefu
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-201` | Minimal real organizational/function model | `Current` |
-| `AC-202` | Reserved Owner Decisions | `Planned` |
+| `AC-201` | Minimal real organizational/function model | `Complete / PASS` |
+| `AC-202` | Reserved Owner Decisions | `Current` |
 | `AC-203` | Delegated Position authority, approval and escalation model | `Planned` |
 | `AC-204` | Initial Position Registry | `Planned` |
 | `AC-205` | Initial Assignments and executor classification | `Planned` |
 | `AC-206` | Company data/tool/credential access boundary baseline | `Planned` |
 | `AC-207` | Critical-function continuity, replacement and manual fallback baseline | `Planned` |
 | `AC-208` | Reference-model transferability boundary and operating-model cross-review | `Planned` |
+
+AC-201 publication `0.1.0` establishes the minimum current Company-level function model with eight executor-neutral responsibility domains: Company Direction/Corporate Governance/Material Control; Commercial Discovery/Qualification/Commitment Preparation; Customer Delivery/Acceptance/Support; Portfolio/Product/Workstream Stewardship/Reuse; Engineering/Automation/QA/Release; Management Finance/Cash/Obligation Control; Organizational State/Evidence/Improvement; and Security/Access/Risk/Continuity Assurance. Its cross-review closed at `9 of maximum 10` after tracing the complete current value/control loop, rejecting unsupported enterprise departments and preserving Company/Product/Customer/OS/external authority boundaries. AC-201 creates no Position, delegation, Assignment, headcount, access grant, module admission or Arvectum OS lifecycle effect. The reusable flagship lesson is the derivation method, not the literal eight-function Arvectum result.
 
 AC-208 must explicitly separate:
 
@@ -444,27 +446,27 @@ This roadmap records Company-level dependencies and decisions only. Product/OS i
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-201
+## 18. Current action — AC-202
 
-### AC-201 — Minimal real organizational/function model
+### AC-202 — Reserved Owner Decisions
 
 Status: `Current`.
 
-Objective: derive the minimum real Company-level function model from M1 evidence before inventing departments, Positions, authority delegations, AI Assignments or software layers.
+Objective: derive the smallest explicit set of Company decisions that must remain reserved to the Owner/competent corporate authority before later work defines delegated Position authority.
 
-AC-201 should determine:
+AC-202 should determine:
 
-- which business functions actually exist because Arvectum has real value streams, obligations, control needs, recurring workload or economic responsibility;
-- which functions are Company-level versus product-specific, outsourced/external, customer-owned or Arvectum OS/platform-owned;
-- where the Owner currently carries execution/context that belongs to a durable function rather than to Owner-reserved authority;
-- which functions must exist even if their current executor changes;
-- what accountable outputs and major handoffs each function must own at a minimal useful level;
-- which functions are primarily value creation, control/assurance, shared support or external-interface functions;
-- what should **not** become a separate function/department because the workload or accountability case is insufficient;
-- which internal patterns appear potentially transferable to the flagship method while remaining explicitly non-customer-template assumptions.
+- which decisions are genuinely reserved because they change Company strategy, capital allocation, risk appetite, material external commitments, governance/organizational model or material authority delegation;
+- which decisions require a legally or corporately valid act by the participant, General Director or another competent Principal and therefore cannot be reduced to an internal workflow label;
+- which material gates across `F-02`, `F-03`, `F-04`, `F-06`, `F-07` and `F-08` require Owner approval rather than reserving whole functions;
+- which current Owner-dependent judgments are **not** inherently reserved and should later become delegation/escalation candidates;
+- the decision classes, triggers, scope and evidence that make a reserved decision identifiable before execution;
+- the boundary between Owner approval, legal/corporate act, technical authorization, workflow validation and external customer/supplier authority;
+- how urgent work must fail closed or queue when the required reserved authority is unavailable rather than allowing AI/software/credential possession to infer authority;
+- what preparation, evidence assembly, publication and post-decision mechanics can be separated from the reserved decision itself.
 
-AC-201 must remain executor-neutral. It does not create final Positions, delegate authority, choose AI/human/software Assignments, grant access or design the detailed customer organization.
+AC-202 must remain executor-neutral and must not yet create delegated Position authority, Position Registry entries, Assignments, access grants or legal instruments. It should minimize reserved scope enough to preserve Owner control without making the Owner an unnecessary bottleneck for low-risk repeatable work.
 
-The bounded AC-108 discovery loop proceeds in parallel as a P1 market-evidence activity under `DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY`; it is not the primary roadmap status item and creates no pilot/commercial commitment by implication.
+The bounded AC-108 discovery loop continues in parallel as a P1 market-evidence activity under `DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY`; it creates no pilot, pricing, SLA, production or customer commitment by implication.
 
-The next Phase 2 handoff after AC-201 is `AC-202 — Reserved Owner Decisions`.
+The next Phase 2 handoff after AC-202 is `AC-203 — Delegated Position authority, approval and escalation model`.
