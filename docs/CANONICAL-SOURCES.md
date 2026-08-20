@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.2.0`
+Version: `1.3.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -39,13 +39,17 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` | Complete / PASS | AC-101 cross-review completed at 10/10 after material Owner strategy correction; records why procurement is a domain/module line rather than the highest-level Company product identity |
 | `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md` | Complete / PASS `0.3.0` | AC-102 Company-level management/economic baseline: revenue architecture, cash-flow classes, cost classes, obligation classes, procurement working-capital logic, flagship investment structure and outsourced-accounting boundary |
 | `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` | Complete / PASS | AC-102 cross-review closed at 7 of maximum 10 after Owner scope correction. Transaction-level bookkeeping is outside Company-design scope and remains with professional accounting/banking systems |
-| `docs/roadmap/ROADMAP.md` | Active `0.8.2` | Canonical Company planning source; AC-102 Complete / PASS and AC-103 Current |
+| `docs/business/CURRENT-CUSTOMER-LIFECYCLE-AND-VALUE-STREAM.md` | Complete / PASS `0.1.0` | AC-103 current customer/client lifecycle and real value-stream baseline: bespoke automation, iterative correction, controlled pilots, productization and explicit separation of the future flagship lifecycle |
+| `docs/reviews/AC-103-CUSTOMER-LIFECYCLE-CROSS-REVIEW.md` | Complete / PASS | AC-103 cross-review closed at 7 of maximum 10 after separating current delivery from future flagship assumptions and exposing qualification, commitment, acceptance, customer-outcome and Owner-bottleneck gaps |
+| `docs/roadmap/ROADMAP.md` | Active `0.8.3` | Canonical Company planning source; AC-103 Complete / PASS and AC-104 Current |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
 Historical chat remains context/evidence and is not converted wholesale into canonical Company state. Material Owner corrections are promoted only through explicit canonical artifacts/decisions.
 
 AC-102 establishes an explicit accounting boundary: transaction-level banking, bookkeeping, tax administration and statutory records remain with the Company's outsourced accounting/banking contour. The Company repository owns the management/business structure and consumes only decision-relevant summaries, budgets, commitments and exceptions when required.
+
+AC-103 establishes an explicit customer-lifecycle evidence boundary: current bespoke client delivery and controlled-pilot evidence are canonical Company planning inputs, while repeatable flagship acquisition/onboarding/deployment remains unproven and is deferred to AC-107/AC-108 and later milestones. Customer-specific data, knowledge, authority and confidential payloads are not admitted into this public registry merely because the engagement creates reusable learning.
 
 ## 4. External canonical Arvectum OS dependencies
 
