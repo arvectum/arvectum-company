@@ -3,9 +3,10 @@
 Status: `Complete`
 Review date: `2026-08-20`
 Iterations completed: `7 of maximum 10`
-Result: `PASS — material consensus reached; explicit Owner approval remains required before binding publication`
-Reviewed artifact: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md` — Proposed `0.9.0`
+Result: `PASS — material consensus reached; Owner approval subsequently recorded`
+Reviewed artifact: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md` — Proposed `0.9.0`, approved for publication as `1.0.0`
 Repository branch: `ac-002-company-os-boundary`
+Owner decision: `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md`
 
 ## 1. Review purpose
 
@@ -222,7 +223,7 @@ Remaining future questions are intentionally deferred to AC-003, AC-202/203, AC-
 
 | Review lens | Final result | Main condition preserved |
 |---|---|---|
-| Owner | PASS for proposal | Company residual/strategic authority is not transferred to OS; actual Owner approval still pending |
+| Owner | PASS | Company residual/strategic authority is not transferred to OS; actual Owner approval recorded separately after review |
 | General Director | PASS | internal/OS governance does not replace legally required executive capacity or form |
 | Finance | PASS | Company commitments cannot create unsupported OS obligations; adoption must justify cost/value |
 | Operations | PASS | contract boundary, failure, fallback and proportional execution rules are usable |
@@ -252,9 +253,9 @@ This keeps AC-002 a boundary contract rather than turning it into premature impl
 
 ## 7. Cross-review conclusion
 
-AC-002 has reached material management consensus at the **proposal** level after seven iterations.
+AC-002 reached material management consensus at the **proposal** level after seven iterations.
 
-The proposal is suitable for Owner decision because it:
+The proposal was suitable for Owner decision because it:
 
 - distinguishes legal/corporate authority, Company Organizational Authority, OS governance, product governance and technical authorization;
 - establishes that canonical record authority mode is not organizational sovereignty;
@@ -266,4 +267,4 @@ The proposal is suitable for Owner decision because it:
 - keeps OS adoption reversible and economically justified;
 - leaves unresolved implementation/authority details to the roadmap items that have the evidence to decide them.
 
-**No actual Owner approval is claimed by this cross-review.** The next governance act is explicit Owner approval or rejection/change request against `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md` Proposed `0.9.0` on branch `ac-002-company-os-boundary`.
+The cross-review itself did **not** constitute Owner approval. Subsequent explicit Owner approval of the exact `Proposed 0.9.0` artifact is recorded in `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md`, authorizing publication as `Approved 1.0.0` without changing the approved normative substance.
