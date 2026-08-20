@@ -12,7 +12,15 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
 - Initial Company portfolio map: `docs/portfolio/PORTFOLIO.md`
 - Repository structure and artifact map: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`
+- Founding baseline cross-review: `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md`
+- M0 founding closure decision: `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md`
 - Formal review evidence: `docs/reviews/`
+
+## Current Company state
+
+`M0 — Company canonically founded` is `Complete / PASS`.
+
+The current canonical Company action is `AC-101 — Current business model and value proposition baseline`. The canonical roadmap remains the source for sequencing and does not itself grant legal, organizational or external-effect authority.
 
 ## Repository boundary
 
