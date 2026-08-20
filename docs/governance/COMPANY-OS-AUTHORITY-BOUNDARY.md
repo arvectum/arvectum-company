@@ -1,16 +1,18 @@
 # AC-002 — Arvectum Company ↔ Arvectum OS Authority and Responsibility Boundary
 
-Status: `Proposed`
-Version: `0.9.0`
+Status: `Approved`
+Version: `1.0.0`
 Created: `2026-08-20`
 Updated: `2026-08-20`
+Approved: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Roadmap item: `AC-002 — Company ↔ Arvectum OS authority and responsibility boundary`
 Company constitutional basis: `docs/constitution/COMPANY-CONSTITUTION.md` — Ratified `1.0.0`
 Arvectum OS baseline: Constitution `1.2.0`; RFC-0001…RFC-0008 `1.0.0` — Accepted within their declared scopes
 Cross-review: `docs/reviews/AC-002-COMPANY-OS-AUTHORITY-BOUNDARY-CROSS-REVIEW.md`
-Approval: `Pending explicit Owner decision`
+Approval: `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md`
+Approved proposal: `Proposed 0.9.0`, blob `faed6d8503dfe771b4505f02ff8fed23aa5e9cb0`
 
 ## 1. Purpose
 
@@ -607,7 +609,7 @@ AC-002 is ready for acceptance when all are true:
 - functional cross-review reaches material consensus or the maximum ten iterations;
 - the Owner/competent Principal explicitly approves the final proposal before it becomes binding Company governance.
 
-Until that last approval occurs, this document remains `Proposed` and AC-002 remains `Current`.
+All acceptance criteria are satisfied. Owner approval is recorded in `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md`, and this artifact is binding Company governance as `Approved 1.0.0` within its declared scope.
 
 ## 18. Source baseline checked for this proposal
 
@@ -615,7 +617,7 @@ Until that last approval occurs, this document remains `Proposed` and AC-002 rem
 
 - `arvectum/arvectum-company` main checked before drafting at commit `9b4651755c88eec1f462749b84261874c56b4d68`;
 - `docs/constitution/COMPANY-CONSTITUTION.md` — Ratified `1.0.0`;
-- `docs/roadmap/ROADMAP.md` — AC-002 is Current;
+- `docs/roadmap/ROADMAP.md` — AC-002 was Current at proposal drafting;
 - `docs/CANONICAL-SOURCES.md` — Company/OS/legal authority registry.
 
 ### Arvectum OS
@@ -638,4 +640,4 @@ No personal identifiers, signatures, tax identifiers, addresses or banking data 
 
 ---
 
-**Proposal conclusion:** Arvectum OS is the governed execution/platform substrate for organizational meaning; it is not the sovereign source of that meaning. Arvectum Company remains the source of its Company-specific organizational authority and business policy, while OS provides domain-neutral contracts to represent, constrain, execute and reconstruct that authority without silently creating or changing it.
+**Approved conclusion:** Arvectum OS is the governed execution/platform substrate for organizational meaning; it is not the sovereign source of that meaning. Arvectum Company remains the source of its Company-specific organizational authority and business policy, while OS provides domain-neutral contracts to represent, constrain, execute and reconstruct that authority without silently creating or changing it.
