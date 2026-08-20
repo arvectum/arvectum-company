@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.9.0`
+Version: `0.10.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-105 — Material risk, dependency, continuity and fallback baseline`
+Current canonical action: `AC-107 — Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
@@ -174,8 +174,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 | `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Complete / PASS` |
 | `AC-103` | Current customer/client lifecycle and real value-stream map | `Complete / PASS` |
 | `AC-104` | Owner workload, manual work and bottleneck map | `Complete / PASS` |
-| `AC-105` | Material risk, dependency, continuity and fallback baseline | `Current` |
-| `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Planned` |
+| `AC-105` | Material risk, dependency, continuity and fallback baseline | `Complete / PASS` |
+| `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Current` |
 | `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Planned` |
 | `AC-106` | M1 business baseline review and Owner priority decision | `Planned` |
 
@@ -186,6 +186,8 @@ AC-102 publication `0.3.0` establishes the Company-level revenue/cash/cost/oblig
 AC-103 publication `0.1.0` establishes the current Company-level customer lifecycle and five value streams, separating real bespoke client delivery and controlled-pilot evidence from the future flagship lifecycle. Its cross-review closed at `7 of maximum 10`; the key handoff is that acquisition/scoping/commitment, customer iteration and acceptance are strongly Owner-dependent and must be measured rather than assumed in AC-104.
 
 AC-104 publication `0.1.0` separates Owner control from Owner execution and maps the main workload concentrations: universal interpretation, portfolio/priority switching, customer-context continuity, exception/rework handling, local/credential gates, reserved-decision preparation and state reconstruction. Its cross-review closed at `8 of maximum 10` without inventing historical hours, future Positions or AI Assignments. The next risk question is which of these dependencies become material continuity failures when the Owner, a local environment, credential or external dependency is unavailable.
+
+AC-105 publication `0.1.0` establishes the material risk/dependency/continuity baseline across Owner/corporate authority, customer context, credentials, local devices, repositories, customer data, external sources/services, suppliers, banking/accounting, Arvectum OS and replaceable AI/runtime dependencies. Its cross-review closed at `9 of maximum 10`; the baseline distinguishes deliberate authority/security gates from accidental single points of failure, records one-day/one-week/extended Owner-unavailability scenarios, and defines minimum fail-closed/degraded/recovery expectations without inventing RTO/RPO, legal instruments, credential holders or future Positions. The next M1 question is who the first plausible flagship buyer is, what job they need done and what measurable outcome would justify a design-partner engagement.
 
 ### M1 exit criteria
 
@@ -429,12 +431,12 @@ This roadmap records Company-level dependencies and decisions only. Product/OS i
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-105
+## 18. Current action — AC-107
 
-### AC-105 — Material risk, dependency, continuity and fallback baseline
+### AC-107 — Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses
 
 Status: `Current`.
 
-Objective: identify the Company's material operational, authority, data, technology, supplier/vendor, customer-obligation and Owner-dependency risks; determine which failures can stop or materially damage current work; and record minimum continuity/fallback expectations without prematurely designing the Phase 2 organization or implementation stack.
+Objective: identify the first plausible flagship customer segment and buyer, the concrete business job/problem they would hire Arvectum to solve, and measurable outcome hypotheses strong enough to support design-partner discovery without pretending that market demand, pricing, repeatability or willingness to pay have already been validated.
 
-AC-102 provides the financial/obligation boundary, AC-103 provides the current customer/value-stream boundary, and AC-104 provides the Owner/manual-work dependency map. AC-105 should now distinguish deliberate control gates from single points of failure, identify what happens when critical Principals, credentials, local environments, repositories, external services or product dependencies are unavailable, and establish the evidence needed for later continuity, replacement and access-control design.
+AC-101 defines the flagship direction; AC-102 establishes the economic/obligation structure; AC-103 exposes the strongest current delivery/value-stream evidence; AC-104 identifies Owner/workload bottlenecks; and AC-105 establishes the continuity/risk constraints a credible customer offer must respect. AC-107 should use those baselines to narrow the first market hypothesis before AC-108 creates the design-partner criteria and discovery/validation plan.
