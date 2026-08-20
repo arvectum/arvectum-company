@@ -1,14 +1,15 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.12.0`
+Version: `0.13.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-106 — M1 business baseline review and Owner priority decision`
+Current canonical action: `AC-201 — Minimal real organizational/function model`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
+M1 closure decision: `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md`
 
 ## 1. Purpose
 
@@ -166,6 +167,8 @@ Completion evidence remains in the corresponding canonical artifacts, review fil
 
 **Milestone:** `M1 — Business/economic reality and first market-validation plan captured`
 
+**Milestone status:** `Complete / PASS`
+
 Purpose: understand the real Company, economic runway and first credible market path before designing a large internal organization or a customer product from assumptions.
 
 | ID | Work item | Status |
@@ -177,7 +180,7 @@ Purpose: understand the real Company, economic runway and first credible market 
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Complete / PASS` |
 | `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Complete / PASS` |
 | `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Complete / PASS` |
-| `AC-106` | M1 business baseline review and Owner priority decision | `Current` |
+| `AC-106` | M1 business baseline review and Owner priority decision | `Complete / PASS` |
 
 AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER` and `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` `0.2.0`.
 
@@ -191,7 +194,9 @@ AC-105 publication `0.1.0` establishes the material risk/dependency/continuity b
 
 AC-107 publication `0.1.0` establishes the first falsifiable flagship market hypothesis: start with an owner-led B2B company where one recurring information/coordination-heavy function materially depends on owner/senior-manager interpretation and exception handling; treat the Owner/CEO/General Director or equivalent executive as the primary buyer hypothesis; and test whether one bounded function can produce the same or better accepted outcome with materially less scarce management attention while preserving quality, authority, customer sovereignty and fallback. Procurement/tender companies remain one strong subsegment/wedge candidate rather than the Company's strategic identity. The cross-review closed at `9 of maximum 10`; demand, willingness to pay, pricing, implementation duration, ROI and repeatability remain explicitly unvalidated and pass to AC-108.
 
-AC-108 publication `0.1.0` converts those hypotheses into an executable first design-partner market-validation instrument. It defines ten hard qualification gates, an eight-dimension candidate-priority heuristic, Russia-first evidence-oriented sourcing, an `8–12` high-information first discovery loop, a non-leading Russian-first interview script, structured evidence/confidence fields, mapping back to all nine AC-107 hypotheses, confirmation-bias controls, explicit continue/change/stop logic and a two-stage diagnostic/supervised-pilot concept. Its cross-review closed at `9 of maximum 10`. AC-108 deliberately does not claim that any market conversation, willingness to pay, price, ROI, production readiness or design-partner commitment has already occurred. AC-106 must review M1 as a **ready-to-run market-validation baseline**, not as validated demand.
+AC-108 publication `0.1.0` converts those hypotheses into an executable first design-partner market-validation instrument. It defines ten hard qualification gates, an eight-dimension candidate-priority heuristic, Russia-first evidence-oriented sourcing, an `8–12` high-information first discovery loop, a non-leading Russian-first interview script, structured evidence/confidence fields, mapping back to all nine AC-107 hypotheses, confirmation-bias controls, explicit continue/change/stop logic and a two-stage diagnostic/supervised-pilot concept. Its cross-review closed at `9 of maximum 10`. AC-108 deliberately does not claim that any market conversation, willingness to pay, price, ROI, production readiness or design-partner commitment has already occurred. AC-106 reviews M1 as a **ready-to-run market-validation baseline**, not as validated demand.
+
+AC-106 publication `0.1.0` reviews AC-101 through AC-108 as one baseline and closes M1 after `9 of maximum 10` cross-review iterations. The approved priority model is: `P0` protects current material obligations/cash/risk when triggered; `P1` runs bounded AC-108 discovery and Phase 2 reference-model work in parallel; `P2` prioritizes product/OS work tied directly to real obligations, revenue or evidence; `P3` keeps speculative productization/module/platform expansion below evidence-producing work. The first AC-108 loop is authorized as bounded non-binding market discovery; no pilot, price, SLA, production access or customer commitment follows by implication. Remaining market, economics, repeatability, Owner-workload and continuity questions are explicitly empirical and must be measured rather than resolved through further desk analysis.
 
 ### M1 exit criteria
 
@@ -206,6 +211,10 @@ The Owner can answer from evidence:
 - what evidence would make a first external design-partner engagement worth pursuing;
 - which near-term improvements and productization work have the strongest business case.
 
+**M1 result:** `COMPLETE / PASS — achieved 2026-08-20`.
+
+Closure evidence: `docs/business/M1-BUSINESS-BASELINE-REVIEW-AND-PRIORITY.md`, `docs/reviews/AC-106-M1-BUSINESS-BASELINE-CROSS-REVIEW.md` and `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md`.
+
 ## 9. Phase 2 — Arvectum Company reference operating model
 
 **Milestone:** `M2 — Arvectum Company reference operating model and authority established`
@@ -214,7 +223,7 @@ Purpose: derive the minimum real organization from M1 evidence and make it usefu
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-201` | Minimal real organizational/function model | `Planned` |
+| `AC-201` | Minimal real organizational/function model | `Current` |
 | `AC-202` | Reserved Owner Decisions | `Planned` |
 | `AC-203` | Delegated Position authority, approval and escalation model | `Planned` |
 | `AC-204` | Initial Position Registry | `Planned` |
@@ -428,27 +437,34 @@ The following may proceed in parallel when separately authorized and economicall
 - Data Platform investigation;
 - Proxy Launcher productization;
 - Arvectum OS roadmap work;
-- early flagship customer discovery after AC-108;
+- bounded AC-108 flagship customer discovery under the M1 priority decision;
 - Arvectum Company operating-model work.
 
 This roadmap records Company-level dependencies and decisions only. Product/OS implementation roadmaps remain canonical in their repositories.
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-106
+## 18. Current action — AC-201
 
-### AC-106 — M1 business baseline review and Owner priority decision
+### AC-201 — Minimal real organizational/function model
 
 Status: `Current`.
 
-Objective: review AC-101 through AC-108 as one coherent M1 business/economic/market-planning baseline and obtain an explicit Owner decision on the near-term Company sequence.
+Objective: derive the minimum real Company-level function model from M1 evidence before inventing departments, Positions, authority delegations, AI Assignments or software layers.
 
-AC-106 should determine, from the current evidence rather than architecture preference alone:
+AC-201 should determine:
 
-- whether M1 is complete within its declared scope;
-- what the Owner's highest near-term priority is among flagship discovery, current client/revenue obligations, Phase 2 operating-model work and other active portfolio demands;
-- how aggressively the AC-108 discovery instrument should be run in parallel with internal Company development;
-- which M1 assumptions require explicit tracking rather than further desk analysis;
-- whether any material risk, cash/commitment or authority issue blocks progression.
+- which business functions actually exist because Arvectum has real value streams, obligations, control needs, recurring workload or economic responsibility;
+- which functions are Company-level versus product-specific, outsourced/external, customer-owned or Arvectum OS/platform-owned;
+- where the Owner currently carries execution/context that belongs to a durable function rather than to Owner-reserved authority;
+- which functions must exist even if their current executor changes;
+- what accountable outputs and major handoffs each function must own at a minimal useful level;
+- which functions are primarily value creation, control/assurance, shared support or external-interface functions;
+- what should **not** become a separate function/department because the workload or accountability case is insufficient;
+- which internal patterns appear potentially transferable to the flagship method while remaining explicitly non-customer-template assumptions.
 
-AC-106 is an Owner decision point. Analysis and recommendation may be prepared by AI/software, but milestone closure, priority choice, material commitments and any external-action authorization require an explicit action by the authorized Owner/Principal. AC-106 must not describe the AC-108 plan as validated market demand merely because the instrument is complete.
+AC-201 must remain executor-neutral. It does not create final Positions, delegate authority, choose AI/human/software Assignments, grant access or design the detailed customer organization.
+
+The bounded AC-108 discovery loop proceeds in parallel as a P1 market-evidence activity under `DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY`; it is not the primary roadmap status item and creates no pilot/commercial commitment by implication.
+
+The next Phase 2 handoff after AC-201 is `AC-202 — Reserved Owner Decisions`.
