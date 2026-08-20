@@ -1,52 +1,121 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.7.1`
+Version: `0.8.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
-Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
+Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
 Current canonical action: `AC-102 — Revenue, cash, recurring cost and obligation baseline`
+Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
 
 This document is the canonical planning source for Arvectum Company development and organizational sequencing.
 
-Arvectum Company is the concrete AI-native organization of ООО «Арвектум». The roadmap coordinates how that organization is founded, modeled, operated and progressively automated. It is not the roadmap of Arvectum OS and it does not replace product roadmaps.
+Arvectum Company is the concrete AI-native organization of ООО «Арвектум». It is also the first real reference implementation / dogfooding environment for the Company's flagship commercial direction: **customer-specific AI-native company / «ИИ-компания под ключ»**.
 
-The roadmap serves the business. Its objective is not to maximize organizational modeling, governance ceremony, software layers or AI headcount. Its objective is to help build a viable, profitable and governable company in which the owner retains ultimate control while repeatable work is progressively delegated to governed human, AI and software executors.
+The roadmap therefore has two coupled purposes:
 
-Roadmap status does not by itself create Organizational Authority, approve expenditure, authorize an external effect, establish legal or contractual authority, promote an Arvectum OS capability, change a Product Contract, or prove business/customer/production readiness.
+1. build ООО «Арвектум» itself as a viable, profitable, governable AI-native company; and
+2. turn validated organizational patterns, workflows and modules into a reproducible customer solution without confusing Arvectum Company, Arvectum OS and customer organizations.
 
-Future roadmap items are planning hypotheses until activated. Explicit owner priority may reorder work when obligations, risk, client value, cash, continuity or other business evidence requires it; material sequencing changes must be reflected back into this roadmap.
+The roadmap serves the business. It does not maximize organizational modeling, governance ceremony, software layers, module count or AI headcount as goals in themselves.
 
-## 2. Authority and source hierarchy
+Roadmap status does not by itself create Organizational Authority, approve expenditure, authorize an external effect, establish legal or contractual authority, promote an Arvectum OS capability, change a Product Contract, approve a module, or prove business/customer/production readiness.
 
-For Company matters, applicable law, legal/corporate authority, approved Company governance artifacts and explicit owner decisions have priority over this roadmap.
+## 2. Strategic North Star — «ИИ-компания под ключ»
+
+The flagship direction fixed by the Owner is:
+
+> Arvectum designs and deploys an organization-specific AI-native operating model for a customer on top of Arvectum OS: business functions, Positions, authority boundaries, workflows, knowledge, controls and human/AI/software execution, adapted to the customer's real business model and populated with reusable or customer-specific functional modules where justified.
+
+The target transformation is:
+
+```text
+Customer business model
+→ value streams / obligations / risks
+→ functions
+→ Positions / authority / escalation
+→ workflows / knowledge / evidence
+→ reusable + customer-specific modules
+→ human | AI | software Assignments
+→ Governed Execution on Arvectum OS where admitted
+→ measurable operating value
+→ governed learning and improvement
+```
+
+The organization-first law remains:
+
+`Position → Principal → Assignment → Runtime → Governed Execution`
+
+### 2.1 What is reusable and what is not
+
+Arvectum Company is a **reference implementation**, not a literal customer template.
+
+Potentially reusable:
+
+- organizational modeling method;
+- authority/delegation patterns;
+- workflow and evidence patterns;
+- module contracts and validated functional implementations;
+- deployment/configuration methods;
+- continuity, portability and replacement patterns;
+- Arvectum OS domain-neutral capabilities/contracts.
+
+Not reusable by default:
+
+- Arvectum-specific departments or Positions;
+- Owner powers or legal/corporate authority;
+- customer/company data, decisions, history or confidential knowledge;
+- product-domain rules merely because Arvectum uses them internally;
+- technical access as a substitute for Organizational Authority.
+
+### 2.2 Product/module rule
+
+Current products are **not automatically modules**.
+
+A product, workflow or component may become:
+
+- a standalone product;
+- a reference implementation;
+- a reusable functional module;
+- a supporting capability;
+- an incubating OS capability where the OS admission rules are satisfied;
+- or a contained/retired experiment.
+
+That classification requires evidence and a Company/Product/OS decision in the proper scope.
+
+## 3. Authority and source hierarchy
+
+For Company matters, applicable law, legal/corporate authority, approved Company governance artifacts and explicit Owner decisions have priority over this roadmap.
 
 Where Company relies on Arvectum OS, applicable Arvectum OS Constitution, Accepted RFC/ADR, approved governance, Product Contracts and implementation/operational evidence remain binding within their declared scope.
 
 Product-specific implementation remains governed by the corresponding product repository and roadmap.
 
+Customer organizational authority remains with the customer's authorized Principals/governance. Arvectum OS technical permission, Arvectum Company expertise or a deployed AI executor does not create customer corporate authority by implication.
+
 Chat history, model memory and historical discussions are context, not independent canonical authority unless explicitly promoted through an approved path.
 
-## 3. Planning principles
+## 4. Planning principles
 
-The roadmap follows these rules:
+1. **Business first.** Prioritize obligations/risk, operational continuity, client value/revenue, unit economics, scalability and Owner workload.
+2. **Reference implementation, not architecture theater.** Internal Company work must improve the real Company and/or produce evidence useful for the flagship product.
+3. **Market evidence early.** Do not wait for a “finished” internal company before testing ICP, customer jobs, willingness to engage and the implementation/support burden.
+4. **Owner control without Owner bottleneck.** Reserved decisions stay with the Owner; bounded repeatable work moves toward accountable Positions and governed execution.
+5. **Organization before executor.** Define function, Position, authority, workflow and evidence before selecting a human, AI or software runtime.
+6. **No fake headcount or fake modules.** Separate agents are not Positions, and separate repositories are not reusable modules, without distinct responsibility/value and evidence.
+7. **Evidence before productization.** Technical PASS does not prove customer value, repeatability, profitability, compliance or module readiness.
+8. **Reversible evolution.** Prefer the smallest sufficient step with fallback, replacement and stop paths.
+9. **Repository boundaries matter.** Company owns organization/portfolio semantics; products own product implementation/domain logic; OS owns domain-neutral platform contracts/capabilities.
+10. **Technology sovereignty by design.** Critical dependencies must be replaceable and must not own authority, canonical history or the only copy of critical organizational/customer data.
+11. **Customer sovereignty by design.** Customer data, knowledge, decisions and authority remain isolated and governed for that customer unless explicit rights permit otherwise.
+12. **Learning is governed.** Work produces evidence; approved evidence may improve reusable organizational assets. Customer or internal incidents do not silently change production behavior.
+13. **Internal and external loops stay coupled.** Arvectum Company proves the method; customer discovery and deployments test whether the method is commercially valuable and transferable.
 
-1. **Business first.** Prioritize obligations/risk, operational continuity, client value/revenue, unit economics, scalability and owner workload.
-2. **Owner control without owner bottleneck.** Reserved decisions stay with the owner; bounded repeatable work should move to accountable Positions and governed execution.
-3. **Organization before executor.** Define the function, accountable Position, authority, workflow and evidence before choosing human, AI or software runtime.
-4. **No fake headcount.** Separate agents are not separate Positions unless responsibilities, authority and accountable outputs are materially distinct.
-5. **Evidence before scaling.** Technical PASS does not prove business readiness, profitability, compliance or customer readiness.
-6. **Reversible evolution.** Prefer the smallest sufficient step with an explicit fallback, replacement or stop path.
-7. **Repository boundaries matter.** Company owns organization and portfolio semantics; products own product implementation; OS owns domain-neutral platform contracts/capabilities.
-8. **Technology sovereignty by design.** External dependencies must be replaceable and must not own Company authority, canonical history or the only copy of critical organizational knowledge/data.
-9. **Learning is governed.** Work produces evidence; evidence may produce an approved improvement. Incidents, customer feedback or AI suggestions do not silently change production behavior.
-10. **Client work does not wait for organizational perfection.** Real obligations and product delivery may continue in parallel with Company founding work under their existing authority and repositories.
-
-## 4. Status model
+## 5. Status model
 
 Company roadmap work items use:
 
@@ -57,31 +126,29 @@ Company roadmap work items use:
 - `Blocked` — cannot proceed until an explicit blocker is resolved;
 - `Stopped` — deliberately discontinued.
 
-By default there is one primary `Current` Company action. Parallel product/client work is tracked in the relevant product roadmap and portfolio, not duplicated here.
+By default there is one primary `Current` Company action. Parallel product, OS and client work remains in the relevant repository and is referenced rather than duplicated.
 
-Completion requires evidence proportionate to consequence and an update of the applicable canonical source. Percent-complete estimates are avoided unless they have operational meaning.
+Completion requires evidence proportionate to consequence and an update of the applicable canonical source.
 
-## 5. Milestone map
+## 6. Milestone map
 
 | Milestone | Meaning |
 |---|---|
 | `M0` | Company canonically founded |
-| `M1` | Business reality and economics captured |
-| `M2` | Initial operating model and authority established |
-| `M3` | Portfolio governed as Company assets/investments |
-| `M4` | Owner management and core control system established |
-| `M5` | First real governed Company operating contour proven |
-| `M6` | First real AI-held Position proven economically and operationally |
-| `M7` | Multiple Positions operate as one governed organization |
-| `M8` | Evidence-driven AI-native Company scaling |
+| `M1` | Business/economic reality and first market-validation plan captured |
+| `M2` | Arvectum Company reference operating model and authority established |
+| `M3` | Product/module-candidate portfolio governed as investments |
+| `M4` | Owner control and reference-implementation observability established |
+| `M5` | First reusable governed internal operating module proven |
+| `M6` | First AI-held Position proven economically, operationally and replaceably |
+| `M7` | First external AI-company design-partner deployment proven |
+| `M8` | Repeatable multi-customer AI-company product proven and scalable |
 
-## 6. Phase 0 — Founding and canonical boundary
+## 7. Phase 0 — Founding and canonical boundary
 
 **Milestone:** `M0 — Company canonically founded`
 
 **Milestone status:** `Complete / PASS`
-
-Purpose: establish the minimum authoritative foundation before detailed organizational design.
 
 | ID | Work item | Status |
 |---|---|---|
@@ -91,144 +158,115 @@ Purpose: establish the minimum authoritative foundation before detailed organiza
 | `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Complete / PASS` |
 | `AC-005` | Founding baseline cross-review and closure | `Complete / PASS` |
 
-AC-001 completion evidence:
-
-- `docs/constitution/COMPANY-CONSTITUTION.md` — `Ratified 1.0.0`;
-- `docs/reviews/AC-001-COMPANY-CONSTITUTION-CROSS-REVIEW.md` — `PASS`, 6/10 iterations, material consensus reached;
-- `docs/governance/decisions/DECISION-2026-08-19-AC-001-RATIFICATION.md` — explicit Owner approval and amendment reservation.
-
-AC-002 completion evidence:
-
-- `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md` — `Approved 1.0.0`;
-- `docs/reviews/AC-002-COMPANY-OS-AUTHORITY-BOUNDARY-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached;
-- `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md` — explicit Owner approval of exact Proposed `0.9.0` blob and publication authority for `1.0.0`.
-
-AC-003 completion evidence:
-
-- `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md` — `Approved 1.0.0`;
-- `docs/reviews/AC-003-CANONICAL-REPOSITORY-STRUCTURE-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached;
-- `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md` — explicit Owner approval of exact Proposed `0.9.0` blob and publication authority for `1.0.0`.
-
-AC-004 completion evidence:
-
-- `docs/portfolio/PORTFOLIO.md` — `Active 0.1.0` initial Company portfolio map;
-- seven evidence-backed material product/initiative nodes are mapped without copying their implementation roadmaps into the Company repository;
-- Arvectum OS is mapped separately as a shared platform dependency rather than treated as an ordinary Company product;
-- the two currently evidenced OS Product Contracts are referenced with their actual Provisional status and no Stable/Active inference;
-- repository/product identity conflicts, stale product status pointers, product-family overlaps, missing Positions and missing investment/stop-continue criteria are exposed explicitly for later reconciliation rather than silently resolved.
-
-AC-005 completion evidence:
-
-- `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached across the complete AC-001–AC-004 baseline;
-- current legal/corporate source consistency, current Arvectum OS canonical state, repository/source boundaries and portfolio deferrals were re-checked as one system;
-- remaining portfolio identity, Position, investment and Product Contract-locator issues are explicitly contained as later work rather than misrepresented as completed founding governance;
-- `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md` — M0 closure/planning-transition decision;
-- no amendment of AC-001, AC-002, AC-003 or AC-004 was required.
-
-### M0 exit criteria
-
-- Company Constitution / Founding Charter is explicitly approved and canonical;
-- corporate/legal authority is not confused with OS governance;
-- Company ↔ OS ↔ Product ownership boundaries are explicit;
-- repository structure identifies canonical homes for durable Company assets;
-- initial portfolio map exists without copying product roadmaps;
-- no unresolved material founding conflict remains.
-
 **M0 result:** `COMPLETE / PASS — achieved 2026-08-20`.
 
-M0 closure does not imply a completed operating model, delegated-authority matrix, financial baseline, profitable portfolio, production-ready AI workforce or comprehensive compliance state. Those claims require their own later evidence and authority.
+Completion evidence remains in the corresponding canonical artifacts, review files and approval records. M0 does not imply a completed operating model, financial baseline, profitable portfolio, production-ready AI workforce or customer-ready flagship product.
 
-## 7. Phase 1 — Business reality and economic baseline
+## 8. Phase 1 — Business reality, economics and early market evidence
 
-**Milestone:** `M1 — Business reality and economics captured`
+**Milestone:** `M1 — Business/economic reality and first market-validation plan captured`
 
-Purpose: model the Company that actually exists before designing departments or AI workforce.
+Purpose: understand the real Company, economic runway and first credible market path before designing a large internal organization or a customer product from assumptions.
 
 | ID | Work item | Status |
 |---|---|---|
 | `AC-101` | Current business model and value proposition baseline | `Complete / PASS` |
 | `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Current` |
-| `AC-103` | Customer/client lifecycle and real value-stream map | `Planned` |
+| `AC-103` | Current customer/client lifecycle and real value-stream map | `Planned` |
 | `AC-104` | Owner workload, manual work and bottleneck map | `Planned` |
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Planned` |
-| `AC-106` | Business baseline review and owner priority decision | `Planned` |
+| `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Planned` |
+| `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Planned` |
+| `AC-106` | M1 business baseline review and Owner priority decision | `Planned` |
 
-AC-101 completion evidence:
-
-- `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` — corrected `Active 0.2.0` baseline; the initial procurement-centered `0.1.0` interpretation is superseded after explicit Owner correction;
-- the flagship commercial direction is **customer-specific AI-native company / «ИИ-компания под ключ»**: organizational design, Positions/authority/workflows, Arvectum OS substrate, reusable/customer-specific functional modules and governed human/AI/software execution adapted to the customer's business model;
-- Arvectum Company is the first real reference implementation/dogfooding organization for the same organization-first approach rather than a literal org-chart template for customers;
-- Arvectum OS remains the domain-neutral Executable Organizational Model substrate and does not become the source of customer Organizational Authority or customer-specific domain semantics;
-- current products are treated as standalone products, reference implementations and **module candidates**, not automatically admitted modules or platform capabilities;
-- procurement remains a real business/domain line and possible tender/procurement module, but no longer defines the Company's highest-level commercial identity;
-- pricing, implementation economics, ICP, market validation and actual revenue remain unknown/evidence tasks for AC-102/AC-103 rather than being invented;
-- `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` — `PASS`, `10/10` maximum iterations reached; iterations 8–10 explicitly reopened and reconciled the material Owner strategy correction.
-
-AC-101 completion does not approve pricing, capital allocation, module admission, customer commitments, product readiness, organizational Positions/delegation or Arvectum OS lifecycle changes.
+AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER` and `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` `0.2.0`.
 
 ### M1 exit criteria
 
-The owner can answer from canonical evidence:
+The Owner can answer from evidence:
 
-- how the Company currently creates and captures value;
-- where revenue/cash enters and material cost/cash commitments arise;
-- what obligations exist and which workflows are operationally critical;
-- where owner time is consumed or blocks scale;
-- which risks/dependencies can materially interrupt delivery;
-- which near-term improvements have the strongest business case.
+- what business Arvectum is building and how current business lines create/capture value;
+- where real revenue/cash enters and material cost/cash commitments arise;
+- what obligations and continuity risks exist;
+- where Owner time is consumed or blocks scale;
+- what investment burden the flagship direction currently creates;
+- who the first plausible flagship buyer/ICP is and what measurable outcome the offer should create;
+- what evidence would make a first external design-partner engagement worth pursuing;
+- which near-term improvements and productization work have the strongest business case.
 
-## 8. Phase 2 — Initial operating model and authority
+## 9. Phase 2 — Arvectum Company reference operating model
 
-**Milestone:** `M2 — Initial operating model and authority established`
+**Milestone:** `M2 — Arvectum Company reference operating model and authority established`
 
-Purpose: derive the minimum organization from real work rather than from a speculative org chart.
+Purpose: derive the minimum real organization from M1 evidence and make it useful both for operating ООО «Арвектум» and for learning what is transferable to customer organizations.
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-201` | Minimal organizational/function model | `Planned` |
+| `AC-201` | Minimal real organizational/function model | `Planned` |
 | `AC-202` | Reserved Owner Decisions | `Planned` |
 | `AC-203` | Delegated Position authority, approval and escalation model | `Planned` |
 | `AC-204` | Initial Position Registry | `Planned` |
 | `AC-205` | Initial Assignments and executor classification | `Planned` |
 | `AC-206` | Company data/tool/credential access boundary baseline | `Planned` |
 | `AC-207` | Critical-function continuity, replacement and manual fallback baseline | `Planned` |
-| `AC-208` | Initial operating model cross-review and closure | `Planned` |
+| `AC-208` | Reference-model transferability boundary and operating-model cross-review | `Planned` |
+
+AC-208 must explicitly separate:
+
+- Arvectum-specific organizational facts;
+- reusable organization-design patterns;
+- reusable workflow/authority patterns;
+- product/module candidates;
+- OS-domain-neutral semantics;
+- customer-specific semantics that must be re-derived for each customer.
 
 ### M2 exit criteria
 
 - every modeled Position exists because of real business responsibility, workload, control need or economic value;
-- accountable outputs and authority boundaries are explicit;
-- owner-reserved decisions are distinguishable from delegated and automatic execution;
-- humans, AI and software are Assignments/executors rather than sources of authority;
+- authority and escalation boundaries are explicit;
+- humans, AI and software remain Assignments/executors rather than authority sources;
 - sensitive access and critical fallback paths are bounded;
-- replacing an executor does not destroy the Position or its history.
+- replacing an executor does not destroy Position meaning/history;
+- the Company can explain what parts of its operating model are evidence for the flagship method and what parts must **not** be copied into a customer organization.
 
-## 9. Phase 3 — Portfolio governance
+## 10. Phase 3 — Product and reusable module-candidate governance
 
-**Milestone:** `M3 — Portfolio governed as Company assets/investments`
+**Milestone:** `M3 — Product/module-candidate portfolio governed as investments`
 
-Purpose: turn repositories/products into explicit Company-owned portfolio nodes without moving product implementation into the Company repository.
+Purpose: decide how existing products and initiatives relate to the flagship offer without turning every repository into a module or every reusable component into Arvectum OS.
 
 | ID | Work item | Status |
 |---|---|---|
 | `AC-301` | Portfolio product/node identity and ownership reconciliation | `Planned` |
 | `AC-302` | Accountable Position for each active product/initiative | `Planned` |
 | `AC-303` | Investment, cost/risk boundary and stop/continue criteria | `Planned` |
-| `AC-304` | Cross-product dependencies and Product Contract reconciliation | `Planned` |
-| `AC-305` | Portfolio prioritization and capital/owner-attention model | `Planned` |
-| `AC-306` | Portfolio governance review and closure | `Planned` |
+| `AC-304` | Standalone product vs reference implementation vs module-candidate vs OS-capability boundary | `Planned` |
+| `AC-305` | Cross-product/module dependencies and Product Contract reconciliation | `Planned` |
+| `AC-306` | Portfolio/module prioritization and capital/Owner-attention model | `Planned` |
+| `AC-307` | Portfolio/module governance review and closure | `Planned` |
+
+A reusable module must eventually have, proportionate to risk and maturity:
+
+- a concrete organizational function/job;
+- accountable ownership;
+- defined inputs/outputs and authority assumptions;
+- data/tool boundaries;
+- workflow/evidence semantics;
+- configuration versus customer-specific customization boundary;
+- quality/cost/risk evidence;
+- dependencies and OS reliance where applicable;
+- version/upgrade/retirement path;
+- replacement/fallback path.
 
 ### M3 exit criteria
 
-For every active material product/initiative, Company knows its purpose, accountable owner/Position, strategic or economic hypothesis, investment boundary, material dependencies, current milestone source and continue/change/stop criteria.
+For every material node, Company knows whether it is being treated as a standalone product, reference implementation, module candidate, supporting capability, experiment or retirement candidate; knows its investment boundary and accountable Position; and does not confuse product-domain reuse with OS platform admission.
 
-Product roadmaps remain canonical for product implementation details.
+## 11. Phase 4 — Owner control and reference observability
 
-## 10. Phase 4 — Owner management and core controls
+**Milestone:** `M4 — Owner control and reference-implementation observability established`
 
-**Milestone:** `M4 — Owner management and core control system established`
-
-Purpose: let the owner understand and direct the Company without reconstructing state from chats, repositories and personal memory.
+Purpose: let the Owner run Arvectum without reconstructing state from chats/repositories and create observable evidence about whether the AI-native organizational model actually works.
 
 | ID | Work item | Status |
 |---|---|---|
@@ -236,48 +274,51 @@ Purpose: let the owner understand and direct the Company without reconstructing 
 | `AC-402` | Decision, approval and escalation register model | `Planned` |
 | `AC-403` | Risk, exception and incident register model | `Planned` |
 | `AC-404` | Cash, commitment and management reporting baseline | `Planned` |
-| `AC-405` | Portfolio/priority review cadence | `Planned` |
-| `AC-406` | Owner Mission Control / unified management view | `Planned` |
+| `AC-405` | Portfolio/module/priority review cadence | `Planned` |
+| `AC-406` | Owner Mission Control / reference-implementation evidence view | `Planned` |
 | `AC-407` | Management operating cadence and control review | `Planned` |
 
-Implementation may initially be simple. A software dashboard is not required until evidence shows that it creates enough value.
+Software dashboards are not required until they create sufficient value. Manual/simpler controls are acceptable when reliable and proportionate.
 
 ### M4 exit criteria
 
-The owner has a reliable view of material work, obligations, cash/commitments, risks/exceptions, decisions awaiting authority, product priorities and operational health, with canonical drill-down to supporting evidence where appropriate.
+The Owner can see material work, obligations, cash/commitments, risks/exceptions, pending decisions, product/module priorities, operational health and evidence needed to evaluate the internal reference implementation.
 
-## 11. Phase 5 — First governed Company operating contour
+## 12. Phase 5 — First reusable governed internal operating module
 
-**Milestone:** `M5 — First real governed Company operating contour proven`
+**Milestone:** `M5 — First reusable governed internal operating module proven`
 
-Purpose: connect the organizational model to real work through the smallest high-value repeatable workflow.
+Purpose: connect the organizational model to one real recurring Company workflow selected for both internal business value and useful flagship-product learning.
 
-The first workflow is **not predetermined**. It must be selected from M1/M2 evidence using business value, workload, repeatability, risk, reversibility, evidence quality and owner-time reduction.
+The first workflow/module is **not predetermined**. Selection uses M1/M2/M3 evidence: business value, workload, repeatability, transferability, risk, reversibility, evidence quality and Owner-time reduction.
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-501` | First governed workflow candidate selection | `Planned` |
-| `AC-502` | Workflow, accountable Position, authority/data/evidence contract | `Planned` |
+| `AC-501` | First governed workflow/module candidate selection | `Planned` |
+| `AC-502` | Workflow, Position, authority/data/evidence contract | `Planned` |
 | `AC-503` | Arvectum OS reliance/admission mapping where applicable | `Planned` |
-| `AC-504` | Bounded workflow implementation | `Planned` |
+| `AC-504` | Bounded internal implementation | `Planned` |
 | `AC-505` | Supervised real-operation proof | `Planned` |
 | `AC-506` | Incident, uncertain-outcome, recovery and fallback drill | `Planned` |
-| `AC-507` | Business-value/economic review and continue/change/stop decision | `Planned` |
+| `AC-507` | Business-value, transferability and economics review | `Planned` |
+| `AC-508` | Reusable module candidate package or explicit non-reuse decision | `Planned` |
 
 ### M5 exit criteria
 
 - a real recurring Company workflow runs through explicit Position/authority semantics;
 - consequential effects remain within approved authority;
-- material actions/evidence can be reconstructed;
-- failure has an explicit safe fallback/recovery path;
-- owner workload, quality, cost or risk shows sufficient benefit to justify continuation;
-- no broader OS/Product lifecycle or readiness claim is inferred from the proof.
+- material execution/evidence is reconstructable;
+- failure has a safe fallback/recovery path;
+- internal value is measurable enough to justify continuation;
+- reusable versus Arvectum-specific semantics are explicit;
+- the result is either promoted to a governed module candidate through the proper scope or explicitly retained as Company-specific work;
+- no OS Active/customer-ready claim is inferred from internal success.
 
-## 12. Phase 6 — First real AI-held Position
+## 13. Phase 6 — First real AI-held Position
 
-**Milestone:** `M6 — First real AI-held Position proven economically and operationally`
+**Milestone:** `M6 — First AI-held Position proven economically, operationally and replaceably`
 
-Purpose: delegate a real Company responsibility to AI only after the function and authority boundary are proven.
+Purpose: prove that a real organizational responsibility can be predominantly executed by AI without making AI the source of authority or organizational continuity.
 
 | ID | Work item | Status |
 |---|---|---|
@@ -287,93 +328,125 @@ Purpose: delegate a real Company responsibility to AI only after the function an
 | `AC-604` | Quality/evaluation, cost and risk gates | `Planned` |
 | `AC-605` | Supervised AI Position pilot | `Planned` |
 | `AC-606` | Human/software fallback and executor-replacement proof | `Planned` |
-| `AC-607` | Value, owner-workload and risk review | `Planned` |
+| `AC-607` | Value, Owner-workload, module-reuse and risk review | `Planned` |
 
 ### M6 exit criteria
 
-A real Position is predominantly executed by AI with measurable value, bounded authority, attributable work, acceptable quality/cost/risk, and a proven replacement/fallback path. AI recommendation, execution or output does not become owner approval by implication.
+A real Position is predominantly executed by AI with measurable value, bounded authority, attributable work, acceptable quality/cost/risk and proven replacement/fallback. The result provides credible evidence for customer module design but does not imply external readiness automatically.
 
-## 13. Phase 7 — Multi-Position AI-native operation
+## 14. Phase 7 — First external AI-company design-partner deployment
 
-**Milestone:** `M7 — Multiple Positions operate as one governed organization`
+**Milestone:** `M7 — First external AI-company design-partner deployment proven`
 
-Purpose: scale from one successful delegation to coordinated human/AI/software execution without creating fake organizational complexity.
+Purpose: test whether the organization-first method transfers from Arvectum Company to a real external organization and creates customer value without creating uncontrolled customization, authority, security or support obligations.
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-701` | Select additional delegations from evidence | `Future` |
-| `AC-702` | Cross-Position workflow and handoff model | `Future` |
-| `AC-703` | Workforce/Assignment directory and continuity history | `Future` |
-| `AC-704` | Coordination, supervision and approval handling where justified | `Future` |
-| `AC-705` | Workforce resource/budget governance | `Future` |
-| `AC-706` | Multi-executor continuity and replacement drills | `Future` |
-| `AC-707` | Multi-Position operating review | `Future` |
+| `AC-701` | Select first design partner from AC-108 evidence | `Future` |
+| `AC-702` | Customer business/value-stream/obligation discovery | `Future` |
+| `AC-703` | Customer functions, Positions, authority and escalation model | `Future` |
+| `AC-704` | Customer data/security/sovereignty/access boundary | `Future` |
+| `AC-705` | Module configuration, gap analysis and customer-specific module scope | `Future` |
+| `AC-706` | Arvectum OS Product Contract/reliance/admission mapping | `Future` |
+| `AC-707` | Bounded supervised customer deployment | `Future` |
+| `AC-708` | Acceptance, support, continuity, replacement and portability proof | `Future` |
+| `AC-709` | Customer-value, implementation-economics and continue/change/stop review | `Future` |
 
 ### M7 exit criteria
 
-Multiple real Positions execute coordinated workflows with clear accountability, authority, evidence and resource boundaries while the owner retains effective control and does not become the routine execution bottleneck.
+- one real customer organization is modeled from its own business rather than cloned from Arvectum;
+- customer Organizational Authority remains with authorized customer Principals;
+- reused modules and customer-specific extensions have explicit boundaries;
+- customer data/knowledge/history remain isolated and portable;
+- deployment can be supported, recovered and exited without hidden vendor lock-in;
+- measurable customer value and implementation/support effort are recorded;
+- the Owner has an evidence-backed decision whether the flagship should continue, change scope or stop.
 
-## 14. Phase 8 — Evidence-driven scale
+## 15. Phase 8 — Repeatable multi-customer AI-company product
 
-**Milestone:** `M8 — Evidence-driven AI-native Company scaling`
+**Milestone:** `M8 — Repeatable multi-customer AI-company product proven and scalable`
 
 Status: `Future`.
 
-Scaling is driven by business capacity and economics, not a target number of agents. A trajectory such as 10 → 25 → 50 → 100 Positions is directional only and must not become a vanity KPI or fake headcount target.
+Purpose: turn one successful external deployment into a repeatable product rather than a consultancy project that must be reinvented from scratch for every customer.
 
-Future scaling may include:
+| ID | Work item | Status |
+|---|---|---|
+| `AC-801` | Standard discovery and organization-configuration methodology | `Future` |
+| `AC-802` | Reusable organizational pattern/blueprint library without fixed org-chart cloning | `Future` |
+| `AC-803` | Governed module catalog, versioning, compatibility and retirement model | `Future` |
+| `AC-804` | Packaging, pricing, implementation and support unit economics | `Future` |
+| `AC-805` | Deployment, upgrade, migration, backup, exit and portability path | `Future` |
+| `AC-806` | Multi-customer isolation, security, privacy and rights model | `Future` |
+| `AC-807` | Sales/onboarding/implementation capacity model | `Future` |
+| `AC-808` | Second/third customer repeatability evidence | `Future` |
+| `AC-809` | Scale review and capital/organization decision | `Future` |
 
-- broader delegation where workload/economics justify it;
-- stronger cross-functional coordination and quality control;
-- resource/model/tool routing where complexity makes it valuable;
-- resilience, portability and disaster-recovery hardening;
-- security/privacy/compliance hardening proportionate to customers and data;
-- readiness for regulated or public-sector use only after current official requirements are verified;
-- additional products, markets and organizational units when supported by strategy and economics.
+Scaling is driven by customer value, repeatability, economics, support burden, risk and Owner capacity — not by a target number of agents or customer organizations.
 
-M8 has no fixed end state. The Company should stop adding organizational or technical complexity whenever marginal business value no longer justifies cost, risk or owner attention.
+### M8 exit criteria
 
-## 15. Parallel work and repository boundaries
+The Company can repeatedly configure and deploy customer-specific AI-native organizations with substantially less reinvention than the first deployment, while preserving customer authority/sovereignty, module/OS boundaries, portability, acceptable implementation/support economics and measurable value.
 
-Company founding work does not suspend real product/client obligations.
+## 16. Coupled internal ↔ external learning loop
+
+The flagship product should compound through this loop:
+
+```text
+Arvectum Company real work
+→ governed execution and evidence
+→ validated organizational pattern/module candidate
+→ product/module review
+→ external customer discovery/deployment
+→ customer value/support/economic evidence
+→ validated improvement
+→ improved method/module/Company operation
+```
+
+Customer feedback or internal convenience does not automatically change reusable modules, OS contracts, Company governance or production behavior. Promotion remains governed.
+
+## 17. Parallel work and repository boundaries
 
 The following may proceed in parallel when separately authorized and economically justified:
 
-- client delivery and fixes in product repositories;
-- Data Platform development;
-- Tender Agent product evolution;
-- Marketing Agent/product evolution;
+- current client delivery and fixes in product repositories;
+- Tender Agent and procurement-domain evolution;
+- Creative Test Agent / marketing-domain evolution;
+- parser/product work;
+- Data Platform investigation;
+- Proxy Launcher productization;
 - Arvectum OS roadmap work;
-- Company founding and operating-model work.
+- early flagship customer discovery after AC-107/AC-108;
+- Arvectum Company operating-model work.
 
-This roadmap records Company-level dependencies and decisions only. It must not duplicate detailed tasks from product or OS roadmaps.
+This roadmap records Company-level dependencies and decisions only. Product/OS implementation roadmaps remain canonical in their repositories.
 
-A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
+A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 16. Current action — AC-102
+## 18. Current action — AC-102
 
 ### AC-102 — Revenue, cash, recurring cost and obligation baseline
 
 Status: `Current`.
 
-Objective: establish the first evidence-backed financial/commitment baseline for the corrected business model fixed by AC-101, using authoritative financial, accounting, banking, contract and operational sources without turning this public repository into the store for sensitive live financial data.
+Objective: establish the first evidence-backed financial/commitment baseline for the corrected flagship direction and current business lines, without inventing financial truth or turning this public repository into the store for sensitive live financial data.
 
 Minimum scope:
 
-- trace actual LLC revenue/cash receipts to current business lines where evidence permits, distinguishing invoiced/accrued/contracted value from cash actually received;
-- distinguish current ООО «Арвектум» financial activity from historical/client work that may have occurred before incorporation or outside the LLC and must not be attributed by assumption;
-- identify current recurring and material non-recurring operating costs relevant to management decisions, including Arvectum Company, Arvectum OS, module/product development, software/infrastructure and administration where evidence exists;
-- identify known tax, supplier, contractor, customer, financing, guarantee, subscription and other material payment/obligation classes without copying restricted payloads into the public repository;
-- capture procurement working-capital/cash-gap exposure where that business line creates a timing difference between outgoing supplier/fulfilment cash and incoming customer cash;
-- identify current investment burden behind the flagship «ИИ-компания под ключ» direction without assuming it is already revenue-producing;
-- record due dates, recurring cadence, uncertainty and authoritative source locators at a level safe for the repository, while keeping bank/accounting/contract originals in their proper canonical systems;
-- separate actual figures, estimates and unknowns; do not fabricate numbers to make the model complete;
-- identify which current business lines produce cash, consume cash or remain pre-revenue where evidence supports that classification;
-- produce enough management-level evidence for AC-103/AC-106 without prematurely deciding product/module investment and stop/continue criteria that belong to Phase 3;
-- preserve the public-repository safety boundary from AC-003: no bank account details, personal data, confidential contract payloads, credentials or unnecessarily sensitive transaction detail in Git.
+- trace actual ООО «Арвектум» revenue/cash receipts to current business lines where evidence permits;
+- distinguish contracted/invoiced/accrued value from cash actually received;
+- distinguish current LLC activity from historical/client work before incorporation or outside the LLC;
+- identify current recurring and material non-recurring costs across Company, OS, product/module development, software/infrastructure and administration;
+- identify known tax, supplier, contractor, customer, financing, guarantee, subscription and other material obligation classes;
+- capture procurement working-capital/cash-gap exposure where applicable without treating procurement as the Company center;
+- identify current investment burden behind «ИИ-компания под ключ», including currently pre-revenue internal work where evidence supports that classification;
+- distinguish real figures, estimates and unknowns;
+- identify which current activities produce cash, consume cash or are pre-revenue;
+- preserve the AC-003 public-repository safety boundary: no bank account details, confidential transaction/contract payloads, personal data, credentials or unnecessary sensitive figures in Git;
+- preserve authoritative banking/accounting/contract sources as external systems of record, using safe summaries/locators in this repository.
 
-Expected artifact home: `docs/business/`. Sensitive live financial evidence may remain in owner-controlled banking/accounting/contract systems or another explicitly approved private authoritative store, with this repository containing only safe summaries, models and locators.
+Expected artifact home: `docs/business/`.
 
-Acceptance requires a coherent current revenue/cash/cost/obligation baseline that is sufficient for the Owner to distinguish real economic activity from the flagship product direction and to continue M1 without inventing financial truth.
+Acceptance requires a coherent current revenue/cash/cost/obligation baseline sufficient for the Owner to distinguish economic reality from strategic product intent and to continue M1 without guessing.
 
-When AC-102 is complete, advance to `AC-103 — Customer/client lifecycle and real value-stream map` unless an explicit higher-priority business obligation requires a recorded sequencing change.
+When AC-102 is complete, advance to `AC-103 — Current customer/client lifecycle and real value-stream map` unless an explicit higher-priority business obligation requires a recorded sequencing change.
