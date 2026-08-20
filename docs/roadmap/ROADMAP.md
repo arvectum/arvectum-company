@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.3.0`
+Version: `0.4.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
-Current canonical action: `AC-003 — Canonical repository structure and artifact map`
+Current canonical action: `AC-004 — Initial docs/portfolio/PORTFOLIO.md`
 
 ## 1. Purpose
 
@@ -85,8 +85,8 @@ Purpose: establish the minimum authoritative foundation before detailed organiza
 |---|---|---|
 | `AC-001` | Company Constitution / Founding Charter | `Complete / PASS` |
 | `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Complete / PASS` |
-| `AC-003` | Canonical repository structure and artifact map | `Current` |
-| `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Planned` |
+| `AC-003` | Canonical repository structure and artifact map | `Complete / PASS` |
+| `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Current` |
 | `AC-005` | Founding baseline cross-review and closure | `Planned` |
 
 AC-001 completion evidence:
@@ -100,6 +100,12 @@ AC-002 completion evidence:
 - `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md` — `Approved 1.0.0`;
 - `docs/reviews/AC-002-COMPANY-OS-AUTHORITY-BOUNDARY-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached;
 - `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md` — explicit Owner approval of exact Proposed `0.9.0` blob and publication authority for `1.0.0`.
+
+AC-003 completion evidence:
+
+- `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md` — `Approved 1.0.0`;
+- `docs/reviews/AC-003-CANONICAL-REPOSITORY-STRUCTURE-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached;
+- `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md` — explicit Owner approval of exact Proposed `0.9.0` blob and publication authority for `1.0.0`.
 
 ### M0 exit criteria
 
@@ -309,22 +315,22 @@ This roadmap records Company-level dependencies and decisions only. It must not 
 
 A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
 
-## 16. Current action — AC-003
+## 16. Current action — AC-004
 
-### AC-003 — Canonical repository structure and artifact map
+### AC-004 — Initial `docs/portfolio/PORTFOLIO.md`
 
 Status: `Current`.
 
-Objective: define the smallest durable Company repository structure and artifact map so each significant Company information class has an explicit canonical home without duplicating product repositories or prematurely forcing Company state into Arvectum OS.
+Objective: create the initial Company portfolio map so active products and initiatives have explicit Company-level identity, strategic role, accountable ownership, dependencies and current canonical implementation sources without copying product roadmaps into this repository.
 
 Minimum scope:
 
-- identify durable Company artifact classes needed for the current roadmap;
-- assign canonical repository paths/homes for Constitution, governance decisions, authority artifacts, roadmap, portfolio, reviews and later organizational/operational assets;
-- distinguish canonical artifacts, evidence/reviews, convenience snapshots and generated/transient outputs;
-- identify which future artifact classes remain repository-first, which may later become OS-native, and which remain external/product-owned;
-- define naming/version/status conventions only to the extent needed for reliable navigation and change control;
-- preserve the AC-002 rule that migration of a Company artifact into OS canonical state is a separate governed change;
-- avoid creating empty departments, fake Positions or speculative policy trees merely to make the repository look complete.
+- identify the active material product/initiative nodes currently owned or sponsored by Arvectum Company;
+- record each node's business purpose and portfolio role at the Company level;
+- identify its canonical product repository and roadmap/decision source where one exists;
+- record known Company↔Product↔Arvectum OS dependencies without inventing new cross-repository commitments;
+- distinguish current products, experiments and infrastructure/platform initiatives where materially relevant;
+- record accountable ownership at the level currently justified, without prematurely creating Positions that belong to AC-204;
+- expose known gaps, unresolved identities or portfolio ambiguities for later reconciliation.
 
-Acceptance requires an explicit repository/artifact map sufficient to support AC-004 and later Company governance without conflicting canonical homes or hidden Company↔OS/Product ownership changes.
+Acceptance requires an initial `docs/portfolio/PORTFOLIO.md` sufficient to support AC-005 and later portfolio-governance work while keeping product implementation authority in the corresponding product repositories.
