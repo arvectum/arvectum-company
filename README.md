@@ -15,6 +15,7 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - AC-202 Reserved Owner Decisions: `docs/governance/RESERVED-OWNER-DECISIONS-v1.0.0.md`
 - AC-203 delegated Position authority model: `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md`
 - AC-204 Initial Position Registry: `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md`
+- AC-205 Initial Assignments: `docs/organization/INITIAL-ASSIGNMENTS-AND-EXECUTOR-CLASSIFICATION-v1.0.0.md`
 - Formal review evidence: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
 
@@ -22,7 +23,7 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 `M0 — Company canonically founded` and `M1 — Business/economic reality and first market-validation plan captured` are `Complete / PASS`.
 
-Phase 2 has established the organization-first chain through concrete Position definitions:
+Phase 2 has now established the organization-first chain through initial executor realization:
 
 ```text
 AC-201 functions
@@ -35,24 +36,26 @@ AC-201 functions
 → AC-208 transferability review
 ```
 
-`AC-204 — Initial Position Registry` is `Complete / PASS` after `10/10` cross-review iterations and explicit Owner approval.
+`AC-205 — Initial Assignments and executor classification` is `Complete / PASS` after `9/10` cross-review iterations and explicit Owner approval.
 
-The approved initial Position set is:
+The approved initial realization is:
 
-1. `POS-001 — Company Executive` — Company direction/integration plus organizational state/evidence (`F-01 + F-07`);
-2. `POS-002 — Commercial & Customer Lead` — discovery through delivery/acceptance (`F-02 + F-03`);
-3. `POS-003 — Portfolio & Product Lead` — portfolio/product/workstream stewardship (`F-04`);
-4. `POS-004 — Engineering & Release Lead` — engineering/automation/QA/release (`F-05`);
-5. `POS-005 — Finance & Obligation Control Lead` — management finance, cash and obligations (`F-06`);
-6. `POS-006 — Security, Risk & Continuity Lead` — security, access, risk, dependency and continuity (`F-08`).
+1. `POS-001 — Company Executive` — Hybrid: Owner human Position holder + AI advisory/preparation;
+2. `POS-002 — Commercial & Customer Lead` — Hybrid: Owner accountable + AI prospect search/research/qualification/drafting/bounded approved outreach + outsourced accounting support + conditional future live-seller Assignments;
+3. `POS-003 — Portfolio & Product Lead` — Hybrid: Owner judgment/direct proposals + AI synthesis/advice;
+4. `POS-004 — Engineering & Release Lead` — AI-led for bounded admitted technical work;
+5. `POS-005 — Finance & Obligation Control Lead` — Owner human Position holder + outsourced accounting/tax external-service interface;
+6. `POS-006 — Security, Risk & Continuity Lead` — Hybrid: Owner bounded judgment/direct proposals + AI analysis/advice.
 
-These are six durable accountability boundaries, **not six employees or six AI agents**. Owner, participant/general-meeting competence and General Director legal office remain separate authority capacities. Assignments of human/AI/software executors are intentionally deferred to AC-205.
+This is an initial executor map, not a fixed staffing plan. Future sellers are not active until actually engaged and assigned. Outsourced accounting remains an external professional interface rather than Company Organizational Authority. A particular AI model/agent/runtime is replaceable and is not the Position itself.
 
-Approved AC-202 `ROD-01` through `ROD-09` remain the hard Owner-reserved boundary. AC-203 defines `AM-0` through `AM-4`; the initial AC-204 Position ceiling is deliberately limited to `AM-0`, `AM-1` and `AM-2` until downstream Assignment, access and workflow evidence exists.
+Approved AC-202 `ROD-01` through `ROD-09` remain the hard Owner-reserved boundary. AC-205 creates no `AM-3` or `AM-4`, legal/corporate/customer/Product/OS authority or technical access.
 
 The current canonical Company action is:
 
-**`AC-205 — Initial Assignments and executor classification`**.
+**`AC-206 — Company data/tool/credential access boundary baseline`**.
+
+AC-206 will derive least-privilege data/tool/credential access from the approved Position and Assignment model while keeping credential possession separate from authority and keeping secrets out of this public repository.
 
 The bounded AC-108 design-partner discovery loop remains separately authorized P1 market-evidence work and does not imply a pilot, price, SLA, privileged access or customer commitment.
 
