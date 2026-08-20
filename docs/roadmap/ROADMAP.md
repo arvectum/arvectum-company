@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.2.0`
+Version: `0.3.0`
 Created: `2026-08-19`
-Updated: `2026-08-19`
+Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
-Current canonical action: `AC-002 — Company ↔ Arvectum OS authority and responsibility boundary`
+Current canonical action: `AC-003 — Canonical repository structure and artifact map`
 
 ## 1. Purpose
 
@@ -84,8 +84,8 @@ Purpose: establish the minimum authoritative foundation before detailed organiza
 | ID | Work item | Status |
 |---|---|---|
 | `AC-001` | Company Constitution / Founding Charter | `Complete / PASS` |
-| `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Current` |
-| `AC-003` | Canonical repository structure and artifact map | `Planned` |
+| `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Complete / PASS` |
+| `AC-003` | Canonical repository structure and artifact map | `Current` |
 | `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Planned` |
 | `AC-005` | Founding baseline cross-review and closure | `Planned` |
 
@@ -94,6 +94,12 @@ AC-001 completion evidence:
 - `docs/constitution/COMPANY-CONSTITUTION.md` — `Ratified 1.0.0`;
 - `docs/reviews/AC-001-COMPANY-CONSTITUTION-CROSS-REVIEW.md` — `PASS`, 6/10 iterations, material consensus reached;
 - `docs/governance/decisions/DECISION-2026-08-19-AC-001-RATIFICATION.md` — explicit Owner approval and amendment reservation.
+
+AC-002 completion evidence:
+
+- `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md` — `Approved 1.0.0`;
+- `docs/reviews/AC-002-COMPANY-OS-AUTHORITY-BOUNDARY-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached;
+- `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md` — explicit Owner approval of exact Proposed `0.9.0` blob and publication authority for `1.0.0`.
 
 ### M0 exit criteria
 
@@ -303,22 +309,22 @@ This roadmap records Company-level dependencies and decisions only. It must not 
 
 A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
 
-## 16. Current action — AC-002
+## 16. Current action — AC-003
 
-### AC-002 — Company ↔ Arvectum OS authority and responsibility boundary
+### AC-003 — Canonical repository structure and artifact map
 
 Status: `Current`.
 
-Objective: make the Company/OS boundary explicit enough that future Company organizational design can use Arvectum OS without treating the platform as a source of corporate authority and without pushing Company-specific semantics into the domain-neutral platform.
+Objective: define the smallest durable Company repository structure and artifact map so each significant Company information class has an explicit canonical home without duplicating product repositories or prematurely forcing Company state into Arvectum OS.
 
 Minimum scope:
 
-- identify Company-owned organizational semantics and authority sources;
-- identify OS-owned domain-neutral platform contracts/capabilities;
-- distinguish legal/corporate authority, Company Organizational Authority, OS governance authority and technical authorization;
-- define what Company may rely on from OS and under which Product Contract/Governed Execution boundaries;
-- define conflict/reconciliation and cross-repository change paths;
-- preserve product-specific ownership and prevent hidden Company→OS or OS→Company commitments;
-- identify any unresolved boundary questions that must be escalated before AC-003.
+- identify durable Company artifact classes needed for the current roadmap;
+- assign canonical repository paths/homes for Constitution, governance decisions, authority artifacts, roadmap, portfolio, reviews and later organizational/operational assets;
+- distinguish canonical artifacts, evidence/reviews, convenience snapshots and generated/transient outputs;
+- identify which future artifact classes remain repository-first, which may later become OS-native, and which remain external/product-owned;
+- define naming/version/status conventions only to the extent needed for reliable navigation and change control;
+- preserve the AC-002 rule that migration of a Company artifact into OS canonical state is a separate governed change;
+- avoid creating empty departments, fake Positions or speculative policy trees merely to make the repository look complete.
 
-Acceptance requires reconciliation with the Ratified Company Constitution `1.0.0`, current canonical Arvectum OS Constitution/RFC state, applicable Company legal/corporate authority, role-based cross-review proportionate to consequence, explicit Owner approval where the resulting boundary creates or reserves material Company authority, and canonical repository publication.
+Acceptance requires an explicit repository/artifact map sufficient to support AC-004 and later Company governance without conflicting canonical homes or hidden Company↔OS/Product ownership changes.
