@@ -1,22 +1,22 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `2.0.0`
+Version: `2.1.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 
 ## 1. Canonical publication model
 
-This registry publication preserves the complete source registry `1.9.0` by immutable git-blob reference and applies the AC-203 registration delta below.
+This registry publication preserves the complete source registry `2.0.0` by immutable git-blob reference and applies the AC-204 registration delta below.
 
 Incorporated prior registry:
 
-- version: `1.9.0`;
+- version: `2.0.0`;
 - path: `docs/CANONICAL-SOURCES.md`;
-- immutable blob SHA: `4cc8a946ec60e8971febf8fd4a1793abcb5eb09c`.
+- immutable blob SHA: `61185c32df7ef09bdd5fa9afbb51ce6e22ba627c`.
 
-All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201/AC-202 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
+All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201/AC-202/AC-203 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
 
 Authority remains:
 
@@ -27,46 +27,49 @@ Authority remains:
 5. roadmaps as planning coordination rather than independent authority;
 6. chats, model memory, generated packs and local copies as non-canonical context unless explicitly promoted.
 
-## 2. AC-203 canonical registration
+## 2. AC-204 canonical registration
 
 The following artifacts are added to the active Company canonical/evidence set:
 
 | Source | Status | Role |
 |---|---|---|
-| `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md` | Approved `1.0.0` | Binding Company-wide delegated Position authority, approval and escalation model; incorporates the exact reviewed `0.9.0` proposal by immutable blob reference |
-| `docs/governance/decisions/DECISION-2026-08-20-AC-203-APPROVAL.md` | Approved | Explicit Owner approval record for AC-203 and publication authority for `1.0.0` |
-| `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL.md` | Historical reviewed proposal `0.9.0` | Exact reviewed proposal preserved at blob `ba89771f7b3ead7f70b0482f06d7d04bc68df2ea`; incorporated in full by the Approved `1.0.0` publication |
-| `docs/reviews/AC-203-DELEGATED-POSITION-AUTHORITY-CROSS-REVIEW.md` | Complete / PASS | AC-203 cross-review, `9 of maximum 10`, validating executor-neutral Position authority, five authority modes, AC-202 negative boundary, explicit escalation and downstream AC-204 handoff |
-| `docs/roadmap/ROADMAP.md` | Active `0.16.0` | Canonical Company planning publication; AC-203 Complete / PASS and AC-204 Current |
+| `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md` | Approved `1.0.0` | Binding Initial Position Registry; establishes six durable executor-neutral Company Positions and incorporates the exact reviewed `0.9.1` proposal by immutable blob reference |
+| `docs/governance/decisions/DECISION-2026-08-20-AC-204-APPROVAL.md` | Approved | Explicit Owner approval record for AC-204 and publication authority for `1.0.0` |
+| `docs/organization/INITIAL-POSITION-REGISTRY.md` | Historical reviewed proposal `0.9.1` | Exact reviewed proposal preserved at blob `9804a57a6cee027712e0c95bbf95bd428f848410`; incorporated in full by the Approved `1.0.0` publication |
+| `docs/reviews/AC-204-INITIAL-POSITION-REGISTRY-CROSS-REVIEW.md` | Complete / PASS | AC-204 cross-review, `10 of maximum 10`, including the Owner-directed separation of finance/obligation control from security/risk/continuity |
+| `docs/roadmap/ROADMAP.md` | Active `0.17.0` | Canonical Company planning publication; AC-204 Complete / PASS and AC-205 Current |
 
-## 3. AC-203 authority boundary
+## 3. Approved Position baseline
 
-AC-203 establishes the reusable semantic model for bounded Position authority but does not itself create a concrete Position, Assignment, access grant, credential, budget, bank authority, legal power, customer authority or Arvectum OS lifecycle change.
+The binding initial Company Position set is:
 
-Approved authority modes are:
+- `POS-001 — Company Executive` — `F-01 + F-07`;
+- `POS-002 — Commercial & Customer Lead` — `F-02 + F-03`;
+- `POS-003 — Portfolio & Product Lead` — `F-04`;
+- `POS-004 — Engineering & Release Lead` — `F-05`;
+- `POS-005 — Finance & Obligation Control Lead` — `F-06`;
+- `POS-006 — Security, Risk & Continuity Lead` — `F-08`.
 
-- `AM-0 — Prepare / Recommend`;
-- `AM-1 — Execute Pre-Decided Work`;
-- `AM-2 — Bounded Decision`;
-- `AM-3 — Delegated Approval`;
-- `AM-4 — Pre-Authorized Automatic Execution`.
+These are accountability units, not a staffing plan. Owner, participant/general-meeting competence and General Director legal office remain separate authority capacities rather than Positions.
 
-The effective executable boundary is the intersection of Position authority, Assignment scope, technical authorization/access and current workflow/data/risk conditions.
+## 4. Authority and executor boundary
 
-AC-202 `ROD-01` through `ROD-09` remain a hard negative boundary. A concrete Position may not silently receive a Reserved Owner Decision through title, access, Assignment, AI capability or workflow configuration.
+AC-204 creates Position meaning and accountable outcomes but does not appoint Principals, create Assignments, grant technical access or create legal/corporate/customer/Product/OS authority.
 
-## 4. AI/software boundary
+The initial Position authority design ceiling remains `AM-0`, `AM-1`, `AM-2`. AC-202 `ROD-01` through `ROD-09` remain a hard negative boundary. Actual executable authority depends on later valid Assignment, access and current workflow/data/risk conditions.
 
-AI/software remain replaceable execution means rather than Organizational Authority sources.
+The Finance and Security/Risk/Continuity boundaries remain distinct even if AC-205 initially assigns the same Principal to both.
 
-A future AI-held Position may perform bounded work under an approved delegation envelope, but consequential approval is not inferred from AI assignment. Where competent authority has approved an action class and its limits in advance, `AM-4` represents bounded automatic execution rather than fictional AI approval.
+## 5. Current Arvectum OS relevance
 
-## 5. Current Company planning state
+AC-204 creates no new Arvectum OS authority or lifecycle effect. The OS baseline re-checked during AC-204 remained Constitution `1.2.0` Ratified, with the OS Decision Authority Policy still Proposed `0.2.1`; AC-204 does not rely on that Proposed policy as binding authority.
 
-`AC-203 — Delegated Position authority, approval and escalation model` is `Complete / PASS`.
+## 6. Current Company planning state
+
+`AC-204 — Initial Position Registry` is `Complete / PASS`.
 
 Current canonical Company action:
 
-`AC-204 — Initial Position Registry`.
+`AC-205 — Initial Assignments and executor classification`.
 
-AC-204 must create only evidence-backed Positions derived from the AC-201 functions, current workload, accountability/control needs and economic value. It must not mechanically create one Position per function or assign current humans/AI/software; Assignments remain AC-205.
+AC-205 must map Principals/executor classes to the approved six Positions without treating Assignment as authority or access and without changing Position meaning merely to fit a preferred AI/model/runtime.
