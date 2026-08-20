@@ -10,6 +10,8 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - Company ↔ Arvectum OS authority boundary: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md`
 - Canonical source registry: `docs/CANONICAL-SOURCES.md`
 - Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
+- Current business model / value proposition baseline: `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md`
+- AC-101 business-model cross-review: `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md`
 - Initial Company portfolio map: `docs/portfolio/PORTFOLIO.md`
 - Repository structure and artifact map: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`
 - Founding baseline cross-review: `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md`
@@ -20,7 +22,9 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 `M0 — Company canonically founded` is `Complete / PASS`.
 
-The current canonical Company action is `AC-101 — Current business model and value proposition baseline`. The canonical roadmap remains the source for sequencing and does not itself grant legal, organizational or external-effect authority.
+`AC-101 — Current business model and value proposition baseline` is `Complete / PASS` after a seven-iteration cross-review. `M1 — Business reality and economics captured` is in progress.
+
+The current canonical Company action is `AC-102 — Revenue, cash, recurring cost and obligation baseline`. The canonical roadmap remains the source for sequencing and does not itself grant legal, organizational or external-effect authority.
 
 ## Repository boundary
 
