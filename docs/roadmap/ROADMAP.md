@@ -1,13 +1,14 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.8.0`
+Version: `0.8.1`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
 Current canonical action: `AC-102 — Revenue, cash, recurring cost and obligation baseline`
+Current action state: `Blocked pending authoritative financial evidence intake`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
@@ -171,7 +172,7 @@ Purpose: understand the real Company, economic runway and first credible market 
 | ID | Work item | Status |
 |---|---|---|
 | `AC-101` | Current business model and value proposition baseline | `Complete / PASS` |
-| `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Current` |
+| `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Blocked` |
 | `AC-103` | Current customer/client lifecycle and real value-stream map | `Planned` |
 | `AC-104` | Owner workload, manual work and bottleneck map | `Planned` |
 | `AC-105` | Material risk, dependency, continuity and fallback baseline | `Planned` |
@@ -180,6 +181,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 | `AC-106` | M1 business baseline review and Owner priority decision | `Planned` |
 
 AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER` and `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` `0.2.0`.
+
+AC-102 publication `0.2.0` and `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` establish a reviewed financial evidence model but do not fabricate missing economics. Cross-review reached material convergence at `6 of maximum 10` iterations and stopped because current bank/accounting/contract evidence is insufficient to determine the LLC's revenue, cash balance, complete recurring run-rate, receivables/payables and settlement of the charter-capital contribution. The resume condition is authoritative financial intake; review then continues from iteration `7` with no more than four further iterations.
 
 ### M1 exit criteria
 
@@ -427,7 +430,7 @@ A cross-repository dependency becomes a commitment only through the applicable g
 
 ### AC-102 — Revenue, cash, recurring cost and obligation baseline
 
-Status: `Current`.
+Status: `Blocked`.
 
 Objective: establish the first evidence-backed financial/commitment baseline for the corrected flagship direction and current business lines, without inventing financial truth or turning this public repository into the store for sensitive live financial data.
 
@@ -447,6 +450,23 @@ Minimum scope:
 
 Expected artifact home: `docs/business/`.
 
+Current reviewed artifact: `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md` `0.2.0`.
+
+Cross-review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` — `6 of maximum 10`, result `BLOCKED`.
+
+### Current blocker and resume condition
+
+The artifact model and repository-safety boundary pass review, but the Company evidence set does not contain authoritative current banking/accounting data sufficient to establish actual LLC revenue/cash, current cash balance, complete LLC-paid recurring run-rate, receivables/payables or charter-capital settlement status.
+
+Resume requires the smallest sufficient private evidence intake:
+
+- ООО «Арвектум» business-account transaction export or bank statement from `2026-06-24` through the current export date;
+- only where required, a compact supplement for contracts/orders/invoices, unpaid obligations, recurring services and charter-capital payment status not clear from bank transactions.
+
+Raw evidence remains private and must not be committed to this public repository by default.
+
+After intake, populate the material financial fields and resume cross-review at iteration `7`, with no more than four additional iterations under the Owner-set maximum of ten.
+
 Acceptance requires a coherent current revenue/cash/cost/obligation baseline sufficient for the Owner to distinguish economic reality from strategic product intent and to continue M1 without guessing.
 
-When AC-102 is complete, advance to `AC-103 — Current customer/client lifecycle and real value-stream map` unless an explicit higher-priority business obligation requires a recorded sequencing change.
+AC-102 MUST NOT advance to `Complete / PASS`, and AC-103 MUST NOT become the next canonical action automatically, until the blocker is resolved or the Owner records an explicit sequencing decision.
