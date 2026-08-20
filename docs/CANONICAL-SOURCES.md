@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `0.6.0`
+Version: `0.7.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -32,6 +32,8 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/governance/decisions/DECISION-2026-08-20-AC-002-APPROVAL.md` | Approved | Owner approval record for exact AC-002 Proposed `0.9.0` and publication authority for `1.0.0` |
 | `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md` | Approved `1.0.0` | Canonical repository structure and artifact-location map for durable Company assets |
 | `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md` | Approved | Owner approval record for exact AC-003 Proposed `0.9.0` and publication authority for `1.0.0` |
+| `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md` | Complete / PASS | Formal cross-review of AC-001 through AC-004 as one founding baseline; seven iterations and M0 closure recommendation |
+| `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md` | Approved | Owner milestone-closure record for AC-005/M0 and planning transition to AC-101; creates no new substantive authority by implication |
 | `docs/roadmap/ROADMAP.md` | Active | Canonical Company planning source |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
@@ -46,6 +48,8 @@ Snapshot used to generate the current repository Project Source pack:
 - commit timestamp: `2026-08-19T21:12:03+03:00`.
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
+
+AC-005 re-checked current Arvectum OS `main` on `2026-08-20` at `f4028cd8d84a1cdc81ae366c59dc4fb15d6a134c`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is still Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 remains `Draft / Exploratory` while P8.00 performs pre-activation revalidation. No Project Source pack refresh is required solely for that roadmap movement.
 
 | Canonical source | Known status at pack generation | Company relevance |
 |---|---|---|
@@ -92,7 +96,7 @@ Current verified source set:
 | Типовой устав №23, утверждённый приказом Минэкономразвития России от 01.08.2018 №411 | Current governing charter form | Corporate governance framework of the Company within applicable law |
 | Решение единственного учредителя №1 о создании ООО «Арвектум» | `2026-06-07` | Founding decision; establishes Company creation, charter choice, capital allocation and initial General Director appointment |
 | Лист записи ЕГРЮЛ о создании ООО «Арвектум» | `2026-06-24` | State-registry evidence of creation and registered corporate facts |
-| Выписка из ЕГРН о постановке российской организации на налоговый учёт | `2026-06-24` | Tax-registration evidence |
+| Выписка из Единого государственного реестра налогоплательщиков (форма по КНД 1121005) | `2026-06-24` | Tax-registration evidence |
 | Банковские реквизиты ООО «Арвектум» | Current owner-managed operational reference | Operational payment reference; not a source of corporate governance authority |
 
 Verified corporate baseline relevant to Company governance:
@@ -100,6 +104,8 @@ Verified corporate baseline relevant to Company governance:
 - the Company has one participant holding 100% of the charter capital;
 - the founding decision appoints the General Director for a five-year term;
 - the ЕГРЮЛ creation record identifies one person entitled to act for the Company without a power of attorney and records the Company as active at issuance.
+
+The founding-decision date was visually re-checked during AC-005 as `2026-06-07`; convenience OCR output is not used to override the source image.
 
 The registry does **not** require repeated procurement of a fresh ЕГРЮЛ extract solely for internal documentation freshness when there is no known corporate change or conflicting evidence. Re-verification is triggered when a consequential decision depends on a potentially changed registry fact, a corporate event occurs, existing evidence becomes inconsistent, or applicable law/contract requires a current extract.
 
