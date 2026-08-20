@@ -1,6 +1,6 @@
 # Arvectum Company
 
-Canonical repository for the durable, repository-suitable governance, planning, portfolio and organizational-model artifacts of ООО «Арвектум» as an owner-operated AI-native company.
+Canonical repository for the durable governance, planning, portfolio and organizational-model artifacts of ООО «Арвектум» as an owner-operated AI-native company.
 
 Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standalone AI agent or a universal software platform.
 
@@ -8,70 +8,60 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 - Company Constitution / Founding Charter: `docs/constitution/COMPANY-CONSTITUTION.md`
 - Company ↔ Arvectum OS authority boundary: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md`
-- Flagship strategy decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 - Canonical source registry: `docs/CANONICAL-SOURCES.md`
 - Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
-- Current business model / value proposition baseline: `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md`
-- AC-102 financial/obligation baseline: `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md`
-- AC-103 customer lifecycle/value-stream baseline: `docs/business/CURRENT-CUSTOMER-LIFECYCLE-AND-VALUE-STREAM.md`
-- AC-104 Owner workload/bottleneck baseline: `docs/business/OWNER-WORKLOAD-MANUAL-WORK-BOTTLENECK-MAP.md`
-- AC-105 material risk/continuity baseline: `docs/business/MATERIAL-RISK-DEPENDENCY-CONTINUITY-FALLBACK-BASELINE.md`
-- AC-107 flagship ICP/buyer/JTBD/outcome hypothesis baseline: `docs/business/FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-HYPOTHESES.md`
-- AC-108 design-partner discovery/market-validation plan: `docs/business/DESIGN-PARTNER-DISCOVERY-AND-MARKET-VALIDATION-PLAN.md`
-- AC-106 M1 synthesis and priority baseline: `docs/business/M1-BUSINESS-BASELINE-REVIEW-AND-PRIORITY.md`
-- AC-201 minimal real organizational/function model: `docs/organization/MINIMAL-REAL-ORGANIZATIONAL-FUNCTION-MODEL.md`
-- AC-201 function-model cross-review: `docs/reviews/AC-201-MINIMAL-ORGANIZATIONAL-FUNCTION-MODEL-CROSS-REVIEW.md`
-- AC-106 M1 cross-review: `docs/reviews/AC-106-M1-BUSINESS-BASELINE-CROSS-REVIEW.md`
-- M1 closure and near-term priority decision: `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md`
-- AC-101 business-model cross-review: `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md`
-- AC-102 financial baseline cross-review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md`
-- AC-103 customer lifecycle cross-review: `docs/reviews/AC-103-CUSTOMER-LIFECYCLE-CROSS-REVIEW.md`
-- AC-104 Owner workload cross-review: `docs/reviews/AC-104-OWNER-WORKLOAD-CROSS-REVIEW.md`
-- AC-105 material risk/continuity cross-review: `docs/reviews/AC-105-MATERIAL-RISK-CONTINUITY-CROSS-REVIEW.md`
-- AC-107 flagship market-hypothesis cross-review: `docs/reviews/AC-107-FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-CROSS-REVIEW.md`
-- AC-108 design-partner market-validation cross-review: `docs/reviews/AC-108-DESIGN-PARTNER-MARKET-VALIDATION-CROSS-REVIEW.md`
-- Initial Company portfolio map: `docs/portfolio/PORTFOLIO.md`
-- Repository structure and artifact map: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`
-- Founding baseline cross-review: `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md`
-- M0 founding closure decision: `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md`
+- Initial Company portfolio: `docs/portfolio/PORTFOLIO.md`
+- AC-201 function model: `docs/organization/MINIMAL-REAL-ORGANIZATIONAL-FUNCTION-MODEL.md`
+- AC-202 Reserved Owner Decisions: `docs/governance/RESERVED-OWNER-DECISIONS-v1.0.0.md`
+- AC-203 delegated Position authority model: `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md`
+- AC-204 Initial Position Registry: `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md`
 - Formal review evidence: `docs/reviews/`
+- Durable Owner/governance decisions: `docs/governance/decisions/`
 
 ## Current Company state
 
-`M0 — Company canonically founded` is `Complete / PASS`.
+`M0 — Company canonically founded` and `M1 — Business/economic reality and first market-validation plan captured` are `Complete / PASS`.
 
-`AC-101 — Current business model and value proposition baseline` is `Complete / PASS` after reaching the maximum `10/10` cross-review iterations, including the material Owner correction of the initial procurement-centered interpretation.
+Phase 2 has established the organization-first chain through concrete Position definitions:
 
-The current flagship business direction is **«ИИ-компания под ключ»**: design and deploy a customer-specific AI-native organizational model on Arvectum OS, adapting functions, Positions, authority, workflows and reusable/customer-specific modules to the customer's business model. Arvectum Company is the first real reference implementation of that organization-first approach.
+```text
+AC-201 functions
+→ AC-202 Reserved Owner Decisions
+→ AC-203 delegated Position authority semantics
+→ AC-204 Initial Position Registry
+→ AC-205 Assignments / executor classification
+→ AC-206 access
+→ AC-207 continuity
+→ AC-208 transferability review
+```
 
-`AC-102 — Revenue, cash, recurring cost and obligation baseline` is `Complete / PASS`. Publication `0.3.0` defines the Company-level revenue architecture, cash-flow categories, recurring/variable/investment cost structure, obligation classes, procurement working-capital logic, flagship investment pools and the boundary between management finance and outsourced accounting. Its cross-review closed at `7 of maximum 10` after the Owner corrected the scope away from transaction-level bookkeeping.
+`AC-204 — Initial Position Registry` is `Complete / PASS` after `10/10` cross-review iterations and explicit Owner approval.
 
-`AC-103 — Current customer/client lifecycle and real value-stream map` is `Complete / PASS`. Publication `0.1.0` separates the real current bespoke-delivery and controlled-pilot lifecycle from the future flagship lifecycle and identifies the Company-level value streams and control points. Its cross-review closed at `7 of maximum 10`.
+The approved initial Position set is:
 
-`AC-104 — Owner workload, manual work and bottleneck map` is `Complete / PASS`. Publication `0.1.0` separates Owner control from Owner execution and identifies the dominant interpretation, priority-switching, customer-context, exception/rework, local/credential-gate, decision-preparation and state-reconstruction bottlenecks. Its cross-review closed at `8 of maximum 10` without inventing historical time-sheet data, future Positions or AI Assignments.
+1. `POS-001 — Company Executive` — Company direction/integration plus organizational state/evidence (`F-01 + F-07`);
+2. `POS-002 — Commercial & Customer Lead` — discovery through delivery/acceptance (`F-02 + F-03`);
+3. `POS-003 — Portfolio & Product Lead` — portfolio/product/workstream stewardship (`F-04`);
+4. `POS-004 — Engineering & Release Lead` — engineering/automation/QA/release (`F-05`);
+5. `POS-005 — Finance & Obligation Control Lead` — management finance, cash and obligations (`F-06`);
+6. `POS-006 — Security, Risk & Continuity Lead` — security, access, risk, dependency and continuity (`F-08`).
 
-`AC-105 — Material risk, dependency, continuity and fallback baseline` is `Complete / PASS`. Publication `0.1.0` identifies material Owner/corporate-authority, credential, local-device, repository, customer-data, external-source/service, supplier, banking/accounting, Arvectum OS and runtime/vendor dependencies. It distinguishes deliberate authority/security gates from accidental single points of failure and defines minimum fail-closed, degraded-mode, recovery and replacement expectations without inventing RTO/RPO, legal instruments or credential holders. Its cross-review closed at `9 of maximum 10` and explicitly does **not** claim that the Company is already continuity-ready.
+These are six durable accountability boundaries, **not six employees or six AI agents**. Owner, participant/general-meeting competence and General Director legal office remain separate authority capacities. Assignments of human/AI/software executors are intentionally deferred to AC-205.
 
-`AC-107 — Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses` is `Complete / PASS`. Publication `0.1.0` defines a behavior-based first ICP: an owner-led B2B company with a recurring information/coordination-heavy function where the Owner/CEO or another scarce senior manager remains a material interpretation/exception bottleneck. The primary buyer hypothesis is the Owner/Founder/CEO/General Director or equivalent executive; the first proof is one bounded function, and the north-star outcome hypothesis is less scarce management attention per accepted business output with quality, authority, sovereignty and fallback guardrails intact. Procurement/tender businesses remain one strong subsegment/wedge candidate rather than the Company identity. Its cross-review closed at `9 of maximum 10`; demand, willingness to pay, price, ROI, implementation duration and repeatability remain unvalidated.
+Approved AC-202 `ROD-01` through `ROD-09` remain the hard Owner-reserved boundary. AC-203 defines `AM-0` through `AM-4`; the initial AC-204 Position ceiling is deliberately limited to `AM-0`, `AM-1` and `AM-2` until downstream Assignment, access and workflow evidence exists.
 
-`AC-108 — First design-partner criteria, discovery script and market-validation plan` is `Complete / PASS`. Publication `0.1.0` defines ten hard qualification gates, an eight-dimension candidate-priority heuristic, Russia-first sourcing logic, a bounded `8–12` high-information discovery loop across more than one subsegment, a non-leading Russian-first interview script, structured evidence/confidence fields, mapping to all nine AC-107 hypotheses, confirmation-bias controls and explicit continue/change/stop logic. It separates a diagnostic baseline from any later supervised pilot and does **not** claim that real customer discovery, willingness to pay, design-partner commitment, price, ROI or production readiness already exist. Its cross-review closed at `9 of maximum 10`.
+The current canonical Company action is:
 
-`M1 — Business/economic reality and first market-validation plan captured` is `Complete / PASS` through `AC-106`. The AC-106 synthesis and cross-review closed at `9 of maximum 10` iterations because the remaining questions are empirical rather than solvable by more desk analysis. The approved near-term priority model is: `P0` protects current material obligations/cash/risk when triggered; `P1` runs bounded AC-108 discovery and the Phase 2 internal reference-model track in parallel; `P2` prioritizes product/OS work tied directly to real obligations, revenue or evidence; `P3` keeps speculative productization/module/platform expansion below evidence-producing work.
+**`AC-205 — Initial Assignments and executor classification`**.
 
-The first AC-108 discovery loop is authorized as bounded non-binding market research: up to `20` candidates and a target of `8–12` high-information conversations across at least two materially different subsegments. This does **not** authorize a design partner, pilot, price, discount, SLA, production access, privileged credentials or customer commitment by implication.
-
-`AC-201 — Minimal real organizational/function model` is now `Complete / PASS`. Publication `0.1.0` derives eight Company-level responsibility domains from M1 evidence without turning them into departments or Positions: Company Direction/Corporate Governance/Material Control; Commercial Discovery/Qualification/Commitment Preparation; Customer Delivery/Acceptance/Support; Portfolio/Product/Workstream Stewardship/Reuse; Engineering/Automation/QA/Release; Management Finance/Cash/Obligation Control; Organizational State/Evidence/Improvement; and Security/Access/Risk/Continuity Assurance. The cross-review closed at `9 of maximum 10`; the tenth desk-review iteration was deliberately not used because the remaining questions belong to AC-202–AC-208 or require real operating evidence. AC-201 creates no delegation, Assignment, headcount, access grant, module admission or Arvectum OS lifecycle effect. The reusable flagship lesson is the derivation method from real business evidence, not a fixed eight-function customer template.
-
-The Company does not recreate bookkeeping, bank reconciliation or tax administration in this repository. Outsourced accounting and banking/accounting systems retain transaction/statutory truth; Arvectum Company consumes management summaries, budgets, commitments and exceptions when needed for decisions.
-
-The canonical roadmap `0.14.0` now advances to `AC-202 — Reserved Owner Decisions` as the current Company action. AC-202 must identify the smallest explicit set of genuinely Owner-/competent-authority-reserved decisions across the AC-201 function model, distinguish them from legally required corporate acts and from merely Owner-dependent execution, and avoid reserving entire functions by default. Delegated Position authority remains AC-203; Positions and Assignments remain AC-204/AC-205.
+The bounded AC-108 design-partner discovery loop remains separately authorized P1 market-evidence work and does not imply a pilot, price, SLA, privileged access or customer commitment.
 
 ## Repository boundary
 
-Company-specific governance and organizational semantics belong here when they are suitable for repository storage. Product implementation belongs in the corresponding product repository. Domain-neutral platform architecture and contracts belong in `arvectum/arvectum-os`.
+Company-specific governance and organizational semantics belong here when suitable for repository storage. Product implementation remains canonical in the corresponding product repository. Domain-neutral platform architecture and contracts belong in `arvectum/arvectum-os`.
 
-This repository is public. Do **not** commit secrets, reusable credentials, unnecessary personal data, signatures, bank/payment details, non-public customer/supplier/contract material or other restricted operational payloads. External legal, accounting, banking and operational systems may remain canonical for their own facts; this repository should reference them safely rather than create competing copies.
+This repository is public. Do **not** commit secrets, reusable credentials, unnecessary personal data, signatures, bank/payment details, non-public customer/supplier/contract material or other restricted operational payloads.
 
 ## Remotes
 
-GitHub `arvectum/arvectum-company` is the current canonical remote. GitVerse is a resilience/sovereignty mirror and is not an independent source of organizational authority.
+GitHub `arvectum/arvectum-company` is the canonical remote. GitVerse is a resilience/sovereignty mirror and is not an independent source of Organizational Authority.
