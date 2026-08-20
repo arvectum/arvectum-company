@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.5.0`
+Version: `0.6.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `governance`, `operations`, `portfolio` and `ai_workforce`
-Current canonical action: `AC-005 — Founding baseline cross-review and closure`
+Current canonical action: `AC-101 — Current business model and value proposition baseline`
 
 ## 1. Purpose
 
@@ -79,6 +79,8 @@ Completion requires evidence proportionate to consequence and an update of the a
 
 **Milestone:** `M0 — Company canonically founded`
 
+**Milestone status:** `Complete / PASS`
+
 Purpose: establish the minimum authoritative foundation before detailed organizational design.
 
 | ID | Work item | Status |
@@ -87,7 +89,7 @@ Purpose: establish the minimum authoritative foundation before detailed organiza
 | `AC-002` | Company ↔ Arvectum OS authority and responsibility boundary | `Complete / PASS` |
 | `AC-003` | Canonical repository structure and artifact map | `Complete / PASS` |
 | `AC-004` | Initial `docs/portfolio/PORTFOLIO.md` | `Complete / PASS` |
-| `AC-005` | Founding baseline cross-review and closure | `Current` |
+| `AC-005` | Founding baseline cross-review and closure | `Complete / PASS` |
 
 AC-001 completion evidence:
 
@@ -115,6 +117,14 @@ AC-004 completion evidence:
 - the two currently evidenced OS Product Contracts are referenced with their actual Provisional status and no Stable/Active inference;
 - repository/product identity conflicts, stale product status pointers, product-family overlaps, missing Positions and missing investment/stop-continue criteria are exposed explicitly for later reconciliation rather than silently resolved.
 
+AC-005 completion evidence:
+
+- `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md` — `PASS`, 7/10 iterations, material consensus reached across the complete AC-001–AC-004 baseline;
+- current legal/corporate source consistency, current Arvectum OS canonical state, repository/source boundaries and portfolio deferrals were re-checked as one system;
+- remaining portfolio identity, Position, investment and Product Contract-locator issues are explicitly contained as later work rather than misrepresented as completed founding governance;
+- `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md` — M0 closure/planning-transition decision;
+- no amendment of AC-001, AC-002, AC-003 or AC-004 was required.
+
 ### M0 exit criteria
 
 - Company Constitution / Founding Charter is explicitly approved and canonical;
@@ -124,6 +134,10 @@ AC-004 completion evidence:
 - initial portfolio map exists without copying product roadmaps;
 - no unresolved material founding conflict remains.
 
+**M0 result:** `COMPLETE / PASS — achieved 2026-08-20`.
+
+M0 closure does not imply a completed operating model, delegated-authority matrix, financial baseline, profitable portfolio, production-ready AI workforce or comprehensive compliance state. Those claims require their own later evidence and authority.
+
 ## 7. Phase 1 — Business reality and economic baseline
 
 **Milestone:** `M1 — Business reality and economics captured`
@@ -132,7 +146,7 @@ Purpose: model the Company that actually exists before designing departments or 
 
 | ID | Work item | Status |
 |---|---|---|
-| `AC-101` | Current business model and value proposition baseline | `Planned` |
+| `AC-101` | Current business model and value proposition baseline | `Current` |
 | `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Planned` |
 | `AC-103` | Customer/client lifecycle and real value-stream map | `Planned` |
 | `AC-104` | Owner workload, manual work and bottleneck map | `Planned` |
@@ -323,23 +337,28 @@ This roadmap records Company-level dependencies and decisions only. It must not 
 
 A cross-repository dependency becomes a commitment only through the applicable repository/governance path. Mentioning a future OS capability or product change here does not authorize that change.
 
-## 16. Current action — AC-005
+## 16. Current action — AC-101
 
-### AC-005 — Founding baseline cross-review and closure
+### AC-101 — Current business model and value proposition baseline
 
 Status: `Current`.
 
-Objective: review the complete Phase 0 founding baseline as one coherent system before declaring `M0 — Company canonically founded` achieved and moving to the business/economic baseline.
+Objective: capture the business that actually exists now — how Arvectum creates value, for whom, through which current offers/product lines, and by what current or evidenced value-capture mechanisms — before designing the organization around assumptions.
 
 Minimum scope:
 
-- cross-review AC-001 through AC-004 together rather than as isolated artifacts;
-- test the baseline from Owner, executive-management, governance/authority, finance/risk, operations, product/portfolio, technology/security and continuity lenses proportionate to the Company's current scale;
-- verify that legal/corporate authority, Company Organizational Authority, product authority and Arvectum OS governance remain separated correctly;
-- verify that repository structure, source registry and portfolio map do not create competing sources of truth or hidden cross-repository commitments;
-- verify that the initial portfolio is sufficient for founding closure while unresolved Phase 1–3 questions remain explicitly deferred rather than falsely solved;
-- reconcile any material conflict found across the Company Constitution, Company↔OS boundary, repository map, portfolio map and roadmap;
-- preserve formal review evidence in `docs/reviews/` and record any approval/closure decision required by consequence;
-- if no material founding conflict remains, declare M0 achieved and advance the current Company action to `AC-101 — Current business model and value proposition baseline`.
+- distinguish **current fact**, **observed operating practice**, **approved direction** and **future hypothesis** rather than blending them;
+- identify the currently material customer/client/beneficiary groups and the concrete problems/jobs the Company is solving for them;
+- identify current offers, product/service lines and portfolio nodes involved in delivering that value without copying product roadmaps;
+- describe how value is currently captured or intended to be captured where the mechanism is already approved/evidenced, while leaving amounts, cash timing, recurring costs and obligation detail to `AC-102`;
+- distinguish current revenue/client work from product experiments, internal platform work and future SaaS/scale hypotheses;
+- identify the Company's current differentiators or value proposition only to the level supported by evidence, not marketing aspiration;
+- record material contradictions, missing evidence and business-model questions instead of silently resolving them from chat memory;
+- use owner input and the applicable canonical product/legal/business sources while preserving confidentiality and public-repository safety;
+- avoid creating departments, Positions, delegation or AI Workforce structure before the later M2 evidence path.
 
-Acceptance requires a documented founding-baseline cross-review, resolution or explicit containment of every material issue found, and a clear M0 close/hold decision. Technical or documentary completeness alone does not force M0 closure if a material governance or business-boundary conflict remains.
+Expected artifact home: `docs/business/`, created only with the first real AC-101 artifact in accordance with AC-003.
+
+Acceptance requires a canonical current-business/value-proposition baseline from which AC-102 can trace revenue, cash, recurring cost and obligations without first reconstructing what business the Company is actually in.
+
+When AC-101 is complete, advance to `AC-102 — Revenue, cash, recurring cost and obligation baseline` unless an explicit higher-priority business obligation requires a recorded sequencing change.
