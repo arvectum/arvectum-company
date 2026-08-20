@@ -18,6 +18,9 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - AC-105 material risk/continuity baseline: `docs/business/MATERIAL-RISK-DEPENDENCY-CONTINUITY-FALLBACK-BASELINE.md`
 - AC-107 flagship ICP/buyer/JTBD/outcome hypothesis baseline: `docs/business/FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-HYPOTHESES.md`
 - AC-108 design-partner discovery/market-validation plan: `docs/business/DESIGN-PARTNER-DISCOVERY-AND-MARKET-VALIDATION-PLAN.md`
+- AC-106 M1 synthesis and priority baseline: `docs/business/M1-BUSINESS-BASELINE-REVIEW-AND-PRIORITY.md`
+- AC-106 M1 cross-review: `docs/reviews/AC-106-M1-BUSINESS-BASELINE-CROSS-REVIEW.md`
+- M1 closure and near-term priority decision: `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md`
 - AC-101 business-model cross-review: `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md`
 - AC-102 financial baseline cross-review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md`
 - AC-103 customer lifecycle cross-review: `docs/reviews/AC-103-CUSTOMER-LIFECYCLE-CROSS-REVIEW.md`
@@ -51,9 +54,13 @@ The current flagship business direction is **«ИИ-компания под кл
 
 `AC-108 — First design-partner criteria, discovery script and market-validation plan` is `Complete / PASS`. Publication `0.1.0` defines ten hard qualification gates, an eight-dimension candidate-priority heuristic, Russia-first sourcing logic, a bounded `8–12` high-information discovery loop across more than one subsegment, a non-leading Russian-first interview script, structured evidence/confidence fields, mapping to all nine AC-107 hypotheses, confirmation-bias controls and explicit continue/change/stop logic. It separates a diagnostic baseline from any later supervised pilot and does **not** claim that real customer discovery, willingness to pay, design-partner commitment, price, ROI or production readiness already exist. Its cross-review closed at `9 of maximum 10`.
 
+`M1 — Business/economic reality and first market-validation plan captured` is now `Complete / PASS` through `AC-106`. The AC-106 synthesis and cross-review closed at `9 of maximum 10` iterations because the remaining questions are empirical rather than solvable by more desk analysis. The approved near-term priority model is: `P0` protects current material obligations/cash/risk when triggered; `P1` runs bounded AC-108 discovery and the Phase 2 internal reference-model track in parallel; `P2` prioritizes product/OS work tied directly to real obligations, revenue or evidence; `P3` keeps speculative productization/module/platform expansion below evidence-producing work.
+
+The first AC-108 discovery loop is authorized as bounded non-binding market research: up to `20` candidates and a target of `8–12` high-information conversations across at least two materially different subsegments. This does **not** authorize a design partner, pilot, price, discount, SLA, production access, privileged credentials or customer commitment by implication.
+
 The Company does not recreate bookkeeping, bank reconciliation or tax administration in this repository. Outsourced accounting and banking/accounting systems retain transaction/statutory truth; Arvectum Company consumes management summaries, budgets, commitments and exceptions when needed for decisions.
 
-The canonical roadmap `0.12.0` now advances to `AC-106 — M1 business baseline review and Owner priority decision` as the current Company action. AC-106 is an explicit Owner decision point: AI/software may prepare analysis and recommendations, but milestone closure, priority choice and any material external commitment require the authorized Owner/Principal.
+The canonical roadmap `0.13.0` now advances to `AC-201 — Minimal real organizational/function model` as the current Company action. AC-201 must derive the minimum real Company functions from M1 value streams, obligations, workload, bottlenecks and control needs before later work defines Reserved Owner Decisions, authority delegation, Positions, Assignments, access or continuity mechanisms.
 
 ## Repository boundary
 
