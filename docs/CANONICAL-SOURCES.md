@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `0.9.0`
+Version: `1.0.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -34,13 +34,14 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md` | Approved | Owner approval record for exact AC-003 Proposed `0.9.0` and publication authority for `1.0.0` |
 | `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md` | Complete / PASS | Formal cross-review of AC-001 through AC-004 as one founding baseline; seven iterations and M0 closure recommendation |
 | `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md` | Approved | Owner milestone-closure record for AC-005/M0 and planning transition to AC-101; creates no new substantive authority by implication |
-| `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` | Active `0.2.0` | Corrected AC-101 business-model/value-proposition baseline. Flagship direction: customer-specific AI-native company / «ИИ-компания под ключ» on Arvectum OS with organization-first design and reusable functional modules. Supersedes the initial procurement-centered `0.1.0` interpretation |
+| `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md` | Approved | Owner strategic decision fixing «ИИ-компания под ключ» as the flagship commercial direction and Arvectum Company as the first real reference implementation; does not itself approve ICP, pricing, modules or customer readiness |
+| `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` | Active `0.2.0` | Corrected AC-101 business-model/value-proposition baseline. Flagship direction: customer-specific AI-native company on Arvectum OS with organization-first design and reusable functional modules. Supersedes the initial procurement-centered `0.1.0` interpretation |
 | `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` | Complete / PASS | AC-101 cross-review completed at 10/10 after material Owner strategy correction; records why procurement is a domain/module line rather than the highest-level Company product identity |
-| `docs/roadmap/ROADMAP.md` | Active | Canonical Company planning source |
+| `docs/roadmap/ROADMAP.md` | Active `0.8.0` | Canonical Company planning source aligned to the flagship reference-Company → reusable modules → first external design partner → repeatable multi-customer product sequence |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
-AC-101 deliberately promotes only the business-model statements actually recorded in the corrected `0.2.0` artifact. The Owner's material correction supersedes the earlier procurement-centered interpretation. Historical chat remains context/evidence and is not converted wholesale into canonical Company state.
+Historical chat remains context/evidence and is not converted wholesale into canonical Company state. Material Owner corrections are promoted only through explicit canonical artifacts/decisions.
 
 ## 4. External canonical Arvectum OS dependencies
 
@@ -53,7 +54,7 @@ Snapshot used to generate the current repository Project Source pack:
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
 
-AC-101 re-checked current Arvectum OS `main` on `2026-08-20` at `f4028cd8d84a1cdc81ae366c59dc4fb15d6a134c`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is still Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 remains `Draft / Exploratory` while P8.00 performs pre-activation revalidation. No Project Source pack refresh is required solely for that roadmap movement.
+AC-101 re-checked current Arvectum OS `main` on `2026-08-20` at `f4028cd8d84a1cdc81ae366c59dc4fb15d6a134c`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 remains `Draft / Exploratory` while P8.00 performs pre-activation revalidation. No Project Source pack refresh is required solely for that roadmap movement.
 
 | Canonical source | Known status at pack generation | Company relevance |
 |---|---|---|
