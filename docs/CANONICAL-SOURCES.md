@@ -1,22 +1,22 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.9.0`
+Version: `2.0.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 
 ## 1. Canonical publication model
 
-This registry publication preserves the complete source registry `1.8.0` by immutable git-blob reference and applies the AC-202 registration delta below.
+This registry publication preserves the complete source registry `1.9.0` by immutable git-blob reference and applies the AC-203 registration delta below.
 
 Incorporated prior registry:
 
-- version: `1.8.0`;
+- version: `1.9.0`;
 - path: `docs/CANONICAL-SOURCES.md`;
-- immutable blob SHA: `7f5a33da4eac62e7de767dd88a3ad0ee84474a6d`.
+- immutable blob SHA: `4cc8a946ec60e8971febf8fd4a1793abcb5eb09c`.
 
-All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
+All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201/AC-202 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
 
 Authority remains:
 
@@ -27,44 +27,46 @@ Authority remains:
 5. roadmaps as planning coordination rather than independent authority;
 6. chats, model memory, generated packs and local copies as non-canonical context unless explicitly promoted.
 
-## 2. AC-202 canonical registration
+## 2. AC-203 canonical registration
 
 The following artifacts are added to the active Company canonical/evidence set:
 
 | Source | Status | Role |
 |---|---|---|
-| `docs/governance/RESERVED-OWNER-DECISIONS-v1.0.0.md` | Approved `1.0.0` | Binding Company-internal Reserved Owner Decision model; incorporates the exact reviewed `0.9.0` proposal by immutable blob reference and defines `ROD-01` through `ROD-09`, delegable work and temporary residual Owner authority |
-| `docs/governance/decisions/DECISION-2026-08-20-AC-202-APPROVAL.md` | Approved | Explicit Owner approval record for the reviewed AC-202 proposal and publication authority for `1.0.0` |
-| `docs/governance/RESERVED-OWNER-DECISIONS.md` | Historical reviewed proposal `0.9.0` | Exact reviewed proposal preserved at blob `eabe1cb14be7d4b4134b263831744c50ce9f77a0`; incorporated in full by the Approved `1.0.0` publication |
-| `docs/reviews/AC-202-RESERVED-OWNER-DECISIONS-CROSS-REVIEW.md` | Complete / PASS | AC-202 cross-review, `9 of maximum 10`, establishing the bounded nine-class reservation model and Owner-approval gate |
-| `docs/roadmap/ROADMAP.md` | Active `0.15.0` | Canonical Company planning publication; AC-202 Complete / PASS and AC-203 Current; incorporates prior roadmap `0.14.0` by immutable blob reference plus explicit transition delta |
+| `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md` | Approved `1.0.0` | Binding Company-wide delegated Position authority, approval and escalation model; incorporates the exact reviewed `0.9.0` proposal by immutable blob reference |
+| `docs/governance/decisions/DECISION-2026-08-20-AC-203-APPROVAL.md` | Approved | Explicit Owner approval record for AC-203 and publication authority for `1.0.0` |
+| `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL.md` | Historical reviewed proposal `0.9.0` | Exact reviewed proposal preserved at blob `ba89771f7b3ead7f70b0482f06d7d04bc68df2ea`; incorporated in full by the Approved `1.0.0` publication |
+| `docs/reviews/AC-203-DELEGATED-POSITION-AUTHORITY-CROSS-REVIEW.md` | Complete / PASS | AC-203 cross-review, `9 of maximum 10`, validating executor-neutral Position authority, five authority modes, AC-202 negative boundary, explicit escalation and downstream AC-204 handoff |
+| `docs/roadmap/ROADMAP.md` | Active `0.16.0` | Canonical Company planning publication; AC-203 Complete / PASS and AC-204 Current |
 
-## 3. AC-202 authority boundary
+## 3. AC-203 authority boundary
 
-AC-202 creates a binding internal governance boundary but does not create legal/corporate powers, a Position, Assignment, access grant, budget, payment authorization, customer consent, Product Contract or Arvectum OS lifecycle change.
+AC-203 establishes the reusable semantic model for bounded Position authority but does not itself create a concrete Position, Assignment, access grant, credential, budget, bank authority, legal power, customer authority or Arvectum OS lifecycle change.
 
-The nine Reserved Owner Decision classes are:
+Approved authority modes are:
 
-- `ROD-01` mission, strategic direction and business-model identity;
-- `ROD-02` capital allocation and material financial exposure;
-- `ROD-03` material external commitments and non-standard commercial exposure;
-- `ROD-04` major portfolio, initiative and investment decisions;
-- `ROD-05` Company constitutional governance, authority architecture and material delegation;
-- `ROD-06` risk appetite and material exception acceptance;
-- `ROD-07` customer/data sovereignty and material reuse/disclosure exceptions;
-- `ROD-08` core IP, critical dependency and technology-sovereignty exceptions;
-- `ROD-09` material Company↔Product↔Arvectum OS boundary and cross-repository commitments.
+- `AM-0 — Prepare / Recommend`;
+- `AM-1 — Execute Pre-Decided Work`;
+- `AM-2 — Bounded Decision`;
+- `AM-3 — Delegated Approval`;
+- `AM-4 — Pre-Authorized Automatic Execution`.
 
-The approved rule is that whole AC-201 functions are not Owner-reserved by default. Non-reserved preparation, routine decisions and execution should move toward accountable Positions through AC-203 delegation envelopes.
+The effective executable boundary is the intersection of Position authority, Assignment scope, technical authorization/access and current workflow/data/risk conditions.
 
-## 4. Current Arvectum OS relevance
+AC-202 `ROD-01` through `ROD-09` remain a hard negative boundary. A concrete Position may not silently receive a Reserved Owner Decision through title, access, Assignment, AI capability or workflow configuration.
 
-AC-202 introduced no new Arvectum OS reliance. The Company-relevant OS baseline most recently re-checked for AC-202 remains compatible: Constitution `1.2.0` Ratified; RFC-0001 through RFC-0008 Accepted `1.0.0`; OS Decision Authority Policy remains Proposed `0.2.1`. No OS Product Contract, capability lifecycle, production-readiness or conformance claim is created by AC-202 approval.
+## 4. AI/software boundary
+
+AI/software remain replaceable execution means rather than Organizational Authority sources.
+
+A future AI-held Position may perform bounded work under an approved delegation envelope, but consequential approval is not inferred from AI assignment. Where competent authority has approved an action class and its limits in advance, `AM-4` represents bounded automatic execution rather than fictional AI approval.
 
 ## 5. Current Company planning state
 
-`AC-202 — Reserved Owner Decisions` is `Complete / PASS`.
+`AC-203 — Delegated Position authority, approval and escalation model` is `Complete / PASS`.
 
 Current canonical Company action:
 
-`AC-203 — Delegated Position authority, approval and escalation model`.
+`AC-204 — Initial Position Registry`.
+
+AC-204 must create only evidence-backed Positions derived from the AC-201 functions, current workload, accountability/control needs and economic value. It must not mechanically create one Position per function or assign current humans/AI/software; Assignments remain AC-205.
