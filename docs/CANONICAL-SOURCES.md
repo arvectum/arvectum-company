@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `0.8.0`
+Version: `0.9.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -34,13 +34,13 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/governance/decisions/DECISION-2026-08-20-AC-003-APPROVAL.md` | Approved | Owner approval record for exact AC-003 Proposed `0.9.0` and publication authority for `1.0.0` |
 | `docs/reviews/AC-005-FOUNDING-BASELINE-CROSS-REVIEW.md` | Complete / PASS | Formal cross-review of AC-001 through AC-004 as one founding baseline; seven iterations and M0 closure recommendation |
 | `docs/governance/decisions/DECISION-2026-08-20-M0-FOUNDING-BASELINE-CLOSURE.md` | Approved | Owner milestone-closure record for AC-005/M0 and planning transition to AC-101; creates no new substantive authority by implication |
-| `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` | Active `0.1.0` | AC-101 current Company business-model/value-proposition baseline; separates current facts, Owner-confirmed business directions, hypotheses and unknown/deferred evidence |
-| `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` | Complete / PASS | Formal seven-iteration cross-review of the AC-101 business baseline across eleven management lenses; review evidence, not independent authority or approval of pricing/investment |
+| `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` | Active `0.2.0` | Corrected AC-101 business-model/value-proposition baseline. Flagship direction: customer-specific AI-native company / «ИИ-компания под ключ» on Arvectum OS with organization-first design and reusable functional modules. Supersedes the initial procurement-centered `0.1.0` interpretation |
+| `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` | Complete / PASS | AC-101 cross-review completed at 10/10 after material Owner strategy correction; records why procurement is a domain/module line rather than the highest-level Company product identity |
 | `docs/roadmap/ROADMAP.md` | Active | Canonical Company planning source |
-| `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions or product readiness |
+| `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
-AC-101 deliberately promoted only the Owner-confirmed business-model statements actually recorded in `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md`. Historical chat remains context/evidence and is not converted wholesale into canonical Company state.
+AC-101 deliberately promotes only the business-model statements actually recorded in the corrected `0.2.0` artifact. The Owner's material correction supersedes the earlier procurement-centered interpretation. Historical chat remains context/evidence and is not converted wholesale into canonical Company state.
 
 ## 4. External canonical Arvectum OS dependencies
 
@@ -85,9 +85,9 @@ Generated files live under `docs/project-sources/`. They are intentionally group
 | `06_ARVECTUM_OS_GOVERNANCE_REFERENCE.md` | `Arvectum OS Governance Reference` | Convenience snapshot; uploadable Project Source |
 | `07_ARVECTUM_OS_PRODUCT_CONTRACTS_REFERENCE.md` | `Arvectum OS Product Contracts Relevant to Initial Arvectum Company Portfolio` | Convenience snapshot; uploadable Project Source |
 
-Recommended upload set: all seven generated files. This leaves Project Source capacity for private legal/corporate documents and future Company founding artifacts.
+Recommended upload set: all seven generated files. This leaves Project Source capacity for private legal/corporate documents and future Company artifacts.
 
-A repository source-pack refresh is not required merely because the Arvectum OS HEAD advances. Refresh is required when an included source changes materially. For example, the OS commits between `fbab170ab337c1631b40d0d36ea58a02f6512f6e` and `de59771281ce1b4c58d943bd003560384e332270` changed only P7.10 implementation/review/test evidence and did not modify the bundled Constitution, RFCs, governance reference or Product Contracts.
+A repository source-pack refresh is not required merely because the Arvectum OS HEAD advances. Refresh is required when an included source changes materially.
 
 ## 6. Legal and corporate authority sources
 
