@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.6.0`
+Version: `1.7.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -49,7 +49,10 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/reviews/AC-107-FLAGSHIP-ICP-BUYER-JTBD-OUTCOME-CROSS-REVIEW.md` | Complete / PASS | AC-107 cross-review closed at 9 of maximum 10 after narrowing the segment, separating buyer/champion roles, bounding the first proof, pairing outcome metrics with control guardrails and preserving market-validation uncertainty |
 | `docs/business/DESIGN-PARTNER-DISCOVERY-AND-MARKET-VALIDATION-PLAN.md` | Complete / PASS `0.1.0` | AC-108 executable design-partner discovery plan: hard qualification gates, candidate scoring, Russia-first sourcing, bounded 8–12 conversation loop, non-leading Russian-first script, evidence schema, hypothesis mapping, continue/change/stop logic and diagnostic/pilot boundary |
 | `docs/reviews/AC-108-DESIGN-PARTNER-MARKET-VALIDATION-CROSS-REVIEW.md` | Complete / PASS | AC-108 cross-review closed at 9 of maximum 10 after separating AI interest from fit, bounding sample interpretation, protecting negative evidence, separating value/buyer intent/Arvectum economics and preserving customer authority/data/OS boundaries |
-| `docs/roadmap/ROADMAP.md` | Active `0.12.0` | Canonical Company planning source; AC-108 Complete / PASS and AC-106 Current |
+| `docs/business/M1-BUSINESS-BASELINE-REVIEW-AND-PRIORITY.md` | Complete / PASS `0.1.0` | AC-106 synthesis of the full M1 baseline, M1 exit-criteria review, P0–P3 priority model, bounded-discovery decision boundary, empirical tracking questions and blocker review |
+| `docs/reviews/AC-106-M1-BUSINESS-BASELINE-CROSS-REVIEW.md` | Complete / PASS | AC-106 cross-review closed at 9 of maximum 10; establishes that remaining M1 uncertainties are empirical rather than documentation defects and recommends M1 closure plus AC-201 transition |
+| `docs/governance/decisions/DECISION-2026-08-20-M1-CLOSURE-AND-NEAR-TERM-PRIORITY.md` | Approved | Owner closure decision for M1/AC-106; approves P0–P3 sequencing, bounded parallel AC-108 discovery and AC-201 as Current without approving customer/pilot/price/SLA/product/OS lifecycle effects by implication |
+| `docs/roadmap/ROADMAP.md` | Active `0.13.0` | Canonical Company planning source; M1/AC-106 Complete / PASS and AC-201 Current; bounded AC-108 discovery runs in parallel under the M1 priority decision |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
@@ -67,6 +70,8 @@ AC-107 establishes the market-hypothesis boundary: the first plausible ICP is de
 
 AC-108 establishes the market-validation-instrument boundary: the Company now has explicit design-partner gates, sourcing/prioritization, a non-leading Russian-first discovery script, evidence/confidence fields and continue/change/stop criteria. The `8–12` first-loop conversation target is an operational qualitative bound, not statistical market proof. AC-108 does not claim that real interviews, design-partner commitments, willingness to pay, price, ROI or production readiness already exist. Raw customer/interview evidence remains outside the public repository by default; future Company decisions should use anonymized/aggregated evidence where repository persistence is useful.
 
+AC-106 establishes the M1 closure and priority boundary: M1 is complete because the declared milestone requires a coherent business/economic baseline and a ready-to-run first market-validation plan, not validated demand. Current material obligations/cash/risk remain P0 exceptions; the default P1 loop runs bounded AC-108 discovery and Phase 2 reference-model work in parallel; product/OS work is prioritized when tied to real obligations/revenue/evidence; speculative expansion remains lower priority. Discovery authorization is non-binding and does not approve a design partner, diagnostic/pilot, price, SLA, privileged access or production commitment. Remaining market, economics, repeatability, Owner-workload and continuity questions are tracked as empirical evidence needs.
+
 ## 4. External canonical Arvectum OS dependencies
 
 Canonical repository: `arvectum/arvectum-os`.
@@ -78,7 +83,7 @@ Snapshot used to generate the current repository Project Source pack:
 
 The snapshot SHA is provenance only. Before material work, current canonical repository state must still be checked.
 
-AC-108 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; Phase 8 is active for bounded external-integration validation and the last checked OS roadmap/current-action state does not create a Stable Product Contract, Active capability or external production/SLA claim. No Project Source pack refresh is required solely for AC-108 market-validation planning.
+AC-106 re-checked current Arvectum OS `main` on `2026-08-20` at `d26f9583393d4f3d9ef104f5408439da0471fd76`. The Company-relevant governing baseline remains compatible with this registry: Constitution `1.2.0` is Ratified; RFC-0001 through RFC-0008 remain Accepted `1.0.0`; the Decision Authority Policy remains Proposed `0.2.1`; CAP-001 through CAP-004 remain `Incubating / Provisional`; P6.02 and P6.06 remain `Provisional 0.1.0`; current Phase 8 progress does not create a Stable Product Contract, Active capability or external production/SLA claim. No Project Source pack refresh is required solely for AC-106 M1 closure or AC-201 planning.
 
 | Canonical source | Known status at pack generation | Company relevance |
 |---|---|---|
