@@ -1,7 +1,7 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `1.1.0`
+Version: `1.2.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
@@ -37,15 +37,15 @@ A file being available as a ChatGPT Project Source does **not** make it canonica
 | `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md` | Approved | Owner strategic decision fixing «ИИ-компания под ключ» as the flagship commercial direction and Arvectum Company as the first real reference implementation; does not itself approve ICP, pricing, modules or customer readiness |
 | `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md` | Active `0.2.0` | Corrected AC-101 business-model/value-proposition baseline. Flagship direction: customer-specific AI-native company on Arvectum OS with organization-first design and reusable functional modules. Supersedes the initial procurement-centered `0.1.0` interpretation |
 | `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md` | Complete / PASS | AC-101 cross-review completed at 10/10 after material Owner strategy correction; records why procurement is a domain/module line rather than the highest-level Company product identity |
-| `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md` | Blocked `0.2.0` | AC-102 repository-safe financial/commitment baseline. Separates LLC cash/revenue from product status, provider-side costs and Owner-funded resources; core financial values remain blocked on authoritative banking/accounting intake |
-| `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` | Complete / BLOCKED | AC-102 cross-review reached material convergence at 6 of maximum 10 iterations. Source hierarchy/privacy model passes; closure is blocked by missing authoritative current financial evidence; review resumes at iteration 7 after intake |
-| `docs/roadmap/ROADMAP.md` | Active `0.8.1` | Canonical Company planning source; AC-102 remains the current action but is explicitly blocked pending authoritative financial evidence intake |
+| `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md` | Complete / PASS `0.3.0` | AC-102 Company-level management/economic baseline: revenue architecture, cash-flow classes, cost classes, obligation classes, procurement working-capital logic, flagship investment structure and outsourced-accounting boundary |
+| `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md` | Complete / PASS | AC-102 cross-review closed at 7 of maximum 10 after Owner scope correction. Transaction-level bookkeeping is outside Company-design scope and remains with professional accounting/banking systems |
+| `docs/roadmap/ROADMAP.md` | Active `0.8.2` | Canonical Company planning source; AC-102 Complete / PASS and AC-103 Current |
 | `docs/portfolio/PORTFOLIO.md` | Active `0.1.0` | Initial Company-level product/initiative ownership, repository/dependency and ambiguity map created by AC-004; does not itself approve investment, Positions, module admission or product readiness |
 | `docs/CANONICAL-SOURCES.md` | Active | This source registry |
 
 Historical chat remains context/evidence and is not converted wholesale into canonical Company state. Material Owner corrections are promoted only through explicit canonical artifacts/decisions.
 
-AC-102 deliberately keeps raw bank statements, transaction data, confidential contracts, tax payloads and personal payment data outside this public repository. Banking/accounting/contract systems remain authoritative for their own facts; the Company repository records only the minimum safe management conclusions required for planning and governance.
+AC-102 establishes an explicit accounting boundary: transaction-level banking, bookkeeping, tax administration and statutory records remain with the Company's outsourced accounting/banking contour. The Company repository owns the management/business structure and consumes only decision-relevant summaries, budgets, commitments and exceptions when required.
 
 ## 4. External canonical Arvectum OS dependencies
 
