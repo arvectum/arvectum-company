@@ -1,22 +1,22 @@
 # Arvectum Company Canonical Sources Registry
 
 Status: `Active`
-Version: `2.1.0`
+Version: `2.2.0`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 
 ## 1. Canonical publication model
 
-This registry publication preserves the complete source registry `2.0.0` by immutable git-blob reference and applies the AC-204 registration delta below.
+This registry publication preserves the complete source registry `2.1.0` by immutable git-blob reference and applies the AC-205 registration delta below.
 
 Incorporated prior registry:
 
-- version: `2.0.0`;
+- version: `2.1.0`;
 - path: `docs/CANONICAL-SOURCES.md`;
-- immutable blob SHA: `61185c32df7ef09bdd5fa9afbb51ce6e22ba627c`.
+- immutable blob SHA: `599411f8ad48ecca25d9b4aaf2e793ba37d222a8`.
 
-All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201/AC-202/AC-203 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
+All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201–AC-204 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
 
 Authority remains:
 
@@ -27,49 +27,47 @@ Authority remains:
 5. roadmaps as planning coordination rather than independent authority;
 6. chats, model memory, generated packs and local copies as non-canonical context unless explicitly promoted.
 
-## 2. AC-204 canonical registration
+## 2. AC-205 canonical registration
 
 The following artifacts are added to the active Company canonical/evidence set:
 
 | Source | Status | Role |
 |---|---|---|
-| `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md` | Approved `1.0.0` | Binding Initial Position Registry; establishes six durable executor-neutral Company Positions and incorporates the exact reviewed `0.9.1` proposal by immutable blob reference |
-| `docs/governance/decisions/DECISION-2026-08-20-AC-204-APPROVAL.md` | Approved | Explicit Owner approval record for AC-204 and publication authority for `1.0.0` |
-| `docs/organization/INITIAL-POSITION-REGISTRY.md` | Historical reviewed proposal `0.9.1` | Exact reviewed proposal preserved at blob `9804a57a6cee027712e0c95bbf95bd428f848410`; incorporated in full by the Approved `1.0.0` publication |
-| `docs/reviews/AC-204-INITIAL-POSITION-REGISTRY-CROSS-REVIEW.md` | Complete / PASS | AC-204 cross-review, `10 of maximum 10`, including the Owner-directed separation of finance/obligation control from security/risk/continuity |
-| `docs/roadmap/ROADMAP.md` | Active `0.17.0` | Canonical Company planning publication; AC-204 Complete / PASS and AC-205 Current |
+| `docs/organization/INITIAL-ASSIGNMENTS-AND-EXECUTOR-CLASSIFICATION-v1.0.0.md` | Approved `1.0.0` | Binding initial Position Assignment/executor classification baseline; incorporates the exact reviewed `0.9.0` proposal by immutable blob reference |
+| `docs/governance/decisions/DECISION-2026-08-20-AC-205-APPROVAL.md` | Approved | Explicit Owner approval record for AC-205 and publication authority for `1.0.0` |
+| `docs/organization/INITIAL-ASSIGNMENTS-AND-EXECUTOR-CLASSIFICATION.md` | Historical reviewed proposal `0.9.0` | Exact reviewed proposal preserved at blob `b7ce232b460543423497176503b43ceea2a191ae`; incorporated in full by the Approved `1.0.0` publication |
+| `docs/reviews/AC-205-INITIAL-ASSIGNMENTS-CROSS-REVIEW.md` | Complete / PASS | AC-205 cross-review, `9 of maximum 10`, validating the initial Owner/AI/accounting/future-sales realization without treating Assignment as authority or access |
+| `docs/roadmap/ROADMAP.md` | Active `0.18.0` | Canonical Company planning publication; AC-205 Complete / PASS and AC-206 Current |
 
-## 3. Approved Position baseline
+## 3. Approved Assignment baseline
 
-The binding initial Company Position set is:
+The binding initial executor realization is:
 
-- `POS-001 — Company Executive` — `F-01 + F-07`;
-- `POS-002 — Commercial & Customer Lead` — `F-02 + F-03`;
-- `POS-003 — Portfolio & Product Lead` — `F-04`;
-- `POS-004 — Engineering & Release Lead` — `F-05`;
-- `POS-005 — Finance & Obligation Control Lead` — `F-06`;
-- `POS-006 — Security, Risk & Continuity Lead` — `F-08`.
+- `POS-001 — Company Executive` — Hybrid: current Owner Principal + AI advisory/preparation;
+- `POS-002 — Commercial & Customer Lead` — Hybrid: current Owner Principal + AI search/research/qualification/drafting/bounded approved outreach + outsourced accounting support + conditional future human seller Assignments;
+- `POS-003 — Portfolio & Product Lead` — Hybrid: current Owner Principal + AI synthesis/advice;
+- `POS-004 — Engineering & Release Lead` — AI-led for bounded admitted technical work;
+- `POS-005 — Finance & Obligation Control Lead` — current Owner Principal + outsourced accounting/tax external-service interface;
+- `POS-006 — Security, Risk & Continuity Lead` — Hybrid: current Owner Principal + AI analysis/advice.
 
-These are accountability units, not a staffing plan. Owner, participant/general-meeting competence and General Director legal office remain separate authority capacities rather than Positions.
+The current Owner Principal therefore temporarily carries the human Position Assignment for POS-001, POS-002, POS-003, POS-005 and POS-006 while keeping Owner, participant, General Director and Position capacities distinct.
 
-## 4. Authority and executor boundary
+## 4. Authority / access / executor boundary
 
-AC-204 creates Position meaning and accountable outcomes but does not appoint Principals, create Assignments, grant technical access or create legal/corporate/customer/Product/OS authority.
+Assignment does not create Organizational Authority, legal/corporate authority or technical access.
 
-The initial Position authority design ceiling remains `AM-0`, `AM-1`, `AM-2`. AC-202 `ROD-01` through `ROD-09` remain a hard negative boundary. Actual executable authority depends on later valid Assignment, access and current workflow/data/risk conditions.
+Approved AC-202 `ROD-01` through `ROD-09` remain the hard Owner-reserved boundary. AC-205 activates no `AM-3` or `AM-4` class.
 
-The Finance and Security/Risk/Continuity boundaries remain distinct even if AC-205 initially assigns the same Principal to both.
+Effective execution remains bounded by the intersection of Position authority, Assignment scope, technical authorization/access and current workflow/data/risk conditions.
 
-## 5. Current Arvectum OS relevance
+Outsourced accounting remains an external professional interface rather than Company authority. Future sellers are not active Principals until explicitly engaged and assigned. AI models/runtimes are replaceable and do not become the Position or source of authority.
 
-AC-204 creates no new Arvectum OS authority or lifecycle effect. The OS baseline re-checked during AC-204 remained Constitution `1.2.0` Ratified, with the OS Decision Authority Policy still Proposed `0.2.1`; AC-204 does not rely on that Proposed policy as binding authority.
+## 5. Current Company planning state
 
-## 6. Current Company planning state
-
-`AC-204 — Initial Position Registry` is `Complete / PASS`.
+`AC-205 — Initial Assignments and executor classification` is `Complete / PASS`.
 
 Current canonical Company action:
 
-`AC-205 — Initial Assignments and executor classification`.
+`AC-206 — Company data/tool/credential access boundary baseline`.
 
-AC-205 must map Principals/executor classes to the approved six Positions without treating Assignment as authority or access and without changing Position meaning merely to fit a preferred AI/model/runtime.
+AC-206 must define least-privilege access from the approved Position/Assignment baseline without placing secrets in the public repository or converting credential possession into authority.
