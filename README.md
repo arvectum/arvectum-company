@@ -29,13 +29,11 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 The current flagship business direction is **«ИИ-компания под ключ»**: design and deploy a customer-specific AI-native organizational model on Arvectum OS, adapting functions, Positions, authority, workflows and reusable/customer-specific modules to the customer's business model. Arvectum Company is the first real reference implementation of that organization-first approach.
 
-The canonical roadmap `0.8.1` couples internal Company development with early market discovery, reusable-module governance, a first external design-partner deployment and later multi-customer repeatability. Procurement remains one important business/domain/module line rather than the Company's highest-level product identity.
+`AC-102 — Revenue, cash, recurring cost and obligation baseline` is now `Complete / PASS`. Publication `0.3.0` defines the Company-level revenue architecture, cash-flow categories, recurring/variable/investment cost structure, obligation classes, procurement working-capital logic, flagship investment pools and the boundary between management finance and outsourced accounting. Its cross-review closed at `7 of maximum 10` after the Owner corrected the scope away from transaction-level bookkeeping.
 
-The current canonical Company action remains `AC-102 — Revenue, cash, recurring cost and obligation baseline`, but its state is `Blocked pending authoritative financial evidence intake`.
+The Company does not recreate bookkeeping, bank reconciliation or tax administration in this repository. Outsourced accounting and banking/accounting systems retain transaction/statutory truth; Arvectum Company consumes management summaries, budgets, commitments and exceptions when needed for decisions.
 
-AC-102 publication `0.2.0` separates LLC financial truth from product status, historical/personal work and provider-side cost evidence. Its cross-review reached material convergence at `6 of maximum 10` iterations and stopped because additional review cannot replace the missing authoritative business-account/accounting evidence. Review resumes at iteration `7` after that evidence is supplied.
-
-No LLC revenue, current cash balance, complete recurring run-rate or profitability conclusion is inferred from repository/email absence. AC-103 is not activated automatically while AC-102 remains blocked.
+The canonical roadmap `0.8.2` now advances to `AC-103 — Current customer/client lifecycle and real value-stream map` as the current Company action.
 
 ## Repository boundary
 
