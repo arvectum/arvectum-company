@@ -1,13 +1,13 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.8.3`
+Version: `0.9.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
 Task classification: `company_planning` with `business`, `governance`, `operations`, `portfolio`, `productization` and `ai_workforce`
-Current canonical action: `AC-104 — Owner workload, manual work and bottleneck map`
+Current canonical action: `AC-105 — Material risk, dependency, continuity and fallback baseline`
 Strategic decision: `docs/governance/decisions/DECISION-2026-08-20-FLAGSHIP-AI-COMPANY-BUILDER.md`
 
 ## 1. Purpose
@@ -173,8 +173,8 @@ Purpose: understand the real Company, economic runway and first credible market 
 | `AC-101` | Current business model and value proposition baseline | `Complete / PASS` |
 | `AC-102` | Revenue, cash, recurring cost and obligation baseline | `Complete / PASS` |
 | `AC-103` | Current customer/client lifecycle and real value-stream map | `Complete / PASS` |
-| `AC-104` | Owner workload, manual work and bottleneck map | `Current` |
-| `AC-105` | Material risk, dependency, continuity and fallback baseline | `Planned` |
+| `AC-104` | Owner workload, manual work and bottleneck map | `Complete / PASS` |
+| `AC-105` | Material risk, dependency, continuity and fallback baseline | `Current` |
 | `AC-107` | Flagship ICP, buyer, job-to-be-done and measurable outcome hypotheses | `Planned` |
 | `AC-108` | First design-partner criteria, discovery script and market-validation plan | `Planned` |
 | `AC-106` | M1 business baseline review and Owner priority decision | `Planned` |
@@ -184,6 +184,8 @@ AC-101 establishes the corrected flagship direction under `DECISION-2026-08-20-F
 AC-102 publication `0.3.0` establishes the Company-level revenue/cash/cost/obligation architecture and the boundary between management finance and outsourced accounting. Its cross-review closed at `7 of maximum 10` after the Owner corrected the task scope: transaction-level bookkeeping, bank reconciliation, tax calculation and receipt inspection are not Company-design work and do not block progression.
 
 AC-103 publication `0.1.0` establishes the current Company-level customer lifecycle and five value streams, separating real bespoke client delivery and controlled-pilot evidence from the future flagship lifecycle. Its cross-review closed at `7 of maximum 10`; the key handoff is that acquisition/scoping/commitment, customer iteration and acceptance are strongly Owner-dependent and must be measured rather than assumed in AC-104.
+
+AC-104 publication `0.1.0` separates Owner control from Owner execution and maps the main workload concentrations: universal interpretation, portfolio/priority switching, customer-context continuity, exception/rework handling, local/credential gates, reserved-decision preparation and state reconstruction. Its cross-review closed at `8 of maximum 10` without inventing historical hours, future Positions or AI Assignments. The next risk question is which of these dependencies become material continuity failures when the Owner, a local environment, credential or external dependency is unavailable.
 
 ### M1 exit criteria
 
@@ -427,14 +429,12 @@ This roadmap records Company-level dependencies and decisions only. Product/OS i
 
 A cross-repository dependency becomes a commitment only through the applicable governance path. Mentioning a future module or OS capability here does not authorize or promote it.
 
-## 18. Current action — AC-104
+## 18. Current action — AC-105
 
-### AC-104 — Owner workload, manual work and bottleneck map
+### AC-105 — Material risk, dependency, continuity and fallback baseline
 
 Status: `Current`.
 
-Objective: map where the Owner currently performs, reviews, approves, coordinates or reconstructs work across the real Company lifecycle and portfolio, distinguish genuinely reserved authority from avoidable execution load, and identify the highest-value delegation/automation candidates without designing Positions prematurely.
+Objective: identify the Company's material operational, authority, data, technology, supplier/vendor, customer-obligation and Owner-dependency risks; determine which failures can stop or materially damage current work; and record minimum continuity/fallback expectations without prematurely designing the Phase 2 organization or implementation stack.
 
-AC-103 provides the customer/value-stream skeleton for this analysis. AC-104 should test actual Owner concentration across opportunity judgment, discovery/scoping, commitment, delivery coordination, exception handling, acceptance, support and productization/reuse decisions.
-
-The output must distinguish work that should remain Owner-reserved from work that can later move to an accountable Position, AI/software Assignment or simpler process control.
+AC-102 provides the financial/obligation boundary, AC-103 provides the current customer/value-stream boundary, and AC-104 provides the Owner/manual-work dependency map. AC-105 should now distinguish deliberate control gates from single points of failure, identify what happens when critical Principals, credentials, local environments, repositories, external services or product dependencies are unavailable, and establish the evidence needed for later continuity, replacement and access-control design.
