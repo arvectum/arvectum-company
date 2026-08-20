@@ -10,6 +10,7 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - Company ↔ Arvectum OS authority boundary: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md`
 - Canonical source registry: `docs/CANONICAL-SOURCES.md`
 - Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
+- Initial Company portfolio map: `docs/portfolio/PORTFOLIO.md`
 - Repository structure and artifact map: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`
 - Formal review evidence: `docs/reviews/`
 
