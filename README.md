@@ -12,7 +12,8 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - Canonical source registry: `docs/CANONICAL-SOURCES.md`
 - Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
 - Current business model / value proposition baseline: `docs/business/CURRENT-BUSINESS-MODEL-AND-VALUE-PROPOSITION.md`
-- Active AC-102 financial/obligation baseline: `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md`
+- AC-102 financial/obligation baseline: `docs/business/REVENUE-CASH-COST-OBLIGATION-BASELINE.md`
+- AC-102 financial baseline cross-review: `docs/reviews/AC-102-FINANCIAL-BASELINE-CROSS-REVIEW.md`
 - AC-101 business-model cross-review: `docs/reviews/AC-101-CURRENT-BUSINESS-MODEL-CROSS-REVIEW.md`
 - Initial Company portfolio map: `docs/portfolio/PORTFOLIO.md`
 - Repository structure and artifact map: `docs/governance/CANONICAL-REPOSITORY-STRUCTURE.md`
@@ -28,9 +29,13 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 The current flagship business direction is **«ИИ-компания под ключ»**: design and deploy a customer-specific AI-native organizational model on Arvectum OS, adapting functions, Positions, authority, workflows and reusable/customer-specific modules to the customer's business model. Arvectum Company is the first real reference implementation of that organization-first approach.
 
-The canonical roadmap `0.8.0` couples internal Company development with early market discovery, reusable-module governance, a first external design-partner deployment and later multi-customer repeatability. Procurement remains one important business/domain/module line rather than the Company's highest-level product identity.
+The canonical roadmap `0.8.1` couples internal Company development with early market discovery, reusable-module governance, a first external design-partner deployment and later multi-customer repeatability. Procurement remains one important business/domain/module line rather than the Company's highest-level product identity.
 
-The current canonical Company action is `AC-102 — Revenue, cash, recurring cost and obligation baseline`. Its evidence model is created; actual financial figures remain pending authoritative financial/obligation evidence.
+The current canonical Company action remains `AC-102 — Revenue, cash, recurring cost and obligation baseline`, but its state is `Blocked pending authoritative financial evidence intake`.
+
+AC-102 publication `0.2.0` separates LLC financial truth from product status, historical/personal work and provider-side cost evidence. Its cross-review reached material convergence at `6 of maximum 10` iterations and stopped because additional review cannot replace the missing authoritative business-account/accounting evidence. Review resumes at iteration `7` after that evidence is supplied.
+
+No LLC revenue, current cash balance, complete recurring run-rate or profitability conclusion is inferred from repository/email absence. AC-103 is not activated automatically while AC-102 remains blocked.
 
 ## Repository boundary
 
