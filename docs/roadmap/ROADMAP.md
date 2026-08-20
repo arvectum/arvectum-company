@@ -1,39 +1,48 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.16.0`
+Version: `0.17.0`
 Created: `2026-08-19`
 Updated: `2026-08-20`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
-Current canonical action: `AC-204 — Initial Position Registry`
+Current canonical action: `AC-205 — Initial Assignments and executor classification`
 
 ## 1. Canonical publication model
 
-This `0.16.0` publication preserves the complete approved planning substance of roadmap `0.15.0` by immutable git-blob reference and applies only the explicit AC-203 closure / AC-204 transition delta below.
+This `0.17.0` publication preserves the complete approved planning substance of roadmap `0.16.0` by immutable git-blob reference and applies only the explicit AC-204 closure / AC-205 transition delta below.
 
 Incorporated prior roadmap:
 
-- prior version: `0.15.0`;
+- prior version: `0.16.0`;
 - prior canonical path: `docs/roadmap/ROADMAP.md`;
-- immutable blob SHA: `51c0cf4577993d4416d708265383a9bbe098b224`.
+- immutable blob SHA: `621511bebf0dd2b7e9064b03fdf6f3fcf5bf0008`.
 
-All Phase 0–8 planning, milestone definitions, business-first principles, repository boundaries, P0–P3 sequencing, AC-108 parallel discovery rules and AC-202 governance baseline from that incorporated version remain unchanged unless explicitly superseded below.
+All Phase 0–8 planning, milestone definitions, business-first principles, repository boundaries, P0–P3 sequencing, AC-108 parallel discovery rules and AC-202/AC-203 governance baseline from that incorporated version remain unchanged unless explicitly superseded below.
 
-## 2. AC-203 closure delta
+## 2. AC-204 closure delta
 
-`AC-203 — Delegated Position authority, approval and escalation model` is now `Complete / PASS`.
+`AC-204 — Initial Position Registry` is now `Complete / PASS`.
 
-Binding governance publication:
+Binding organizational publication:
 
-- `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md` — `Approved 1.0.0`;
-- approved reviewed proposal: `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL.md` — `Proposed 0.9.0`, blob `ba89771f7b3ead7f70b0482f06d7d04bc68df2ea`;
-- cross-review: `docs/reviews/AC-203-DELEGATED-POSITION-AUTHORITY-CROSS-REVIEW.md` — `9 of maximum 10`, PASS for Owner approval;
-- Owner approval: `docs/governance/decisions/DECISION-2026-08-20-AC-203-APPROVAL.md`.
+- `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md` — `Approved 1.0.0`;
+- approved reviewed proposal: `docs/organization/INITIAL-POSITION-REGISTRY.md` — `Proposed 0.9.1`, blob `9804a57a6cee027712e0c95bbf95bd428f848410`;
+- cross-review: `docs/reviews/AC-204-INITIAL-POSITION-REGISTRY-CROSS-REVIEW.md` — `10 of maximum 10`, PASS for Owner approval;
+- Owner approval: `docs/governance/decisions/DECISION-2026-08-20-AC-204-APPROVAL.md`.
 
-AC-203 establishes five authority modes (`AM-0` through `AM-4`), executor-neutral Position authority, deny-by-default delegation, explicit approval semantics, fail-closed/escalation behavior and the rule that effective execution is bounded by the intersection of Position authority, Assignment scope, technical access and current workflow/data/risk conditions.
+AC-204 establishes six durable executor-neutral Company Positions:
 
-Approved AC-202 `ROD-01` through `ROD-09` remain a hard negative boundary. AC-203 creates no concrete Position, Assignment, access grant, numeric threshold, legal power, customer authority or Arvectum OS lifecycle effect.
+1. `POS-001 — Company Executive` (`F-01 + F-07`);
+2. `POS-002 — Commercial & Customer Lead` (`F-02 + F-03`);
+3. `POS-003 — Portfolio & Product Lead` (`F-04`);
+4. `POS-004 — Engineering & Release Lead` (`F-05`);
+5. `POS-005 — Finance & Obligation Control Lead` (`F-06`);
+6. `POS-006 — Security, Risk & Continuity Lead` (`F-08`).
+
+Finance/obligation control and security/risk/continuity are intentionally separate Position boundaries. Organizational State/Evidence/Improvement is carried with Company Executive at the present scale.
+
+The six Positions do not imply six employees or agents. No Principal, human, AI, software or runtime is assigned by AC-204. Initial Position authority design ceiling remains `AM-0`/`AM-1`/`AM-2`; AC-202 `ROD-*` remains a hard negative boundary.
 
 ## 3. Phase 2 current status
 
@@ -42,40 +51,36 @@ Approved AC-202 `ROD-01` through `ROD-09` remain a hard negative boundary. AC-20
 | `AC-201` | Minimal real organizational/function model | `Complete / PASS` |
 | `AC-202` | Reserved Owner Decisions | `Complete / PASS` |
 | `AC-203` | Delegated Position authority, approval and escalation model | `Complete / PASS` |
-| `AC-204` | Initial Position Registry | `Current` |
-| `AC-205` | Initial Assignments and executor classification | `Planned` |
+| `AC-204` | Initial Position Registry | `Complete / PASS` |
+| `AC-205` | Initial Assignments and executor classification | `Current` |
 | `AC-206` | Company data/tool/credential access boundary baseline | `Planned` |
 | `AC-207` | Critical-function continuity, replacement and manual fallback baseline | `Planned` |
 | `AC-208` | Reference-model transferability boundary and operating-model cross-review | `Planned` |
 
-## 4. Current action — AC-204
+## 4. Current action — AC-205
 
-### AC-204 — Initial Position Registry
+### AC-205 — Initial Assignments and executor classification
 
 Status: `Current`.
 
-Objective: derive the smallest evidence-backed set of durable Company Positions from the AC-201 function model, current workload/accountability/control needs and approved AC-202/AC-203 authority boundaries.
+Objective: map the current and near-term executor realization of the six approved Positions without redesigning the organization around preferred models, agents, software or today's Owner concentration.
 
-AC-204 must determine, proportionately to current evidence:
+AC-205 must determine, proportionately to current evidence:
 
-- which AC-201 responsibilities require a distinct durable Position rather than remaining bundled;
-- where one Position may legitimately span several functions at the Company's current scale;
-- where one function requires more than one Position because accountability, authority, workload or control separation genuinely differs;
-- each Position's purpose and business reason for existence;
-- accountable outputs/outcomes;
-- function/responsibility coverage;
-- authority modes available to the Position under AC-203 and explicit exclusions under AC-202;
-- major handoffs and escalation destinations;
-- whether the Position is currently required, conditional/future or not justified;
-- what evidence would justify later splitting, merging or retiring the Position.
+- which Principal(s) currently or initially occupy each approved Position;
+- executor class for each Assignment: human, AI, software, external-service interface or hybrid;
+- where the same Principal temporarily holds several Positions while keeping the capacities distinct;
+- Assignment scope relative to each Position's approved authority ceiling;
+- which responsibilities remain human-led, which are AI/software-executable and which are deliberately not delegated yet;
+- supervision/accountability and escalation for AI/software execution;
+- known executor-specific limitations, local-device/runtime dependencies and replacement concerns;
+- Assignment duration/review condition and what evidence would justify reassignment or a different executor mix.
 
-AC-204 MUST NOT mechanically create one Position per AC-201 function and MUST NOT create familiar departments or fake headcount for organizational completeness.
-
-AC-204 must remain executor-neutral. It MUST NOT assign named humans, AI agents, software services or runtimes. Those remain AC-205 Assignments. It also must not create credentials or technical access; those remain AC-206.
+AC-205 MUST NOT infer data/tool/credential access from Assignment. Technical access remains AC-206. It MUST NOT grant new legal/corporate authority, customer authority, `ROD-*` decisions or Arvectum OS governance authority by Assignment.
 
 The bounded AC-108 discovery loop continues in parallel as previously authorized P1 market-evidence work.
 
-The next Phase 2 handoff after AC-204 is `AC-205 — Initial Assignments and executor classification`.
+The next Phase 2 handoff after AC-205 is `AC-206 — Company data/tool/credential access boundary baseline`.
 
 ## 5. Authority reminder
 
