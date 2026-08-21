@@ -16,6 +16,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-307 — итоговая проверка портфеля и закрытие M3: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md`
 - AC-401 — модель реестра работ и обязательств: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md`
 - AC-402 — модель реестра решений, approvals и эскалаций: `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md`
+- AC-403 — модель реестра рисков, исключений и инцидентов: `docs/operations/COMPANY-RISK-EXCEPTION-INCIDENT-REGISTER-MODEL-v1.0.0.md`
 - Материалы перекрёстных проверок: `docs/reviews/`
 - Долговременные решения собственника и системы управления: `docs/governance/decisions/`
 
@@ -40,8 +41,8 @@ M4:
 ```text
 AC-401 work/obligation register model             Complete / PASS
 → AC-402 decision/approval/escalation register   Complete / PASS
-→ AC-403 risk/exception/incident register        Current
-→ AC-404 cash/commitment/reporting baseline      Planned
+→ AC-403 risk/exception/incident register        Complete / PASS
+→ AC-404 cash/commitment/reporting baseline      Current
 → AC-405 portfolio/priority review cadence       Planned
 → AC-406 Owner Mission Control                    Planned
 → AC-407 management operating cadence            Planned
@@ -49,11 +50,11 @@ AC-401 work/obligation register model             Complete / PASS
 
 Текущее каноническое действие:
 
-**`AC-403 — Risk, exception and incident register model` — модель реестра рисков, исключений и инцидентов.**
+**`AC-404 — Cash, commitment and management reporting baseline` — базовая модель видимости денег, обязательств и управленческой отчётности.**
 
 ## Утверждённый M4 control baseline
 
-AC-401 установил два Company control namespace:
+AC-401 установил:
 
 - `WORK-*` — material Company-level work;
 - `OBL-*` — material obligation control.
@@ -64,13 +65,27 @@ AC-402 добавил:
 - `APR-*` — approval gate / attributable approval act control record;
 - `ESC-*` — escalation case.
 
-Ключевое правило AC-402:
+AC-403 добавил:
 
-`recommendation ≠ decision ≠ approval ≠ legal/corporate act ≠ technical authorization ≠ execution`.
+- `RSK-*` — material risk exposure/control record;
+- `EXC-*` — material control-exception request/decision record;
+- `INC-*` — material incident control record.
 
-Company repository authoritative только для Company governance/control state в своём scope. Договоры, legal/corporate acts, customer facts, accounting/banking truth, product implementation/status и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+Ключевые правила:
 
-Наличие `decision_outcome=approve`, технического доступа, credential или успешного workflow step само по себе не разрешает consequential external effect.
+`recommendation ≠ decision ≠ approval ≠ legal/corporate act ≠ technical authorization ≠ execution`
+
+`risk evidence ≠ accepted risk`
+
+`exception request ≠ approved exception`
+
+`incident detection ≠ authority to act`
+
+`containment ≠ risk acceptance`.
+
+Company repository authoritative только для Company governance/control state в своём scope. Договоры, legal/corporate acts, customer facts, accounting/banking truth, product implementation/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+
+Наличие cash, dashboard visibility, credential, technical access, `decision_outcome=approve`, incident state или AI recommendation само по себе не создаёт spend/external-effect authority.
 
 ## Business-first приоритет
 
@@ -82,11 +97,11 @@ Company repository authoritative только для Company governance/control 
 
 ## Граница репозитория
 
-Специфические для Arvectum Company правила управления, организационные Positions, Assignments, портфельные решения и Company-level control models принадлежат этому репозиторию, когда их допустимо хранить здесь.
+Специфические для Arvectum Company правила управления, organizational Positions, Assignments, portfolio decisions и Company-level control models принадлежат этому репозиторию, когда их допустимо хранить здесь.
 
 Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура, Product Contracts и platform governance принадлежат `arvectum/arvectum-os`.
 
-Этот репозиторий публичный. **Запрещено** размещать здесь секреты, повторно используемые учётные данные, private keys, подписи, избыточные персональные данные, банковские/платёжные payloads, непубличные клиентские/поставщицкие/договорные материалы, privileged incident details и другие ограниченные операционные данные.
+Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, непубличные клиентские/поставщицкие/договорные материалы, privileged incident/security details и другие ограниченные операционные данные.
 
 ## Удалённые репозитории
 
