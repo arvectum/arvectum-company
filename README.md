@@ -21,6 +21,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-405 — portfolio/module/priority review cadence: `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-v1.0.0.md`
 - AC-406 — Owner Mission Control evidence view: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-IMPLEMENTATION-EVIDENCE-VIEW-v1.0.0.md`
 - AC-407 / закрытие M4: `docs/operations/MANAGEMENT-OPERATING-CADENCE-AND-M4-CONTROL-REVIEW-v1.0.0.md`
+- AC-501 — выбор первого governed workflow: `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-v1.0.0.md`
 - Первый public-safe Mission Control evidence snapshot: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-SNAPSHOT-2026-08-21.md`
 - Cross-reviews: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
@@ -38,15 +39,21 @@ Arvectum Company — конкретная организация ООО «Арв
 - `M4` — Owner control and reference-implementation observability: `Complete / PASS`;
 - `M5` — first real governed Company operating contour: `Current`.
 
+`AC-501 — First governed workflow candidate selection` закрыт как `Complete / PASS`.
+
+Утверждён первый M5 workflow:
+
+**`WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`**, первый real-operation contour — **`PORT-002 — Discount Parser`**.
+
 Текущее каноническое действие:
 
-**`AC-501 — First governed workflow candidate selection` — выбор первого реального workflow, на котором Company проверит организационную модель в операционной работе.**
+**`AC-502 — Workflow, accountable Position, authority/data/evidence contract` — формализация выбранного workflow до implementation и supervised real-operation proof.**
 
 M5:
 
 ```text
-AC-501 first governed workflow candidate selection      Current
-→ AC-502 workflow / Position / authority / data contract Planned
+AC-501 first governed workflow candidate selection       Complete / PASS
+→ AC-502 workflow / Position / authority / data contract Current
 → AC-503 Arvectum OS reliance/admission mapping          Planned
 → AC-504 bounded workflow implementation                 Planned
 → AC-505 supervised real-operation proof                 Planned
@@ -89,17 +96,29 @@ quarterly
 
 Daily dashboard/meeting ritual не требуется. Routine `AM-1`/`AM-2` work не проходит полную governance ceremony, если не пересечена material/authority boundary.
 
-## Что M4 не доказал
+## Что выбрал AC-501
 
-M4 closure не означает полноту live Company registers, current cash/liquidity completeness, отсутствие обязательств/рисков/инцидентов, measured Owner-time reduction, broad AI effectiveness, Company-wide continuity/DR readiness, profitability, market validation, customer readiness, legal compliance или production readiness.
+AC-501 сравнил несколько реальных workflow candidates и выбрал `WF-M5-001` не потому, что Discount Parser технически зрелее остальных, а потому что здесь уже есть повторяющийся customer-feedback/correction/validation loop, прямой business/customer value, явный Owner exception/rework bottleneck, bounded technical delegation path, practical fallback и сильный reconstruction evidence path.
 
-Эти empirical gaps должны закрываться реальной работой в M5/M6 и ongoing operations, а не дополнительными design-only документами.
+Выбор `PORT-002` не означает новый budget, permanent portfolio re-ranking, новый customer commitment или product/production-readiness claim.
 
-## M5 business-first rule
+## Что AC-502 должен определить
 
-AC-501 не получает заранее назначенный workflow. Кандидат выбирается по actual evidence: business/customer/revenue/obligation value, workload, repeatability, authority feasibility, data/tool/access readiness, risk/reversibility, evidence quality, fallback feasibility и вероятный Owner-time/economic benefit.
+До implementation AC-502 должен установить для `WF-M5-001`:
 
-Technical readiness, наличие AI или существующая Arvectum OS integration сами по себе недостаточны для выбора.
+- exact start/end и workflow states;
+- accountable и participating Positions;
+- permitted/excluded `AM-*` actions;
+- customer scope/commitment/acceptance gates;
+- Company/Product source-of-truth boundary;
+- data/tool/access requirements;
+- evidence contract и reconstructability;
+- stale/unknown/ambiguous-input behavior;
+- escalation/fail-closed conditions;
+- continuity/manual fallback;
+- lightweight M5 measurements по Owner interventions, rework, blocking/cycle и outcome quality.
+
+Arvectum OS не считается обязательным по импликации. Exact reliance/admission mapping — отдельный AC-503.
 
 ## Business-first portfolio order
 
@@ -111,17 +130,17 @@ Technical readiness, наличие AI или существующая Arvectum 
 
 ## Граница Arvectum OS
 
-Company-specific Positions, Assignments, authority, portfolio decisions, operating controls и Mission Control semantics принадлежат `arvectum/arvectum-company`.
+Company-specific Positions, Assignments, authority, portfolio decisions, operating controls и M5 workflow governance принадлежат `arvectum/arvectum-company`.
 
 Product implementation/status остаются в product repositories. Domain-neutral platform architecture, Product Contracts, RFC/ADR и Platform Capability lifecycle принадлежат `arvectum/arvectum-os`.
 
-M4 не создаёт Company Product Contract/Active Capability в Arvectum OS. Любая реальная OS reliance для выбранного M5 workflow проходит отдельный AC-503/admission mapping и применимый OS governance path.
+AC-501 не создаёт Company Product Contract/Active Capability в Arvectum OS. Любая реальная OS reliance для `WF-M5-001` проходит отдельный AC-503/admission mapping и применимый OS governance path.
 
 ## Граница публичного репозитория
 
 Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, transaction exports, confidential exact cash balances, sensitive tax/accounting documents, непубличные customer/vendor/contract materials, privileged payment/fraud/incident/security details и chain-of-thought.
 
-Public-safe Mission Control хранит governance/evidence references и explicit unknowns. Live restricted finance/customer/security projection должен находиться в соответствующем защищённом контуре.
+Для `WF-M5-001` здесь должны храниться только public-safe governance/evidence references и sanitized operating meaning. Raw customer evidence остаётся в соответствующем authorized contour.
 
 ## Удалённые репозитории
 
