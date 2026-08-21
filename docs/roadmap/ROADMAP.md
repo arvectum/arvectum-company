@@ -1,79 +1,68 @@
 # Каноническая дорожная карта Arvectum Company
 
 Статус: `Active`
-Версия: `0.29.0`
+Версия: `0.30.0`
 Создано: `2026-08-19`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
-Текущее каноническое действие: `AC-401 — Company work/obligation register model`
-Русское название текущего действия: `Модель реестра работ и обязательств Компании`
+Текущее каноническое действие: `AC-402 — Decision, approval and escalation register model`
+Русское название текущего действия: `Модель реестра решений, утверждений и эскалаций`
 
 ## 1. Модель публикации
 
-Эта редакция `0.29.0` сохраняет полное содержание дорожной карты `0.28.0` по immutable git blob и добавляет утверждение AC-307, закрытие M3 и переход к первому действию M4.
+Эта редакция `0.30.0` сохраняет полное содержание дорожной карты `0.29.0` по immutable git blob и добавляет утверждение/закрытие AC-401 с переходом к AC-402.
 
 Предыдущая редакция:
 
-- версия: `0.28.0`;
+- версия: `0.29.0`;
 - путь: `docs/roadmap/ROADMAP.md`;
-- immutable git blob SHA: `009f3aa9341c01039cf7b1d217fb246cf51855fe`.
+- immutable git blob SHA: `d66f04e9b5b7636683b8bc3007967ccbe346d89c`.
 
 Все ранее определённые этапы M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, bounded AC-108 evidence loop и конечный AC-901 остаются в силе, если прямо не изменены более новым утверждённым решением.
 
-## 2. Закрытие AC-307
+## 2. Закрытие AC-401
 
-`AC-307 — Итоговая проверка управления портфелем и закрытие M3` имеет статус:
+`AC-401 — Company work/obligation register model` имеет статус:
 
 `Complete / PASS`.
 
 Утверждённая publication:
 
-- `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md` — `Approved 1.0.0`, blob `ff9a07d8c7161bfdaf3628e1c8e21d2a2d0f4435`;
-- exact reviewed proposal: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE.md` — `Proposed 0.9.0`, blob `904b9e5ffa12caeb082b3bf23a89aff251ebe8c4`;
-- cross-review: `docs/reviews/AC-307-PORTFOLIO-GOVERNANCE-M3-CLOSURE-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `bc3c4992f12dabaeb155f055373da292278cd791`;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-307-APPROVAL-AND-M3-CLOSURE.md`;
-- explicit Owner approval wording: `AC-307 утверждаю`.
+- `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md` — `Approved 1.0.0`, blob `fa9f513b1434c7eda257ac412bf7472da400519d`;
+- exact reviewed proposal: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL.md` — `Proposed 0.9.0`, blob `0f4444fbd968e176a0a158771a7d0abe93549ecd`;
+- cross-review: `docs/reviews/AC-401-COMPANY-WORK-OBLIGATION-REGISTER-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `7c0cbc178bf50a7babbd0403798091c4ddef996f`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-401-APPROVAL.md`, blob `408ee310b81d6d27af36e901e42358de2b48aa82`;
+- explicit Owner approval wording: `AC-401 утверждаю`.
 
-Канонический portfolio map синхронизирован:
+AC-401 устанавливает минимальный Company control substrate:
 
-- `docs/portfolio/PORTFOLIO.md` — `Active 0.8.0`, blob `8a77be35225f9c8c4958531e52a4131abda13d0f`.
+```text
+Authoritative sources
+        ↓ references + freshness
+WORK-* / OBL-* Company control entries
+        ↓
+Position accountability + P0…P3 + control state
+        ↓
+attention / escalation need / next control point
+        ↓
+future specialized decision/risk/cash views
+```
 
-## 3. Закрытие M3
+Реестр является canonical только для Company-level control representation в своём scope. Он не становится бухгалтерией, legal/contract source, product tracker или Arvectum OS authority.
 
-Этап:
+## 3. M3 и предыдущие этапы
 
-`M3 — Product/module-candidate portfolio governed as investments`
+- `M0` — `Complete / PASS`;
+- `M1` — `Complete / PASS`;
+- `M2` — `Complete / PASS`;
+- `M3 — Product/module-candidate portfolio governed as investments` — `Complete / PASS`.
 
-закрыт со статусом:
-
-`Complete / PASS`.
-
-Итог M3:
-
-- `PORT-001…PORT-007` имеют устойчивую Company identity, repository locator и disposition;
-- каждый узел имеет primary accountable Position `POS-003 — Portfolio & Product Lead` при сохранении функциональных authority boundaries других Positions и `ROD-*`;
-- AC-303 задаёт bounded investment/cost/risk treatment;
-- AC-304 отделяет standalone product, reference implementation, Company/product-family module candidate и OS-capability hypothesis;
-- AC-305 фиксирует отсутствие обязательной hard inter-product runtime/code/data dependency и текущую Arvectum OS Product Contract correspondence;
-- AC-306 задаёт default discretionary capital/economics/Owner-attention order без создания budget/spend authorization;
-- AC-307 подтвердил согласованность этих слоёв и явный carry-forward недостающего empirical evidence.
+Полный M3 baseline остаётся в редакции roadmap `0.29.0`, AC-301…AC-307 и `docs/portfolio/PORTFOLIO.md`.
 
 Закрытие M3 не означает profitability, market validation, legal compliance, customer readiness, production readiness, approved reusable production module, Stable Product Contract или Active Arvectum OS capability.
 
-## 4. Phase 3 final status
-
-| ID | Работа | Статус |
-|---|---|---|
-| `AC-301` | Сверка идентичности, границ и владения продуктами и инициативами портфеля | `Complete / PASS` |
-| `AC-302` | Закрепление ответственной организационной позиции за каждым активным продуктом/инициативой | `Complete / PASS` |
-| `AC-303` | Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить | `Complete / PASS` |
-| `AC-304` | Разделение standalone/reference/module/OS-capability candidate roles | `Complete / PASS` |
-| `AC-305` | Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS | `Complete / PASS` |
-| `AC-306` | Приоритизация портфеля по капиталу, экономике и вниманию собственника | `Complete / PASS` |
-| `AC-307` | Итоговая проверка управления портфелем и закрытие M3 | `Complete / PASS` |
-
-## 5. Phase 4 — Owner control and reference observability
+## 4. Phase 4 — Owner control and reference observability
 
 Milestone:
 
@@ -81,12 +70,12 @@ Milestone:
 
 Назначение M4: дать собственнику возможность видеть существенные работы, обязательства, решения, риски, cash/commitments и portfolio state без постоянного восстановления контекста из чатов и отдельных репозиториев, одновременно создавая наблюдаемое evidence того, работает ли AI-native organizational model на практике.
 
-План M4:
+Текущий статус:
 
 | ID | Работа | Статус |
 |---|---|---|
-| `AC-401` | Company work/obligation register model | `Current` |
-| `AC-402` | Decision, approval and escalation register model | `Planned` |
+| `AC-401` | Company work/obligation register model | `Complete / PASS` |
+| `AC-402` | Decision, approval and escalation register model | `Current` |
 | `AC-403` | Risk, exception and incident register model | `Planned` |
 | `AC-404` | Cash, commitment and management reporting baseline | `Planned` |
 | `AC-405` | Portfolio/module/priority review cadence | `Planned` |
@@ -95,22 +84,42 @@ Milestone:
 
 Software dashboard не является предпосылкой M4: manual/simpler controls допустимы, если они надёжны, пропорциональны и уменьшают Owner reconstruction burden.
 
-## 6. Текущее действие — AC-401
+## 5. AC-401 approved boundary carried forward
 
-### AC-401 — Company work/obligation register model
+AC-402…AC-406 должны сохранять AC-401 semantics:
+
+- `WORK-*` и `OBL-*` — Company control identities, а не копии lower-level truth;
+- одна primary accountable `POS-*` Position на active item;
+- `P0/P1/P2/P3` — sequencing context, не spend authorization;
+- `open/waiting/blocked/closed` описывают Company control handling, а не юридическую/product/accounting truth;
+- `normal/needs_attention/escalated` не являются approval states;
+- due/trigger и source freshness не фабрикуются;
+- закрытие work не означает satisfaction obligation без authoritative evidence;
+- data minimization и reference-over-copy остаются default;
+- visibility не создаёт authority, permission, credential или external-effect right;
+- Company-specific semantics не переносятся в Arvectum OS без применимого governed boundary.
+
+AC-401 `1.0.0` сам по себе не создаёт фактический live population `WORK-*`/`OBL-*`; первое наполнение может быть выполнено отдельным bounded evidence-producing шагом на подтверждённых current sources.
+
+## 6. Текущее действие — AC-402
+
+### AC-402 — Decision, approval and escalation register model
 
 Статус: `Current`.
 
-AC-401 должен определить Company-level модель реестра существенных работ и обязательств, достаточную для operational visibility собственника и последующих AC-402…AC-406, не создавая параллельный бухгалтерский, продуктовый или project-tracker source of truth.
+AC-402 должен определить отдельную Company-level семантику material decisions, pending/obtained approvals и escalations поверх утверждённого AC-401 control substrate.
 
-AC-401 должен сохранять уже утверждённые границы:
+Минимальные вопросы AC-402:
 
-- реальное обязательство/риск/cash issue имеет приоритет по AC-106 `P0`;
-- product implementation/status остаётся в product repository;
-- юридические/договорные/финансовые первичные факты остаются в компетентных системах;
-- register должен хранить Company-level operating meaning, ownership, status, due/trigger context, evidence/source reference и escalation need без избыточного копирования закрытых данных;
-- Owner должен видеть исключения и решения, а не становиться ручным диспетчером каждого low-risk task;
-- AC-401 не создаёт dashboard, runtime, automation, spending authority или external commitment автоматически.
+- как отличить proposal/recommendation от decision и approval;
+- как привязать decision/approval/escalation к `WORK-*`, `OBL-*`, `PORT-*`, Position, `ROD-*`/`AM-*` и authoritative legal/corporate source без смешения сфер;
+- как представить pending authority gate и exact decision owner/approver;
+- как фиксировать explicit approval/decline/expiry/supersession без вывода approval из silence, AI recommendation или technical execution;
+- как различать внутреннее Organizational Authority, требуемый legal/corporate act и technical execution authorization;
+- как показать Owner только те decisions/escalations, которые действительно требуют его действия;
+- как сохранить минимизацию данных, evidence references, reconstructability и fail-closed behavior.
+
+AC-402 не должен автоматически создавать approval authority, legal power, budget, customer commitment, external mutation или OS Product Contract.
 
 ## 7. M4 exit direction
 
