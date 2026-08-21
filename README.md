@@ -23,6 +23,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-407 / закрытие M4: `docs/operations/MANAGEMENT-OPERATING-CADENCE-AND-M4-CONTROL-REVIEW-v1.0.0.md`
 - AC-501 — выбор первого governed workflow: `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-v1.0.0.md`
 - AC-502 — workflow authority/data/evidence contract: `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md`
+- AC-503 — Arvectum OS reliance/admission mapping: `docs/operations/FIRST-GOVERNED-WORKFLOW-ARVECTUM-OS-RELIANCE-ADMISSION-MAPPING-v1.0.0.md`
 - Первый public-safe Mission Control evidence snapshot: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-SNAPSHOT-2026-08-21.md`
 - Cross-reviews: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
@@ -40,7 +41,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - `M4` — Owner control and reference-implementation observability: `Complete / PASS`;
 - `M5` — first real governed Company operating contour: `Current`.
 
-`AC-501` и `AC-502` закрыты как `Complete / PASS`.
+`AC-501`, `AC-502` и `AC-503` закрыты как `Complete / PASS`.
 
 Утверждён первый M5 workflow:
 
@@ -67,45 +68,59 @@ Arvectum Company — конкретная организация ООО «Арв
 
 `technical task closed ≠ Company/customer obligation satisfied`.
 
+AC-503 дополнительно установил:
+
+**`NO-ADDITIONAL-OS-RELIANCE — no additional Arvectum OS reliance required for the first M5 proof of WF-M5-001`.**
+
+Это означает, что первый proof может быть реализован на текущих Company/product/customer-owned sources и tools без обязательного OS Execution Context/shared history/CAP-004 и без нового OS Product Contract, пока implementation не пересекает actual governed-OS reliance trigger.
+
+Это не отказ от Arvectum OS. Это bounded decision только для первого M5 proof.
+
 Текущее каноническое действие:
 
-**`AC-503 — Arvectum OS reliance/admission mapping where applicable` — проверить, нужна ли вообще фактическая опора `WF-M5-001` на Arvectum OS до реализации.**
+**`AC-504 — Bounded workflow implementation` — сделать минимальную обратимую OS-neutral реализацию первого реального workflow case/evidence contour.**
 
 M5:
 
 ```text
 AC-501 first governed workflow candidate selection       Complete / PASS
 → AC-502 workflow / Position / authority / data contract Complete / PASS
-→ AC-503 Arvectum OS reliance/admission mapping          Current
-→ AC-504 bounded workflow implementation                 Planned
+→ AC-503 Arvectum OS reliance/admission mapping          Complete / PASS
+→ AC-504 bounded workflow implementation                 Current
 → AC-505 supervised real-operation proof                 Planned
 → AC-506 incident/recovery/fallback drill                Planned
 → AC-507 business-value/economic continue-change-stop    Planned
 ```
 
-## Что установил AC-502
+## Что установил AC-503
 
-AC-502 сделал selected workflow достаточно точным для следующего implementation/admission decision, но не объявил его уже работающим.
+AC-503 проверил current canonical Arvectum OS state и не нашёл фактической необходимости делать OS обязательной dependency первого WF-M5-001 proof.
 
-Company owns workflow/accountability/authority/evidence semantics. `arvectum/discount-parser` остаётся canonical source product implementation/status. Raw customer feedback/acceptance остаётся в соответствующем authorized customer/workstream contour. Material `WORK/OBL/DEC/APR/ESC/RSK/EXC/INC` создаются только по existing qualification rules.
+Existing `P6.06` в `arvectum/arvectum-os` остаётся узким Provisional Product Contract для controlled Telegram publication/reconstruction и **не расширяется** на customer-feedback/correction workflow. Его CAP-004 reliance не переносится на WF-M5-001 по импликации.
 
-Raw customer `DC-2` по умолчанию не переносится в public Company repo и не передаётся AI без необходимости. `DC-3` reusable secrets не должны попадать в обычный model context.
+Company workflow states, classification, Position accountability, customer acceptance semantics и M5 measurements остаются Company-owned. Product implementation/status остаются в `arvectum/discount-parser`. Raw customer feedback/validation остаётся в соответствующем authorized customer/workstream contour.
 
-AC-502 не создаёт customer promise, budget, spend/payment/signing authority, new Position/Assignment/access, autonomous consequential customer effect, full product readiness claim или M5 completion.
+Если AC-504 реально потребует OS canonical state, OS Governed Execution, CAP-004, OS-held authorization, shared provenance/history или admitted Productive Workspace composition, Company должна остановиться на этой границе и заново пройти applicable Arvectum OS Product Contract/capability/RFC/ADR governance path до consequential reliance.
 
-## Что делает AC-503
+## Что делает AC-504
 
-AC-503 проверяет current canonical Arvectum OS state и отвечает на один практический вопрос:
+AC-504 реализует smallest sufficient mechanics для одного реального WF-M5-001 case.
 
-> Нужна ли `WF-M5-001` какая-либо реальная OS reliance/admission для первого M5 proof, и если да — какая минимальная?
+Нужно получить lightweight, reconstructable implementation, которая:
 
-Допустимы три результата:
+- знает exact workflow/version;
+- ведёт safe case identifier и material `W*` transitions;
+- хранит attributable `CL-*` classification;
+- связывает protected customer feedback refs с product issue/PR/commit/test/build/release-candidate refs;
+- различает Candidate Ready, customer-facing handoff и customer acceptance;
+- умеет явно быть `blocked/unknown/stale/uncertain`;
+- не требует raw customer DC-2 или reusable DC-3 secrets в public repo;
+- допускает manual fallback и runtime replacement;
+- достаточно проста для следующего supervised AC-505 proof.
 
-1. `no additional OS reliance required for first M5 proof`;
-2. существующей bounded OS reliance достаточно;
-3. нужен новый/изменённый OS Product Contract/capability admission через proper OS governance.
+AC-504 не должен строить generic workflow engine, event bus, Company-wide orchestration platform, CAP-004 substitute или локальный «mini Arvectum OS».
 
-OS не должен внедряться ради dogfooding. Company-specific Position, customer и workflow semantics не переносятся в domain-neutral OS.
+Technical implementation PASS не является AC-505 empirical proof и не закрывает M5.
 
 ## Business-first portfolio order
 
@@ -121,7 +136,7 @@ Company-specific Positions, Assignments, authority, portfolio decisions, operati
 
 Product implementation/status остаются в product repositories. Domain-neutral platform architecture, Product Contracts, RFC/ADR и Platform Capability lifecycle принадлежат `arvectum/arvectum-os`.
 
-Никакой Arvectum OS dependency не выводится автоматически из AC-501/AC-502. Любая actual reliance проходит AC-503 и применимый OS governance path.
+Approved AC-503 explicitly says that **additional OS reliance is not required for the first proof**, but future actual reliance must still pass the applicable OS governance path.
 
 ## Граница публичного репозитория
 
