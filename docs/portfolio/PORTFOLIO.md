@@ -1,110 +1,139 @@
 # Arvectum Company Portfolio
 
 Status: `Active`
-Version: `0.6.0`
+Version: `0.7.0`
 Created: `2026-08-20`
 Updated: `2026-08-21`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
-Current governance baseline: `AC-305 — Approved 1.0.0`
+Current governance baseline: `AC-306 — Approved 1.0.0`
 
 ## 1. Publication model
 
-This `0.6.0` publication preserves the complete portfolio baseline `0.5.0` by immutable git blob reference and overlays the approved AC-305 cross-product dependency / Arvectum OS Product Contract reconciliation as the current dependency-contract baseline.
+This `0.7.0` publication preserves the complete portfolio baseline `0.6.0` by immutable git blob reference and overlays the approved AC-306 capital/economics/Owner-attention prioritization as the current portfolio priority baseline.
 
 Previous publication:
 
-- version: `0.5.0`;
+- version: `0.6.0`;
 - path: `docs/portfolio/PORTFOLIO.md`;
-- immutable git blob SHA: `09f2a7f07ede40d5beee976f331f13b5ebd889e2`.
+- immutable git blob SHA: `c8243820fe1f7bd5acb817302c7332904c574459`.
 
-Approved AC-305 baseline:
+Approved AC-306 baseline:
 
-- `docs/portfolio/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-RECONCILIATION-v1.0.0.md` — `Approved 1.0.0`;
-- exact reviewed proposal: `docs/portfolio/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-RECONCILIATION.md` — `Proposed 0.9.0`, blob `c27973c48b7bb5306e36f71d0f1007fc41896de9`;
-- cross-review: `docs/reviews/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-CROSS-REVIEW.md` — `7 of maximum 7`, PASS, blob `369c42f8066ac8a10d3b00a0afd2fc034b8c7fe3`;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-305-APPROVAL.md`.
+- `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION-v1.0.0.md` — `Approved 1.0.0`;
+- exact reviewed proposal: `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION.md` — `Proposed 0.9.0`, blob `d254c6441baca5f22828648ecfa701d04c8344b1`;
+- cross-review: `docs/reviews/AC-306-PORTFOLIO-PRIORITIZATION-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `329c87d6a63e08564e8b52362b8af02b159d7b74`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-306-APPROVAL.md`.
 
-The approved AC-301 identity/disposition baseline, AC-302 accountable-Position mapping, AC-303 investment treatment and AC-304 role/reuse classification remain fully in force.
+The approved AC-301 identity/disposition baseline, AC-302 accountable-Position mapping, AC-303 investment treatment, AC-304 role/reuse classification and AC-305 dependency/Product Contract reconciliation remain fully in force.
 
 ## 2. Current governed portfolio map
 
-| ID | Primary Company-level name | Canonical repository | Disposition | Primary accountable Position | Standalone / reference role | Current hard inter-product dependency |
+| ID | Primary Company-level name | Canonical repository | Disposition | Accountable Position | Role | AC-306 band |
 |---|---|---|---|---|---|---|
-| `PORT-001` | `Arvectum Tender Agent` | `arvectum/tender-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | none evidenced |
-| `PORT-002` | `Discount Parser` | `arvectum/discount-parser` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` + `RI-PRODUCT-FAMILY` | none evidenced |
-| `PORT-003` | `Arvectum Proxy Launcher` | `arvectum/proxy-launcher` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone only | none evidenced |
-| `PORT-004` | `Creative Test Agent` | `arvectum/creative-test-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | none evidenced |
-| `PORT-005` | `Tender Small-Volume Calculator` | `arvectum/tender-app` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | none; selective reference reuse into PORT-001 only |
-| `PORT-006` | `Doors Parser` | `arvectum/doors_parser` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | none evidenced |
-| `PORT-007` | `Data Platform` | `arvectum/data-platform` | `clarify` | `POS-003 — Portfolio & Product Lead` | clarification-only Company/product-family module candidate | none; not an operational dependency |
+| `PORT-001` | `Arvectum Tender Agent` | `arvectum/tender-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | `A2` |
+| `PORT-002` | `Discount Parser` | `arvectum/discount-parser` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` + `RI-PRODUCT-FAMILY` | `A1` |
+| `PORT-003` | `Arvectum Proxy Launcher` | `arvectum/proxy-launcher` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone only | `B1` |
+| `PORT-004` | `Creative Test Agent` | `arvectum/creative-test-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | `B2` |
+| `PORT-005` | `Tender Small-Volume Calculator` | `arvectum/tender-app` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | `D1` |
+| `PORT-006` | `Doors Parser` | `arvectum/doors_parser` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | `D2` |
+| `PORT-007` | `Data Platform` | `arvectum/data-platform` | `clarify` | `POS-003 — Portfolio & Product Lead` | clarification-only Company/product-family module candidate | `C1` |
 
-## 3. Approved inter-product dependency conclusions
+No mandatory hard runtime/code/data dependency is currently established between `PORT-001…PORT-007`; AC-305 remains authoritative for the exact relationship/Product Contract interpretation.
 
-No mandatory hard runtime/code/data dependency is currently established between `PORT-001…PORT-007`.
+## 3. Approved default priority order
 
-Approved relationship interpretation:
+When no higher Company-level `P0` obligation exists, discretionary product attention follows:
 
-- `PORT-005 → PORT-001` is selective procurement-family reuse/evidence, not runtime coupling or a product merge;
-- `PORT-002 + PORT-006` provide parser/data-acquisition family evidence but do not form a shared parser runtime/datastore automatically;
-- `PORT-007` remains a clarification-only module hypothesis and must not become a hidden shared operational dependency before its explicit admission/economic/ownership review;
-- `PORT-003` is not inferred to be Company-wide or OS infrastructure merely because its networking/release patterns may be useful;
-- common owner, common technology stack, code similarity and reference status do not create a dependency contract.
+```text
+A1  PORT-002 — Discount Parser
+A2  PORT-001 — Arvectum Tender Agent
+    ↓
+B1  PORT-003 — Arvectum Proxy Launcher
+B2  PORT-004 — Creative Test Agent
+    ↓
+C1  PORT-007 — Data Platform
+    ↓
+D1  PORT-005 — Tender Small-Volume Calculator
+D2  PORT-006 — Doors Parser
+```
 
-## 4. Current Arvectum OS Product Contract / integration map
+This is a decision order, not a permanent engineering queue, funding allocation or product-value ranking.
 
-| Portfolio node | Governed OS boundary | Exact current platform dependency | Core-product OS mandatory? |
-|---|---|---|---|
-| `PORT-001 — Arvectum Tender Agent` | `P6.02 — Provisional 0.1.0`; supplemental `P8.03 — Provisional 0.1.0` | `CAP-001 + CAP-004` in exact bounded scopes | only for the governed contours declared by those contracts; not a blanket product-wide inference |
-| `PORT-002 — Discount Parser` | `P6.06 — Provisional 0.1.0` | `CAP-004 only` | no blanket product-wide inference |
-| `PORT-004 — Creative Test Agent` | `P8.06 — Provisional 0.1.0`, optional external extension | `CAP-004 only` | no; optional extension remains separately enableable/disableable |
-| `PORT-003` | none evidenced | none inferred | no |
-| `PORT-005` | none evidenced | none inferred | no |
-| `PORT-006` | none evidenced | none inferred | no |
-| `PORT-007` | none evidenced | none inferred | no |
+## 4. Current node treatments
 
-`RI-OS-CONSUMER` is an evidence/reuse classification. It is not a statement that Arvectum OS is required for every core-product operation or that a product implements/owns an OS capability.
+### `A1 — PORT-002 — Discount Parser`
 
-## 5. P6.02 locator reconciliation
+`finish / accept / stabilize / maintain`.
 
-P6.02 historically names `arutyunoveth/ai-corporation`. The approved Company identity map establishes `arvectum/tender-agent` as the current canonical implementation repository for `PORT-001`.
+Prioritize bounded customer acceptance, defect correction, delivery continuity and clearly agreed support. After accepted delivery, default to maintenance/freeze unless new paid scope, second-consumer evidence or explicit product investment evidence justifies more work. Do not infer generic parser platformization.
 
-The conflict is now reconciled through the proper Arvectum OS governance path:
+### `A2 — PORT-001 — Arvectum Tender Agent`
 
-- OS approved publication: `arvectum/arvectum-os/docs/contracts/P6-02-REPOSITORY-LOCATOR-RECONCILIATION-v1.0.0.md`;
-- OS Owner decision: `arvectum/arvectum-os/docs/governance/decisions/DECISION-2026-08-21-P6-02-REPOSITORY-LOCATOR-RECONCILIATION-APPROVAL.md`;
-- historical locator remains `arutyunoveth/ai-corporation`;
-- current implementation locator is `arvectum/tender-agent`;
-- P6.02 Product Identity, semantic boundary, dependency set and lifecycle remain unchanged at `Provisional 0.1.0`.
+Continue as bounded revenue/pilot/evidence product. Prefer quality, reliability and decision evidence tied to a specific qualified pilot/procurement opportunity/flagship hypothesis over broad feature accumulation. No mass pilot, SaaS, submission/EDS or autonomous consequential expansion by implication.
 
-No artificial P8.03 version cascade is created because only locator/provenance metadata changed.
+### `B1 — PORT-003 — Arvectum Proxy Launcher`
 
-## 6. Investment and authority boundaries remain binding
+Preserve the verified productized baseline and perform trigger-based work. Real user/support/IP/release issues may justify attention. Known unavailable physical-host gates must not consume continuous Owner attention. Per-application expansion remains separately gated.
 
-AC-305 does not replace AC-303 or create a priority order. Existing treatment remains:
+### `B2 — PORT-004 — Creative Test Agent`
 
-- `PORT-001` — bounded continuation; material capital/customer/risk expansion requires evidence and Owner gate;
-- `PORT-002` — complete/maintain accepted client/product contour; material recurring cost or scope expansion requires review;
-- `PORT-003` — bounded productization; material signing/dependency/market commitments remain gated;
-- `PORT-004` — bounded controlled-pilot/productization; material customer/data/operational expansion requires review;
-- `PORT-005` — maintenance/evidence preservation/reuse assessment only;
-- `PORT-006` — support/completed-delivery/reuse evidence only;
-- `PORT-007` — clarify before investment; no build/funding/platform status by implication.
+Maintain runnable pilot readiness. Activate bounded product work when a qualified design partner/customer provides real inputs, success criteria and plausible commercial or flagship-learning value. Technical completeness or OS-reference value alone is not a funding claim.
 
-`ROD-*`, delegated authority, Assignments, access, continuity, legal/IP/data rights and customer authority are not altered by this dependency reconciliation.
+### `C1 — PORT-007 — Data Platform`
 
-## 7. Source-of-truth rule
+Clarification-only. Allowed work is limited to named consumers, minimal common-contract hypothesis, ownership/data/sovereignty/continuity boundaries and an economic case for removing duplicated burden. No material shared-runtime/datastore/platform build is authorized.
 
-This file is canonical for the current Company-level portfolio map and approved Company interpretation of inter-product dependencies and OS reliance.
+### `D1 — PORT-005 — Tender Small-Volume Calculator`
 
-Product repositories remain canonical for product implementation/status/domain semantics. Arvectum OS remains canonical for Product Contracts, platform capabilities and OS dependency semantics. If later OS contract evidence changes, this portfolio must be refreshed rather than overriding OS from Company scope.
+Contain. Preserve maintenance/security/continuity and selective procurement-family reference evidence. Do not create a parallel procurement growth product without a new decision.
 
-## 8. Downstream governance
+### `D2 — PORT-006 — Doors Parser`
 
-`AC-305 — Complete / PASS`.
+Contain completed-delivery asset. Preserve support obligations and extraction/QA/reuse evidence. Do not expand into a generic parser or growth product without new evidence and decision.
+
+## 5. Company-level override hierarchy
+
+AC-306 remains subordinate to AC-106:
+
+- `P0` — obligations, cash, material risk;
+- `P1` — flagship `«ИИ-компания под ключ»` market evidence + minimal real Company operating model;
+- `P2` — product/OS work directly tied to revenue, obligation, evidence or blocker removal;
+- `P3` — speculative expansion.
+
+A real customer/security/data/continuity obligation may temporarily override the portfolio order for the exact affected work. That does not silently change the node's disposition or AC-306 band.
+
+## 6. Owner-attention rule
+
+For material product work, decision preparation must state:
+
+1. why now;
+2. exact bounded outcome;
+3. exact Owner action required;
+4. what can proceed without Owner;
+5. stop condition;
+6. next decision enabled by evidence.
+
+Owner attention is scarce management capital and must not be consumed by known-unavailable gate retries, speculative polish or unranked simultaneous feature expansion.
+
+## 7. Capital and authority boundary
+
+AC-306 creates no budget, numeric spend threshold, customer/vendor commitment, price, SLA, hiring authorization, Product Contract change, shared module or legal/IP/data right.
+
+`ROD-02`, `ROD-04` and all other applicable Owner/authority gates remain binding for specific material effects.
+
+## 8. Source-of-truth rule
+
+- this file is canonical for the current Company-level portfolio map and default investment/attention order;
+- product repositories remain canonical for product implementation/status/domain semantics;
+- Arvectum OS remains canonical for Product Contracts/platform capability lifecycle;
+- actual customer/accounting/legal evidence remains in its competent source of truth;
+- material new evidence should trigger re-evaluation rather than silent re-banding.
+
+## 9. Downstream governance
+
+`AC-306 — Complete / PASS`.
 
 Next canonical portfolio action:
 
-`AC-306 — Приоритизация портфеля по капиталу, экономике и вниманию собственника`.
-
-AC-306 may rank investment and Owner attention but must not reinterpret the dependency/contract boundaries established here without new evidence and applicable governance.
+`AC-307 — Итоговая проверка управления портфелем и закрытие M3`.
