@@ -18,6 +18,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-402 — модель реестра решений, approvals и эскалаций: `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md`
 - AC-403 — модель реестра рисков, исключений и инцидентов: `docs/operations/COMPANY-RISK-EXCEPTION-INCIDENT-REGISTER-MODEL-v1.0.0.md`
 - AC-404 — базовая модель cash/commitment/management reporting: `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md`
+- AC-405 — порядок portfolio/module/priority review: `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-v1.0.0.md`
 - Материалы перекрёстных проверок: `docs/reviews/`
 - Долговременные решения собственника и системы управления: `docs/governance/decisions/`
 
@@ -44,14 +45,14 @@ AC-401 work/obligation register model             Complete / PASS
 → AC-402 decision/approval/escalation register   Complete / PASS
 → AC-403 risk/exception/incident register        Complete / PASS
 → AC-404 cash/commitment/reporting baseline      Complete / PASS
-→ AC-405 portfolio/priority review cadence       Current
-→ AC-406 Owner Mission Control                    Planned
+→ AC-405 portfolio/priority review cadence       Complete / PASS
+→ AC-406 Owner Mission Control                    Current
 → AC-407 management operating cadence            Planned
 ```
 
 Текущее каноническое действие:
 
-**`AC-405 — Portfolio/module/priority review cadence` — порядок пересмотра портфеля, кандидатов в модули и приоритетов.**
+**`AC-406 — Owner Mission Control / reference-implementation evidence view` — owner-facing представление существенного Company state и доказательств эталонной реализации.**
 
 ## Утверждённый M4 control baseline
 
@@ -72,36 +73,27 @@ AC-403 добавил:
 - `EXC-*` — material control-exception request/decision record;
 - `INC-*` — material incident control record.
 
-AC-404 добавил management-finance projection layer, не создавая нового transaction register. Главная граница:
+AC-404 добавил management-finance projection layer, не создавая нового transaction register:
 
-```text
-bank/accounting fact
-≠ management interpretation
-≠ forecast
-≠ budget/limit
-≠ planned spend
-≠ approved internal commitment
-≠ incurred obligation
-≠ actual payment
-```
+`bank/accounting fact ≠ management interpretation ≠ forecast ≠ budget/limit ≠ planned spend ≠ approved internal commitment ≠ incurred obligation ≠ actual payment`.
 
-Ключевые правила:
+AC-405 добавил review discipline:
 
-`recommendation ≠ decision ≠ approval ≠ legal/corporate act ≠ technical authorization ≠ execution`
+`material event → scoped review → monthly exception scan / quarterly revalidation backstops → reaffirm or prepare material decision`.
 
-`risk evidence ≠ accepted risk`
+При этом:
 
-`exception request ≠ approved exception`
+`review ≠ decision ≠ approval ≠ investment ≠ product roadmap change ≠ OS lifecycle change`;
 
-`incident detection ≠ authority to act`
+`P0 temporary execution priority ≠ permanent portfolio reclassification`;
 
-`containment ≠ risk acceptance`
+`named trigger ≠ automatic promotion/funding`;
 
-`forecasted/conditional inflow ≠ available cash`.
+`reference/reuse evidence ≠ automatic module admission`.
 
-Company repository authoritative только для Company governance/control/management-interpretation state в своём scope. Договоры, legal/corporate acts, customer/vendor facts, accounting/banking truth, product implementation/economics/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+Company repository authoritative только для Company governance/control/management/portfolio state в своём scope. Договоры, legal/corporate acts, customer/vendor facts, accounting/banking truth, product implementation/economics/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
 
-Наличие cash, dashboard visibility, credential, technical/banking access, `decision_outcome=approve`, incident state, favorable financial projection или AI recommendation само по себе не создаёт spend/external-effect authority.
+Наличие cash, priority rank, dashboard visibility, credential, technical/banking access, favorable projection, review completion или AI recommendation само по себе не создаёт spend/external-effect authority.
 
 ## Business-first приоритет
 
