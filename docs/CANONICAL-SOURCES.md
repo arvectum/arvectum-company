@@ -1,22 +1,22 @@
 # Реестр канонических источников Arvectum Company
 
 Статус: `Active`
-Версия: `2.7.0`
+Версия: `2.8.0`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
 
 ## 1. Модель публикации
 
-Эта редакция сохраняет полный реестр `2.6.0` по неизменяемой ссылке на git blob и синхронизирует навигационный/источниковый слой с фактически утверждённым Phase 3 состоянием перед AC-307.
+Эта редакция сохраняет полный реестр `2.7.0` по immutable git blob и добавляет утверждение AC-307, закрытие M3 и переход к M4/AC-401.
 
 Предыдущая редакция:
 
-- версия: `2.6.0`;
+- версия: `2.7.0`;
 - путь: `docs/CANONICAL-SOURCES.md`;
-- immutable git blob SHA: `5943729d6bb14a55e188d27763d80b53e6034771`.
+- immutable git blob SHA: `80a6e1c03cf4b7d15dcc93dc5dd92b7c9b7b189e`.
 
-Все ранее зарегистрированные источники M0–M2, AC-201–AC-208, языково-терминологическая политика, границы Company/Product/Arvectum OS и правила внешних источников сохраняются без изменений, если прямо не уточнены ниже более новым утверждённым артефактом.
+Все ранее зарегистрированные источники M0–M2, AC-201–AC-208, языково-терминологическая политика, Company/Product/Arvectum OS boundaries и правила внешних источников сохраняются без изменений, если прямо не уточнены более новым утверждённым артефактом.
 
 ## 2. Порядок приоритета источников
 
@@ -33,85 +33,99 @@
 
 Канонический источник планирования:
 
-- `docs/roadmap/ROADMAP.md` — `Active 0.28.0`;
-- текущий blob SHA: `009f3aa9341c01039cf7b1d217fb246cf51855fe`.
+- `docs/roadmap/ROADMAP.md` — `Active 0.29.0`;
+- текущий blob SHA: `d66f04e9b5b7636683b8bc3007967ccbe346d89c`.
 
 Текущее каноническое действие:
 
-`AC-307 — Итоговая проверка управления портфелем и закрытие M3`.
+`AC-401 — Company work/obligation register model`.
 
-Полный план M0–M8, включённый в текущую publication chain, восходит к roadmap `0.14.0`; после M3 следующим этапом является M4 `Owner control and reference-implementation observability`, начинающийся с `AC-401 — Company work/obligation register model`. Финальный M9/AC-901, добавленный позднее, остаётся самым последним плановым этапом после M8.
+Текущий этап:
+
+`M4 — Owner control and reference-implementation observability established`.
+
+Полный план M0–M8 восходит к сохранённой roadmap chain; финальный M9/AC-901 остаётся последним плановым этапом после M8.
 
 ## 4. Действующий портфель
 
 Канонический Company-level portfolio source:
 
-- `docs/portfolio/PORTFOLIO.md` — `Active 0.7.0`;
-- текущий blob SHA: `e2e43ced1647d5fcbe6cd484b528770775097753`;
-- текущий governance baseline: `AC-306 — Approved 1.0.0`.
+- `docs/portfolio/PORTFOLIO.md` — `Active 0.8.0`;
+- текущий blob SHA: `8a77be35225f9c8c4958531e52a4131abda13d0f`;
+- current governance baseline: `AC-307 — Approved 1.0.0 / M3 Complete / PASS`.
 
-Approved Phase 3 publications:
+Approved M3 closure sources:
 
-1. `docs/portfolio/AC-301-PORTFOLIO-IDENTITY-BOUNDARY-OWNERSHIP-RECONCILIATION-v1.0.0.md` — identity/boundary/ownership;
-2. `docs/portfolio/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-MAPPING-v1.0.0.md` — accountable Position;
-3. `docs/portfolio/AC-303-PORTFOLIO-INVESTMENT-COST-RISK-BOUNDARIES-v1.0.0.md` — investment/cost/risk treatment;
-4. `docs/portfolio/AC-304-PORTFOLIO-ROLE-CLASSIFICATION-v1.0.0.md` — standalone/reference/module/OS-candidate classification;
-5. `docs/portfolio/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-RECONCILIATION-v1.0.0.md` — inter-product dependency and Arvectum OS Product Contract reconciliation;
-6. `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION-v1.0.0.md` — capital/economics/Owner-attention prioritization.
+- `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md` — `Approved 1.0.0`, blob `ff9a07d8c7161bfdaf3628e1c8e21d2a2d0f4435`;
+- reviewed proposal blob `904b9e5ffa12caeb082b3bf23a89aff251ebe8c4`;
+- cross-review blob `bc3c4992f12dabaeb155f055373da292278cd791`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-307-APPROVAL-AND-M3-CLOSURE.md`.
 
-AC-307 is the current final Phase 3 review. Until it is explicitly approved, M3 remains `Current`, not `Complete`.
+Approved Phase 3 publications AC-301…AC-306 остаются binding layers текущего portfolio baseline.
 
-## 5. Current Phase 3 meaning
+## 5. M3 closure meaning
 
-The current governed portfolio has seven stable Company identities `PORT-001…PORT-007`.
+`M3 — Product/module-candidate portfolio governed as investments` имеет статус `Complete / PASS`.
 
-Binding high-level state:
+Current governed state:
 
-- `PORT-001` Tender Agent — `continue`, standalone + `RI-OS-CONSUMER`, AC-306 `A2`;
-- `PORT-002` Discount Parser — `continue`, standalone + `RI-OS-CONSUMER + RI-PRODUCT-FAMILY`, AC-306 `A1`;
-- `PORT-003` Proxy Launcher — `continue`, standalone, trigger-based `B1`;
-- `PORT-004` Creative Test Agent — `continue`, standalone + `RI-OS-CONSUMER`, trigger-based `B2`;
+- `PORT-001` Tender Agent — `continue`, standalone + `RI-OS-CONSUMER`, `A2`;
+- `PORT-002` Discount Parser — `continue`, standalone + `RI-OS-CONSUMER + RI-PRODUCT-FAMILY`, `A1`;
+- `PORT-003` Proxy Launcher — `continue`, standalone, named-trigger `B1`;
+- `PORT-004` Creative Test Agent — `continue`, standalone + `RI-OS-CONSUMER`, named-trigger `B2`;
 - `PORT-005` Tender Small-Volume Calculator — `contain`, `RI-PRODUCT-FAMILY`, `D1`;
 - `PORT-006` Doors Parser — `contain`, `RI-PRODUCT-FAMILY`, `D2`;
-- `PORT-007` Data Platform — `clarify`, clarification-only Company/product-family module candidate, `C1`.
+- `PORT-007` Data Platform — `clarify`, clarification-only Company/product-family module candidate, `C1`, no material build.
 
-Между текущими `PORT-*` не установлено обязательной hard runtime/code/data dependency. Product repositories остаются источником implementation/status/domain semantics. Arvectum OS остаётся источником Product Contracts/platform semantics. Company portfolio documents не переписывают эти внешние источники.
+Между `PORT-*` не установлено обязательной hard runtime/code/data dependency. AC-306 ranking не является бюджетом. Product repositories остаются canonical для implementation/status/domain semantics; Arvectum OS — для Product Contracts/platform semantics.
 
 ## 6. Arvectum OS correspondence
 
-Текущая Company interpretation применимых OS boundaries зафиксирована AC-305:
+Текущая Company interpretation применимых OS boundaries остаётся:
 
 - `PORT-001` — P6.02 + P8.03, exact bounded reliance on `CAP-001 + CAP-004`;
 - `PORT-002` — P6.06, `CAP-004 only`;
 - `PORT-004` — P8.06 optional external extension, `CAP-004 only`.
 
-P6.02 repository locator отдельно reconciled в `arvectum/arvectum-os` через approved locator/provenance overlay: current implementation locator `arvectum/tender-agent`, historical predecessor locator `arutyunoveth/ai-corporation`. P6.02 semantic contract остаётся `Provisional 0.1.0`.
+P6.02 repository locator reconciled в `arvectum/arvectum-os` отдельным Approved locator/provenance overlay: current implementation locator `arvectum/tender-agent`, historical predecessor `arutyunoveth/ai-corporation`. P6.02 semantic contract остаётся `Provisional 0.1.0`.
 
-## 7. Статус планирования
+## 7. Статус этапов
 
 - `M0` — `Complete / PASS`;
 - `M1` — `Complete / PASS`;
 - `M2` — `Complete / PASS`;
-- `M3` — `Current`, AC-301…AC-306 `Complete / PASS`, AC-307 `Current`;
-- `M4` — `Planned`, первый пункт `AC-401`;
+- `M3` — `Complete / PASS`;
+- `M4` — `Current`, AC-401 `Current`;
 - `M5` — `Planned`;
 - `M6` — `Planned`;
 - `M7` — `Future`;
 - `M8` — `Future`;
-- `M9` — финальный плановый этап, `AC-901` `Planned` после M8.
+- `M9` — финальный плановый этап, AC-901 `Planned` после M8.
 
-Параллельный bounded AC-108 discovery loop остаётся источником рыночных данных и не создаёт пилот, цену, SLA, production access или customer commitment по импликации.
+Параллельный bounded AC-108 discovery loop остаётся источником рыночных данных и не создаёт pilot, price, SLA, production access или customer commitment по импликации.
 
-## 8. Язык, терминология и публичная граница
+## 8. M4 navigation
+
+M4 должен сформировать Owner control/reference-observability layer без преждевременного dashboard theater.
+
+План M4:
+
+1. `AC-401` — Company work/obligation register model — `Current`;
+2. `AC-402` — Decision, approval and escalation register model;
+3. `AC-403` — Risk, exception and incident register model;
+4. `AC-404` — Cash, commitment and management reporting baseline;
+5. `AC-405` — Portfolio/module/priority review cadence;
+6. `AC-406` — Owner Mission Control / reference-implementation evidence view;
+7. `AC-407` — Management operating cadence and control review.
+
+## 9. Язык, терминология и публичная граница
 
 Для новых человекочитаемых Company-документов действует русскоязычный режим и `docs/governance/TERMINOLOGY-GLOSSARY.md`.
 
-Технические идентификаторы, code/API names и машинные материалы могут оставаться на английском, если их смысл не расходится с утверждённой терминологией.
-
 Этот публичный репозиторий не является местом хранения секретов, reusable credentials, private keys, избыточных персональных данных, банковских/платёжных реквизитов, непубличных договорных материалов или customer-confidential payloads.
 
-## 9. Конечный этап M9
+## 10. Конечный этап M9
 
 `M9 — Человекочитаемая документация полностью русифицирована и согласована` остаётся самым последним плановым этапом после M8, если собственник отдельно не изменит последовательность.
 
-`AC-901 — Полная русификация человекочитаемой документации и итоговая междокументная сверка` остаётся `Planned` и не подменяет текущую AC-307/M3 работу.
+`AC-901 — Полная русификация человекочитаемой документации и итоговая междокументная сверка` остаётся `Planned`.
