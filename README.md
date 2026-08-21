@@ -12,134 +12,119 @@ Arvectum Company — конкретная организация ООО «Арв
 - Каноническая дорожная карта: `docs/roadmap/ROADMAP.md`
 - Карта портфеля: `docs/portfolio/PORTFOLIO.md`
 - Терминологический глоссарий: `docs/governance/TERMINOLOGY-GLOSSARY.md`
-- AC-208 — граница переносимости эталонной модели и закрытие M2: `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md`
-- AC-307 — итоговая проверка портфеля и закрытие M3: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md`
-- AC-401 — модель реестра работ и обязательств: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md`
-- AC-402 — модель реестра решений, approvals и эскалаций: `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md`
-- AC-403 — модель реестра рисков, исключений и инцидентов: `docs/operations/COMPANY-RISK-EXCEPTION-INCIDENT-REGISTER-MODEL-v1.0.0.md`
-- AC-404 — базовая модель cash/commitment/management reporting: `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md`
-- AC-405 — порядок portfolio/module/priority review: `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-v1.0.0.md`
-- AC-406 — Owner Mission Control / reference evidence view: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-IMPLEMENTATION-EVIDENCE-VIEW-v1.0.0.md`
-- Материалы перекрёстных проверок: `docs/reviews/`
-- Долговременные решения собственника и системы управления: `docs/governance/decisions/`
+- AC-208 / закрытие M2: `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md`
+- AC-307 / закрытие M3: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md`
+- AC-401 — work/obligation model: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md`
+- AC-402 — decision/approval/escalation model: `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md`
+- AC-403 — risk/exception/incident model: `docs/operations/COMPANY-RISK-EXCEPTION-INCIDENT-REGISTER-MODEL-v1.0.0.md`
+- AC-404 — cash/commitment/management reporting: `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md`
+- AC-405 — portfolio/module/priority review cadence: `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-v1.0.0.md`
+- AC-406 — Owner Mission Control evidence view: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-IMPLEMENTATION-EVIDENCE-VIEW-v1.0.0.md`
+- AC-407 / закрытие M4: `docs/operations/MANAGEMENT-OPERATING-CADENCE-AND-M4-CONTROL-REVIEW-v1.0.0.md`
+- Первый public-safe Mission Control evidence snapshot: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-SNAPSHOT-2026-08-21.md`
+- Cross-reviews: `docs/reviews/`
+- Durable Owner/governance decisions: `docs/governance/decisions/`
 
 ## Язык документов
 
-Документы, предназначенные для чтения собственником и другими русскоязычными участниками управления, должны быть написаны на полноценном русском языке.
-
-Английский язык допустим в коде, API, идентификаторах, именах файлов, технических схемах и документах для ИИ/программных исполнителей. Системообразующие термины связываются через `docs/governance/TERMINOLOGY-GLOSSARY.md`.
+Человекочитаемые Company-документы для русскоязычного управления пишутся преимущественно на русском языке. Английский допустим в коде, API, идентификаторах, именах файлов и технических схемах. Системообразующие термины связываются через `docs/governance/TERMINOLOGY-GLOSSARY.md`.
 
 ## Текущее состояние Company
 
-Этапы:
-
-- `M0` — каноническое учреждение Company: `Complete / PASS`;
-- `M1` — бизнес-/экономическая реальность и первая market-validation baseline: `Complete / PASS`;
-- `M2` — эталонная организационная модель Company и система полномочий: `Complete / PASS`;
-- `M3` — управление портфелем продуктов/кандидатов в модули как инвестициями: `Complete / PASS`;
-- `M4` — Owner control and reference-implementation observability: `Current`.
-
-M4:
-
-```text
-AC-401 work/obligation register model             Complete / PASS
-→ AC-402 decision/approval/escalation register   Complete / PASS
-→ AC-403 risk/exception/incident register        Complete / PASS
-→ AC-404 cash/commitment/reporting baseline      Complete / PASS
-→ AC-405 portfolio/priority review cadence       Complete / PASS
-→ AC-406 Owner Mission Control                    Complete / PASS
-→ AC-407 management operating cadence            Current
-```
+- `M0` — Company founding: `Complete / PASS`;
+- `M1` — business/economic baseline: `Complete / PASS`;
+- `M2` — reference operating model and authority: `Complete / PASS`;
+- `M3` — governed portfolio: `Complete / PASS`;
+- `M4` — Owner control and reference-implementation observability: `Complete / PASS`;
+- `M5` — first real governed Company operating contour: `Current`.
 
 Текущее каноническое действие:
 
-**`AC-407 — Management operating cadence and control review` — проверка рабочего ритма управления, реальной нагрузки системы контроля и достаточности evidence для закрытия M4.**
+**`AC-501 — First governed workflow candidate selection` — выбор первого реального workflow, на котором Company проверит организационную модель в операционной работе.**
 
-## Утверждённый M4 control baseline
+M5:
 
-AC-401 установил:
+```text
+AC-501 first governed workflow candidate selection      Current
+→ AC-502 workflow / Position / authority / data contract Planned
+→ AC-503 Arvectum OS reliance/admission mapping          Planned
+→ AC-504 bounded workflow implementation                 Planned
+→ AC-505 supervised real-operation proof                 Planned
+→ AC-506 incident/recovery/fallback drill                Planned
+→ AC-507 business-value/economic continue-change-stop    Planned
+```
 
-- `WORK-*` — material Company-level work;
-- `OBL-*` — material obligation control.
+## Что установил M4
 
-AC-402 добавил:
+AC-401…AC-406 сформировали Company control/reference-observability layers, а AC-407 установил их operating cadence и закрыл M4.
 
-- `DEC-*` — material decision case / durable decision record;
-- `APR-*` — approval gate / attributable approval act control record;
-- `ESC-*` — escalation case.
-
-AC-403 добавил:
-
-- `RSK-*` — material risk exposure/control record;
-- `EXC-*` — material control-exception request/decision record;
-- `INC-*` — material incident control record.
-
-AC-404 добавил management-finance projection layer, не создавая нового transaction register:
-
-`bank/accounting fact ≠ management interpretation ≠ forecast ≠ budget/limit ≠ planned spend ≠ approved internal commitment ≠ incurred obligation ≠ actual payment`.
-
-AC-405 добавил review discipline:
-
-`material event → scoped review → monthly exception scan / quarterly revalidation backstops → reaffirm or prepare material decision`.
-
-AC-406 добавил Owner Mission Control как derived evidence projection:
-
-`source/control evidence → owner-facing material projection → exact Owner action where authority actually requires it → governed handoff`.
-
-Ключевые границы:
+Ключевые границы сохраняются:
 
 `Mission Control ≠ source of truth ≠ authority ≠ approval ≠ execution`;
 
 `source fact ≠ Company interpretation ≠ recommendation ≠ decision ≠ approval ≠ legal/corporate/customer act ≠ technical authorization ≠ execution evidence`;
 
-`P0 temporary execution priority ≠ permanent portfolio reclassification`;
+`bank/accounting fact ≠ management interpretation ≠ forecast ≠ budget/limit ≠ planned spend ≠ approved internal commitment ≠ incurred obligation ≠ actual payment`;
 
-`named trigger ≠ automatic promotion/funding`;
+`P0 temporary execution priority ≠ permanent portfolio reclassification`;
 
 `reference/reuse evidence ≠ automatic module admission`.
 
-При stale/unknown/conflicted material evidence Owner Mission Control должен показывать uncertainty / `not decision-ready`, а не ложную готовность.
+Approved operating cadence после M4:
 
-Company repository authoritative только для Company governance/control/management/portfolio interpretation state в своём scope. Договоры, legal/corporate acts, customer/vendor facts, accounting/banking truth, product implementation/economics/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+```text
+material event
+→ immediate bounded update/review
+→ Owner only if actual authority/action need exists
 
-Наличие cash, priority rank, dashboard visibility, credential, technical/banking access, favorable projection, review completion или AI recommendation само по себе не создаёт spend/external-effect authority.
+active operating week + material aggregate state
+→ at most one short asynchronous Owner checkpoint
 
-## Reference-implementation evidence
+monthly
+→ one integrated management checkpoint
 
-Для доказательства того, что Arvectum Company действительно работает как AI-native owner-controlled organization, недостаточно существования governance-документов, агентов, коммитов или технических PASS.
+quarterly
+→ integrated portfolio / continuity-gap / control-fit / Owner-burden revalidation
+```
 
-Нужны actual source-backed traces, где видимы:
+Daily dashboard/meeting ritual не требуется. Routine `AM-1`/`AM-2` work не проходит полную governance ceremony, если не пересечена material/authority boundary.
 
-- разделение recommendation / decision / approval / execution;
-- устойчивое Position accountability;
-- bounded AI/software execution и корректный fail-closed/escalation;
-- уменьшение Owner reconstruction burden в реальном использовании;
-- continuity/replacement evidence;
-- связь с customer/revenue/obligation/economic outcome или evidence acquisition;
-- provenance и reviewed learning loop.
+## Что M4 не доказал
 
-AC-407 должен проверить именно этот operational layer и не выдавать design за доказанную эффективность.
+M4 closure не означает полноту live Company registers, current cash/liquidity completeness, отсутствие обязательств/рисков/инцидентов, measured Owner-time reduction, broad AI effectiveness, Company-wide continuity/DR readiness, profitability, market validation, customer readiness, legal compliance или production readiness.
 
-## Business-first приоритет
+Эти empirical gaps должны закрываться реальной работой в M5/M6 и ongoing operations, а не дополнительными design-only документами.
 
-При отсутствии более высокого `P0` обязательства default discretionary portfolio order остаётся: `PORT-002 → PORT-001 → PORT-003/PORT-004 по named trigger → PORT-007 clarification-only → PORT-005/PORT-006 contain`.
+## M5 business-first rule
 
-Этот порядок не является бюджетом, постоянной engineering queue или Company flagship. Общая иерархия AC-106 `P0…P3` остаётся выше portfolio ranking.
+AC-501 не получает заранее назначенный workflow. Кандидат выбирается по actual evidence: business/customer/revenue/obligation value, workload, repeatability, authority feasibility, data/tool/access readiness, risk/reversibility, evidence quality, fallback feasibility и вероятный Owner-time/economic benefit.
 
-Параллельный bounded AC-108 discovery loop остаётся источником рыночных данных и сам по себе не означает pilot, price, SLA, privileged access или customer commitment.
+Technical readiness, наличие AI или существующая Arvectum OS integration сами по себе недостаточны для выбора.
 
-## Граница репозитория
+## Business-first portfolio order
 
-Специфические для Arvectum Company правила управления, organizational Positions, Assignments, portfolio decisions и Company-level control models принадлежат этому репозиторию, когда их допустимо хранить здесь.
+При отсутствии более высокого `P0` обязательства default discretionary portfolio order остаётся:
 
-Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура, Product Contracts и platform governance принадлежат `arvectum/arvectum-os`.
+`PORT-002 → PORT-001 → PORT-003/PORT-004 по named trigger → PORT-007 clarification-only → PORT-005/PORT-006 contain`.
 
-Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, transaction exports, confidential exact cash balances, sensitive tax/accounting documents, непубличные клиентские/поставщицкие/договорные материалы, privileged payment/fraud/incident/security details и другие ограниченные операционные данные.
+Это не budget, funding allocation или постоянная engineering queue. AC-106 `P0…P3` hierarchy остаётся выше portfolio ranking.
 
-Live Mission Control, если он содержит restricted financial/customer/security context, должен находиться в соответствующем защищённом контуре; public repo хранит semantic/governance specification и безопасные references.
+## Граница Arvectum OS
+
+Company-specific Positions, Assignments, authority, portfolio decisions, operating controls и Mission Control semantics принадлежат `arvectum/arvectum-company`.
+
+Product implementation/status остаются в product repositories. Domain-neutral platform architecture, Product Contracts, RFC/ADR и Platform Capability lifecycle принадлежат `arvectum/arvectum-os`.
+
+M4 не создаёт Company Product Contract/Active Capability в Arvectum OS. Любая реальная OS reliance для выбранного M5 workflow проходит отдельный AC-503/admission mapping и применимый OS governance path.
+
+## Граница публичного репозитория
+
+Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, transaction exports, confidential exact cash balances, sensitive tax/accounting documents, непубличные customer/vendor/contract materials, privileged payment/fraud/incident/security details и chain-of-thought.
+
+Public-safe Mission Control хранит governance/evidence references и explicit unknowns. Live restricted finance/customer/security projection должен находиться в соответствующем защищённом контуре.
 
 ## Удалённые репозитории
 
-GitHub `arvectum/arvectum-company` — канонический удалённый репозиторий.
+GitHub `arvectum/arvectum-company` — канонический remote.
 
-GitVerse — зеркало для устойчивости и технологической суверенности. Наличие копии в GitVerse не делает её самостоятельным источником организационных полномочий и не меняет канонический статус автоматически.
+GitVerse — зеркало для устойчивости и технологической суверенности. Наличие mirror не делает его самостоятельным источником Organizational Authority и не меняет canonical status автоматически.
