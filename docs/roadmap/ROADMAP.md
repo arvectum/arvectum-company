@@ -1,50 +1,49 @@
 # Arvectum Company Canonical Roadmap
 
 Status: `Active`
-Version: `0.19.0`
+Version: `0.20.0`
 Created: `2026-08-19`
 Updated: `2026-08-21`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
-Current canonical action: `AC-207 — Critical-function continuity, replacement and manual fallback baseline`
+Current canonical action: `AC-208 — Reference-model transferability boundary and operating-model cross-review`
 
 ## 1. Canonical publication model
 
-This `0.19.0` publication preserves the complete approved planning substance of roadmap `0.18.0` by immutable git-blob reference and applies only the explicit AC-206 closure / AC-207 transition delta below.
+This `0.20.0` publication preserves the complete approved planning substance of roadmap `0.19.0` by immutable git-blob reference and applies only the explicit AC-207 closure / AC-208 transition delta below.
 
 Incorporated prior roadmap:
 
-- prior version: `0.18.0`;
+- prior version: `0.19.0`;
 - prior canonical path: `docs/roadmap/ROADMAP.md`;
-- immutable blob SHA: `763268dc5d017c30d5978335d73d5017fbd230a1`.
+- immutable blob SHA: `01e96face970eb37990ecf924508a7fe072cfaed`.
 
-All Phase 0–8 planning, milestone definitions, business-first principles, repository boundaries, P0–P3 sequencing, AC-108 parallel discovery rules and AC-202–AC-205 governance/organization baseline from that incorporated version remain unchanged unless explicitly superseded below.
+All Phase 0–8 planning, milestone definitions, business-first principles, repository boundaries, P0–P3 sequencing, AC-108 parallel discovery rules and AC-202–AC-206 governance/organization/access baseline from that incorporated version remain unchanged unless explicitly superseded below.
 
-## 2. AC-206 closure delta
+## 2. AC-207 closure delta
 
-`AC-206 — Company data/tool/credential access boundary baseline` is now `Complete / PASS`.
+`AC-207 — Critical-function continuity, replacement and manual fallback baseline` is now `Complete / PASS`.
 
-Binding access-governance publication:
+Binding continuity publication:
 
-- `docs/security/COMPANY-DATA-TOOL-CREDENTIAL-ACCESS-BOUNDARY-v1.0.0.md` — `Approved 1.0.0`;
-- approved reviewed proposal: `docs/security/COMPANY-DATA-TOOL-CREDENTIAL-ACCESS-BOUNDARY.md` — `Proposed 0.9.0`, blob `0588ab2736e5aa5c2782c572f8e10adf4c65de1e`;
-- cross-review: `docs/reviews/AC-206-COMPANY-ACCESS-BOUNDARY-CROSS-REVIEW.md` — `9 of maximum 10`, PASS for Owner approval;
-- Owner approval: `docs/governance/decisions/DECISION-2026-08-21-AC-206-APPROVAL.md`.
+- `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE-v1.0.0.md` — `Approved 1.0.0`;
+- approved reviewed proposal: `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE.md` — `Proposed 0.9.0`, blob `425ab4d83098aa3dbc73925305aa5d9981512818`;
+- cross-review: `docs/reviews/AC-207-CRITICAL-FUNCTION-CONTINUITY-CROSS-REVIEW.md` — `9 of maximum 10`, PASS for Owner approval;
+- Owner approval: `docs/governance/decisions/DECISION-2026-08-21-AC-207-APPROVAL.md`.
 
-AC-206 establishes:
+AC-207 establishes:
 
-- deny-by-default / least-privilege access governance;
-- `DC-0` through `DC-3` Company access-governance data classes;
-- `R/W/X/P/K/E` technical capability markers, distinct from Organizational Authority and AC-203 authority modes;
-- `RA-01` through `RA-18` Company resource classes;
-- Position/Assignment-specific access eligibility ceilings for the AC-205 executor model;
-- meaningful bounded code/build/test access for AI-led Engineering without Owner-wide admin/bank/signing/commercial privilege;
-- scoped commercial research/outreach access with dedicated sending identity requirements rather than Owner-general-mailbox access;
-- separation of Finance and Security access purposes even where the same human Principal currently holds both Positions;
-- prohibition on storing reusable credentials/secrets in the public Company repository or ordinary AI/model context;
-- restricted-store metadata, grant/review/revocation/recovery and fail-closed requirements.
+- five continuity modes `CM-0` through `CM-4` covering normal, bounded continuity, degraded, fail-closed and recovery/reconciliation behavior;
+- four continuity-evidence states `CE-0` through `CE-3`, preventing a designed fallback from being mislabeled as tested;
+- separation of runtime, Principal, provider, device and legal/corporate replacement;
+- minimum continuity-packet expectations for reconstructable workstream state;
+- Position-specific behavior for Owner absence, AI/runtime failure, accounting-provider unavailability and security/risk degradation;
+- AI-led Engineering runtime replacement without automatic authority/access inheritance;
+- explicit GitHub/GitVerse/local-copy canonicality and reconciliation rules;
+- fail-closed treatment for unavailable signing, payment, legal, customer-rights, trusted-state and security gates;
+- explicit preservation of current unresolved Owner/legal/credential/signing/customer-data continuity risks rather than claiming disaster-recovery readiness.
 
-AC-206 approval does not itself provision accounts/credentials, create legal/customer authority, activate `AM-3`/`AM-4`, or prove that the target access/recovery model is already implemented.
+AC-207 approval does not create RTO/RPO/SLA commitments, legal succession instruments, alternate providers, credentials, `AM-3`/`AM-4`, customer authority or tested recovery evidence.
 
 ## 3. Phase 2 current status
 
@@ -56,38 +55,37 @@ AC-206 approval does not itself provision accounts/credentials, create legal/cus
 | `AC-204` | Initial Position Registry | `Complete / PASS` |
 | `AC-205` | Initial Assignments and executor classification | `Complete / PASS` |
 | `AC-206` | Company data/tool/credential access boundary baseline | `Complete / PASS` |
-| `AC-207` | Critical-function continuity, replacement and manual fallback baseline | `Current` |
-| `AC-208` | Reference-model transferability boundary and operating-model cross-review | `Planned` |
+| `AC-207` | Critical-function continuity, replacement and manual fallback baseline | `Complete / PASS` |
+| `AC-208` | Reference-model transferability boundary and operating-model cross-review | `Current` |
 
-## 4. Current action — AC-207
+## 4. Current action — AC-208
 
-### AC-207 — Critical-function continuity, replacement and manual fallback baseline
+### AC-208 — Reference-model transferability boundary and operating-model cross-review
 
 Status: `Current`.
 
-Objective: prove, at a proportionate Company baseline, that the six approved Positions and their critical workflows can survive executor/runtime/device/vendor/service unavailability without inventing authority, bypassing security controls or losing reconstructable organizational meaning.
+Objective: close Phase 2 by testing whether the Company operating model created through AC-201–AC-207 is internally coherent, business-first and transferable as a **method/reference model** without turning Arvectum Company's exact Positions, authority allocations, access matrix or continuity pattern into a universal customer template.
 
-AC-207 must determine, proportionately to current evidence:
+AC-208 must determine, proportionately to current evidence:
 
-- continuity expectations for each approved Position and the most material Company/workstream dependencies;
-- what may continue automatically, what must degrade to a bounded mode and what must stop/fail closed;
-- how `POS-004` AI-led Engineering can move between AI models/agents/runtimes or temporarily to human execution without losing workstream state;
-- how hybrid Positions preserve decision/evidence state if the current AI adviser/runtime is unavailable;
-- how future human sellers or replacement commercial operators can receive reconstructable scoped state rather than relying on Owner memory;
-- how outsourced accounting/provider replacement can occur while Company management meaning and source-document access remain recoverable;
-- how GitHub/GitVerse/local copies, product repositories and canonical source rules behave during outage/recovery without silently changing authority;
-- how credential rotation/recovery/revocation, privileged service identities, local machines/VMs, signing mechanisms and other deliberate gates behave under failure;
-- how customer/workstream data and rights remain isolated and reconstructable during replacement/recovery;
-- what happens during short Owner unavailability versus materially longer Owner/legal-representation unavailability, without AI or technical operators inheriting `ROD-*` or legal powers;
-- which continuity/fallback paths are already evidenced, which are plausible but untested, and which remain unresolved risks requiring later implementation/tests.
+- whether the chain `business evidence → functions → reserved decisions → delegated authority → Positions → Assignments → access → continuity` remains internally consistent end to end;
+- whether any Owner bottleneck, fake delegation, fake headcount, ambient AI authority or technical-access-as-authority assumption has reappeared across the combined model;
+- whether `POS-001` through `POS-006` remain justified for the current Company rather than becoming a permanent universal organization chart;
+- whether the AC-205 human/AI/external-service realization remains a current Assignment baseline rather than a product/runtime architecture requirement;
+- whether AC-206 access and AC-207 continuity constraints preserve business execution without defeating the intended AI-native operating model;
+- what parts of the model are reusable **derivation method / governance pattern** for future customer-specific AI-native companies;
+- what parts are Company-specific facts that MUST NOT be copied to customer organizations without their own business, legal, authority, data, risk and economic evidence;
+- where Arvectum OS may provide domain-neutral representation/governed-execution capabilities without becoming the source of customer or Company corporate authority;
+- which Phase 2 assumptions require later empirical operating evidence, market validation or implementation before any stronger readiness claim;
+- what durable Phase 2 closure decision and next roadmap handoff should follow if the model passes.
 
-AC-207 MUST distinguish continuity from bypass. A deliberate Owner/legal/customer/security gate may legitimately stop an action. Recovery must preserve authority and security rather than granting broader access or decision rights for convenience.
+AC-208 MUST NOT claim that Arvectum Company's six Positions, Owner-reserved decisions, executor mix, access classes or continuity matrix are automatically correct for another organization.
 
-AC-207 MUST NOT fabricate RTO/RPO/SLA values, legal succession instruments, powers of attorney, tested recovery evidence or alternate providers that do not actually exist.
+AC-208 MUST distinguish a reusable **organization-design method** from a reusable **organization instance**.
 
 The bounded AC-108 discovery loop continues in parallel as previously authorized P1 market-evidence work.
 
-The next Phase 2 handoff after AC-207 is `AC-208 — Reference-model transferability boundary and operating-model cross-review`.
+The next roadmap handoff after AC-208 must be determined from the existing incorporated roadmap and the evidence produced by the Phase 2 closure review; roadmap progression itself does not authorize expenditure, hiring, customer commitment, production deployment or cross-repository obligations.
 
 ## 5. Authority reminder
 
