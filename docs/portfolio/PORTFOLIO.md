@@ -1,139 +1,132 @@
 # Arvectum Company Portfolio
 
 Status: `Active`
-Version: `0.7.0`
+Version: `0.8.0`
 Created: `2026-08-20`
 Updated: `2026-08-21`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
-Current governance baseline: `AC-306 — Approved 1.0.0`
+Current governance baseline: `AC-307 — Approved 1.0.0 / M3 Complete / PASS`
 
 ## 1. Publication model
 
-This `0.7.0` publication preserves the complete portfolio baseline `0.6.0` by immutable git blob reference and overlays the approved AC-306 capital/economics/Owner-attention prioritization as the current portfolio priority baseline.
+Эта редакция `0.8.0` сохраняет полный portfolio baseline `0.7.0` по immutable git blob и добавляет утверждённую итоговую проверку AC-307 и закрытие M3.
 
-Previous publication:
+Предыдущая редакция:
 
-- version: `0.6.0`;
+- version: `0.7.0`;
 - path: `docs/portfolio/PORTFOLIO.md`;
-- immutable git blob SHA: `c8243820fe1f7bd5acb817302c7332904c574459`.
+- immutable git blob SHA: `e2e43ced1647d5fcbe6cd484b528770775097753`.
 
-Approved AC-306 baseline:
+Approved AC-307 baseline:
 
-- `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION-v1.0.0.md` — `Approved 1.0.0`;
-- exact reviewed proposal: `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION.md` — `Proposed 0.9.0`, blob `d254c6441baca5f22828648ecfa701d04c8344b1`;
-- cross-review: `docs/reviews/AC-306-PORTFOLIO-PRIORITIZATION-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `329c87d6a63e08564e8b52362b8af02b159d7b74`;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-306-APPROVAL.md`.
+- `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md` — `Approved 1.0.0`, blob `ff9a07d8c7161bfdaf3628e1c8e21d2a2d0f4435`;
+- exact reviewed proposal: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE.md` — `Proposed 0.9.0`, blob `904b9e5ffa12caeb082b3bf23a89aff251ebe8c4`;
+- cross-review: `docs/reviews/AC-307-PORTFOLIO-GOVERNANCE-M3-CLOSURE-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `bc3c4992f12dabaeb155f055373da292278cd791`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-307-APPROVAL-AND-M3-CLOSURE.md`.
 
-The approved AC-301 identity/disposition baseline, AC-302 accountable-Position mapping, AC-303 investment treatment, AC-304 role/reuse classification and AC-305 dependency/Product Contract reconciliation remain fully in force.
+Approved AC-301…AC-306 остаются в силе и являются составными слоями текущего M3 baseline.
 
 ## 2. Current governed portfolio map
 
-| ID | Primary Company-level name | Canonical repository | Disposition | Accountable Position | Role | AC-306 band |
+| ID | Company-level name | Canonical repository | Disposition | Accountable Position | Role | Priority |
 |---|---|---|---|---|---|---|
-| `PORT-001` | `Arvectum Tender Agent` | `arvectum/tender-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | `A2` |
-| `PORT-002` | `Discount Parser` | `arvectum/discount-parser` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` + `RI-PRODUCT-FAMILY` | `A1` |
-| `PORT-003` | `Arvectum Proxy Launcher` | `arvectum/proxy-launcher` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone only | `B1` |
-| `PORT-004` | `Creative Test Agent` | `arvectum/creative-test-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | `B2` |
-| `PORT-005` | `Tender Small-Volume Calculator` | `arvectum/tender-app` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | `D1` |
-| `PORT-006` | `Doors Parser` | `arvectum/doors_parser` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | `D2` |
-| `PORT-007` | `Data Platform` | `arvectum/data-platform` | `clarify` | `POS-003 — Portfolio & Product Lead` | clarification-only Company/product-family module candidate | `C1` |
+| `PORT-001` | `Arvectum Tender Agent` | `arvectum/tender-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | `A2` bounded revenue/pilot/evidence |
+| `PORT-002` | `Discount Parser` | `arvectum/discount-parser` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER + RI-PRODUCT-FAMILY` | `A1` finish/accept/stabilize/maintain |
+| `PORT-003` | `Arvectum Proxy Launcher` | `arvectum/proxy-launcher` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone | `B1` named-trigger |
+| `PORT-004` | `Creative Test Agent` | `arvectum/creative-test-agent` | `continue` | `POS-003 — Portfolio & Product Lead` | standalone + `RI-OS-CONSUMER` | `B2` named-trigger |
+| `PORT-005` | `Tender Small-Volume Calculator` | `arvectum/tender-app` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | `D1` contain/reference |
+| `PORT-006` | `Doors Parser` | `arvectum/doors_parser` | `contain` | `POS-003 — Portfolio & Product Lead` | `RI-PRODUCT-FAMILY` | `D2` contain/support/reference |
+| `PORT-007` | `Data Platform` | `arvectum/data-platform` | `clarify` | `POS-003 — Portfolio & Product Lead` | clarification-only Company/product-family module candidate | `C1` clarification-only; no material build |
 
-No mandatory hard runtime/code/data dependency is currently established between `PORT-001…PORT-007`; AC-305 remains authoritative for the exact relationship/Product Contract interpretation.
+## 3. Dependency and Arvectum OS boundary
 
-## 3. Approved default priority order
+Между `PORT-001…PORT-007` не установлено обязательной hard runtime/code/data dependency.
 
-When no higher Company-level `P0` obligation exists, discretionary product attention follows:
+Current governed OS correspondence:
+
+| Node | OS boundary | Exact current platform dependency |
+|---|---|---|
+| `PORT-001` | P6.02 + supplemental P8.03 | `CAP-001 + CAP-004` в exact bounded scopes |
+| `PORT-002` | P6.06 | `CAP-004 only` |
+| `PORT-004` | P8.06 optional external extension | `CAP-004 only` |
+| `PORT-003` | none evidenced | none inferred |
+| `PORT-005` | none evidenced | none inferred |
+| `PORT-006` | none evidenced | none inferred |
+| `PORT-007` | none evidenced | none inferred |
+
+P6.02 historical locator `arutyunoveth/ai-corporation` reconciled отдельным Approved Arvectum OS provenance overlay; current implementation locator — `arvectum/tender-agent`. Семантика P6.02 остаётся `Provisional 0.1.0`.
+
+Reference/reuse evidence не создаёт shared runtime, library, datastore, module или Product Contract автоматически.
+
+## 4. Default portfolio decision order
+
+При отсутствии более высокого Company-level `P0` обязательства:
 
 ```text
 A1  PORT-002 — Discount Parser
 A2  PORT-001 — Arvectum Tender Agent
     ↓
-B1  PORT-003 — Arvectum Proxy Launcher
-B2  PORT-004 — Creative Test Agent
-    ↓
-C1  PORT-007 — Data Platform
+B1  PORT-003 — Arvectum Proxy Launcher   ┐
+B2  PORT-004 — Creative Test Agent       ├─ named trigger only
+    ↓                                     ┘
+C1  PORT-007 — Data Platform — clarification only
     ↓
 D1  PORT-005 — Tender Small-Volume Calculator
 D2  PORT-006 — Doors Parser
 ```
 
-This is a decision order, not a permanent engineering queue, funding allocation or product-value ranking.
+Это decision order, а не постоянная engineering queue, funding allocation или новый Company flagship.
 
-## 4. Current node treatments
+AC-106 остаётся выше portfolio ranking:
 
-### `A1 — PORT-002 — Discount Parser`
+`P0 obligations/cash/material risk → P1 flagship evidence + real operating model → P2 revenue/obligation/evidence-linked product/OS work → P3 speculative expansion`.
 
-`finish / accept / stabilize / maintain`.
+## 5. M3 closure result
 
-Prioritize bounded customer acceptance, defect correction, delivery continuity and clearly agreed support. After accepted delivery, default to maintenance/freeze unless new paid scope, second-consumer evidence or explicit product investment evidence justifies more work. Do not infer generic parser platformization.
+`M3 — Product/module-candidate portfolio governed as investments` имеет статус:
 
-### `A2 — PORT-001 — Arvectum Tender Agent`
+`Complete / PASS`.
 
-Continue as bounded revenue/pilot/evidence product. Prefer quality, reliability and decision evidence tied to a specific qualified pilot/procurement opportunity/flagship hypothesis over broad feature accumulation. No mass pilot, SaaS, submission/EDS or autonomous consequential expansion by implication.
+M3 установил достаточный Company-level baseline по:
 
-### `B1 — PORT-003 — Arvectum Proxy Launcher`
+- identity/disposition;
+- accountable Position;
+- investment/cost/risk treatment;
+- standalone/reference/module/OS-candidate classification;
+- inter-product and Arvectum OS dependency boundaries;
+- capital/economics/Owner-attention priority.
 
-Preserve the verified productized baseline and perform trigger-based work. Real user/support/IP/release issues may justify attention. Known unavailable physical-host gates must not consume continuous Owner attention. Per-application expansion remains separately gated.
+Закрытие M3 не доказывает profitability, market validation, customer/production readiness, legal/IP/data completeness или Stable/Active Arvectum OS lifecycle.
 
-### `B2 — PORT-004 — Creative Test Agent`
+## 6. Carry-forward discipline
 
-Maintain runnable pilot readiness. Activate bounded product work when a qualified design partner/customer provides real inputs, success criteria and plausible commercial or flagship-learning value. Technical completeness or OS-reference value alone is not a funding claim.
+Материальное новое evidence должно приводить к re-evaluation, а не silent re-banding.
 
-### `C1 — PORT-007 — Data Platform`
+Особенно остаются открыты:
 
-Clarification-only. Allowed work is limited to named consumers, minimal common-contract hypothesis, ownership/data/sovereignty/continuity boundaries and an economic case for removing duplicated burden. No material shared-runtime/datastore/platform build is authorized.
+- PORT-001 — real paid/pilot/deal economics and repeatability;
+- PORT-002 — live client acceptance/support boundary и дальнейшее решение после accepted delivery;
+- PORT-003 — legal/IP rights-basis evidence, separate-host gates и per-app stop-gate;
+- PORT-004 — real design-partner/customer/commercial evidence;
+- PORT-007 — named consumers, common contract и economic/continuity case до material build;
+- portfolio-wide — unit economics, profitability, CAC/LTV/ROI и legal/customer readiness там, где они нужны для конкретного решения.
 
-### `D1 — PORT-005 — Tender Small-Volume Calculator`
+## 7. Source-of-truth rule
 
-Contain. Preserve maintenance/security/continuity and selective procurement-family reference evidence. Do not create a parallel procurement growth product without a new decision.
+- этот файл — canonical Company-level portfolio map;
+- product repositories — canonical для implementation/status/domain semantics;
+- Arvectum OS — canonical для Product Contracts/platform capabilities;
+- legal/accounting/customer systems — canonical для соответствующих правовых, финансовых, договорных и конфиденциальных фактов.
 
-### `D2 — PORT-006 — Doors Parser`
+Repository locator, technical access, common ownership или common stack сами по себе не создают Organizational Authority, legal/IP ownership или cross-product commitment.
 
-Contain completed-delivery asset. Preserve support obligations and extraction/QA/reuse evidence. Do not expand into a generic parser or growth product without new evidence and decision.
+## 8. Handoff
 
-## 5. Company-level override hierarchy
+`AC-307 — Complete / PASS`.
 
-AC-306 remains subordinate to AC-106:
+`M3 — Complete / PASS`.
 
-- `P0` — obligations, cash, material risk;
-- `P1` — flagship `«ИИ-компания под ключ»` market evidence + minimal real Company operating model;
-- `P2` — product/OS work directly tied to revenue, obligation, evidence or blocker removal;
-- `P3` — speculative expansion.
+Следующее каноническое Company action находится уже в M4:
 
-A real customer/security/data/continuity obligation may temporarily override the portfolio order for the exact affected work. That does not silently change the node's disposition or AC-306 band.
-
-## 6. Owner-attention rule
-
-For material product work, decision preparation must state:
-
-1. why now;
-2. exact bounded outcome;
-3. exact Owner action required;
-4. what can proceed without Owner;
-5. stop condition;
-6. next decision enabled by evidence.
-
-Owner attention is scarce management capital and must not be consumed by known-unavailable gate retries, speculative polish or unranked simultaneous feature expansion.
-
-## 7. Capital and authority boundary
-
-AC-306 creates no budget, numeric spend threshold, customer/vendor commitment, price, SLA, hiring authorization, Product Contract change, shared module or legal/IP/data right.
-
-`ROD-02`, `ROD-04` and all other applicable Owner/authority gates remain binding for specific material effects.
-
-## 8. Source-of-truth rule
-
-- this file is canonical for the current Company-level portfolio map and default investment/attention order;
-- product repositories remain canonical for product implementation/status/domain semantics;
-- Arvectum OS remains canonical for Product Contracts/platform capability lifecycle;
-- actual customer/accounting/legal evidence remains in its competent source of truth;
-- material new evidence should trigger re-evaluation rather than silent re-banding.
-
-## 9. Downstream governance
-
-`AC-306 — Complete / PASS`.
-
-Next canonical portfolio action:
-
-`AC-307 — Итоговая проверка управления портфелем и закрытие M3`.
+`AC-401 — Company work/obligation register model`.
