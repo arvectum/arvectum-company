@@ -1,92 +1,127 @@
-# Arvectum Company Canonical Roadmap
+# Каноническая дорожная карта Arvectum Company
 
-Status: `Active`
-Version: `0.20.0`
-Created: `2026-08-19`
-Updated: `2026-08-21`
-Owner: `ООО «Арвектум»`
-Repository: `arvectum/arvectum-company`
-Current canonical action: `AC-208 — Reference-model transferability boundary and operating-model cross-review`
+Статус: `Active`
+Версия: `0.21.0`
+Создано: `2026-08-19`
+Обновлено: `2026-08-21`
+Владелец: `ООО «Арвектум»`
+Репозиторий: `arvectum/arvectum-company`
+Текущее каноническое действие: `AC-301 — Portfolio product/node identity and ownership reconciliation`
+Русское название текущего действия: `Сверка идентичности, границ и владения продуктами и инициативами портфеля`
 
-## 1. Canonical publication model
+## 1. Модель публикации
 
-This `0.20.0` publication preserves the complete approved planning substance of roadmap `0.19.0` by immutable git-blob reference and applies only the explicit AC-207 closure / AC-208 transition delta below.
+Эта редакция `0.21.0` сохраняет полное содержание дорожной карты `0.20.0` по неизменяемой ссылке на git blob и вносит только изменения, связанные с утверждением AC-208, закрытием M2 и переходом к Phase 3.
 
-Incorporated prior roadmap:
+Предыдущая редакция:
 
-- prior version: `0.19.0`;
-- prior canonical path: `docs/roadmap/ROADMAP.md`;
-- immutable blob SHA: `01e96face970eb37990ecf924508a7fe072cfaed`.
+- версия: `0.20.0`;
+- путь: `docs/roadmap/ROADMAP.md`;
+- git blob SHA: `7c67769e0d784bd201a716690d2a48c5cf1d59e1`.
 
-All Phase 0–8 planning, milestone definitions, business-first principles, repository boundaries, P0–P3 sequencing, AC-108 parallel discovery rules and AC-202–AC-206 governance/organization/access baseline from that incorporated version remain unchanged unless explicitly superseded below.
+Все ранее утверждённые этапы M0–M1, принципы business-first, границы Company/Product/Arvectum OS, правила приоритета P0–P3 и параллельный цикл AC-108 остаются в силе, если прямо не изменены более новым утверждённым решением.
 
-## 2. AC-207 closure delta
+## 2. Закрытие AC-208
 
-`AC-207 — Critical-function continuity, replacement and manual fallback baseline` is now `Complete / PASS`.
+`AC-208 — Reference-model transferability boundary and operating-model cross-review` получает статус:
 
-Binding continuity publication:
+`Complete / PASS`.
 
-- `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE-v1.0.0.md` — `Approved 1.0.0`;
-- approved reviewed proposal: `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE.md` — `Proposed 0.9.0`, blob `425ab4d83098aa3dbc73925305aa5d9981512818`;
-- cross-review: `docs/reviews/AC-207-CRITICAL-FUNCTION-CONTINUITY-CROSS-REVIEW.md` — `9 of maximum 10`, PASS for Owner approval;
-- Owner approval: `docs/governance/decisions/DECISION-2026-08-21-AC-207-APPROVAL.md`.
+Утверждённая публикация:
 
-AC-207 establishes:
+- `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md` — `Approved 1.0.0`;
+- точная проверенная исходная редакция: `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE.md` — `Proposed 0.9.0`, blob `78b9c3333a23b196f34338c9fec9e9dd2f802d22`;
+- перекрёстная проверка: `docs/reviews/AC-208-REFERENCE-MODEL-TRANSFERABILITY-CROSS-REVIEW.md` — `10 of maximum 10`, PASS;
+- решение собственника: `docs/governance/decisions/DECISION-2026-08-21-AC-208-APPROVAL-AND-M2-CLOSURE.md`.
 
-- five continuity modes `CM-0` through `CM-4` covering normal, bounded continuity, degraded, fail-closed and recovery/reconciliation behavior;
-- four continuity-evidence states `CE-0` through `CE-3`, preventing a designed fallback from being mislabeled as tested;
-- separation of runtime, Principal, provider, device and legal/corporate replacement;
-- minimum continuity-packet expectations for reconstructable workstream state;
-- Position-specific behavior for Owner absence, AI/runtime failure, accounting-provider unavailability and security/risk degradation;
-- AI-led Engineering runtime replacement without automatic authority/access inheritance;
-- explicit GitHub/GitVerse/local-copy canonicality and reconciliation rules;
-- fail-closed treatment for unavailable signing, payment, legal, customer-rights, trusted-state and security gates;
-- explicit preservation of current unresolved Owner/legal/credential/signing/customer-data continuity risks rather than claiming disaster-recovery readiness.
+AC-208 закрепляет принцип:
 
-AC-207 approval does not create RTO/RPO/SLA commitments, legal succession instruments, alternate providers, credentials, `AM-3`/`AM-4`, customer authority or tested recovery evidence.
+```text
+повторно используемый метод
+≠ конкретная организационная конфигурация ООО «Арвектум»
+≠ готовый программный модуль
+≠ универсальная семантика Arvectum OS
+```
 
-## 3. Phase 2 current status
+Для каждой клиентской организации функции, полномочия, организационные позиции, назначения, доступ и резервный порядок работы должны выводиться заново из её собственного бизнеса, юридических и корпоративных источников, обязательств, данных, рисков и экономики.
 
-| ID | Work item | Status |
+## 3. Закрытие M2
+
+Этап:
+
+`M2 — Arvectum Company reference operating model and authority established`
+
+закрыт со статусом:
+
+`Complete / PASS`.
+
+Русская смысловая формулировка результата:
+
+**базовая эталонная организационная модель Arvectum Company и система распределения полномочий сформированы и проверены в пределах M2.**
+
+Статус работ Phase 2:
+
+| ID | Работа | Статус |
 |---|---|---|
-| `AC-201` | Minimal real organizational/function model | `Complete / PASS` |
-| `AC-202` | Reserved Owner Decisions | `Complete / PASS` |
-| `AC-203` | Delegated Position authority, approval and escalation model | `Complete / PASS` |
-| `AC-204` | Initial Position Registry | `Complete / PASS` |
-| `AC-205` | Initial Assignments and executor classification | `Complete / PASS` |
-| `AC-206` | Company data/tool/credential access boundary baseline | `Complete / PASS` |
-| `AC-207` | Critical-function continuity, replacement and manual fallback baseline | `Complete / PASS` |
-| `AC-208` | Reference-model transferability boundary and operating-model cross-review | `Current` |
+| `AC-201` | Минимальная реальная модель функций организации | `Complete / PASS` |
+| `AC-202` | Решения, зарезервированные за собственником | `Complete / PASS` |
+| `AC-203` | Модель делегирования полномочий, утверждения и передачи вопросов выше | `Complete / PASS` |
+| `AC-204` | Начальный реестр организационных позиций | `Complete / PASS` |
+| `AC-205` | Начальные назначения и классификация исполнителей | `Complete / PASS` |
+| `AC-206` | Границы доступа к данным, инструментам и учётным данным | `Complete / PASS` |
+| `AC-207` | Непрерывность, замена и резервный порядок работы | `Complete / PASS` |
+| `AC-208` | Граница переносимости эталонной модели и итоговая проверка | `Complete / PASS` |
 
-## 4. Current action — AC-208
+Закрытие M2 не означает подтверждённый спрос, прибыльность, промышленную готовность, готовый универсальный модуль, завершённую реализацию доступа/восстановления или готовность к внешнему внедрению.
 
-### AC-208 — Reference-model transferability boundary and operating-model cross-review
+## 4. Phase 3 — управление портфелем и кандидатами в повторно используемые модули
 
-Status: `Current`.
+Этап: `M3 — Product/module-candidate portfolio governed as investments`.
 
-Objective: close Phase 2 by testing whether the Company operating model created through AC-201–AC-207 is internally coherent, business-first and transferable as a **method/reference model** without turning Arvectum Company's exact Positions, authority allocations, access matrix or continuity pattern into a universal customer template.
+Русская смысловая формулировка: **портфель продуктов и кандидатов в модули управляется как набор инвестиций, а не как список репозиториев**.
 
-AC-208 must determine, proportionately to current evidence:
+Текущий план Phase 3:
 
-- whether the chain `business evidence → functions → reserved decisions → delegated authority → Positions → Assignments → access → continuity` remains internally consistent end to end;
-- whether any Owner bottleneck, fake delegation, fake headcount, ambient AI authority or technical-access-as-authority assumption has reappeared across the combined model;
-- whether `POS-001` through `POS-006` remain justified for the current Company rather than becoming a permanent universal organization chart;
-- whether the AC-205 human/AI/external-service realization remains a current Assignment baseline rather than a product/runtime architecture requirement;
-- whether AC-206 access and AC-207 continuity constraints preserve business execution without defeating the intended AI-native operating model;
-- what parts of the model are reusable **derivation method / governance pattern** for future customer-specific AI-native companies;
-- what parts are Company-specific facts that MUST NOT be copied to customer organizations without their own business, legal, authority, data, risk and economic evidence;
-- where Arvectum OS may provide domain-neutral representation/governed-execution capabilities without becoming the source of customer or Company corporate authority;
-- which Phase 2 assumptions require later empirical operating evidence, market validation or implementation before any stronger readiness claim;
-- what durable Phase 2 closure decision and next roadmap handoff should follow if the model passes.
+| ID | Работа | Статус |
+|---|---|---|
+| `AC-301` | Сверка идентичности, границ и владения продуктами и инициативами портфеля | `Current` |
+| `AC-302` | Закрепление ответственной организационной позиции за каждым активным продуктом/инициативой | `Planned` |
+| `AC-303` | Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить | `Planned` |
+| `AC-304` | Разделение: самостоятельный продукт / эталонная реализация / кандидат в модуль / кандидат в возможность Arvectum OS | `Planned` |
+| `AC-305` | Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS | `Planned` |
+| `AC-306` | Приоритизация портфеля по капиталу, экономике и вниманию собственника | `Planned` |
+| `AC-307` | Итоговая проверка управления портфелем и закрытие M3 | `Planned` |
 
-AC-208 MUST NOT claim that Arvectum Company's six Positions, Owner-reserved decisions, executor mix, access classes or continuity matrix are automatically correct for another organization.
+## 5. Текущее действие — AC-301
 
-AC-208 MUST distinguish a reusable **organization-design method** from a reusable **organization instance**.
+### AC-301 — Сверка идентичности, границ и владения продуктами и инициативами портфеля
 
-The bounded AC-108 discovery loop continues in parallel as previously authorized P1 market-evidence work.
+Статус: `Current`.
 
-The next roadmap handoff after AC-208 must be determined from the existing incorporated roadmap and the evidence produced by the Phase 2 closure review; roadmap progression itself does not authorize expenditure, hiring, customer commitment, production deployment or cross-repository obligations.
+Цель: привести существующую карту портфеля к однозначному состоянию перед распределением ответственности и инвестиций.
 
-## 5. Authority reminder
+AC-301 должен для каждого существенного узла портфеля установить:
 
-Roadmap status coordinates planning only. It does not itself grant Organizational Authority, approve expenditure, authorize external effect, establish legal/corporate authority, create Product/OS obligations or prove business/customer/production readiness.
+- точное имя и идентичность продукта/инициативы;
+- канонический репозиторий и источник текущего продуктового состояния;
+- является ли узел отдельным продуктом, экспериментом, клиентским решением, внутренней инициативой или иной сущностью;
+- где проходит граница между Company, продуктом и Arvectum OS;
+- кто является владельцем продукта/репозитория в организационном смысле, не создавая пока нового назначения без AC-302;
+- какие старые имена, репозитории, дорожные карты и контракты требуют сверки;
+- какие потенциальные дубли или семейства продуктов требуют отдельного решения, а не молчаливого объединения;
+- какие узлы недостаточно определены и должны получить явное состояние `continue / clarify / contain / retire candidate` до дальнейших инвестиций.
+
+AC-301 не утверждает бюджет, остановку продукта, слияние репозиториев, повторное использование как модуля или изменение Arvectum OS автоматически.
+
+## 6. Язык и терминология
+
+Для новых человекочитаемых Company-документов действует русскоязычный режим и нормативный глоссарий:
+
+- `docs/governance/decisions/DECISION-2026-08-21-LANGUAGE-AND-TERMINOLOGY-POLICY.md`;
+- `docs/governance/TERMINOLOGY-GLOSSARY.md`.
+
+Технические идентификаторы и машинные документы могут сохранять английские имена, но системообразующий смысл терминов должен оставаться стабильным.
+
+## 7. Напоминание о полномочиях
+
+Дорожная карта координирует работу, но сама по себе не создаёт организационные или юридические полномочия, не утверждает расходы, найм, клиентские обязательства, доступ, промышленное развёртывание и не изменяет Arvectum OS или продуктовые репозитории.
