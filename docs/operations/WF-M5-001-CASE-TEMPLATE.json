@@ -1,0 +1,73 @@
+{
+  "schema_version": "wf-m5-001.case.v1",
+  "case_id": "WF-M5-001-YYYYMMDD-XXXXXXXX",
+  "workflow": {
+    "id": "WF-M5-001",
+    "version": "1.0.0",
+    "approved_publication_blob": "9b06e02a6d9afa8b6b4533d3a9f71690518c3ce1",
+    "reviewed_proposal_blob": "b1df71839422e509cbfa76faec31bf788ca9842d",
+    "os_reliance_decision_blob": "8984d4c094da87a2c9d201fd9cffcd617c641f8f",
+    "os_reliance": "NO-ADDITIONAL-OS-RELIANCE"
+  },
+  "product": {
+    "portfolio_id": "PORT-002",
+    "repository": "arvectum/discount-parser",
+    "baseline_ref": "<exact product commit/tag used by this case>"
+  },
+  "state": "W0",
+  "classification": null,
+  "classification_history": [],
+  "intake": {
+    "received_at": "<ISO-8601 timestamp>",
+    "affected_version": null,
+    "environment_ref": null,
+    "sanitized_summary": null,
+    "scope_basis_ref": null,
+    "unknowns": [],
+    "data_boundary_assessed": false
+  },
+  "technical_scope": {
+    "summary": null,
+    "exclusions": [],
+    "known_limitations": null
+  },
+  "refs": [
+    {
+      "type": "feedback",
+      "ref": "protected://customer-feedback/<opaque-id>",
+      "data_class": "DC-2",
+      "at": "<ISO-8601 timestamp>"
+    }
+  ],
+  "verification": {
+    "result": "not_started",
+    "at": null
+  },
+  "customer_validation": {
+    "status": "not_started",
+    "handoff_ref": null,
+    "validation_ref": null
+  },
+  "blocker": null,
+  "measurements": {
+    "owner_interventions": 0,
+    "owner_minutes": null,
+    "rework_count": 0
+  },
+  "transitions": [
+    {
+      "from": null,
+      "to": "W0",
+      "at": "<ISO-8601 timestamp>",
+      "actor_position": "POS-002",
+      "principal_ref": "principal/owner",
+      "authority_mode": "AM-0",
+      "reason": "feedback intake opened",
+      "evidence_refs": [
+        "protected://customer-feedback/<opaque-id>"
+      ]
+    }
+  ],
+  "created_at": "<ISO-8601 timestamp>",
+  "updated_at": "<ISO-8601 timestamp>"
+}
