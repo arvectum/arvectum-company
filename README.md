@@ -19,6 +19,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-403 — модель реестра рисков, исключений и инцидентов: `docs/operations/COMPANY-RISK-EXCEPTION-INCIDENT-REGISTER-MODEL-v1.0.0.md`
 - AC-404 — базовая модель cash/commitment/management reporting: `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md`
 - AC-405 — порядок portfolio/module/priority review: `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-v1.0.0.md`
+- AC-406 — Owner Mission Control / reference evidence view: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-IMPLEMENTATION-EVIDENCE-VIEW-v1.0.0.md`
 - Материалы перекрёстных проверок: `docs/reviews/`
 - Долговременные решения собственника и системы управления: `docs/governance/decisions/`
 
@@ -46,13 +47,13 @@ AC-401 work/obligation register model             Complete / PASS
 → AC-403 risk/exception/incident register        Complete / PASS
 → AC-404 cash/commitment/reporting baseline      Complete / PASS
 → AC-405 portfolio/priority review cadence       Complete / PASS
-→ AC-406 Owner Mission Control                    Current
-→ AC-407 management operating cadence            Planned
+→ AC-406 Owner Mission Control                    Complete / PASS
+→ AC-407 management operating cadence            Current
 ```
 
 Текущее каноническое действие:
 
-**`AC-406 — Owner Mission Control / reference-implementation evidence view` — owner-facing представление существенного Company state и доказательств эталонной реализации.**
+**`AC-407 — Management operating cadence and control review` — проверка рабочего ритма управления, реальной нагрузки системы контроля и достаточности evidence для закрытия M4.**
 
 ## Утверждённый M4 control baseline
 
@@ -81,9 +82,15 @@ AC-405 добавил review discipline:
 
 `material event → scoped review → monthly exception scan / quarterly revalidation backstops → reaffirm or prepare material decision`.
 
-При этом:
+AC-406 добавил Owner Mission Control как derived evidence projection:
 
-`review ≠ decision ≠ approval ≠ investment ≠ product roadmap change ≠ OS lifecycle change`;
+`source/control evidence → owner-facing material projection → exact Owner action where authority actually requires it → governed handoff`.
+
+Ключевые границы:
+
+`Mission Control ≠ source of truth ≠ authority ≠ approval ≠ execution`;
+
+`source fact ≠ Company interpretation ≠ recommendation ≠ decision ≠ approval ≠ legal/corporate/customer act ≠ technical authorization ≠ execution evidence`;
 
 `P0 temporary execution priority ≠ permanent portfolio reclassification`;
 
@@ -91,9 +98,27 @@ AC-405 добавил review discipline:
 
 `reference/reuse evidence ≠ automatic module admission`.
 
-Company repository authoritative только для Company governance/control/management/portfolio state в своём scope. Договоры, legal/corporate acts, customer/vendor facts, accounting/banking truth, product implementation/economics/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+При stale/unknown/conflicted material evidence Owner Mission Control должен показывать uncertainty / `not decision-ready`, а не ложную готовность.
+
+Company repository authoritative только для Company governance/control/management/portfolio interpretation state в своём scope. Договоры, legal/corporate acts, customer/vendor facts, accounting/banking truth, product implementation/economics/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
 
 Наличие cash, priority rank, dashboard visibility, credential, technical/banking access, favorable projection, review completion или AI recommendation само по себе не создаёт spend/external-effect authority.
+
+## Reference-implementation evidence
+
+Для доказательства того, что Arvectum Company действительно работает как AI-native owner-controlled organization, недостаточно существования governance-документов, агентов, коммитов или технических PASS.
+
+Нужны actual source-backed traces, где видимы:
+
+- разделение recommendation / decision / approval / execution;
+- устойчивое Position accountability;
+- bounded AI/software execution и корректный fail-closed/escalation;
+- уменьшение Owner reconstruction burden в реальном использовании;
+- continuity/replacement evidence;
+- связь с customer/revenue/obligation/economic outcome или evidence acquisition;
+- provenance и reviewed learning loop.
+
+AC-407 должен проверить именно этот operational layer и не выдавать design за доказанную эффективность.
 
 ## Business-first приоритет
 
@@ -110,6 +135,8 @@ Company repository authoritative только для Company governance/control/
 Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура, Product Contracts и platform governance принадлежат `arvectum/arvectum-os`.
 
 Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, transaction exports, confidential exact cash balances, sensitive tax/accounting documents, непубличные клиентские/поставщицкие/договорные материалы, privileged payment/fraud/incident/security details и другие ограниченные операционные данные.
+
+Live Mission Control, если он содержит restricted financial/customer/security context, должен находиться в соответствующем защищённом контуре; public repo хранит semantic/governance specification и безопасные references.
 
 ## Удалённые репозитории
 
