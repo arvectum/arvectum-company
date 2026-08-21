@@ -14,6 +14,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - Терминологический глоссарий: `docs/governance/TERMINOLOGY-GLOSSARY.md`
 - AC-208 — граница переносимости эталонной модели и закрытие M2: `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md`
 - AC-307 — итоговая проверка портфеля и закрытие M3: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md`
+- AC-401 — модель реестра работ и обязательств: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md`
 - Материалы перекрёстных проверок: `docs/reviews/`
 - Долговременные решения собственника и системы управления: `docs/governance/decisions/`
 
@@ -33,21 +34,23 @@ Arvectum Company — конкретная организация ООО «Арв
 - `M3` — управление портфелем продуктов/кандидатов в модули как инвестициями: `Complete / PASS`;
 - `M4` — Owner control and reference-implementation observability: `Current`.
 
-Результат M3:
+M4:
 
 ```text
-AC-301 identity/boundary/ownership            Complete / PASS
-→ AC-302 accountable Position                 Complete / PASS
-→ AC-303 investment/cost/risk boundaries      Complete / PASS
-→ AC-304 portfolio role classification        Complete / PASS
-→ AC-305 dependency/Product Contract map      Complete / PASS
-→ AC-306 capital/economics/Owner priority     Complete / PASS
-→ AC-307 final M3 review                      Complete / PASS
+AC-401 work/obligation register model          Complete / PASS
+→ AC-402 decision/approval/escalation register Current
+→ AC-403 risk/exception/incident register      Planned
+→ AC-404 cash/commitment/reporting baseline    Planned
+→ AC-405 portfolio/priority review cadence     Planned
+→ AC-406 Owner Mission Control                 Planned
+→ AC-407 management operating cadence          Planned
 ```
 
 Текущее каноническое действие:
 
-**`AC-401 — Company work/obligation register model` — модель реестра работ и обязательств Компании.**
+**`AC-402 — Decision, approval and escalation register model` — модель реестра решений, утверждений и эскалаций.**
+
+AC-401 уже установил два Company control namespace: `WORK-*` для material Company-level work и `OBL-*` для material obligation control. Реестр является authoritative только для Company control metadata в своём scope и не заменяет договоры, legal/corporate sources, bank/accounting truth, product repositories или Arvectum OS state.
 
 M4 нужен, чтобы собственник видел существенные работы, обязательства, решения, риски, cash/commitment signals и portfolio state без постоянного восстановления контекста из чатов и отдельных репозиториев. Software dashboard не является самоцелью и не требуется до тех пор, пока более простой control layer решает задачу надёжно.
 
