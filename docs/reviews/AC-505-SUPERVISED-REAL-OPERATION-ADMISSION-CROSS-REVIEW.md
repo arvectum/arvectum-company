@@ -1,120 +1,148 @@
 # AC-505 — Supervised Real-Operation Admission Cross-Review
 
 Статус: `Complete`
-Версия: `1.0.0`
+Версия: `1.1.0`
 Дата: `2026-08-21`
-Reviewed artifact: `docs/operations/AC-505-SUPERVISED-REAL-OPERATION-ADMISSION-EVIDENCE.md`
+Reviewed artifact: `docs/operations/AC-505-SUPERVISED-REAL-OPERATION-ADMISSION-EVIDENCE.md` version `0.2.0`
 Review iterations: `10 of 10`
 
 ## Result
 
-**PASS for fail-closed AC-505 wait state.**
+**PASS for real-case admission to the POS-002 classification gate.**
 
 **NOT PASS for AC-505 completion.**
 
-Причина: real customer-derived historical evidence и product provenance существуют, но текущего explicit post-handoff customer validation/rework evidence нет, а pre-AC-504 product work нельзя задним числом выдать за supervised execution.
+Current recommended classification remains `CL-3 — Evidence insufficient / not reproduced`, but that recommendation is AM-0 preparation only and is not substituted for the required attributable human POS-002 AM-2 decision.
 
 ## Iteration 1 — Real-event authenticity
 
 PASS.
 
-Проверен реальный customer-derived workstream, а не synthetic/demo fixture. Public repository не копирует raw customer payload; используется protected-source reference.
+Connected Gmail evidence contains a genuine Kwork customer notification for the Discount Parser workstream dated `2026-08-20T13:44:29Z` with a defect-like symptom concerning parsing with configured settings.
 
-Residual: новый eligible post-AC-504 external event пока отсутствует.
+The event is not synthetic/demo evidence.
+
+Raw customer payload is not copied into the public repository.
 
 ## Iteration 2 — Temporal integrity
 
 PASS.
 
-Historical PR #74/#75 и customer feedback остаются historical evidence. Review запрещает переписывать chronology так, будто AC-504 helper управлял теми product changes до своего появления.
+The customer event predates AC-504, but the proposed supervised case begins prospectively now.
 
-Это предотвращает fabricated supervised history.
+The review explicitly rejects any claim that PR #74/#75 or other earlier engineering was governed by AC-504 before AC-504 existed.
 
-## Iteration 3 — Customer acceptance boundary
+Historical `received_at` and current case-supervision time remain separate facts.
 
-PASS.
-
-PR merge, tests/build, installer handoff и technical readiness не интерпретируются как customer acceptance.
-
-Отсутствие подтверждённого download/install/test и customer silence сохраняются как pending/unknown evidence, а не acceptance.
-
-## Iteration 4 — Position and authority attribution
+## Iteration 3 — Eligibility of unresolved historical feedback
 
 PASS.
 
-Future live case сохраняет:
+ROADMAP 0.40.0 requires one `актуальный реальный feedback item`; it does not require that the original customer message itself be newer than AC-504.
 
-- POS-002 human-attributable intake/classification/customer gates;
-- POS-004 bounded technical segment;
-- only AM-0/AM-1/AM-2;
-- no AM-3/AM-4;
-- no authority inheritance from access/runtime/technical success.
+An unresolved/uncertain real customer item is therefore eligible for prospective supervision provided chronology, current baseline and evidence gaps are explicit.
 
-## Iteration 5 — Classification/scope discipline
+This interpretation does not create new authority or customer commitment.
+
+## Iteration 4 — Classification recommendation
 
 PASS.
 
-Customer-derived feedback содержит как defect-like symptom, так и source-mapping/product-UX meaning. Review не заставляет compound/ambiguous evidence автоматически стать CL-1.
+`CL-3` is the proportionate recommendation because current evidence does not establish:
 
-Future admission requires explicit accepted-scope basis for CL-1; CL-4/CL-5/CL-6 must route out/escalate under AC-502 rather than create scope by implementation momentum.
+- exact affected version;
+- exact failing settings/source state;
+- present reproducibility on current main/0.1.11;
+- current customer-side environment;
+- whether the complaint was later resolved/superseded outside connected evidence.
+
+The review rejects automatic `CL-1` because defect causality and accepted-scope basis are not yet sufficiently evidenced.
+
+## Iteration 5 — Position and authority attribution
+
+PASS.
+
+The current case may be prepared but must not cross W3 until the current human POS-002 Principal performs/confirms the AM-2 classification.
+
+AI recommendation, Gmail retrieval, product evidence or Owner instruction to continue work are not silently converted into a human classification decision.
+
+AM-3/AM-4 remain inactive.
 
 ## Iteration 6 — Data/privacy boundary
 
 PASS.
 
-Raw customer message, unnecessary PII, credentials and private payloads are not copied into the public Company repo. Public artifact stores only sanitized meaning and protected refs.
+The public artifact uses only:
 
-Public Promokood example URL is non-secret contextual evidence.
+- timestamp;
+- sanitized defect meaning;
+- protected source reference;
+- product commit/PR references;
+- explicit unknowns.
+
+No credentials, raw private payload, unnecessary PII or DC-3 data are introduced.
 
 ## Iteration 7 — Product/Company source-of-truth separation
 
 PASS.
 
-Product implementation truth remains in `arvectum/discount-parser`:
+Current product baseline remains:
+
+`a8c1b29702a8ce40bd30b5d972ac2541367900e1`.
+
+Historical related product provenance remains:
 
 - PR #74 / merge `87e427dec8cdc21645f220a089b0ad5ffe5d6671`;
-- PR #75 / main `a8c1b29702a8ce40bd30b5d972ac2541367900e1`.
+- PR #75 / current main `a8c1b29702a8ce40bd30b5d972ac2541367900e1`.
 
-Company stores workflow/governance/evidence interpretation only. No parallel product implementation history is invented.
+Company stores only workflow/governance interpretation and protected references.
 
-## Iteration 8 — Arvectum OS boundary
-
-PASS.
-
-No new OS dependency is introduced. AC-503 `NO-ADDITIONAL-OS-RELIANCE` remains sufficient for this first proof attempt.
-
-No Product Contract or capability lifecycle transition is implied by waiting for customer evidence.
-
-## Iteration 9 — Business/economic honesty
+## Iteration 8 — Customer acceptance boundary
 
 PASS.
 
-Review does not infer customer value, willingness to pay, profitability, acceptance or support success from a merged PR or delivered installer.
+Installer handoff, merged PRs, current main and technical readiness are not customer acceptance.
 
-Waiting for actual external validation is cheaper and more informative than generating ceremony/synthetic evidence solely to advance the milestone.
+Available connected evidence still does not establish explicit download/install/test/acceptance of 0.1.11.
 
-## Iteration 10 — Readiness for next real event
+Silence remains non-acceptance.
+
+## Iteration 9 — Arvectum OS / dependency boundary
 
 PASS.
 
-When qualifying evidence arrives, the next execution path is unambiguous:
+No new Arvectum OS reliance is required to admit this case to classification.
 
-`protected real evidence → POS-002 intake/classification → bounded technical path only if CL-1 → POS-004 verification → human handoff → explicit customer result → AC-505 measurement/evidence`.
+AC-503 `NO-ADDITIONAL-OS-RELIANCE` remains valid for this proof stage.
 
-No additional architecture or governance artifact is required before that event unless the event itself crosses an authority/data/risk/OS boundary.
+No Product Contract, capability lifecycle transition or OS-owned semantics are created.
 
-## Blocking fact
+## Iteration 10 — Next-state correctness
 
-The only current AC-505 blocker established by this review is:
+PASS.
 
-**no eligible explicit external customer validation/rework/new-feedback evidence is presently available for a truthful supervised proof.**
+Prepared case identity:
 
-This is an external evidence wait, not authorization to substitute synthetic data.
+`WF-M5-001-20260821-AC505001`.
+
+Next valid state-changing action is the explicit attributable POS-002 classification.
+
+Recommended result:
+
+`CL-3 — Evidence insufficient / not reproduced`.
+
+If confirmed, the case should record W3 and then fail closed to W11/unknown-follow-up rather than enter the ordinary CL-1 correction path.
+
+If POS-002 selects CL-1 instead, accepted-scope basis and bounded admission must be evidenced before POS-004 execution.
 
 ## Review conclusion
 
 `AC-505` remains `Current / In Progress`.
 
-Cross-review approves the fail-closed wait state and rejects premature closure.
+The real customer case candidate is admissible.
 
-The next valid state change must be triggered by real customer evidence, not by another internal technical PASS.
+The previous generic external-evidence wait has narrowed to one concrete governance boundary:
+
+**POS-002 human AM-2 classification is required before the case can proceed.**
+
+Cross-review does not approve AC-505 closure and does not substitute model recommendation for the human decision.
