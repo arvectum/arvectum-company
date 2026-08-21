@@ -17,6 +17,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-401 — модель реестра работ и обязательств: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md`
 - AC-402 — модель реестра решений, approvals и эскалаций: `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md`
 - AC-403 — модель реестра рисков, исключений и инцидентов: `docs/operations/COMPANY-RISK-EXCEPTION-INCIDENT-REGISTER-MODEL-v1.0.0.md`
+- AC-404 — базовая модель cash/commitment/management reporting: `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md`
 - Материалы перекрёстных проверок: `docs/reviews/`
 - Долговременные решения собственника и системы управления: `docs/governance/decisions/`
 
@@ -42,15 +43,15 @@ M4:
 AC-401 work/obligation register model             Complete / PASS
 → AC-402 decision/approval/escalation register   Complete / PASS
 → AC-403 risk/exception/incident register        Complete / PASS
-→ AC-404 cash/commitment/reporting baseline      Current
-→ AC-405 portfolio/priority review cadence       Planned
+→ AC-404 cash/commitment/reporting baseline      Complete / PASS
+→ AC-405 portfolio/priority review cadence       Current
 → AC-406 Owner Mission Control                    Planned
 → AC-407 management operating cadence            Planned
 ```
 
 Текущее каноническое действие:
 
-**`AC-404 — Cash, commitment and management reporting baseline` — базовая модель видимости денег, обязательств и управленческой отчётности.**
+**`AC-405 — Portfolio/module/priority review cadence` — порядок пересмотра портфеля, кандидатов в модули и приоритетов.**
 
 ## Утверждённый M4 control baseline
 
@@ -71,6 +72,19 @@ AC-403 добавил:
 - `EXC-*` — material control-exception request/decision record;
 - `INC-*` — material incident control record.
 
+AC-404 добавил management-finance projection layer, не создавая нового transaction register. Главная граница:
+
+```text
+bank/accounting fact
+≠ management interpretation
+≠ forecast
+≠ budget/limit
+≠ planned spend
+≠ approved internal commitment
+≠ incurred obligation
+≠ actual payment
+```
+
 Ключевые правила:
 
 `recommendation ≠ decision ≠ approval ≠ legal/corporate act ≠ technical authorization ≠ execution`
@@ -81,11 +95,13 @@ AC-403 добавил:
 
 `incident detection ≠ authority to act`
 
-`containment ≠ risk acceptance`.
+`containment ≠ risk acceptance`
 
-Company repository authoritative только для Company governance/control state в своём scope. Договоры, legal/corporate acts, customer facts, accounting/banking truth, product implementation/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+`forecasted/conditional inflow ≠ available cash`.
 
-Наличие cash, dashboard visibility, credential, technical access, `decision_outcome=approve`, incident state или AI recommendation само по себе не создаёт spend/external-effect authority.
+Company repository authoritative только для Company governance/control/management-interpretation state в своём scope. Договоры, legal/corporate acts, customer/vendor facts, accounting/banking truth, product implementation/economics/status, security tooling и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+
+Наличие cash, dashboard visibility, credential, technical/banking access, `decision_outcome=approve`, incident state, favorable financial projection или AI recommendation само по себе не создаёт spend/external-effect authority.
 
 ## Business-first приоритет
 
@@ -101,7 +117,7 @@ Company repository authoritative только для Company governance/control 
 
 Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура, Product Contracts и platform governance принадлежат `arvectum/arvectum-os`.
 
-Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, непубличные клиентские/поставщицкие/договорные материалы, privileged incident/security details и другие ограниченные операционные данные.
+Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, transaction exports, confidential exact cash balances, sensitive tax/accounting documents, непубличные клиентские/поставщицкие/договорные материалы, privileged payment/fraud/incident/security details и другие ограниченные операционные данные.
 
 ## Удалённые репозитории
 
