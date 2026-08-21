@@ -1,74 +1,67 @@
 # Каноническая дорожная карта Arvectum Company
 
 Статус: `Active`
-Версия: `0.28.0`
+Версия: `0.29.0`
 Создано: `2026-08-19`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
-Текущее каноническое действие: `AC-307 — Final portfolio governance review and M3 closure`
-Русское название текущего действия: `Итоговая проверка управления портфелем и закрытие M3`
+Текущее каноническое действие: `AC-401 — Company work/obligation register model`
+Русское название текущего действия: `Модель реестра работ и обязательств Компании`
 
 ## 1. Модель публикации
 
-Эта редакция `0.28.0` сохраняет полное содержание дорожной карты `0.27.0` по immutable git blob и добавляет утверждение/закрытие AC-306 с переводом текущего действия на AC-307.
+Эта редакция `0.29.0` сохраняет полное содержание дорожной карты `0.28.0` по immutable git blob и добавляет утверждение AC-307, закрытие M3 и переход к первому действию M4.
 
 Предыдущая редакция:
 
-- версия: `0.27.0`;
+- версия: `0.28.0`;
 - путь: `docs/roadmap/ROADMAP.md`;
-- immutable git blob SHA: `afad4b60275c207008c06c569a292dc8bec2cb28`.
+- immutable git blob SHA: `009f3aa9341c01039cf7b1d217fb246cf51855fe`.
 
-Все ранее определённые этапы M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, параллельные evidence loops и конечный AC-901 остаются в силе, если прямо не изменены более новым утверждённым решением.
+Все ранее определённые этапы M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, bounded AC-108 evidence loop и конечный AC-901 остаются в силе, если прямо не изменены более новым утверждённым решением.
 
-## 2. Закрытие AC-306
+## 2. Закрытие AC-307
 
-`AC-306 — Приоритизация портфеля по капиталу, экономике и вниманию собственника` имеет статус:
+`AC-307 — Итоговая проверка управления портфелем и закрытие M3` имеет статус:
 
 `Complete / PASS`.
 
 Утверждённая publication:
 
-- `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION-v1.0.0.md` — `Approved 1.0.0`;
-- exact reviewed proposal: `docs/portfolio/AC-306-PORTFOLIO-PRIORITIZATION-CAPITAL-ECONOMICS-OWNER-ATTENTION.md` — `Proposed 0.9.0`, blob `d254c6441baca5f22828648ecfa701d04c8344b1`;
-- cross-review: `docs/reviews/AC-306-PORTFOLIO-PRIORITIZATION-CROSS-REVIEW.md` — `10 of maximum 10`, `Complete / PASS for Owner approval`, blob `329c87d6a63e08564e8b52362b8af02b159d7b74`;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-306-APPROVAL.md`;
-- explicit Owner approval wording: `AC-306 утверждаю`.
+- `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md` — `Approved 1.0.0`, blob `ff9a07d8c7161bfdaf3628e1c8e21d2a2d0f4435`;
+- exact reviewed proposal: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE.md` — `Proposed 0.9.0`, blob `904b9e5ffa12caeb082b3bf23a89aff251ebe8c4`;
+- cross-review: `docs/reviews/AC-307-PORTFOLIO-GOVERNANCE-M3-CLOSURE-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `bc3c4992f12dabaeb155f055373da292278cd791`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-307-APPROVAL-AND-M3-CLOSURE.md`;
+- explicit Owner approval wording: `AC-307 утверждаю`.
 
 Канонический portfolio map синхронизирован:
 
-- `docs/portfolio/PORTFOLIO.md` — `Active 0.7.0`.
+- `docs/portfolio/PORTFOLIO.md` — `Active 0.8.0`, blob `8a77be35225f9c8c4958531e52a4131abda13d0f`.
 
-## 3. Утверждённая portfolio prioritization
+## 3. Закрытие M3
 
-При отсутствии более высокого Company-level `P0` обязательства default discretionary product order:
+Этап:
 
-| Band | Node | Treatment |
-|---|---|---|
-| `A1` | `PORT-002 — Discount Parser` | finish / accept / stabilize / maintain |
-| `A2` | `PORT-001 — Arvectum Tender Agent` | bounded revenue / pilot / evidence work |
-| `B1` | `PORT-003 — Arvectum Proxy Launcher` | trigger-based; preserve verified baseline |
-| `B2` | `PORT-004 — Creative Test Agent` | trigger-based bounded pilot activation |
-| `C1` | `PORT-007 — Data Platform` | clarification-only; no material build |
-| `D1` | `PORT-005 — Tender Small-Volume Calculator` | contain / reference evidence |
-| `D2` | `PORT-006 — Doors Parser` | contain / support / reuse evidence |
+`M3 — Product/module-candidate portfolio governed as investments`
 
-Это decision order, а не permanent engineering queue, budget allocation или автоматическая lifecycle promotion.
+закрыт со статусом:
 
-## 4. Company priority hierarchy остаётся выше portfolio ranking
+`Complete / PASS`.
 
-AC-106 hierarchy остаётся binding:
+Итог M3:
 
-1. `P0` — protect current obligations, cash and material risk;
-2. `P1` — flagship market evidence + minimal real Arvectum operating model;
-3. `P2` — product/OS work directly tied to revenue, obligation, evidence or blocker removal;
-4. `P3` — speculative productization/module/platform expansion.
+- `PORT-001…PORT-007` имеют устойчивую Company identity, repository locator и disposition;
+- каждый узел имеет primary accountable Position `POS-003 — Portfolio & Product Lead` при сохранении функциональных authority boundaries других Positions и `ROD-*`;
+- AC-303 задаёт bounded investment/cost/risk treatment;
+- AC-304 отделяет standalone product, reference implementation, Company/product-family module candidate и OS-capability hypothesis;
+- AC-305 фиксирует отсутствие обязательной hard inter-product runtime/code/data dependency и текущую Arvectum OS Product Contract correspondence;
+- AC-306 задаёт default discretionary capital/economics/Owner-attention order без создания budget/spend authorization;
+- AC-307 подтвердил согласованность этих слоёв и явный carry-forward недостающего empirical evidence.
 
-Реальный customer/security/data/continuity obligation может временно поднять exact work slice в P0 независимо от portfolio band. После closure это не меняет node treatment без отдельного решения.
+Закрытие M3 не означает profitability, market validation, legal compliance, customer readiness, production readiness, approved reusable production module, Stable Product Contract или Active Arvectum OS capability.
 
-## 5. Phase 3 — управление портфелем и кандидатами в повторно используемые модули
-
-Этап: `M3 — Product/module-candidate portfolio governed as investments`.
+## 4. Phase 3 final status
 
 | ID | Работа | Статус |
 |---|---|---|
@@ -78,43 +71,55 @@ AC-106 hierarchy остаётся binding:
 | `AC-304` | Разделение standalone/reference/module/OS-capability candidate roles | `Complete / PASS` |
 | `AC-305` | Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS | `Complete / PASS` |
 | `AC-306` | Приоритизация портфеля по капиталу, экономике и вниманию собственника | `Complete / PASS` |
-| `AC-307` | Итоговая проверка управления портфелем и закрытие M3 | `Current` |
+| `AC-307` | Итоговая проверка управления портфелем и закрытие M3 | `Complete / PASS` |
 
-## 6. Текущее действие — AC-307
+## 5. Phase 4 — Owner control and reference observability
 
-### AC-307 — Final portfolio governance review and M3 closure
+Milestone:
+
+`M4 — Owner control and reference-implementation observability established`.
+
+Назначение M4: дать собственнику возможность видеть существенные работы, обязательства, решения, риски, cash/commitments и portfolio state без постоянного восстановления контекста из чатов и отдельных репозиториев, одновременно создавая наблюдаемое evidence того, работает ли AI-native organizational model на практике.
+
+План M4:
+
+| ID | Работа | Статус |
+|---|---|---|
+| `AC-401` | Company work/obligation register model | `Current` |
+| `AC-402` | Decision, approval and escalation register model | `Planned` |
+| `AC-403` | Risk, exception and incident register model | `Planned` |
+| `AC-404` | Cash, commitment and management reporting baseline | `Planned` |
+| `AC-405` | Portfolio/module/priority review cadence | `Planned` |
+| `AC-406` | Owner Mission Control / reference-implementation evidence view | `Planned` |
+| `AC-407` | Management operating cadence and control review | `Planned` |
+
+Software dashboard не является предпосылкой M4: manual/simpler controls допустимы, если они надёжны, пропорциональны и уменьшают Owner reconstruction burden.
+
+## 6. Текущее действие — AC-401
+
+### AC-401 — Company work/obligation register model
 
 Статус: `Current`.
 
-Цель: проверить AC-301…AC-306 как единый Company-level portfolio governance baseline и определить, выполнен ли milestone M3 без скрытых contradictions, missing ownership, unauthorized coupling, unfunded growth mandates или размывания Company/Product/Arvectum OS boundaries.
+AC-401 должен определить Company-level модель реестра существенных работ и обязательств, достаточную для operational visibility собственника и последующих AC-402…AC-406, не создавая параллельный бухгалтерский, продуктовый или project-tracker source of truth.
 
-AC-307 должен как минимум проверить:
+AC-401 должен сохранять уже утверждённые границы:
 
-- каждый `PORT-*` имеет стабильную Company identity, repository locator, disposition и accountable Position;
-- investment/cost/risk treatment AC-303 совместим с role classification AC-304;
-- AC-305 dependency/Product Contract map не противоречит current portfolio state;
-- AC-306 ranking не создаёт скрытый budget, customer commitment или automatic lifecycle promotion;
-- `PORT-005/006` реально остаются contained, а `PORT-007` clarification-only;
-- Band B nodes требуют named trigger, а не continuous speculative work;
-- Company flagship и AC-106 `P0…P3` hierarchy остаются выше portfolio ranking;
-- Owner attention, capital, obligations, risk and evidence boundaries согласованы;
-- no hidden cross-repository shared runtime/data/authority commitment создан в M3;
-- Product repositories остаются canonical для implementation/status/domain semantics;
-- Arvectum OS остаётся canonical для Product Contracts/platform capabilities;
-- unresolved items после M3 явно вынесены в downstream roadmap rather than hidden as completed;
-- M3 closure не заявляет profitability, market validation, legal compliance, customer readiness или production readiness без evidence.
+- реальное обязательство/риск/cash issue имеет приоритет по AC-106 `P0`;
+- product implementation/status остаётся в product repository;
+- юридические/договорные/финансовые первичные факты остаются в компетентных системах;
+- register должен хранить Company-level operating meaning, ownership, status, due/trigger context, evidence/source reference и escalation need без избыточного копирования закрытых данных;
+- Owner должен видеть исключения и решения, а не становиться ручным диспетчером каждого low-risk task;
+- AC-401 не создаёт dashboard, runtime, automation, spending authority или external commitment автоматически.
 
-## 7. AC-307 exit condition
+## 7. M4 exit direction
 
-M3 может быть закрыт только если final review показывает coherent governed portfolio baseline и все material contradictions либо устранены, либо явно classified/carried forward с owner, boundary и next action.
+M4 должен завершиться только когда собственник может из устойчивого Company control layer видеть как минимум material work, obligations, pending decisions/approvals, risks/exceptions, cash/commitment signals, portfolio priorities и evidence, достаточное для оценки внутренней reference implementation.
 
-Если review PASS, AC-307 должен:
-
-1. зафиксировать M3 closure evidence;
-2. синхронизировать `PORTFOLIO.md` и canonical roadmap при необходимости;
-3. определить следующее каноническое действие после M3 согласно уже утверждённой Company roadmap sequence;
-4. не выполнять downstream milestone работу преждевременно.
+Конкретные register semantics, cadence и presentation должны выводиться по AC-401…AC-407, а не проектироваться заранее ради полноты.
 
 ## 8. Authority boundary
 
-Дорожная карта не создаёт организационные или юридические полномочия. AC-306 approval не является blanket spend authorization. Material capital allocation, material external commitments, risk acceptance, legal/IP/data exceptions и Company↔Product↔Arvectum OS commitments продолжают требовать соответствующий evidence и authority path.
+Roadmap координирует работу, но не создаёт Organizational Authority, budget, legal/corporate authority, customer/vendor commitment, Product Contract, access grant или production approval.
+
+Material capital, external commitment, risk, legal/IP/data и Company↔Product↔Arvectum OS decisions продолжают проходить соответствующий evidence и authority path.
