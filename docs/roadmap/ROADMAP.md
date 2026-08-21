@@ -1,61 +1,89 @@
 # Каноническая дорожная карта Arvectum Company
 
 Статус: `Active`
-Версия: `0.26.0`
+Версия: `0.27.0`
 Создано: `2026-08-19`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
-Текущее каноническое действие: `AC-305 — Inter-product dependency and Arvectum OS Product Contract reconciliation`
-Русское название текущего действия: `Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS`
+Текущее каноническое действие: `AC-306 — Portfolio prioritization by capital, economics and Owner attention`
+Русское название текущего действия: `Приоритизация портфеля по капиталу, экономике и вниманию собственника`
 
 ## 1. Модель публикации
 
-Эта редакция `0.26.0` сохраняет полное содержание дорожной карты `0.25.0` по неизменяемой ссылке на git blob и добавляет только закрытие AC-304 и перевод текущего действия на AC-305.
+Эта редакция `0.27.0` сохраняет полное содержание дорожной карты `0.26.0` по неизменяемой ссылке на git blob и добавляет закрытие AC-305 с переводом текущего действия на AC-306.
 
 Предыдущая редакция:
 
-- версия: `0.25.0`;
+- версия: `0.26.0`;
 - путь: `docs/roadmap/ROADMAP.md`;
-- immutable git blob SHA: `e6d32d76c710b9956f7902ac838c429f32829358`.
+- immutable git blob SHA: `d4f57d03cf5ae3a500035eba67259cce4f6da6a9`.
 
 Все ранее определённые этапы M0–M9, принципы приоритизации, границы Company/Product/Arvectum OS, параллельные циклы и конечный AC-901 остаются в силе, если прямо не изменены более новым утверждённым решением.
 
-## 2. Закрытие AC-304
+## 2. Закрытие AC-305
 
-`AC-304 — Разделение: самостоятельный продукт / эталонная реализация / кандидат в модуль / кандидат в возможность Arvectum OS` имеет статус:
+`AC-305 — Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS` имеет статус:
 
 `Complete / PASS`.
 
-Утверждённая публикация:
+Утверждённая Company publication:
 
-- `docs/portfolio/AC-304-PORTFOLIO-ROLE-CLASSIFICATION-v1.0.0.md` — `Approved 1.0.0`;
-- точная проверенная исходная редакция: `docs/portfolio/AC-304-PORTFOLIO-ROLE-CLASSIFICATION.md` — `Proposed 0.9.0`, blob `533ccef1d28bf9a154da9b99dd1c4226c19d166b`;
-- перекрёстная проверка: `docs/reviews/AC-304-PORTFOLIO-ROLE-CLASSIFICATION-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `94c70f2d9f168f54e4d4f948b754b22d177872ec`;
-- решение собственника: `docs/governance/decisions/DECISION-2026-08-21-AC-304-APPROVAL.md`.
+- `docs/portfolio/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-RECONCILIATION-v1.0.0.md` — `Approved 1.0.0`;
+- exact reviewed proposal: `docs/portfolio/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-RECONCILIATION.md` — `Proposed 0.9.0`, blob `c27973c48b7bb5306e36f71d0f1007fc41896de9`;
+- cross-review: `docs/reviews/AC-305-CROSS-PRODUCT-DEPENDENCY-AND-OS-CONTRACT-CROSS-REVIEW.md` — `7 of maximum 7`, PASS, blob `369c42f8066ac8a10d3b00a0afd2fc034b8c7fe3`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-305-APPROVAL.md`.
+
+Связанный Arvectum OS governance action также утверждён:
+
+- `arvectum/arvectum-os/docs/contracts/P6-02-REPOSITORY-LOCATOR-RECONCILIATION-v1.0.0.md` — `Approved 1.0.0`;
+- approved reviewed proposal blob: `95f32a2625a3df2c18615021aa2ca46f83faa946`;
+- OS Owner decision: `arvectum/arvectum-os/docs/governance/decisions/DECISION-2026-08-21-P6-02-REPOSITORY-LOCATOR-RECONCILIATION-APPROVAL.md`.
 
 Канонический portfolio map синхронизирован:
 
-- `docs/portfolio/PORTFOLIO.md` — `Active 0.5.0`.
+- `docs/portfolio/PORTFOLIO.md` — `Active 0.6.0`.
 
-AC-304 установил Company-level role/reuse classification для `PORT-001…PORT-007` без смешения product identity, reference implementation, Company/product-family module hypothesis и Arvectum OS capability lifecycle.
+## 3. Главные результаты AC-305
 
-Ключевые результаты:
+Утверждено:
 
-- `PORT-001`, `PORT-002`, `PORT-003`, `PORT-004` подтверждены как самостоятельные продукты;
-- `PORT-001`, `PORT-002`, `PORT-004` подтверждены как `RI-OS-CONSUMER` в пределах существующего evidence;
-- `PORT-002`, `PORT-005`, `PORT-006` дают `RI-PRODUCT-FAMILY` evidence, не образуя автоматически общий module;
-- `PORT-007` получает только `clarification-only` Company/product-family module-candidate hypothesis для bounded data acquisition/extraction layer;
-- новых Company-side кандидатов в Platform Capability Arvectum OS не создано;
-- никакой OS lifecycle `Candidate/Incubating/Active` не присвоен Company artifact.
+- между `PORT-001…PORT-007` не установлено ни одной обязательной hard runtime/code/data dependency;
+- `PORT-005 → PORT-001` является selective procurement-family reuse/evidence relation, а не runtime coupling или product merge;
+- `PORT-002`, `PORT-006` и `PORT-007` не образуют автоматически shared parser/runtime/datastore/platform;
+- `PORT-007` остаётся clarification-only Company/product-family module candidate и не является operational dependency;
+- `PORT-003` не является скрытой Company-wide/OS инфраструктурной зависимостью;
+- common owner, common stack, similarity и reference status сами по себе dependency не создают.
 
-AC-304 не создаёт shared implementation, Product Contract, budget, repository merge, code/data migration, production deployment или customer commitment.
+Текущая OS reliance matrix:
 
-## 3. Phase 3 — управление портфелем и кандидатами в повторно используемые модули
+| Portfolio node | OS boundary | Exact dependency |
+|---|---|---|
+| `PORT-001 — Arvectum Tender Agent` | `P6.02` + supplemental `P8.03` | `CAP-001 + CAP-004` в exact bounded scopes |
+| `PORT-002 — Discount Parser` | `P6.06` | `CAP-004 only` |
+| `PORT-004 — Creative Test Agent` | `P8.06` optional external extension | `CAP-004 only` |
+| `PORT-003` | none | none inferred |
+| `PORT-005` | none | none inferred |
+| `PORT-006` | none | none inferred |
+| `PORT-007` | none | none inferred |
+
+`RI-OS-CONSUMER` остаётся evidence/reuse classification, а не blanket OS dependency всего продукта.
+
+## 4. P6.02 locator reconciliation closed
+
+Stale P6.02 locator теперь reconciled через надлежащий Arvectum OS governance path:
+
+- historical/predecessor locator: `arutyunoveth/ai-corporation`;
+- current implementation locator: `arvectum/tender-agent`;
+- Company correspondence: `PORT-001 — Arvectum Tender Agent`.
+
+Это locator/provenance reconciliation only. P6.02 остаётся `Provisional 0.1.0`; Product Identity, semantic boundary, CAP-001/CAP-004 dependency set, authority/data/security restrictions и P8.03 continuity не изменены.
+
+Исторический P6.02 artifact не переписывается задним числом; approved OS reconciliation publication является current resolver overlay.
+
+## 5. Phase 3 — управление портфелем и кандидатами в повторно используемые модули
 
 Этап: `M3 — Product/module-candidate portfolio governed as investments`.
-
-Русская смысловая формулировка: **портфель продуктов и кандидатов в модули управляется как набор инвестиций, а не как список репозиториев**.
 
 Текущий план Phase 3:
 
@@ -65,49 +93,44 @@ AC-304 не создаёт shared implementation, Product Contract, budget, repo
 | `AC-302` | Закрепление ответственной организационной позиции за каждым активным продуктом/инициативой | `Complete / PASS` |
 | `AC-303` | Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить | `Complete / PASS` |
 | `AC-304` | Разделение: самостоятельный продукт / эталонная реализация / кандидат в модуль / кандидат в возможность Arvectum OS | `Complete / PASS` |
-| `AC-305` | Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS | `Current` |
-| `AC-306` | Приоритизация портфеля по капиталу, экономике и вниманию собственника | `Planned` |
+| `AC-305` | Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS | `Complete / PASS` |
+| `AC-306` | Приоритизация портфеля по капиталу, экономике и вниманию собственника | `Current` |
 | `AC-307` | Итоговая проверка управления портфелем и закрытие M3 | `Planned` |
 
-## 4. Текущее действие — AC-305
+## 6. Текущее действие — AC-306
 
-### AC-305 — Inter-product dependency and Arvectum OS Product Contract reconciliation
+### AC-306 — Portfolio prioritization by capital, economics and Owner attention
 
 Статус: `Current`.
 
-Цель: сверить фактические зависимости между `PORT-001…PORT-007`, существующие reuse relationships и все применимые Product Contract/extension boundaries Arvectum OS так, чтобы ни Company, ни продукты, ни OS не создавали скрытых cross-repository обязательств.
+Цель: ранжировать `PORT-001…PORT-007` как инвестиционный портфель с учётом уже утверждённых identity, accountability, investment boundaries, role/reuse classification и dependency/Product Contract state.
 
-AC-305 должен как минимум:
+AC-306 должен как минимум:
 
-- построить явную dependency map между portfolio nodes, отделив runtime/code/data dependency от reference/evidence relationship;
-- проверить, не зависят ли продукты от внутренних деталей друг друга или Arvectum OS вне declared contract boundary;
-- сверить реальные Product Contracts и external-consumer contracts Arvectum OS с текущими Company/product identities и repository locators;
-- исправить stale locator `arutyunoveth/ai-corporation` в P6.02 через применимый Arvectum OS governance path, а не Company-side silent rewrite;
-- проверить Product Contract continuity для Tender Agent, Discount Parser и Creative Test Agent;
-- определить, где существующий Product Contract действительно отражает текущий product boundary, а где нужен proposal/version refresh;
-- проверить, что `RI-OS-CONSUMER` classification AC-304 не превратилась в undeclared platform dependency;
-- проверить, что `RI-PRODUCT-FAMILY` evidence не создаёт скрытой shared-library/data coupling;
-- оставить AC-306 relative capital/economics prioritization отдельно.
+- отделить обязательства/continuity от discretionary growth investment;
+- оценить ближайший client/revenue/value path по каждому node;
+- учитывать cash и recurring cost, engineering effort и operational burden;
+- учитывать expected value, unit economics и evidence quality;
+- учитывать downside, reversibility, security/data/legal/IP/sovereignty exposure;
+- учитывать dependency/lock-in и replacement path;
+- учитывать Owner attention как ограниченный капитал, а не бесплатный ресурс;
+- определить relative priority bands и stop/defer/continue/change recommendations;
+- не превращать ranking в автоматическую authorisation spending/customer commitment;
+- сохранить `contain` для PORT-005/006 и `clarify before investment` для PORT-007, пока отдельное evidence не обосновывает изменение;
+- оставить M3 final review/closure для AC-307.
 
-## 5. Границы AC-305
+## 7. Границы AC-306
 
-AC-305 сверяет и фиксирует dependency/contract state, но сам по себе не:
+AC-306 может подготовить portfolio ranking и decision recommendations, но сам по себе не:
 
-- объединяет repositories или продукты;
-- переносит код/data/history;
-- создаёт новый shared module;
-- создаёт новую Platform Capability;
-- автоматически меняет Product Contract без применимого OS governance action;
-- утверждает budget, spend или priority order;
-- расширяет customer commitments;
-- меняет legal/IP/data rights.
+- создаёт budget или spend authorization;
+- заключает customer/vendor commitments;
+- меняет legal/IP/data rights;
+- меняет Product Contract Arvectum OS;
+- создаёт shared module или Platform Capability;
+- меняет product implementation roadmap без product-side decision;
+- отменяет AC-301…AC-305 без нового evidence/governance action.
 
-Если reconciliation требует изменения Arvectum OS canonical artifact, изменение должно проходить в `arvectum/arvectum-os` через его собственный governance path и не может быть создано одной Company-side записью.
+## 8. Напоминание о полномочиях
 
-## 6. Язык и терминология
-
-Для новых человекочитаемых Company-документов продолжает действовать русскоязычный режим и нормативный глоссарий, установленные действующими Company decisions.
-
-## 7. Напоминание о полномочиях
-
-Дорожная карта координирует работу, но сама по себе не создаёт организационные или юридические полномочия, не утверждает расходы, найм, клиентские обязательства, доступ, промышленное развёртывание и не изменяет Arvectum OS или продуктовые репозитории.
+Дорожная карта координирует работу, но не создаёт организационные или юридические полномочия. Material capital allocation, material risk acceptance, существенные Company↔Product↔OS commitments и иные Reserved Owner Decisions требуют соответствующего явного решения уполномоченного Principal.
