@@ -1,22 +1,22 @@
 # Реестр канонических источников Arvectum Company
 
 Статус: `Active`
-Версия: `3.6.0`
+Версия: `3.7.0`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
 
 ## 1. Модель публикации
 
-Эта редакция сохраняет полный реестр `3.5.0` по immutable git blob и добавляет утверждение AC-501, выбранный `WF-M5-001` и переход к AC-502.
+Эта редакция сохраняет полный реестр `3.6.0` по immutable git blob и добавляет утверждение AC-502, binding workflow contract `WF-M5-001` и переход к AC-503.
 
 Предыдущая редакция:
 
-- версия: `3.5.0`;
+- версия: `3.6.0`;
 - путь: `docs/CANONICAL-SOURCES.md`;
-- immutable git blob SHA: `9171d2ef815b6a31f36da09dd940191979554369`.
+- immutable git blob SHA: `288604a53ec8de8b1e743a9aaa005bb50bfd6c3d`.
 
-Все ранее зарегистрированные Company Constitution/governance, M0–M4, AC-201…AC-407, portfolio, terminology, Company/Product/Arvectum OS boundaries, public/restricted-source rules и M4 operating cadence сохраняются, если прямо не изменены более новым approved artifact.
+Все ранее зарегистрированные Company Constitution/governance, M0–M4, AC-201…AC-501, portfolio, terminology, Company/Product/Arvectum OS boundaries, public/restricted-source rules и operating-control baseline сохраняются, если прямо не изменены более новым approved artifact.
 
 ## 2. Порядок приоритета источников
 
@@ -31,107 +31,129 @@
 
 ## 3. Действующая дорожная карта
 
-- `docs/roadmap/ROADMAP.md` — `Active 0.37.0`;
-- текущий blob SHA: `95fe1f98b9f9c93cf90d8999d011eec7b37aca75`.
+- `docs/roadmap/ROADMAP.md` — `Active 0.38.0`;
+- текущий blob SHA: `44b265a3a1816352eb66bd7e7252328f58bede24`.
 
 Текущее каноническое действие:
 
-`AC-502 — Workflow, accountable Position, authority/data/evidence contract`.
+`AC-503 — Arvectum OS reliance/admission mapping where applicable`.
 
 Текущий milestone:
 
 `M5 — First real governed Company operating contour proven`.
 
-## 4. Approved AC-501
+## 4. Approved AC-502
 
 Canonical Approved publication:
 
-- `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-v1.0.0.md` — `Approved 1.0.0`;
-- immutable publication blob SHA: `c0e1bd3a0e247ef72cb79ebd988d78d4487618f7`.
+- `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md` — `Approved 1.0.0`;
+- immutable publication blob SHA: `9b06e02a6d9afa8b6b4533d3a9f71690518c3ce1`.
 
 Exact reviewed proposal:
 
-- `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION.md` — `Proposed 0.9.0`;
-- immutable proposal blob SHA: `f6cbebfea1c2e6a56a0fd03c38b68a7211c6bbde`.
+- `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT.md` — `Proposed 0.9.0`;
+- immutable proposal blob SHA: `b1df71839422e509cbfa76faec31bf788ca9842d`.
 
 Cross-review:
 
-- `docs/reviews/AC-501-FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-CROSS-REVIEW.md`;
+- `docs/reviews/AC-502-FIRST-GOVERNED-WORKFLOW-CONTRACT-CROSS-REVIEW.md`;
 - `10 of maximum 10`;
 - `Complete / PASS for explicit Owner approval`;
-- immutable blob SHA: `10924469f889d9e97d6a6d11b61d57a70b69e22a`.
+- immutable blob SHA: `7c457c2b3145b0f2becb3b6e289d9496e02e2d15`.
 
 Owner decision:
 
-- `docs/governance/decisions/DECISION-2026-08-21-AC-501-APPROVAL.md` — `Approved`;
-- immutable blob SHA: `04d42d227c74c779e58d4298ad542e458821837b`;
+- `docs/governance/decisions/DECISION-2026-08-21-AC-502-APPROVAL.md` — `Approved`;
+- immutable blob SHA: `08db32414f9f19c99b281d936a5eccaa0f456ede`;
 - explicit Owner wording at the pending approval gate: `делай`.
 
-`AC-501` — `Complete / PASS`.
+`AC-502` — `Complete / PASS`.
 
-## 5. First governed workflow selection
+## 5. Binding WF-M5-001 contract
 
-Первый выбранный M5 workflow:
+Workflow:
 
 `WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`.
 
-Первый real-operation contour:
+First application contour:
 
 `PORT-002 — Discount Parser`.
 
-Company authoritative scope здесь ограничен выбором workflow, accountable/authority/evidence semantics и M5 proof.
+Binding Company semantics now include:
 
-Product-specific implementation/status/domain truth остаётся в `arvectum/discount-parser`.
+- workflow states `W0…W11`;
+- classification `CL-1…CL-7`;
+- `POS-002` end-to-end accountability;
+- `POS-004` technical-segment accountability `W4 → W7`;
+- initial human-attributable routine classification under current POS-002 Assignment;
+- AI-led bounded engineering under POS-004 within existing `AM-0/1/2` and access ceilings;
+- no `AM-3`/`AM-4` activation;
+- explicit customer acceptance, data/access, evidence, escalation/failure and continuity boundaries.
 
-Выбор не создаёт customer commitment, budget/spend authority, portfolio reallocation, production-readiness claim, new Assignment/access grant или Arvectum OS dependency.
+Important invariants:
 
-## 6. M5 navigation
+`technical PASS ≠ customer-facing approval ≠ customer acceptance`;
 
-M5 current sequence:
+`Candidate Ready ≠ permission to deploy/send/promise`;
+
+`customer silence ≠ acceptance` without stronger authoritative rule;
+
+`technical task closed ≠ Company/customer obligation satisfied`.
+
+## 6. Source-of-truth and data boundary
+
+Company repository is canonical for the approved Company workflow governance semantics only.
+
+It does not replace:
+
+- `arvectum/discount-parser` for product implementation/status/domain truth;
+- customer/workstream sources for raw feedback and customer validation/acceptance evidence;
+- legal/corporate sources for legal acts/obligations;
+- Arvectum OS canonical sources for Product Contracts/platform lifecycle;
+- AC-401/402/403 registers where material control records are required.
+
+Public Company artifacts store only public-safe references/sanitized meaning. Raw customer `DC-2` remains protected by default; reusable `DC-3` secrets do not enter ordinary AI/model context.
+
+## 7. Authority and continuity boundary
+
+AC-502 does not create Organizational Authority or access.
+
+Existing AC-202…AC-207 remain controlling. In particular:
+
+- `ROD-01…ROD-09` are unchanged;
+- workflow participation does not broaden an Assignment;
+- credential possession does not create authority;
+- POS-002/Owner unavailability does not transfer customer/Owner authority to AI;
+- POS-004 runtime replacement preserves Position meaning only inside valid Assignment/access conditions;
+- actual incident/recovery/fallback drill remains AC-506 evidence work.
+
+## 8. M5 navigation
 
 1. `AC-501` — First governed workflow candidate selection — `Complete / PASS`;
-2. `AC-502` — Workflow, accountable Position, authority/data/evidence contract — `Current`;
-3. `AC-503` — Arvectum OS reliance/admission mapping where applicable — `Planned`;
+2. `AC-502` — Workflow, accountable Position, authority/data/evidence contract — `Complete / PASS`;
+3. `AC-503` — Arvectum OS reliance/admission mapping where applicable — `Current`;
 4. `AC-504` — Bounded workflow implementation — `Planned`;
 5. `AC-505` — Supervised real-operation proof — `Planned`;
 6. `AC-506` — Incident, uncertain-outcome, recovery and fallback drill — `Planned`;
 7. `AC-507` — Business-value/economic review and continue/change/stop decision — `Planned`.
 
-AC-502 должен сначала определить Company workflow contract. Arvectum OS reliance не выводится автоматически из наличия current P6.06/CAP-004 correspondence у PORT-002.
+## 9. AC-503 boundary
 
-## 7. Authority and source-of-truth boundary for WF-M5-001
+AC-503 must re-check current canonical Arvectum OS state and determine actual reliance/admission need for `WF-M5-001`.
 
-Продолжают применяться:
+Valid results include:
 
-- AC-202 `ROD-01…ROD-09`;
-- AC-203 `AM-0…AM-4` semantics;
-- AC-204 Position Registry;
-- AC-205 Assignment baseline;
-- AC-206 access boundary;
-- AC-207 continuity/fallback baseline;
-- AC-401…AC-407 Company operating-control baseline.
+- `no additional OS reliance required for first M5 proof`;
+- bounded existing reliance is sufficient;
+- new/changed OS Product Contract/capability admission is required through the proper OS governance path.
 
-Customer feedback/evidence остаётся customer-scoped source evidence. Customer validation/acceptance не может быть выведено только из technical PASS или internal workflow completion.
+AC-503 must not force OS integration for dogfooding, move Company-specific Position/customer/workflow semantics into OS, or infer lifecycle state from technical correspondence.
 
-`arvectum/discount-parser` остаётся canonical для product implementation/status/domain semantics.
-
-`arvectum/arvectum-os` остаётся canonical для Product Contracts/platform capabilities/governance. Exact OS reliance/admission mapping — AC-503.
-
-## 8. Current Arvectum OS check boundary
-
-Для AC-501 использован current checked Arvectum OS `main` commit:
-
-`76504766353028540891ac1dfdbf1e5dc331a4af`.
-
-Этот check подтверждает только отсутствие необходимости создавать OS reliance по импликации на этапе selection. Он не является будущим AC-503 admission decision и должен быть повторён, если current OS state materially изменится к AC-503.
-
-## 9. Public repository boundary
+## 10. Public repository boundary
 
 Публичный Company repository не должен содержать secrets, reusable credentials, private keys/signatures, unnecessary PII, bank/payment payloads, transaction exports, confidential exact cash balances, non-public customer/vendor/contract materials, sensitive tax/accounting documents, privileged payment/fraud/incident/security details или chain-of-thought.
 
-Для `WF-M5-001` public Company artifacts должны хранить только минимальные governance/evidence references и sanitized operational meaning. Raw customer evidence и confidential payload остаются в соответствующем authorized contour.
-
-## 10. Final planned language stage
+## 11. Final planned language stage
 
 `M9 — Человекочитаемая документация полностью русифицирована и согласована` remains the final planned stage after M8 unless the Owner explicitly changes sequence.
 
