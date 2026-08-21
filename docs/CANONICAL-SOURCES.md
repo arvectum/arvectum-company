@@ -1,22 +1,22 @@
 # Реестр канонических источников Arvectum Company
 
 Статус: `Active`
-Версия: `2.9.0`
+Версия: `3.0.0`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
 
 ## 1. Модель публикации
 
-Эта редакция сохраняет полный реестр `2.8.0` по immutable git blob и добавляет утверждение AC-401 и переход к AC-402.
+Эта редакция сохраняет полный реестр `2.9.0` по immutable git blob и добавляет утверждение AC-402 и переход к AC-403.
 
 Предыдущая редакция:
 
-- версия: `2.8.0`;
+- версия: `2.9.0`;
 - путь: `docs/CANONICAL-SOURCES.md`;
-- immutable git blob SHA: `9b87bf5a78586307151202335405fe8fc20114c5`.
+- immutable git blob SHA: `a7b9933622260f0037b56ddadbb9833a77038279`.
 
-Все ранее зарегистрированные источники M0–M3, AC-201–AC-307, языково-терминологическая политика, Company/Product/Arvectum OS boundaries и правила внешних источников сохраняются без изменений, если прямо не уточнены более новым утверждённым артефактом.
+Все ранее зарегистрированные источники M0–M3, AC-201–AC-401, языково-терминологическая политика, Company/Product/Arvectum OS boundaries и правила внешних источников сохраняются без изменений, если прямо не уточнены более новым утверждённым артефактом.
 
 ## 2. Порядок приоритета источников
 
@@ -33,64 +33,77 @@
 
 Канонический источник планирования:
 
-- `docs/roadmap/ROADMAP.md` — `Active 0.30.0`;
-- текущий blob SHA: `0ffc55769028405bd2f78ad6b2d0700b55e33469`.
+- `docs/roadmap/ROADMAP.md` — `Active 0.31.0`;
+- текущий blob SHA: `f02a2c6fe44d7465d976504706b8a52cbd48690d`.
 
 Текущее каноническое действие:
 
-`AC-402 — Decision, approval and escalation register model`.
+`AC-403 — Risk, exception and incident register model`.
 
 Текущий этап:
 
 `M4 — Owner control and reference-implementation observability established`.
 
-## 4. Approved AC-401 control model
+## 4. Approved AC-401 work/obligation control model
 
 Каноническая approved publication:
 
 - `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md` — `Approved 1.0.0`;
 - immutable publication blob SHA: `fa9f513b1434c7eda257ac412bf7472da400519d`.
 
-Exact reviewed source:
+Exact reviewed proposal:
 
 - `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL.md` — `Proposed 0.9.0`;
-- immutable proposal blob SHA: `0f4444fbd968e176a0a158771a7d0abe93549ecd`.
+- immutable blob SHA: `0f4444fbd968e176a0a158771a7d0abe93549ecd`.
+
+AC-401 устанавливает `WORK-*` и `OBL-*` как Company-level control identities при сохранении underlying legal/accounting/customer/product/OS truth в соответствующих authoritative contours.
+
+## 5. Approved AC-402 decision/approval/escalation model
+
+Каноническая approved publication:
+
+- `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md` — `Approved 1.0.0`;
+- immutable publication blob SHA: `ae013d7e93dc51573f56b1ded2e907ee58182e57`.
+
+Exact reviewed proposal:
+
+- `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL.md` — `Proposed 0.9.0`;
+- immutable proposal blob SHA: `a48081ba3599e6f3c91b8a6562435ad1f0c152f4`.
 
 Cross-review:
 
-- `docs/reviews/AC-401-COMPANY-WORK-OBLIGATION-REGISTER-CROSS-REVIEW.md`;
+- `docs/reviews/AC-402-COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-CROSS-REVIEW.md`;
 - `10 of maximum 10`;
 - `Complete / PASS for Owner approval`;
-- immutable blob SHA: `7c0cbc178bf50a7babbd0403798091c4ddef996f`.
+- immutable blob SHA: `82cf1046178cde22387a04037e86cf7e1b224f9a`.
 
 Owner decision:
 
-- `docs/governance/decisions/DECISION-2026-08-21-AC-401-APPROVAL.md` — `Approved`;
-- immutable blob SHA: `408ee310b81d6d27af36e901e42358de2b48aa82`;
-- explicit wording: `AC-401 утверждаю`.
+- `docs/governance/decisions/DECISION-2026-08-21-AC-402-APPROVAL.md` — `Approved`;
+- immutable blob SHA: `30dbae9a081b1dc1939923083b31e3f40be2a80c`;
+- explicit wording: `AC-402 утверждаю`.
 
-AC-401 является binding Company control model в своём declared scope.
+AC-402 является binding Company decision-control model в своём declared scope.
 
-## 5. AC-401 canonicality boundary
+## 6. AC-402 canonicality and authority boundary
 
-AC-401 устанавливает два класса control identities:
+AC-402 устанавливает три control namespaces:
 
-- `WORK-*` — material Company-level work item;
-- `OBL-*` — material obligation control item.
+- `DEC-*` — material decision case / durable decision record;
+- `APR-*` — approval gate / attributable approval act control record;
+- `ESC-*` — escalation case.
 
-Company repository может быть authoritative для Company control metadata этих entries: identity, operating meaning, accountable Position, priority/control/attention state, due-or-trigger context, next control point, source/evidence references, review/closure history.
+Главная граница:
 
-Underlying truth остаётся в соответствующих источниках:
+`recommendation ≠ decision ≠ approval ≠ legal/corporate act ≠ technical authorization ≠ execution`.
 
-- legal/corporate obligation — применимый юридический/корпоративный источник;
-- accounting/banking/statutory fact — профессиональный учётный/банковский контур;
-- customer/vendor fact — соответствующий contract/source contour;
-- product implementation/status — product repository;
-- Arvectum OS Product Contract/platform state — `arvectum/arvectum-os`.
+Company repository может быть canonical для внутреннего Company Organizational Authority act только в своём declared scope. Participant/General Director/customer/Product/Arvectum OS/legal/external facts остаются authoritative в собственных contours.
 
-Создание/изменение register entry не создаёт само obligation, approval, Organizational Authority, legal power, budget, spend, customer commitment, technical permission или OS lifecycle transition.
+`ROD-01…ROD-09`, `AM-0…AM-4`, Position/Assignment/access boundaries сохраняются. `decision_outcome=approve` не является универсальным разрешением внешнего эффекта.
 
-## 6. Действующий портфель и предыдущие этапы
+Current Arvectum OS `DECISION-AUTHORITY-POLICY.md` `Proposed 0.2.1` не принят AC-402 как Company governance.
+
+## 7. Действующий портфель и предыдущие этапы
 
 Канонический Company-level portfolio source:
 
@@ -104,44 +117,42 @@ Underlying truth остаётся в соответствующих источн
 - `M1` — `Complete / PASS`;
 - `M2` — `Complete / PASS`;
 - `M3` — `Complete / PASS`;
-- `M4` — `Current`, AC-402 `Current`;
+- `M4` — `Current`, AC-403 `Current`;
 - `M5` — `Planned`;
 - `M6` — `Planned`;
 - `M7` — `Future`;
 - `M8` — `Future`;
 - `M9` — финальный плановый этап, AC-901 `Planned` после M8.
 
-Полный M3 portfolio baseline и Arvectum OS Product Contract correspondence сохраняются из `2.8.0` и Approved AC-301…AC-307.
-
-## 7. Arvectum OS correspondence
-
-AC-401 не создаёт Arvectum OS Product Contract или Company-specific Platform Capability.
-
-Проверенный перед proposal текущий OS state включал завершённый `P9.04 — My Work / Needs Attention projection`, который остаётся derived/non-authoritative presentation mechanism.
-
-Допустимая будущая интеграция Company register с Arvectum OS требует отдельного explicit admitted boundary и должна сохранять Organization/Actor, authorization/data-governance, minimization, freshness и authority separation.
+Полный M3 portfolio baseline и Arvectum OS Product Contract correspondence сохраняются из предыдущей source-register chain и Approved AC-301…AC-307.
 
 ## 8. M4 navigation
 
 M4 теперь проходит так:
 
 1. `AC-401` — Company work/obligation register model — `Complete / PASS`;
-2. `AC-402` — Decision, approval and escalation register model — `Current`;
-3. `AC-403` — Risk, exception and incident register model;
+2. `AC-402` — Decision, approval and escalation register model — `Complete / PASS`;
+3. `AC-403` — Risk, exception and incident register model — `Current`;
 4. `AC-404` — Cash, commitment and management reporting baseline;
 5. `AC-405` — Portfolio/module/priority review cadence;
 6. `AC-406` — Owner Mission Control / reference-implementation evidence view;
 7. `AC-407` — Management operating cadence and control review.
 
-AC-401 сам по себе не создаёт live `WORK-*`/`OBL-*` population. Такое наполнение является отдельным evidence step и должно опираться только на подтверждённые current sources.
+AC-401/AC-402 утверждают semantic/control models, но сами по себе не создают полную live population `WORK-*`/`OBL-*`/`DEC-*`/`APR-*`/`ESC-*`. Наполнение должно опираться на подтверждённые current sources и отдельное evidence.
 
-## 9. Язык, терминология и публичная граница
+## 9. Arvectum OS boundary
+
+Company-specific control semantics принадлежат `arvectum/arvectum-company`.
+
+Arvectum OS MAY позднее предоставлять domain-neutral persistence/projection/governed-execution mechanisms через отдельный admitted boundary. Никакая Company запись, UI projection или OS technical role не создаёт Organizational Authority по импликации.
+
+## 10. Язык, терминология и публичная граница
 
 Для новых человекочитаемых Company-документов действует русскоязычный режим и `docs/governance/TERMINOLOGY-GLOSSARY.md`.
 
-Этот публичный репозиторий не является местом хранения секретов, reusable credentials, private keys, избыточных персональных данных, банковских/платёжных реквизитов, непубличных договорных материалов или customer-confidential payloads.
+Этот публичный репозиторий не является местом хранения секретов, reusable credentials, private keys, подписей, избыточных персональных данных, банковских/платёжных payloads, непубличных договорных/customer материалов, privileged incident details или chain-of-thought.
 
-## 10. Конечный этап M9
+## 11. Конечный этап M9
 
 `M9 — Человекочитаемая документация полностью русифицирована и согласована` остаётся самым последним плановым этапом после M8, если собственник отдельно не изменит последовательность.
 
