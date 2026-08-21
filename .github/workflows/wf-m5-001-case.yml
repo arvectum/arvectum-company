@@ -1,0 +1,27 @@
+name: WF-M5-001 Case Helper
+
+on:
+  push:
+    paths:
+      - "tools/wf_m5_001_case.py"
+      - "tests/test_wf_m5_001_case.py"
+      - ".github/workflows/wf-m5-001-case.yml"
+  pull_request:
+    paths:
+      - "tools/wf_m5_001_case.py"
+      - "tests/test_wf_m5_001_case.py"
+      - ".github/workflows/wf-m5-001-case.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run bounded workflow tests
+        run: python -m unittest discover -s tests -p 'test_wf_m5_001_case.py' -v
