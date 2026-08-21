@@ -17,6 +17,7 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 - AC-204 Initial Position Registry: `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md`
 - AC-205 Initial Assignments: `docs/organization/INITIAL-ASSIGNMENTS-AND-EXECUTOR-CLASSIFICATION-v1.0.0.md`
 - AC-206 Company access boundary: `docs/security/COMPANY-DATA-TOOL-CREDENTIAL-ACCESS-BOUNDARY-v1.0.0.md`
+- AC-207 continuity/replacement/fallback baseline: `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE-v1.0.0.md`
 - Formal review evidence: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
 
@@ -24,7 +25,7 @@ Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standa
 
 `M0 — Company canonically founded` and `M1 — Business/economic reality and first market-validation plan captured` are `Complete / PASS`.
 
-Phase 2 has established the organization-first chain through Position, Assignment and access-governance design:
+Phase 2 now has a complete operating-model chain through continuity governance:
 
 ```text
 AC-201 functions
@@ -34,27 +35,28 @@ AC-201 functions
 → AC-205 Assignments / executor classification
 → AC-206 access boundary
 → AC-207 continuity / replacement / fallback
-→ AC-208 transferability review
+→ AC-208 transferability / operating-model closure review
 ```
 
-`AC-206 — Company data/tool/credential access boundary baseline` is `Complete / PASS` after `9/10` cross-review iterations and explicit Owner approval.
+`AC-207 — Critical-function continuity, replacement and manual fallback baseline` is `Complete / PASS` after `9/10` cross-review iterations and explicit Owner approval.
 
-The binding AC-206 baseline establishes deny-by-default / least-privilege access governance, `DC-0` through `DC-3` data classes, `R/W/X/P/K/E` technical capability markers, `RA-01` through `RA-18` resource classes and Position/Assignment-specific access ceilings.
+The binding AC-207 baseline establishes five continuity modes (`CM-0` through `CM-4`) and four evidence states (`CE-0` through `CE-3`). It preserves the principle that continuity is not a bypass: runtime replacement, device recovery, mirror use or emergency operation do not transfer Organizational Authority, customer rights or legal/corporate powers.
 
 Key operating implications:
 
-- technical access does not create Organizational Authority, legal/corporate power or customer rights;
-- AI-led `POS-004 — Engineering & Release Lead` may receive meaningful bounded repository/build/test execution access without receiving Owner-wide admin, bank, signing or unrelated commercial/customer privilege;
-- AI commercial work under `POS-002` is designed around scoped prospect/CRM state and a dedicated/scoped sender rather than the Owner's unrestricted mailbox;
-- `POS-005` Finance and `POS-006` Security/Risk/Continuity remain separate access contexts even though the same current human Principal temporarily holds both Positions;
-- reusable secrets, private keys, recovery codes, bank/signing authentication material and equivalent `DC-3` values are prohibited from the public Company repository and ordinary AI/model context;
-- approval of the access boundary does not itself provision accounts or credentials and does not claim that rotation/recovery/break-glass/continuity controls are already fully implemented.
+- the current Owner human Principal remains a real continuity concentration for POS-001, POS-002, POS-003, POS-005 and POS-006; AI support does not make those Positions Owner-independent;
+- `POS-004 — Engineering & Release Lead` is designed so a specific AI model/agent/runtime can be replaced without redefining the Position, but a new Principal still requires explicit Assignment/access;
+- future sellers do not become active automatically during Owner absence;
+- outsourced accounting may continue only inside its professional/contractual contour and does not inherit Company spending or management authority;
+- GitVerse/local clones can preserve bounded work/history during GitHub outage but do not become canonical automatically;
+- missing signing, bank/payment, legal/customer-rights or trusted-state gates may correctly force fail-closed behavior;
+- the approved baseline deliberately records unresolved/untested continuity areas rather than claiming disaster-recovery readiness.
 
 The current canonical Company action is:
 
-**`AC-207 — Critical-function continuity, replacement and manual fallback baseline`**.
+**`AC-208 — Reference-model transferability boundary and operating-model cross-review`**.
 
-AC-207 must determine what continues, degrades or stops when an Owner, AI runtime, local device, repository host, credential path, outsourced provider or other material dependency is unavailable, while preserving Owner/legal/customer authority and deliberate security gates.
+AC-208 will close Phase 2 by testing the full AC-201–AC-207 chain for internal coherence and by separating what is reusable as the Arvectum organization-design method from what is specific to ООО «Арвектум» and must not be copied mechanically into a customer's organization.
 
 The bounded AC-108 design-partner discovery loop remains separately authorized P1 market-evidence work and does not imply a pilot, price, SLA, privileged access or customer commitment.
 
