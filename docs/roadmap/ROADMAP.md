@@ -1,48 +1,46 @@
 # Каноническая дорожная карта Arvectum Company
 
 Статус: `Active`
-Версия: `0.24.0`
+Версия: `0.25.0`
 Создано: `2026-08-19`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
-Текущее каноническое действие: `AC-303 — Investment, cost and risk boundaries; continue/change/stop criteria`
-Русское название текущего действия: `Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить`
+Текущее каноническое действие: `AC-304 — Standalone product / reference implementation / module candidate / Arvectum OS capability candidate classification`
+Русское название текущего действия: `Разделение: самостоятельный продукт / эталонная реализация / кандидат в модуль / кандидат в возможность Arvectum OS`
 
 ## 1. Модель публикации
 
-Эта редакция `0.24.0` сохраняет полное содержание дорожной карты `0.23.0` по неизменяемой ссылке на git blob и добавляет только закрытие AC-302 и перевод текущего действия на AC-303.
+Эта редакция `0.25.0` сохраняет полное содержание дорожной карты `0.24.0` по неизменяемой ссылке на git blob и добавляет только закрытие AC-303 и перевод текущего действия на AC-304.
 
 Предыдущая редакция:
 
-- версия: `0.23.0`;
+- версия: `0.24.0`;
 - путь: `docs/roadmap/ROADMAP.md`;
-- immutable git blob SHA: `158497c1807af4528fdb7f3bc95189e71b13c4c5`.
+- immutable git blob SHA: `d5e9d481b76365179e6f18708e8b892740e2813b`.
 
 Все ранее определённые этапы M0–M9, принципы приоритизации, границы Company/Product/Arvectum OS, параллельные циклы и конечный AC-901 остаются в силе, если прямо не изменены более новым утверждённым решением.
 
-## 2. Закрытие AC-302
+## 2. Закрытие AC-303
 
-`AC-302 — Закрепление ответственной организационной позиции за каждым активным продуктом/инициативой` имеет статус:
+`AC-303 — Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить` имеет статус:
 
 `Complete / PASS`.
 
 Утверждённая публикация:
 
-- `docs/portfolio/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-MAPPING-v1.0.0.md` — `Approved 1.0.0`;
-- точная проверенная исходная редакция: `docs/portfolio/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-MAPPING.md` — `Proposed 0.9.0`, blob `29bec89402118ddfc061501b8b25f5c0000d65a4`;
-- перекрёстная проверка: `docs/reviews/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-CROSS-REVIEW.md` — `10 of maximum 10`, PASS;
-- решение собственника: `docs/governance/decisions/DECISION-2026-08-21-AC-302-APPROVAL.md`.
+- `docs/portfolio/AC-303-PORTFOLIO-INVESTMENT-COST-RISK-BOUNDARIES-v1.0.0.md` — `Approved 1.0.0`;
+- точная проверенная исходная редакция: `docs/portfolio/AC-303-PORTFOLIO-INVESTMENT-COST-RISK-BOUNDARIES.md` — `Proposed 0.9.0`, blob `e246d06e87b4221ad85718d2aeeb4e3486bf388e`;
+- перекрёстная проверка: `docs/reviews/AC-303-PORTFOLIO-INVESTMENT-COST-RISK-CROSS-REVIEW.md` — `10 of maximum 10`, PASS, blob `f455a8652de57a4062c5d1c32d91b66b627b7e45`;
+- решение собственника: `docs/governance/decisions/DECISION-2026-08-21-AC-303-APPROVAL.md`.
 
 Канонический portfolio map синхронизирован:
 
-- `docs/portfolio/PORTFOLIO.md` — `Active 0.3.0`.
+- `docs/portfolio/PORTFOLIO.md` — `Active 0.4.0`.
 
-AC-302 закрепил для всех семи текущих `PORT-001…PORT-007` primary Company-level accountable Position:
+AC-303 установил Company-level bounded investment/cost/risk treatment для всех `PORT-001…PORT-007`, evidence requirements и review semantics `continue / change / contain / stop-retire candidate`, сохранив `ROD-*`, функциональную accountability Positions, product-specific sources и границы Company/Product/Arvectum OS.
 
-`POS-003 — Portfolio & Product Lead`.
-
-Это Company-level portfolio stewardship relation, а не end-to-end ownership всех продуктовых функций. Functional accountability POS-001/POS-002/POS-004/POS-005/POS-006, AC-202 Reserved Owner Decisions, AC-205 Assignments, AC-206 access и AC-207 continuity остаются неизменными.
+AC-303 не создаёт бюджет, не утверждает конкретный расход, не заменяет product implementation truth и не делает technical PASS инвестиционным решением.
 
 ## 3. Phase 3 — управление портфелем и кандидатами в повторно используемые модули
 
@@ -56,33 +54,46 @@ AC-302 закрепил для всех семи текущих `PORT-001…PORT
 |---|---|---|
 | `AC-301` | Сверка идентичности, границ и владения продуктами и инициативами портфеля | `Complete / PASS` |
 | `AC-302` | Закрепление ответственной организационной позиции за каждым активным продуктом/инициативой | `Complete / PASS` |
-| `AC-303` | Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить | `Current` |
-| `AC-304` | Разделение: самостоятельный продукт / эталонная реализация / кандидат в модуль / кандидат в возможность Arvectum OS | `Planned` |
+| `AC-303` | Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить | `Complete / PASS` |
+| `AC-304` | Разделение: самостоятельный продукт / эталонная реализация / кандидат в модуль / кандидат в возможность Arvectum OS | `Current` |
 | `AC-305` | Сверка межпродуктовых зависимостей и контрактов продуктов с Arvectum OS | `Planned` |
 | `AC-306` | Приоритизация портфеля по капиталу, экономике и вниманию собственника | `Planned` |
 | `AC-307` | Итоговая проверка управления портфелем и закрытие M3 | `Planned` |
 
-## 4. Текущее действие — AC-303
+## 4. Текущее действие — AC-304
 
-### AC-303 — Границы инвестиций, затрат и рисков; критерии продолжить/изменить/остановить
+### AC-304 — Standalone product / reference implementation / module candidate / Arvectum OS capability candidate classification
 
 Статус: `Current`.
 
-Цель: для каждого `PORT-001…PORT-007` определить Company-level investment envelope и evidence-based критерии, по которым узел может продолжаться, требовать изменения/containment или быть предложен к остановке, не смешивая эти правила с product implementation truth, юридическими правами или Arvectum OS lifecycle.
+Цель: для каждого `PORT-001…PORT-007` определить его текущую Company-level portfolio role без смешения четырёх разных понятий:
 
-AC-303 должен как минимум:
+- самостоятельный продукт;
+- эталонная/референсная реализация;
+- кандидат в повторно используемый Company/product-family module;
+- кандидат в domain-neutral Platform Capability Arvectum OS.
 
-- определить применимые категории затрат, recurring cost, capital/time/Owner-attention exposure и downside для каждого узла;
-- установить пропорциональные risk/cost boundaries без выдумывания неподтверждённых финансовых чисел;
-- определить evidence requirements и review triggers для `continue / change / contain / stop/retire candidate`;
-- сохранить `ROD-02`, `ROD-04`, `ROD-06`, `ROD-08`, `ROD-09` и иные применимые Reserved Owner Decisions;
-- отделить investment decision от technical PASS, repository activity, sunk cost и AI recommendation;
-- учитывать current AC-301 dispositions и AC-302 accountability mapping, не меняя их молча;
-- не выполнять AC-304 module classification, AC-305 OS/dependency reconciliation или AC-306 portfolio prioritization заранее.
+AC-304 должен как минимум:
 
-## 5. Границы AC-303
+- опираться на Approved AC-301 identities/dispositions, AC-302 accountability и AC-303 investment treatment;
+- не считать repository reuse доказательством module status;
+- не считать сходство функций или общего кода достаточным для platform promotion;
+- не превращать Company-level classification в Product Contract, Arvectum OS capability lifecycle decision или product implementation change;
+- сохранять правило, что reusable Company/product-family semantics и domain-neutral Arvectum OS capabilities — разные architectural ownership scopes;
+- потребовать evidence business/reuse/consumer/control need для module/reference classification;
+- оставить AC-305 точную dependency/Product Contract reconciliation и AC-306 относительную capital/economics priority.
 
-AC-303 не создаёт бюджет автоматически, не утверждает конкретный расход без отдельного applicable authority action, не меняет юридические полномочия, product implementation, customer commitments, Product Contracts Arvectum OS или Position/Assignment/access model.
+## 5. Границы AC-304
+
+AC-304 классифицирует portfolio role и promotion/reuse hypothesis, но сам по себе не:
+
+- переносит код или schemas между репозиториями;
+- создаёт shared library/service;
+- изменяет Product Contract Arvectum OS;
+- продвигает capability в `Candidate`, `Incubating` или `Active` без применимого OS governance path;
+- объединяет продукты;
+- создаёт budget или priority order;
+- меняет юридические/IP/data права.
 
 ## 6. Язык и терминология
 
