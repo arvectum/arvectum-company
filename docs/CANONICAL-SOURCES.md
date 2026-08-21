@@ -1,22 +1,22 @@
 # Реестр канонических источников Arvectum Company
 
 Статус: `Active`
-Версия: `3.2.0`
+Версия: `3.3.0`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
 
 ## 1. Модель публикации
 
-Эта редакция сохраняет полный реестр `3.1.0` по immutable git blob и добавляет утверждение AC-404 и переход к AC-405.
+Эта редакция сохраняет полный реестр `3.2.0` по immutable git blob и добавляет утверждение AC-405 и переход к AC-406.
 
 Предыдущая редакция:
 
-- версия: `3.1.0`;
+- версия: `3.2.0`;
 - путь: `docs/CANONICAL-SOURCES.md`;
-- immutable git blob SHA: `8e1022670568fb697a307cb3a1988226dbce8e4b`.
+- immutable git blob SHA: `96e927705f5e40df2cf39763fcfdd79fd878c4d2`.
 
-Все ранее зарегистрированные источники M0–M3, AC-201–AC-403, языково-терминологическая политика, Company/Product/Arvectum OS boundaries и правила внешних источников сохраняются без изменений, если прямо не уточнены более новым утверждённым артефактом.
+Все ранее зарегистрированные источники M0–M3, AC-201–AC-404, языково-терминологическая политика, Company/Product/Arvectum OS boundaries и правила внешних источников сохраняются без изменений, если прямо не уточнены более новым утверждённым артефактом.
 
 ## 2. Порядок приоритета источников
 
@@ -33,12 +33,12 @@
 
 Канонический источник планирования:
 
-- `docs/roadmap/ROADMAP.md` — `Active 0.33.0`;
-- текущий blob SHA: `a409b059771f78d26dc529cc5d8bee74acfadfc6`.
+- `docs/roadmap/ROADMAP.md` — `Active 0.34.0`;
+- текущий blob SHA: `de67144e8e0650fb8290145bd5049d16f7020a1e`.
 
 Текущее каноническое действие:
 
-`AC-405 — Portfolio/module/priority review cadence`.
+`AC-406 — Owner Mission Control / reference-implementation evidence view`.
 
 Текущий этап:
 
@@ -81,55 +81,68 @@ AC-403 устанавливает `RSK-*`/`EXC-*`/`INC-*` и границы:
 
 ## 7. Approved AC-404 cash/commitment/management-reporting baseline
 
-Каноническая approved publication:
-
-- `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md` — `Approved 1.0.0`;
-- immutable publication blob SHA: `519330a5460ef9c712d7e6045dbb07475b021954`.
-
-Exact reviewed proposal:
-
-- `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE.md` — `Proposed 0.9.0`;
-- immutable proposal blob SHA: `80c7b620cf446ed28b76143a0325ce89b1939ac0`.
-
-Cross-review:
-
-- `docs/reviews/AC-404-CASH-COMMITMENT-MANAGEMENT-REPORTING-CROSS-REVIEW.md`;
-- `8 iterations`;
-- `Complete / PASS for Owner approval`;
-- immutable blob SHA: `3519f63ef7c09f075aa75b6d0d83ccd770911141`.
-
-Owner decision:
-
-- `docs/governance/decisions/DECISION-2026-08-21-AC-404-APPROVAL.md` — `Approved`;
-- immutable blob SHA: `8e6ea741f14bb6471d250c6d39a76f15bdfb8ff3`;
-- explicit wording: `AC-404 утверждаю`.
-
-AC-404 является binding Company management-finance/control baseline в своём declared scope.
-
-## 8. AC-404 canonicality and authority boundary
+- publication: `docs/operations/COMPANY-CASH-COMMITMENT-MANAGEMENT-REPORTING-BASELINE-v1.0.0.md` — `Approved 1.0.0`, blob `519330a5460ef9c712d7e6045dbb07475b021954`;
+- exact reviewed proposal blob: `80c7b620cf446ed28b76143a0325ce89b1939ac0`;
+- cross-review blob: `3519f63ef7c09f075aa75b6d0d83ccd770911141`;
+- Owner decision blob: `8e6ea741f14bb6471d250c6d39a76f15bdfb8ff3`.
 
 Главное разделение AC-404:
 
-```text
-bank/accounting fact
-≠ management interpretation
-≠ forecast
-≠ budget/limit
-≠ planned spend
-≠ approved internal commitment
-≠ incurred obligation
-≠ actual payment
-```
+`bank/accounting fact ≠ management interpretation ≠ forecast ≠ budget/limit ≠ planned spend ≠ approved internal commitment ≠ incurred obligation ≠ actual payment`.
 
-AC-404 не создаёт `FIN-*`, `PAY-*`, `TX-*` или другой parallel transaction ledger.
+AC-404 не создаёт parallel transaction ledger или spend/payment authority.
 
-Bank/payment, accounting/tax/statutory, legal/corporate, customer/vendor, product/project economics и Arvectum OS facts остаются authoritative в своих contours. Company MAY быть canonical только для bounded management interpretation/control state.
+## 8. Approved AC-405 portfolio/module/priority review cadence
 
-Management report является derived decision-support projection. Он не является spend authorization, payment proof, budget approval или profitability proof.
+Каноническая approved publication:
 
-`POS-005` accountability, наличие cash, banking access, report/dashboard visibility или prepared payment не создают spend/payment Organizational Authority.
+- `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-v1.0.0.md` — `Approved 1.0.0`;
+- immutable publication blob SHA: `8150c0b8ff009941220dd6d0ce48d721eb9e42d9`.
 
-## 9. Действующий портфель и статус этапов
+Exact reviewed proposal:
+
+- `docs/portfolio/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE.md` — `Proposed 0.9.0`;
+- immutable proposal blob SHA: `13d19b2a5418c2d1d3349e889fe54817dd9ee126`.
+
+Cross-review:
+
+- `docs/reviews/AC-405-PORTFOLIO-MODULE-PRIORITY-REVIEW-CADENCE-CROSS-REVIEW.md`;
+- `8 iterations`;
+- `Complete / PASS for Owner approval`;
+- immutable blob SHA: `1192472888da43de4160499d828e5def87391197`.
+
+Owner decision:
+
+- `docs/governance/decisions/DECISION-2026-08-21-AC-405-APPROVAL.md` — `Approved`;
+- immutable blob SHA: `76bc7b8f9c560c3e2a3baf18b58c13de009e8eb4`;
+- explicit wording: `AC-405 утверждаю`.
+
+AC-405 является binding Company portfolio-review baseline в своём declared scope.
+
+## 9. AC-405 canonicality and authority boundary
+
+AC-405 устанавливает:
+
+- immediate scoped review при material event;
+- monthly asynchronous exception scan как initial light backstop;
+- quarterly integrated portfolio revalidation как initial broader backstop;
+- возможность корректировки cadence последующим operating evidence;
+- `POS-003` `AM-2` stewardship только внутри уже approved envelope;
+- material portfolio/module/investment/boundary changes только через applicable `DEC/APR/ROD` path.
+
+Ключевые границы:
+
+`review ≠ decision ≠ approval ≠ investment ≠ product roadmap change ≠ OS lifecycle change`
+
+`P0 temporary execution priority ≠ permanent portfolio reclassification`
+
+`named trigger ≠ automatic promotion/funding`
+
+`reference/reuse evidence ≠ automatic module admission`.
+
+AC-405 не меняет текущие `PORT-*` treatments по факту approval.
+
+## 10. Действующий портфель и статус этапов
 
 Канонический Company-level portfolio source:
 
@@ -143,14 +156,14 @@ Management report является derived decision-support projection. Он н�
 - `M1` — `Complete / PASS`;
 - `M2` — `Complete / PASS`;
 - `M3` — `Complete / PASS`;
-- `M4` — `Current`, AC-405 `Current`;
+- `M4` — `Current`, AC-406 `Current`;
 - `M5` — `Planned`;
 - `M6` — `Planned`;
 - `M7` — `Future`;
 - `M8` — `Future`;
 - `M9` — финальный плановый этап, AC-901 `Planned` после M8.
 
-## 10. M4 navigation
+## 11. M4 navigation
 
 M4 проходит так:
 
@@ -158,27 +171,27 @@ M4 проходит так:
 2. `AC-402` — decision/approval/escalation register model — `Complete / PASS`;
 3. `AC-403` — risk/exception/incident register model — `Complete / PASS`;
 4. `AC-404` — cash/commitment/management reporting baseline — `Complete / PASS`;
-5. `AC-405` — portfolio/module/priority review cadence — `Current`;
-6. `AC-406` — Owner Mission Control / reference-implementation evidence view;
+5. `AC-405` — portfolio/module/priority review cadence — `Complete / PASS`;
+6. `AC-406` — Owner Mission Control / reference-implementation evidence view — `Current`;
 7. `AC-407` — management operating cadence and control review.
 
-Approved control models сами по себе не доказывают полноту live register population, current cash/liquidity, absence of risks/incidents, profitability или business readiness. Такие факты требуют current authoritative evidence.
+Approved control models сами по себе не доказывают полноту live register population, current cash/liquidity, absence of risks/incidents, profitability, portfolio thesis validity или business readiness. Такие факты требуют current authoritative evidence.
 
-## 11. Arvectum OS boundary
+## 12. Arvectum OS boundary
 
-Company-specific control и management-finance semantics принадлежат `arvectum/arvectum-company`.
+Company-specific control, management-finance и portfolio-review semantics принадлежат `arvectum/arvectum-company`.
 
-При AC-404 current OS state был проверен на `76504766353028540891ac1dfdbf1e5dc331a4af`. OS roadmap `2.81.0` фиксирует `M9-alpha — Usable Internal Workspace` как `Achieved / PASS` в exact private internal scope и P9.07 как current. `docs/governance/DECISION-AUTHORITY-POLICY.md` Arvectum OS остаётся `Proposed 0.2.1` и не принят Company governance.
+При AC-405 current OS state был проверен на `76504766353028540891ac1dfdbf1e5dc331a4af`. OS M9-alpha остаётся `Achieved / PASS` только в exact private internal workspace scope; P9.07 был current на момент review. Это не создаёт Company portfolio authority, reusable module, Stable Product Contract или capability lifecycle state.
 
-Arvectum OS MAY позднее предоставлять domain-neutral persistence/projection/composition/governed-execution mechanisms через отдельный admitted boundary. UI, technical roles, runtime availability и M9-alpha evidence не создают Company financial authority, Product Contract или capability lifecycle state.
+Arvectum OS MAY позднее предоставлять domain-neutral persistence/projection/composition/governed-execution mechanisms через отдельный admitted boundary. UI/runtime visibility не создаёт Company Organizational Authority.
 
-## 12. Язык, терминология и публичная граница
+## 13. Язык, терминология и публичная граница
 
 Для новых человекочитаемых Company-документов действует русскоязычный режим и `docs/governance/TERMINOLOGY-GLOSSARY.md`.
 
 Публичный Company repository не является местом хранения secrets, reusable credentials, private keys, signatures, избыточных персональных данных, банковских/платёжных payloads, transaction exports, confidential exact cash balances, непубличных договорных/customer/vendor материалов, sensitive tax/accounting documents, privileged payment/fraud или incident/security details и chain-of-thought.
 
-## 13. Конечный этап M9
+## 14. Конечный этап M9
 
 `M9 — Человекочитаемая документация полностью русифицирована и согласована` остаётся самым последним плановым этапом после M8, если собственник отдельно не изменит последовательность.
 
