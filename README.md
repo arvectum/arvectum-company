@@ -22,6 +22,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-406 — Owner Mission Control evidence view: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-IMPLEMENTATION-EVIDENCE-VIEW-v1.0.0.md`
 - AC-407 / закрытие M4: `docs/operations/MANAGEMENT-OPERATING-CADENCE-AND-M4-CONTROL-REVIEW-v1.0.0.md`
 - AC-501 — выбор первого governed workflow: `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-v1.0.0.md`
+- AC-502 — workflow authority/data/evidence contract: `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md`
 - Первый public-safe Mission Control evidence snapshot: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-SNAPSHOT-2026-08-21.md`
 - Cross-reviews: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
@@ -39,86 +40,72 @@ Arvectum Company — конкретная организация ООО «Арв
 - `M4` — Owner control and reference-implementation observability: `Complete / PASS`;
 - `M5` — first real governed Company operating contour: `Current`.
 
-`AC-501 — First governed workflow candidate selection` закрыт как `Complete / PASS`.
+`AC-501` и `AC-502` закрыты как `Complete / PASS`.
 
 Утверждён первый M5 workflow:
 
 **`WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`**, первый real-operation contour — **`PORT-002 — Discount Parser`**.
 
+Для workflow утверждён operating contract:
+
+- `POS-002 — Commercial & Customer Lead` — один end-to-end accountable Position;
+- `POS-004 — Engineering & Release Lead` — accountable Position технического сегмента `W4 → W7`;
+- states `W0…W11`;
+- classifications `CL-1…CL-7`;
+- initial human-attributable `W3 — Classified` через current POS-002 Assignment;
+- AI-led bounded engineering через POS-004 в existing `AM-0/1/2` и access ceilings;
+- `AM-3`/`AM-4` не активированы;
+- customer/data/access/evidence/failure/continuity boundaries зафиксированы.
+
+Ключевые правила:
+
+`technical PASS ≠ customer-facing approval ≠ customer acceptance`;
+
+`Candidate Ready ≠ permission to deploy/send/promise`;
+
+`customer silence ≠ acceptance` без более сильного authoritative rule;
+
+`technical task closed ≠ Company/customer obligation satisfied`.
+
 Текущее каноническое действие:
 
-**`AC-502 — Workflow, accountable Position, authority/data/evidence contract` — формализация выбранного workflow до implementation и supervised real-operation proof.**
+**`AC-503 — Arvectum OS reliance/admission mapping where applicable` — проверить, нужна ли вообще фактическая опора `WF-M5-001` на Arvectum OS до реализации.**
 
 M5:
 
 ```text
 AC-501 first governed workflow candidate selection       Complete / PASS
-→ AC-502 workflow / Position / authority / data contract Current
-→ AC-503 Arvectum OS reliance/admission mapping          Planned
+→ AC-502 workflow / Position / authority / data contract Complete / PASS
+→ AC-503 Arvectum OS reliance/admission mapping          Current
 → AC-504 bounded workflow implementation                 Planned
 → AC-505 supervised real-operation proof                 Planned
 → AC-506 incident/recovery/fallback drill                Planned
 → AC-507 business-value/economic continue-change-stop    Planned
 ```
 
-## Что установил M4
+## Что установил AC-502
 
-AC-401…AC-406 сформировали Company control/reference-observability layers, а AC-407 установил их operating cadence и закрыл M4.
+AC-502 сделал selected workflow достаточно точным для следующего implementation/admission decision, но не объявил его уже работающим.
 
-Ключевые границы сохраняются:
+Company owns workflow/accountability/authority/evidence semantics. `arvectum/discount-parser` остаётся canonical source product implementation/status. Raw customer feedback/acceptance остаётся в соответствующем authorized customer/workstream contour. Material `WORK/OBL/DEC/APR/ESC/RSK/EXC/INC` создаются только по existing qualification rules.
 
-`Mission Control ≠ source of truth ≠ authority ≠ approval ≠ execution`;
+Raw customer `DC-2` по умолчанию не переносится в public Company repo и не передаётся AI без необходимости. `DC-3` reusable secrets не должны попадать в обычный model context.
 
-`source fact ≠ Company interpretation ≠ recommendation ≠ decision ≠ approval ≠ legal/corporate/customer act ≠ technical authorization ≠ execution evidence`;
+AC-502 не создаёт customer promise, budget, spend/payment/signing authority, new Position/Assignment/access, autonomous consequential customer effect, full product readiness claim или M5 completion.
 
-`bank/accounting fact ≠ management interpretation ≠ forecast ≠ budget/limit ≠ planned spend ≠ approved internal commitment ≠ incurred obligation ≠ actual payment`;
+## Что делает AC-503
 
-`P0 temporary execution priority ≠ permanent portfolio reclassification`;
+AC-503 проверяет current canonical Arvectum OS state и отвечает на один практический вопрос:
 
-`reference/reuse evidence ≠ automatic module admission`.
+> Нужна ли `WF-M5-001` какая-либо реальная OS reliance/admission для первого M5 proof, и если да — какая минимальная?
 
-Approved operating cadence после M4:
+Допустимы три результата:
 
-```text
-material event
-→ immediate bounded update/review
-→ Owner only if actual authority/action need exists
+1. `no additional OS reliance required for first M5 proof`;
+2. существующей bounded OS reliance достаточно;
+3. нужен новый/изменённый OS Product Contract/capability admission через proper OS governance.
 
-active operating week + material aggregate state
-→ at most one short asynchronous Owner checkpoint
-
-monthly
-→ one integrated management checkpoint
-
-quarterly
-→ integrated portfolio / continuity-gap / control-fit / Owner-burden revalidation
-```
-
-Daily dashboard/meeting ritual не требуется. Routine `AM-1`/`AM-2` work не проходит полную governance ceremony, если не пересечена material/authority boundary.
-
-## Что выбрал AC-501
-
-AC-501 сравнил несколько реальных workflow candidates и выбрал `WF-M5-001` не потому, что Discount Parser технически зрелее остальных, а потому что здесь уже есть повторяющийся customer-feedback/correction/validation loop, прямой business/customer value, явный Owner exception/rework bottleneck, bounded technical delegation path, practical fallback и сильный reconstruction evidence path.
-
-Выбор `PORT-002` не означает новый budget, permanent portfolio re-ranking, новый customer commitment или product/production-readiness claim.
-
-## Что AC-502 должен определить
-
-До implementation AC-502 должен установить для `WF-M5-001`:
-
-- exact start/end и workflow states;
-- accountable и participating Positions;
-- permitted/excluded `AM-*` actions;
-- customer scope/commitment/acceptance gates;
-- Company/Product source-of-truth boundary;
-- data/tool/access requirements;
-- evidence contract и reconstructability;
-- stale/unknown/ambiguous-input behavior;
-- escalation/fail-closed conditions;
-- continuity/manual fallback;
-- lightweight M5 measurements по Owner interventions, rework, blocking/cycle и outcome quality.
-
-Arvectum OS не считается обязательным по импликации. Exact reliance/admission mapping — отдельный AC-503.
+OS не должен внедряться ради dogfooding. Company-specific Position, customer и workflow semantics не переносятся в domain-neutral OS.
 
 ## Business-first portfolio order
 
@@ -134,7 +121,7 @@ Company-specific Positions, Assignments, authority, portfolio decisions, operati
 
 Product implementation/status остаются в product repositories. Domain-neutral platform architecture, Product Contracts, RFC/ADR и Platform Capability lifecycle принадлежат `arvectum/arvectum-os`.
 
-AC-501 не создаёт Company Product Contract/Active Capability в Arvectum OS. Любая реальная OS reliance для `WF-M5-001` проходит отдельный AC-503/admission mapping и применимый OS governance path.
+Никакой Arvectum OS dependency не выводится автоматически из AC-501/AC-502. Любая actual reliance проходит AC-503 и применимый OS governance path.
 
 ## Граница публичного репозитория
 
