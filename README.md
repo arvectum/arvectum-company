@@ -1,6 +1,6 @@
 # Arvectum Company
 
-Канонический репозиторий долговременных документов управления, планирования, портфеля и организационной модели ООО «Арвектум» как компании, в которой значительная часть повторяемой работы выполняется ИИ и программными средствами, а конечный контроль сохраняется за собственником.
+Канонический репозиторий долговременных документов управления, планирования, портфеля и организационной модели ООО «Арвектум» как owner-operated AI-native company, где конечный контроль сохраняется за собственником, а значительная часть повторяемой работы может выполняться ИИ и программными средствами в утверждённых границах.
 
 Arvectum Company — конкретная организация ООО «Арвектум». Это **не** Arvectum OS, не отдельный ИИ-агент и не универсальная программная платформа.
 
@@ -15,6 +15,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-208 — граница переносимости эталонной модели и закрытие M2: `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md`
 - AC-307 — итоговая проверка портфеля и закрытие M3: `docs/portfolio/AC-307-PORTFOLIO-GOVERNANCE-REVIEW-AND-M3-CLOSURE-v1.0.0.md`
 - AC-401 — модель реестра работ и обязательств: `docs/operations/COMPANY-WORK-OBLIGATION-REGISTER-MODEL-v1.0.0.md`
+- AC-402 — модель реестра решений, approvals и эскалаций: `docs/operations/COMPANY-DECISION-APPROVAL-ESCALATION-REGISTER-MODEL-v1.0.0.md`
 - Материалы перекрёстных проверок: `docs/reviews/`
 - Долговременные решения собственника и системы управления: `docs/governance/decisions/`
 
@@ -37,24 +38,43 @@ Arvectum Company — конкретная организация ООО «Арв
 M4:
 
 ```text
-AC-401 work/obligation register model          Complete / PASS
-→ AC-402 decision/approval/escalation register Current
-→ AC-403 risk/exception/incident register      Planned
-→ AC-404 cash/commitment/reporting baseline    Planned
-→ AC-405 portfolio/priority review cadence     Planned
-→ AC-406 Owner Mission Control                 Planned
-→ AC-407 management operating cadence          Planned
+AC-401 work/obligation register model             Complete / PASS
+→ AC-402 decision/approval/escalation register   Complete / PASS
+→ AC-403 risk/exception/incident register        Current
+→ AC-404 cash/commitment/reporting baseline      Planned
+→ AC-405 portfolio/priority review cadence       Planned
+→ AC-406 Owner Mission Control                    Planned
+→ AC-407 management operating cadence            Planned
 ```
 
 Текущее каноническое действие:
 
-**`AC-402 — Decision, approval and escalation register model` — модель реестра решений, утверждений и эскалаций.**
+**`AC-403 — Risk, exception and incident register model` — модель реестра рисков, исключений и инцидентов.**
 
-AC-401 уже установил два Company control namespace: `WORK-*` для material Company-level work и `OBL-*` для material obligation control. Реестр является authoritative только для Company control metadata в своём scope и не заменяет договоры, legal/corporate sources, bank/accounting truth, product repositories или Arvectum OS state.
+## Утверждённый M4 control baseline
 
-M4 нужен, чтобы собственник видел существенные работы, обязательства, решения, риски, cash/commitment signals и portfolio state без постоянного восстановления контекста из чатов и отдельных репозиториев. Software dashboard не является самоцелью и не требуется до тех пор, пока более простой control layer решает задачу надёжно.
+AC-401 установил два Company control namespace:
 
-Текущий approved portfolio baseline находится в `docs/portfolio/PORTFOLIO.md` `0.8.0`. При отсутствии более высокого `P0` обязательства default discretionary product order остаётся: `PORT-002 → PORT-001 → PORT-003/PORT-004 по named trigger → PORT-007 clarification-only → PORT-005/PORT-006 contain`.
+- `WORK-*` — material Company-level work;
+- `OBL-*` — material obligation control.
+
+AC-402 добавил:
+
+- `DEC-*` — material decision case / durable decision record;
+- `APR-*` — approval gate / attributable approval act control record;
+- `ESC-*` — escalation case.
+
+Ключевое правило AC-402:
+
+`recommendation ≠ decision ≠ approval ≠ legal/corporate act ≠ technical authorization ≠ execution`.
+
+Company repository authoritative только для Company governance/control state в своём scope. Договоры, legal/corporate acts, customer facts, accounting/banking truth, product implementation/status и Arvectum OS governance/platform state остаются в соответствующих authoritative contours.
+
+Наличие `decision_outcome=approve`, технического доступа, credential или успешного workflow step само по себе не разрешает consequential external effect.
+
+## Business-first приоритет
+
+При отсутствии более высокого `P0` обязательства default discretionary portfolio order остаётся: `PORT-002 → PORT-001 → PORT-003/PORT-004 по named trigger → PORT-007 clarification-only → PORT-005/PORT-006 contain`.
 
 Этот порядок не является бюджетом, постоянной engineering queue или Company flagship. Общая иерархия AC-106 `P0…P3` остаётся выше portfolio ranking.
 
@@ -62,11 +82,11 @@ M4 нужен, чтобы собственник видел существенн
 
 ## Граница репозитория
 
-Специфические для Arvectum Company правила управления, организационные позиции, назначения, портфельные решения и Company-level control models принадлежат этому репозиторию, когда их допустимо хранить здесь.
+Специфические для Arvectum Company правила управления, организационные Positions, Assignments, портфельные решения и Company-level control models принадлежат этому репозиторию, когда их допустимо хранить здесь.
 
-Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура и контракты платформы принадлежат `arvectum/arvectum-os`.
+Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура, Product Contracts и platform governance принадлежат `arvectum/arvectum-os`.
 
-Этот репозиторий публичный. **Запрещено** размещать здесь секреты, повторно используемые учётные данные, private keys, избыточные персональные данные, подписи, банковские/платёжные реквизиты, непубличные клиентские/поставщицкие/договорные материалы и другие ограниченные операционные данные.
+Этот репозиторий публичный. **Запрещено** размещать здесь секреты, повторно используемые учётные данные, private keys, подписи, избыточные персональные данные, банковские/платёжные payloads, непубличные клиентские/поставщицкие/договорные материалы, privileged incident details и другие ограниченные операционные данные.
 
 ## Удалённые репозитории
 
