@@ -1,60 +1,68 @@
 # Каноническая дорожная карта Arvectum Company
 
 Статус: `Active`
-Версия: `0.37.0`
+Версия: `0.38.0`
 Создано: `2026-08-19`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
-Текущее каноническое действие: `AC-502 — Workflow, accountable Position, authority/data/evidence contract`
-Русское название текущего действия: `Формализация первого реального управляемого workflow: ответственность, полномочия, данные и evidence`
+Текущее каноническое действие: `AC-503 — Arvectum OS reliance/admission mapping where applicable`
+Русское название текущего действия: `Проверка фактической необходимости и допустимости опоры первого workflow на Arvectum OS`
 
 ## 1. Модель публикации
 
-Эта редакция `0.37.0` сохраняет полное содержание дорожной карты `0.36.0` по immutable git blob и добавляет утверждение/закрытие AC-501, выбор первого M5 workflow и переход к AC-502.
+Эта редакция `0.38.0` сохраняет полное содержание дорожной карты `0.37.0` по immutable git blob и добавляет утверждение/закрытие AC-502 и переход к AC-503.
 
 Предыдущая редакция:
 
-- версия: `0.36.0`;
+- версия: `0.37.0`;
 - путь: `docs/roadmap/ROADMAP.md`;
-- immutable git blob SHA: `81c34c542a1ef5606f1ade6c28af300ba113f39e`.
+- immutable git blob SHA: `95fe1f98b9f9c93cf90d8999d011eec7b37aca75`.
 
-Все ранее определённые M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, bounded AC-108 evidence loop и конечный AC-901 сохраняются, если прямо не изменены более новым approved decision.
+Все ранее определённые M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, bounded AC-108 evidence loop, AC-501 workflow selection и конечный AC-901 сохраняются, если прямо не изменены более новым approved decision.
 
-## 2. Закрытие AC-501
+## 2. Закрытие AC-502
 
-`AC-501 — First governed workflow candidate selection` имеет статус:
+`AC-502 — Workflow, accountable Position, authority/data/evidence contract` имеет статус:
 
 `Complete / PASS`.
 
 Approved publication:
 
-- `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-v1.0.0.md` — `Approved 1.0.0`, blob `c0e1bd3a0e247ef72cb79ebd988d78d4487618f7`;
-- exact reviewed proposal: `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION.md` — `Proposed 0.9.0`, blob `f6cbebfea1c2e6a56a0fd03c38b68a7211c6bbde`;
-- cross-review: `docs/reviews/AC-501-FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-CROSS-REVIEW.md` — `10 of maximum 10`, `Complete / PASS for explicit Owner approval`, blob `10924469f889d9e97d6a6d11b61d57a70b69e22a`;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-501-APPROVAL.md`, blob `04d42d227c74c779e58d4298ad542e458821837b`;
+- `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md` — `Approved 1.0.0`, blob `9b06e02a6d9afa8b6b4533d3a9f71690518c3ce1`;
+- exact reviewed proposal: `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT.md` — `Proposed 0.9.0`, blob `b1df71839422e509cbfa76faec31bf788ca9842d`;
+- cross-review: `docs/reviews/AC-502-FIRST-GOVERNED-WORKFLOW-CONTRACT-CROSS-REVIEW.md` — `10 of maximum 10`, `Complete / PASS for explicit Owner approval`, blob `7c457c2b3145b0f2becb3b6e289d9496e02e2d15`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-502-APPROVAL.md`, blob `08db32414f9f19c99b281d936a5eccaa0f456ede`;
 - explicit Owner wording at the pending approval gate: `делай`.
 
-## 3. Первый выбранный governed workflow
+## 3. Утверждённый contract WF-M5-001
 
-Для M5 утверждён:
+Для выбранного AC-501 workflow:
 
-`WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`.
+`WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`
 
-Первый real-operation contour:
+в первом contour `PORT-002 — Discount Parser` утверждены:
 
-`PORT-002 — Discount Parser`.
+- workflow states `W0…W11`;
+- classification taxonomy `CL-1…CL-7`;
+- `POS-002 — Commercial & Customer Lead` как end-to-end accountable Position;
+- `POS-004 — Engineering & Release Lead` как accountable Position технического сегмента `W4 → W7`;
+- existing `AM-0/AM-1/AM-2` only, без activation `AM-3`/`AM-4`;
+- human-attributable initial `W3 — Classified` через current POS-002 Assignment;
+- AI-led bounded engineering через POS-004 внутри existing Assignment/access ceilings;
+- explicit customer acceptance/data/access/evidence/escalation/failure/continuity boundaries;
+- customer/product/Company/control-register source-of-truth separation;
+- lightweight M5 measurement inputs.
 
-Выбор основан на реальном повторяющемся customer-feedback/correction/validation evidence, Owner-bottleneck relevance, bounded authority feasibility, data/tool readiness, reversibility, reconstructability и practical fallback.
+Ключевые инварианты:
 
-Этот выбор не является:
+`technical PASS ≠ customer-facing approval ≠ customer acceptance`;
 
-- новым budget или portfolio reallocation;
-- customer commitment;
-- изменением `PORT-002` disposition;
-- утверждением production/business/legal readiness;
-- автоматическим OS dependency;
-- доказательством M5 closure.
+`Candidate Ready ≠ permission to deploy/send/promise`;
+
+`customer silence ≠ acceptance` без отдельного authoritative rule;
+
+`technical task closed ≠ Company/customer obligation satisfied`.
 
 ## 4. Status milestones
 
@@ -71,81 +79,64 @@ Approved publication:
 
 ## 5. Phase 5 — First governed Company operating contour
 
-Milestone:
-
-`M5 — First real governed Company operating contour proven`.
-
-Purpose: connect the approved organization/control model to a real recurring Company workflow through the smallest high-value reversible contour.
-
 | ID | Работа | Статус |
 |---|---|---|
 | `AC-501` | First governed workflow candidate selection | `Complete / PASS` |
-| `AC-502` | Workflow, accountable Position, authority/data/evidence contract | `Current` |
-| `AC-503` | Arvectum OS reliance/admission mapping where applicable | `Planned` |
+| `AC-502` | Workflow, accountable Position, authority/data/evidence contract | `Complete / PASS` |
+| `AC-503` | Arvectum OS reliance/admission mapping where applicable | `Current` |
 | `AC-504` | Bounded workflow implementation | `Planned` |
 | `AC-505` | Supervised real-operation proof | `Planned` |
 | `AC-506` | Incident, uncertain-outcome, recovery and fallback drill | `Planned` |
 | `AC-507` | Business-value/economic review and continue/change/stop decision | `Planned` |
 
-## 6. Текущее действие — AC-502
+## 6. Текущее действие — AC-503
 
-### AC-502 — Workflow, accountable Position, authority/data/evidence contract
+### AC-503 — Arvectum OS reliance/admission mapping where applicable
 
 Статус: `Current`.
 
-AC-502 должен формализовать `WF-M5-001` до implementation и real-operation proof.
+AC-503 должен определить **фактическую**, а не архитектурно желаемую, необходимость Arvectum OS для `WF-M5-001` до bounded implementation.
 
-Минимальный scope AC-502:
+Минимальный scope:
 
-- exact workflow purpose, start/end boundary и state transitions;
-- accountable Position и participating Positions без fake headcount;
-- permitted/excluded action classes и applicable `AM-*` ceilings;
-- explicit customer scope/commitment/acceptance gates;
-- Company/Product source-of-truth separation;
-- data classes, tool/access needs и least-privilege requirements;
-- evidence contract: какие source facts, classifications, implementation/test results, delivery candidate и customer validation outcome нужны для reconstructability;
-- stale/unknown/ambiguous-input behavior;
-- escalation/fail-closed conditions при scope change, non-standard commitment, material risk, missing rights/access/evidence или uncertain external effect;
-- continuity/manual fallback expectations;
-- lightweight M5 measurements, включая Owner interventions, rework cause, cycle/blocking evidence и outcome quality там, где это реально измеримо.
+1. re-check current canonical `arvectum/arvectum-os` state: Constitution, Accepted RFC/ADR/policies/Product Contracts/capability lifecycle и current roadmap/code evidence, где это применимо;
+2. определить, какие части approved AC-502 workflow являются Company-owned organizational semantics и не должны переноситься в OS;
+3. определить, есть ли у workflow реальная runtime/record/authority/provenance/document/knowledge/security dependency на OS;
+4. проверить existing PORT-002 ↔ OS correspondence/admission evidence без вывода lifecycle state по импликации;
+5. проверить Product Contract/capability admission requirements, если реальная dependency существует;
+6. проверить sovereignty, portability, fallback and replacement path;
+7. определить минимальный reversible integration/admission path только если он реально создаёт value или необходим для governed execution;
+8. явно зафиксировать один из результатов:
+   - `no additional OS reliance required for first M5 proof`;
+   - `bounded existing OS reliance is sufficient`;
+   - `new/changed OS contract or capability admission is required`, с отдельным OS governance path.
 
-AC-502 не должен преждевременно:
+AC-503 не должен:
 
-- строить новый runtime/software layer;
-- создавать customer promise;
-- менять Product roadmap;
-- выдавать credentials;
-- активировать `AM-3`/`AM-4`;
-- считать Arvectum OS обязательным.
-
-Exact OS reliance/admission mapping остаётся отдельным `AC-503` после определения workflow contract.
+- внедрять Arvectum OS ради dogfooding;
+- переносить Company-specific Position/customer/workflow semantics в OS;
+- считать техническое соответствие Product Contract admission;
+- создавать hidden cross-repository commitment;
+- менять OS Constitution/RFC/ADR/Product Contract вне OS governance;
+- преждевременно реализовывать AC-504.
 
 ## 7. M5 exit direction
 
-M5 может быть закрыт только после actual supervised real-operation proof, где:
+M5 остаётся открытым. Он может быть закрыт только после AC-504…AC-507 и actual supervised real-operation evidence, включая:
 
-- workflow реально повторяется или имеет достаточную recurring basis;
-- accountable Position/authority/Assignment/access semantics действуют, а не только описаны;
-- consequential effects остаются внутри approved authority;
-- material actions/evidence reconstructable;
-- failure/uncertainty имеет safe fallback/recovery path;
-- customer/business/Owner-load/quality/cost/risk evidence достаточно для continue/change/stop decision;
-- broader Product/OS/business readiness не выводится по импликации.
+- real governed workflow execution;
+- valid Position/Assignment/authority/access behavior;
+- reconstructable consequential evidence;
+- actual uncertainty/failure/recovery path;
+- customer/business outcome evidence;
+- measured Owner intervention/reconstruction burden;
+- technical/AI quality, cost and reliability evidence;
+- continue/change/stop economic decision.
 
-## 8. Carry-forward from M4/AC-501
+AC-502 approval — design/control readiness для implementation, а не empirical proof.
 
-M5/M6 должны получать empirical evidence по gaps, которые M4 и AC-501 сознательно не закрыли: live control-record completeness, measured Owner-load reduction, AI execution quality/cost/reliability, actual continuity/replacement, current source-backed finance evidence и direct business linkage.
+## 8. Authority and boundary rule
 
-Для `WF-M5-001` отдельно должны быть проверены:
+Roadmap не создаёт Organizational Authority, budget, legal/corporate authority, customer/vendor commitment, Product Contract, access grant, production approval или OS lifecycle transition.
 
-- может ли first-pass classification реально уменьшить Owner interruption без ошибочного scope/commitment решения;
-- какой объём correction/verification может выполнять `POS-004` в bounded envelope;
-- где customer validation/acceptance неизбежно требует human/customer authority;
-- не становится ли workflow новым бюрократическим overhead относительно текущего быстрого feedback loop;
-- создаёт ли evidence capture measurable reduction в reconstruction/rework cost.
-
-## 9. Authority boundary
-
-Roadmap координирует работу, но не создаёт Organizational Authority, budget, legal/corporate authority, customer/vendor commitment, Product Contract, access grant или production approval.
-
-Material capital, spend, external commitment, portfolio investment, risk acceptance, legal/IP/data и Company↔Product↔Arvectum OS decisions продолжают проходить applicable evidence and authority path.
+Company workflow semantics остаются Company-owned; product implementation truth — product-owned; Arvectum OS universal platform contracts/lifecycle — OS-owned. Любая новая cross-repository dependency требует явного evidence/authority/governance path.
