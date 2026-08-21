@@ -24,7 +24,9 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-501 — выбор первого governed workflow: `docs/operations/FIRST-GOVERNED-WORKFLOW-CANDIDATE-SELECTION-v1.0.0.md`
 - AC-502 — workflow authority/data/evidence contract: `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md`
 - AC-503 — Arvectum OS reliance/admission mapping: `docs/operations/FIRST-GOVERNED-WORKFLOW-ARVECTUM-OS-RELIANCE-ADMISSION-MAPPING-v1.0.0.md`
-- Первый public-safe Mission Control evidence snapshot: `docs/operations/OWNER-MISSION-CONTROL-REFERENCE-SNAPSHOT-2026-08-21.md`
+- AC-504 — bounded implementation evidence: `docs/operations/AC-504-BOUNDED-WORKFLOW-IMPLEMENTATION-EVIDENCE.md`
+- WF-M5-001 operator runbook: `docs/operations/WF-M5-001-BOUNDED-IMPLEMENTATION-RUNBOOK.md`
+- WF-M5-001 manual fallback template: `docs/operations/WF-M5-001-CASE-TEMPLATE.json`
 - Cross-reviews: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
 
@@ -41,44 +43,74 @@ Arvectum Company — конкретная организация ООО «Арв
 - `M4` — Owner control and reference-implementation observability: `Complete / PASS`;
 - `M5` — first real governed Company operating contour: `Current`.
 
-`AC-501`, `AC-502` и `AC-503` закрыты как `Complete / PASS`.
+`AC-501`…`AC-504` закрыты как `Complete / PASS`.
 
 Утверждён первый M5 workflow:
 
 **`WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`**, первый real-operation contour — **`PORT-002 — Discount Parser`**.
 
-Для workflow утверждён operating contract:
+Для workflow действуют:
 
-- `POS-002 — Commercial & Customer Lead` — один end-to-end accountable Position;
-- `POS-004 — Engineering & Release Lead` — accountable Position технического сегмента `W4 → W7`;
-- states `W0…W11`;
-- classifications `CL-1…CL-7`;
-- initial human-attributable `W3 — Classified` через current POS-002 Assignment;
-- AI-led bounded engineering через POS-004 в existing `AM-0/1/2` и access ceilings;
-- `AM-3`/`AM-4` не активированы;
-- customer/data/access/evidence/failure/continuity boundaries зафиксированы.
+- `POS-002 — Commercial & Customer Lead` — end-to-end accountable Position;
+- `POS-004 — Engineering & Release Lead` — accountable Position технического сегмента;
+- states `W0…W11` и classifications `CL-1…CL-7`;
+- initial human-attributable POS-002 classification/customer gates;
+- AI-led bounded POS-004 engineering только внутри existing `AM-0/1/2` и access ceilings;
+- `AM-3/AM-4` не активированы;
+- `technical PASS ≠ customer-facing approval ≠ customer acceptance`;
+- `Candidate Ready ≠ permission to deploy/send/promise`;
+- customer silence не является acceptance.
 
-Ключевые правила:
-
-`technical PASS ≠ customer-facing approval ≠ customer acceptance`;
-
-`Candidate Ready ≠ permission to deploy/send/promise`;
-
-`customer silence ≠ acceptance` без более сильного authoritative rule;
-
-`technical task closed ≠ Company/customer obligation satisfied`.
-
-AC-503 дополнительно установил:
+AC-503 установил:
 
 **`NO-ADDITIONAL-OS-RELIANCE — no additional Arvectum OS reliance required for the first M5 proof of WF-M5-001`.**
 
-Это означает, что первый proof может быть реализован на текущих Company/product/customer-owned sources и tools без обязательного OS Execution Context/shared history/CAP-004 и без нового OS Product Contract, пока implementation не пересекает actual governed-OS reliance trigger.
+Это bounded решение для первого M5 proof, а не отказ Company от Arvectum OS.
 
-Это не отказ от Arvectum OS. Это bounded decision только для первого M5 proof.
+## Что реализовано в AC-504
 
-Текущее каноническое действие:
+Добавлен минимальный OS-neutral helper:
 
-**`AC-504 — Bounded workflow implementation` — сделать минимальную обратимую OS-neutral реализацию первого реального workflow case/evidence contour.**
+`tools/wf_m5_001_case.py`.
+
+Он ведёт локальный reference-oriented case/evidence record и применяет bounded state/authority gates. Реальные case files по умолчанию находятся в `.local/wf-m5-001/` и исключены из git.
+
+Helper:
+
+- pin-ит exact AC-502/AC-503 governance versions и product baseline;
+- сохраняет `W*` transition history и attributable `CL-*` classification;
+- допускает Company/customer gates только через POS-002 attribution;
+- допускает technical W5–W7 gates через POS-004;
+- не принимает AM-3/AM-4;
+- не пропускает non-CL-1 в обычный correction path;
+- требует test + candidate provenance для Candidate Ready;
+- не позволяет закрыть case без explicit customer validation ref;
+- умеет явно фиксировать blocked/unknown/stale/uncertain;
+- не отправляет customer messages, не делает deploy, payment, signing, commitment или acceptance;
+- имеет manual fallback через JSON template.
+
+Scoped tests: **`7/7 PASS`** local-equivalent unittest run. Remote GitHub Actions run не заявляется как evidence AC-504.
+
+Secret-pattern detection в helper — только дополнительный guardrail, не DLP/compliance proof. Raw customer `DC-2` и любые `DC-3` secrets не должны попадать в public Company repository или ordinary model/helper context.
+
+## Текущее каноническое действие
+
+**`AC-505 — Supervised real-operation proof`.**
+
+Нужен не synthetic/demo run, а один актуальный реальный customer feedback case из `PORT-002 — Discount Parser`.
+
+AC-505 должен связать:
+
+```text
+real protected customer feedback
+→ POS-002 attributable classification/admission
+→ bounded POS-004 product work + verification evidence, если CL-1
+→ Candidate Ready
+→ authorized human customer handoff, если применимо
+→ explicit customer validation / rework / change / block evidence
+```
+
+Технический PASS сам по себе не является AC-505 PASS. При ambiguous scope/contract/customer rights, missing evidence/access, security/material risk или новой consequential authority работа должна fail closed/escalate, а не расширять полномочия ради milestone.
 
 M5:
 
@@ -86,41 +118,11 @@ M5:
 AC-501 first governed workflow candidate selection       Complete / PASS
 → AC-502 workflow / Position / authority / data contract Complete / PASS
 → AC-503 Arvectum OS reliance/admission mapping          Complete / PASS
-→ AC-504 bounded workflow implementation                 Current
-→ AC-505 supervised real-operation proof                 Planned
+→ AC-504 bounded workflow implementation                 Complete / PASS
+→ AC-505 supervised real-operation proof                 Current
 → AC-506 incident/recovery/fallback drill                Planned
 → AC-507 business-value/economic continue-change-stop    Planned
 ```
-
-## Что установил AC-503
-
-AC-503 проверил current canonical Arvectum OS state и не нашёл фактической необходимости делать OS обязательной dependency первого WF-M5-001 proof.
-
-Existing `P6.06` в `arvectum/arvectum-os` остаётся узким Provisional Product Contract для controlled Telegram publication/reconstruction и **не расширяется** на customer-feedback/correction workflow. Его CAP-004 reliance не переносится на WF-M5-001 по импликации.
-
-Company workflow states, classification, Position accountability, customer acceptance semantics и M5 measurements остаются Company-owned. Product implementation/status остаются в `arvectum/discount-parser`. Raw customer feedback/validation остаётся в соответствующем authorized customer/workstream contour.
-
-Если AC-504 реально потребует OS canonical state, OS Governed Execution, CAP-004, OS-held authorization, shared provenance/history или admitted Productive Workspace composition, Company должна остановиться на этой границе и заново пройти applicable Arvectum OS Product Contract/capability/RFC/ADR governance path до consequential reliance.
-
-## Что делает AC-504
-
-AC-504 реализует smallest sufficient mechanics для одного реального WF-M5-001 case.
-
-Нужно получить lightweight, reconstructable implementation, которая:
-
-- знает exact workflow/version;
-- ведёт safe case identifier и material `W*` transitions;
-- хранит attributable `CL-*` classification;
-- связывает protected customer feedback refs с product issue/PR/commit/test/build/release-candidate refs;
-- различает Candidate Ready, customer-facing handoff и customer acceptance;
-- умеет явно быть `blocked/unknown/stale/uncertain`;
-- не требует raw customer DC-2 или reusable DC-3 secrets в public repo;
-- допускает manual fallback и runtime replacement;
-- достаточно проста для следующего supervised AC-505 proof.
-
-AC-504 не должен строить generic workflow engine, event bus, Company-wide orchestration platform, CAP-004 substitute или локальный «mini Arvectum OS».
-
-Technical implementation PASS не является AC-505 empirical proof и не закрывает M5.
 
 ## Business-first portfolio order
 
@@ -136,13 +138,13 @@ Company-specific Positions, Assignments, authority, portfolio decisions, operati
 
 Product implementation/status остаются в product repositories. Domain-neutral platform architecture, Product Contracts, RFC/ADR и Platform Capability lifecycle принадлежат `arvectum/arvectum-os`.
 
-Approved AC-503 explicitly says that **additional OS reliance is not required for the first proof**, but future actual reliance must still pass the applicable OS governance path.
+AC-504 не создаёт новой OS dependency. Если реальный AC-505 case потребует OS canonical state, Governed Execution, CAP-004 или иной admitted platform reliance, applicable AC-503/OS governance boundary должен быть открыт заново до consequential reliance.
 
 ## Граница публичного репозитория
 
 Этот репозиторий публичный. **Запрещено** размещать здесь secrets, reusable credentials, private keys, signatures, избыточные персональные данные, банковские/платёжные payloads, transaction exports, confidential exact cash balances, sensitive tax/accounting documents, непубличные customer/vendor/contract materials, privileged payment/fraud/incident/security details и chain-of-thought.
 
-Для `WF-M5-001` здесь должны храниться только public-safe governance/evidence references и sanitized operating meaning. Raw customer evidence остаётся в соответствующем authorized contour.
+Для `WF-M5-001` здесь хранятся implementation/governance artifacts и public-safe evidence references. Raw customer evidence остаётся в соответствующем authorized contour.
 
 ## Удалённые репозитории
 
