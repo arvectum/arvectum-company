@@ -1,8 +1,8 @@
 # AC-505 — Supervised Real-Operation Admission Evidence
 
 Статус: `In Progress`
-Результат текущего admission check: `WAIT — ELIGIBLE EXTERNAL CUSTOMER EVIDENCE REQUIRED`
-Версия: `0.1.0`
+Результат текущего admission check: `REAL CASE CANDIDATE FOUND — POS-002 CLASSIFICATION GATE`
+Версия: `0.2.0`
 Дата: `2026-08-21`
 Roadmap item: `AC-505 — Supervised real-operation proof`
 Workflow: `WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`
@@ -10,19 +10,17 @@ Workflow: `WF-M5-001 — Customer Feedback → Classified Correction → Verifie
 
 ## 1. Purpose
 
-Этот artifact фиксирует фактический старт AC-505 и fail-closed admission check перед первым real supervised case.
+Этот artifact фиксирует фактический старт AC-505 и admission check перед первым real supervised case.
 
 Он не является доказательством завершения AC-505, customer acceptance, production readiness или M5 closure.
 
-Главное правило этого шага:
+Главное правило:
 
-**pre-governance historical product work нельзя задним числом выдать за supervised execution AC-505.**
+**pre-AC-504 product work нельзя задним числом выдать за supervised execution, но реально существующий unresolved feedback item можно взять в работу prospectively после появления AC-504 implementation, если chronology и unknowns сохранены честно.**
 
 ## 2. Governing baseline re-check
 
-Перед admission check повторно проверены текущие canonical/product refs.
-
-Company main на момент старта AC-505 содержит AC-504 `Complete / PASS` и текущий roadmap `0.40.0`, где AC-505 является `Current`.
+Company main содержит AC-504 `Complete / PASS` и roadmap `0.40.0`, где AC-505 является `Current`.
 
 AC-504 implementation boundary остаётся:
 
@@ -52,98 +50,119 @@ Relevant historical customer-derived product work:
 - PR body фиксирует intended interaction: customer supplies source URL, inspects automatic proposal/preview and confirms it; low-confidence schema is not silently guessed;
 - PR #75 subsequently synchronized package/installer version to `0.1.11` and merged as current product main.
 
-PR #74/#75 являются product implementation/provenance evidence. Они **не являются сами по себе customer acceptance evidence**.
+PR #74/#75 являются product implementation/provenance evidence. Они **не являются сами по себе customer acceptance evidence** и не будут ретроспективно маркироваться как AC-505 W4→W7 execution.
 
-## 4. Real customer evidence available before AC-505
+## 4. Real customer evidence candidate
 
-Protected project-chat evidence contains a real customer report from `2026-08-19` that Discount Parser opened but collected information incorrectly on a real source and that per-site mapping behavior needed correction. The same workstream then constrained customer participation to verification/confirmation of an automatic proposal rather than technical selector work.
+Connected Gmail re-check обнаружил реальную Kwork notification от customer workstream `An1480`:
 
-Raw customer message is intentionally not copied into this public repository. Public-safe reference:
+- timestamp: `2026-08-20T13:44:29Z`;
+- protected source class: customer/Kwork evidence;
+- sanitized meaning: customer reports that parsing does not work with the configured settings;
+- public-safe protected reference: `protected-gmail:kwork:2026-08-20:discount-parser-settings-feedback`.
 
-`protected-project-chat:discount-parser:2026-08-19:customer-feedback-source-mapping`
+Raw email/message body and unnecessary customer identifiers are not copied into the public repository.
 
-The public example source associated with that feedback was:
+This item is real, non-synthetic and customer-derived.
 
-`https://promokood.ru/o/vseinstrumenti`
+## 5. Chronology rule
 
-This evidence is historically useful for scope/reconstruction, but the implementation response to it occurred before AC-504 was established as the Company bounded workflow runtime/evidence mechanism.
+The feedback event predates AC-504 implementation. That does **not** authorize a retrospective claim that earlier engineering work was governed by AC-504.
 
-Therefore the historical sequence cannot be relabelled as though W0→W7 had been supervised under AC-504 at the time it happened.
+However, AC-505 roadmap requires an `актуальный реальный feedback item`, not necessarily a feedback item received only after AC-504 publication.
 
-## 5. Delivery/validation evidence status
+Therefore an unresolved/uncertain historical real feedback item may be opened **now** as a prospective supervised case if all of the following remain explicit:
 
-Protected project-chat evidence from `2026-08-20` records that installer `DiscountParser-Setup-0.1.11.exe` had been sent, but there was **no confirmed evidence that the customer had downloaded, installed, run or validated it** at that point.
+1. original `received_at` remains the historical customer timestamp;
+2. case creation/supervision starts only after AC-504 exists;
+3. earlier PR/commit/build evidence remains historical context, not fabricated W4→W7 transitions;
+4. current product baseline is pinned separately;
+5. current reproduction, affected version and resolution state are treated as unknown until evidenced;
+6. POS-002 classification is performed now and attributable to the current human Principal.
 
-Public-safe handoff reference:
+This preserves temporal integrity while avoiding the opposite error of discarding a still-relevant real customer problem solely because governance was implemented later.
 
-`protected-project-chat:discount-parser:2026-08-20:installer-0.1.11-handoff`
+## 6. Current evidence gaps
 
-A subsequent retrieval for post-handoff customer evidence found no later explicit customer message confirming download/install/test/acceptance, rejecting the candidate, or supplying a new rework result.
+For the Gmail feedback item, the following are not yet established from authoritative current evidence:
 
-Consequently:
+- exact application/installer version used when the customer observed the problem;
+- exact source/configuration/settings state that produced the failure;
+- whether the same failure reproduces on current product main / synchronized version `0.1.11`;
+- whether the customer-side environment changed after the report;
+- whether a later Kwork reply resolved/superseded the complaint outside the available connected evidence;
+- whether current accepted-scope basis is sufficient to classify the observed symptom as an in-scope defect rather than evidence-insufficient/configuration/product-design issue.
 
-- handoff/reporting evidence exists;
-- explicit customer validation evidence does not currently exist;
-- silence/non-download uncertainty cannot be converted into acceptance;
-- AC-505 cannot be closed honestly at this time.
+Gmail search found no newer Kwork notification from the same customer in the currently available mailbox window that supplies explicit post-handoff acceptance/rework evidence.
 
-## 6. Admission decision
+## 7. Classification recommendation
 
-The current historical feedback/correction chain is admissible as **context and historical product evidence**, but not sufficient by itself as the first supervised AC-505 proof.
+Current **recommendation only**:
 
-No synthetic/demo workflow case will be created to fill the gap.
+`CL-3 — Evidence insufficient / not reproduced`.
 
-No retrospective helper transitions will be manufactured to make pre-AC-504 work look supervised.
+Reason:
 
-The first AC-505 supervised case must begin from an eligible real external event captured after the governed implementation is available, for example:
+- the customer symptom is real;
+- the message is too terse to establish current reproducibility or affected build;
+- current main exists and contains related source-mapping work, but that does not prove the present symptom is fixed or still present;
+- forcing `CL-1` would require assuming accepted scope and defect causality that current evidence does not establish.
 
-1. a new real customer feedback item concerning Discount Parser behavior; or
-2. an explicit customer validation/rework result for the already-delivered `0.1.11` candidate that can be attributed to the real customer source.
+This recommendation is `AM-0` preparation. It is **not** the required POS-002 human `AM-2` classification decision.
 
-## 7. Exact next execution path once evidence arrives
+## 8. Prepared case identity
 
-For an eligible real event the operator must use `WF-M5-001 / 1.0.0` and the AC-504 helper/runbook, keeping the real case record outside git.
+Reserved public-safe case identifier for the live supervised contour:
 
-Required live sequence:
+`WF-M5-001-20260821-AC505001`.
 
-`real protected customer evidence`
-→ `POS-002 intake/data-boundary assessment`
-→ `POS-002 AM-2 classification`
-→ `CL-1 only: bounded POS-002 technical admission`
-→ `POS-004 bounded implementation/verification`
-→ `W7 Candidate Ready`
-→ `authorized human customer handoff`
-→ `explicit customer validation / rework / block`
-→ `measurement and AC-505 evidence publication`.
+Expected product baseline pin:
 
-If the event is CL-4/CL-5/CL-6, ambiguous, unsupported by accepted scope, or needs unavailable access/authority, the workflow must route/escalate/fail closed rather than forcing it into CL-1.
+`a8c1b29702a8ce40bd30b5d972ac2541367900e1`.
 
-## 8. Current AC-505 state
+Expected source ref:
 
-`AC-505 — In Progress / WAITING FOR ELIGIBLE EXTERNAL CUSTOMER EVIDENCE`.
+`protected-gmail:kwork:2026-08-20:discount-parser-settings-feedback`.
 
-This wait state is a governed outcome, not a failure of the implementation.
+No W3 classification is recorded until the current human POS-002 Principal explicitly confirms the classification.
 
-The current blocker is external evidence availability, not missing Company authority, missing OS capability, or a known technical defect in the AC-504 helper.
+## 9. Next live gate
 
-## 9. Explicit non-effects
+The immediate governance gate is:
+
+**POS-002 human classification of `WF-M5-001-20260821-AC505001`.**
+
+Recommended decision:
+
+`CL-3 — Evidence insufficient / not reproduced`.
+
+If confirmed, the supervised case should record the classification and then exit the ordinary CL-1 technical path into an explicit blocked/unknown follow-up state until authoritative reproduction/customer evidence exists.
+
+If POS-002 instead classifies `CL-1`, an accepted-scope basis reference and bounded technical admission are required before POS-004 work may begin.
+
+## 10. Delivery/validation evidence status
+
+Protected prior workstream evidence records that installer `DiscountParser-Setup-0.1.11.exe` was sent, but available connected evidence still does not establish customer download/install/test/acceptance.
+
+Silence/non-download uncertainty remains pending evidence and cannot be converted into acceptance.
+
+## 11. Explicit non-effects
 
 This artifact does not:
 
 - claim customer acceptance;
 - claim the customer downloaded or installed 0.1.11;
-- claim that PR #74/#75 were executed under AC-504 governance;
-- create or widen customer scope, SLA, price, obligation or legal commitment;
+- claim PR #74/#75 were executed under AC-504 governance;
+- classify the case on behalf of POS-002;
+- create/widen customer scope, SLA, price, obligation or legal commitment;
 - create new Assignment, access or credential rights;
 - activate AM-3/AM-4;
 - authorize automatic customer messaging/deployment;
 - create Arvectum OS reliance or Product Contract change;
 - close AC-505 or M5.
 
-## 10. Next canonical action
+## 12. Current AC-505 state
 
-The canonical roadmap action remains:
+`AC-505 — In Progress / REAL CASE CANDIDATE FOUND / POS-002 CLASSIFICATION REQUIRED`.
 
-`AC-505 — Supervised real-operation proof`.
-
-Execution resumes immediately when a qualifying real customer event is available. Until then the correct behavior is to preserve the wait state rather than manufacture empirical evidence.
+The canonical roadmap action remains `AC-505 — Supervised real-operation proof`.
