@@ -1,105 +1,90 @@
 # Arvectum Company Portfolio
 
 Status: `Active`
-Version: `0.2.0`
+Version: `0.3.0`
 Created: `2026-08-20`
 Updated: `2026-08-21`
 Owner: `ООО «Арвектум»`
 Repository: `arvectum/arvectum-company`
-Current governance baseline: `AC-301 — Approved 1.0.0`
+Current governance baseline: `AC-302 — Approved 1.0.0`
 
 ## 1. Publication model
 
-This `0.2.0` publication preserves the complete initial portfolio map `0.1.0` by immutable git blob reference and overlays the approved AC-301 identity/boundary/organizational-ownership reconciliation as the current Company-level baseline.
+This `0.3.0` publication preserves the complete portfolio baseline `0.2.0` by immutable git blob reference and overlays the approved AC-302 accountable-Position mapping as the current Company-level accountability baseline.
 
 Previous publication:
 
-- version: `0.1.0`;
+- version: `0.2.0`;
 - path: `docs/portfolio/PORTFOLIO.md`;
-- immutable git blob SHA: `8c5ed000ef6c89d25360ccb22f07720d7ec2c17c`.
+- immutable git blob SHA: `43a53565daef8c319d2d6b5ffe0b73fcb1d4a56f`.
 
-Approved reconciliation:
+Approved AC-302 baseline:
 
-- `docs/portfolio/AC-301-PORTFOLIO-IDENTITY-BOUNDARY-OWNERSHIP-RECONCILIATION-v1.0.0.md` — `Approved 1.0.0`;
-- exact reviewed proposal: `docs/portfolio/AC-301-PORTFOLIO-IDENTITY-BOUNDARY-OWNERSHIP-RECONCILIATION.md` — `Proposed 0.9.0`, blob `146b5868a21c09cf20b633e309e587b7a631ad32`;
-- cross-review: `docs/reviews/AC-301-PORTFOLIO-IDENTITY-BOUNDARY-OWNERSHIP-CROSS-REVIEW.md` — `10 of maximum 10`, PASS;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-301-APPROVAL.md`.
+- `docs/portfolio/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-MAPPING-v1.0.0.md` — `Approved 1.0.0`;
+- exact reviewed proposal: `docs/portfolio/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-MAPPING.md` — `Proposed 0.9.0`, blob `29bec89402118ddfc061501b8b25f5c0000d65a4`;
+- cross-review: `docs/reviews/AC-302-PORTFOLIO-ACCOUNTABLE-POSITION-CROSS-REVIEW.md` — `10 of maximum 10`, PASS;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-302-APPROVAL.md`.
 
-Where the old `0.1.0` map conflicts with the approved AC-301 baseline on Company-level identity, node type, repository locator, ownership interpretation or disposition, AC-301 prevails. Product repositories remain canonical for product-specific implementation/status/roadmaps; Arvectum OS remains canonical for OS Product Contracts and platform semantics.
+The `0.2.0` AC-301 identity/boundary/disposition baseline remains fully in force except where this publication adds the accountable-Position relationship.
 
 ## 2. Current governed portfolio map
 
-| ID | Primary Company-level name | Current node type | Canonical implementation repository | Organizational owner | Disposition |
+| ID | Primary Company-level name | Node type / state | Canonical repository | Disposition | Primary accountable Position |
 |---|---|---|---|---|---|
-| `PORT-001` | `Arvectum Tender Agent` | standalone product | `arvectum/tender-agent` | ООО «Арвектум» as portfolio sponsor/product organizational owner; accountable Position pending AC-302 | `continue` |
-| `PORT-002` | `Discount Parser` | productized client solution / product with client delivery contour | `arvectum/discount-parser` | ООО «Арвектум» as portfolio sponsor/product organizational owner; accountable Position pending AC-302 | `continue` |
-| `PORT-003` | `Arvectum Proxy Launcher` | standalone product | `arvectum/proxy-launcher` | ООО «Арвектум» as portfolio sponsor/product organizational owner; accountable Position pending AC-302 | `continue` |
-| `PORT-004` | `Creative Test Agent` | standalone product / controlled-pilot solution | `arvectum/creative-test-agent` | ООО «Арвектум» as portfolio sponsor/product organizational owner; accountable Position pending AC-302 | `continue` |
-| `PORT-005` | `Tender Small-Volume Calculator` | product experiment / local procurement MVP | `arvectum/tender-app` | ООО «Арвектум» as sponsor of the existing experiment asset; no new Assignment created by AC-301 | `contain` |
-| `PORT-006` | `Doors Parser` | client-delivery solution / completed product experiment | `arvectum/doors_parser` | ООО «Арвектум» as organizational sponsor/portfolio-node holder; legal/IP boundaries remain separately evidenced | `contain` |
-| `PORT-007` | `Data Platform` | internal initiative at definition stage | `arvectum/data-platform` | ООО «Арвектум» as initiative sponsor; product/Position authority not yet inferred | `clarify` |
+| `PORT-001` | `Arvectum Tender Agent` | standalone product | `arvectum/tender-agent` | `continue` | `POS-003 — Portfolio & Product Lead` |
+| `PORT-002` | `Discount Parser` | productized client solution / product | `arvectum/discount-parser` | `continue` | `POS-003 — Portfolio & Product Lead` |
+| `PORT-003` | `Arvectum Proxy Launcher` | standalone product | `arvectum/proxy-launcher` | `continue` | `POS-003 — Portfolio & Product Lead` |
+| `PORT-004` | `Creative Test Agent` | standalone product / controlled-pilot solution | `arvectum/creative-test-agent` | `continue` | `POS-003 — Portfolio & Product Lead` |
+| `PORT-005` | `Tender Small-Volume Calculator` | contained product experiment | `arvectum/tender-app` | `contain` | `POS-003 — Portfolio & Product Lead` |
+| `PORT-006` | `Doors Parser` | contained completed client-delivery/product experiment | `arvectum/doors_parser` | `contain` | `POS-003 — Portfolio & Product Lead` |
+| `PORT-007` | `Data Platform` | internal initiative requiring definition | `arvectum/data-platform` | `clarify` | `POS-003 — Portfolio & Product Lead` |
 
-## 3. Identity rule
+## 3. Meaning of the accountable-Position relation
 
-`PORT-*` is the stable Company-level identity of a portfolio node. Repository names, repository moves, marketing names, historical aliases and OS Product Contract identities do not create a second Company product automatically.
+`PORT-* → POS-003` means Company-level accountability for portfolio stewardship of the node: identity/status/source-reference integrity, portfolio role/disposition visibility, preparation of evidence for continue/change/stop/reuse/investment decisions, and correct escalation.
 
-A new `PORT-*` is required only when a genuinely new independent object of investment/accountability is created.
+It does **not** make POS-003 the end-to-end owner of every function of a product.
 
-## 4. Boundary rule
+Functional accountability remains:
 
-For all nodes:
+- `POS-002` — commercial/customer;
+- `POS-004` — engineering/release;
+- `POS-005` — finance/economics/obligations;
+- `POS-006` — security/data/dependency/risk/continuity;
+- `POS-001` — Company operating integration and escalation.
 
-- Company owns portfolio sponsorship, strategic/investment direction and Company-level governance within approved authority;
-- the product repository owns product-specific domain semantics, implementation, product roadmap and product operational/release evidence;
-- Arvectum OS owns only its domain-neutral platform semantics, Product Contracts, capability lifecycle and governed platform behavior;
-- technical access, GitHub ownership/admin status, AI execution or Product Contract possession does not create Organizational Authority;
-- Company-level organizational ownership does not prove legal/IP title, customer-data rights or contractual rights.
+Product repositories remain canonical for product-specific implementation, status and roadmap. Arvectum OS remains canonical for OS Product Contracts/platform semantics. Customer authority remains customer-owned. Legal/IP rights remain evidenced by applicable legal/contractual sources.
 
-## 5. Approved reconciliation conclusions
+## 4. Authority, Assignment, access and continuity boundaries
 
-1. `PORT-001` and `PORT-005` remain separate identities. Domain overlap does not authorize a silent merge.
-2. OS P6.02 still contains the historical locator `arutyunoveth/ai-corporation`; the current implementation repository is `arvectum/tender-agent`. The OS artifact must be reconciled through AC-305 and applicable Arvectum OS governance, preserving lineage.
-3. `Discount Parser`, `Doors Parser` and `Data Platform` do not automatically form `Universal Parser`, `Arvectum Parser`, a reusable module or an OS capability.
-4. `Creative Test Agent` remains the current product identity; `Marketing Agent` is not the current product identity without a separate product-scope decision.
-5. `Data Platform` receives no Product/OS/platform authority merely from its repository name.
+AC-302 does not alter:
 
-## 6. Disposition semantics
+- AC-202 `ROD-01…ROD-09` Reserved Owner Decisions;
+- AC-203 authority semantics;
+- POS-003 initial ceiling `AM-0/AM-1/AM-2`;
+- AC-205 Assignments/executor realization;
+- AC-206 access ceilings/provisioning rules;
+- AC-207 continuity/replacement/fallback rules.
 
-- `continue` — identity and current boundary are sufficient for bounded work; no budget/priority conclusion follows.
-- `contain` — preserve the asset and current bounded scope, but do not expand it into a strategic-growth product or module without a later decision.
-- `clarify` — resolve business hypothesis, consumers and boundary before the next material investment step.
-- `retire candidate` — candidate for later stop/archive decision; no node currently has this state under AC-301.
+The current Owner Principal may execute POS-003 through the approved AC-205 Assignment, but the accountable relation belongs to the Position and survives replacement of Principal/runtime unless an approved organizational change states otherwise.
 
-These states are not substitutes for AC-303 investment limits or AC-306 prioritization.
+## 5. Contained and clarify nodes
 
-## 7. Current Product Contract / OS reliance notes
+For `PORT-005` and `PORT-006`, POS-003 acts as portfolio custodian and owner of the continue/merge/reuse/retire question. The mapping does not authorize growth investment or scope expansion.
 
-The initial `0.1.0` OS-reliance map remains valid except as explicitly reconciled here:
+For `PORT-007`, POS-003 owns preparation of the clarification/admission question: business problem, consumers, boundary, strategic/economic hypothesis and evidence. The mapping does not admit Data Platform as a product, module or OS capability by implication.
 
-- `PORT-001` Tender Agent: P6.02 remains `Provisional 0.1.0`; its stale repository locator is a known reconciliation defect, not a second product identity.
-- `PORT-002` Discount Parser: P6.06 remains the currently evidenced Provisional OS Product Contract boundary; it does not transfer parser-domain semantics into Arvectum OS.
-- no other node receives inferred OS reliance merely from this portfolio publication.
+## 6. Downstream governance
 
-## 8. Next governance action
+The following remain unresolved by design and belong to subsequent Phase 3 work:
 
-AC-301 is `Complete / PASS`.
+- `AC-303` — investment, cost and risk boundaries; continue/change/stop criteria;
+- `AC-304` — standalone product / reference implementation / module candidate / Arvectum OS capability candidate classification;
+- `AC-305` — inter-product dependencies and Arvectum OS Product Contract reconciliation, including the stale P6.02 repository locator;
+- `AC-306` — portfolio prioritization by capital, economics and Owner attention.
 
-Next canonical portfolio action:
+## 7. Source-of-truth rule
 
-`AC-302 — Закрепление ответственной организационной позиции за каждым активным продуктом/инициативой`.
+This file is canonical for the current Company-level portfolio map and accountable-Position relationship. Its incorporated historical publications remain available by immutable blob reference.
 
-AC-302 must assign accountability using the approved M2 Position model or explicitly justify a Position-registry change; it must not infer authority from repository ownership or current executor identity.
-
-## 9. Refresh triggers
-
-Refresh this portfolio when materially affected by:
-
-- creation, merge, rename, sale, containment, stop or retirement of a node;
-- canonical repository relocation;
-- accountable Position approval/change;
-- AC-303 investment/stop criteria;
-- AC-304 module/OS-candidate classification;
-- AC-305 dependency/Product Contract reconciliation;
-- AC-306 prioritization;
-- Product Contract lifecycle change;
-- material legal/IP/contractual boundary evidence that changes the organizational interpretation recorded here.
+If a product source conflicts with this file on implementation/status, the product source wins within product scope and this portfolio must be refreshed. If Company governance changes the identity, disposition or accountability relation, the later approved Company artifact wins within Company scope.
