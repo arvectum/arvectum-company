@@ -1,90 +1,101 @@
-# Arvectum Company Canonical Sources Registry
+# Реестр канонических источников Arvectum Company
 
-Status: `Active`
-Version: `2.4.0`
-Updated: `2026-08-21`
-Owner: `ООО «Арвектум»`
-Repository: `arvectum/arvectum-company`
+Статус: `Active`
+Версия: `2.5.0`
+Обновлено: `2026-08-21`
+Владелец: `ООО «Арвектум»`
+Репозиторий: `arvectum/arvectum-company`
 
-## 1. Canonical publication model
+## 1. Модель публикации
 
-This registry publication preserves the complete source registry `2.3.0` by immutable git-blob reference and applies the AC-207 registration delta below.
+Эта редакция сохраняет полный реестр `2.4.0` по неизменяемой ссылке на git blob и добавляет только изменения, связанные с AC-208, закрытием M2 и утверждением русскоязычной терминологической политики.
 
-Incorporated prior registry:
+Предыдущая редакция:
 
-- version: `2.3.0`;
-- path: `docs/CANONICAL-SOURCES.md`;
-- immutable blob SHA: `f8b67bc1ef5cf5067f4760f7510a19e7f670e108`.
+- версия: `2.4.0`;
+- путь: `docs/CANONICAL-SOURCES.md`;
+- git blob SHA: `b58118385a4de1c08f7eb7e0a4482a4ec0e3dcf1`.
 
-All source hierarchy, Company/OS/Product authority rules, M0/M1/AC-201–AC-206 registrations, external-source boundaries and Project Source provenance from that incorporated registry remain unchanged unless explicitly superseded here.
+Все ранее зарегистрированные источники M0, M1, AC-201–AC-207, границы Company/Product/Arvectum OS и правила внешних источников сохраняются, если явно не изменены более новым утверждённым решением.
 
-Authority remains:
+## 2. Порядок приоритета источников
 
-1. applicable law and valid legal/corporate authority within their scope;
-2. approved Company governance artifacts and explicit Owner decisions for Company-specific internal matters;
-3. applicable canonical Arvectum OS governance where Company relies on OS;
-4. product-specific canonical repositories/decisions within product scope;
-5. roadmaps as planning coordination rather than independent authority;
-6. chats, model memory, generated packs and local copies as non-canonical context unless explicitly promoted.
+В своей области продолжают действовать:
 
-## 2. AC-207 canonical registration
+1. применимое право и действительные юридические/корпоративные полномочия;
+2. утверждённые документы управления Arvectum Company и явные решения собственника;
+3. канонические документы Arvectum OS там, где Company фактически использует OS;
+4. продуктовые репозитории и продуктовые решения в пределах продуктовой области;
+5. дорожная карта как средство планирования, а не самостоятельный источник полномочий;
+6. чаты, память модели, локальные копии и сгенерированные материалы как контекст, если они не были явно повышены до канонического источника.
 
-The following artifacts are added to the active Company canonical/evidence set:
+## 3. Регистрация AC-208 и закрытия M2
 
-| Source | Status | Role |
+| Источник | Статус | Роль |
 |---|---|---|
-| `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE-v1.0.0.md` | Approved `1.0.0` | Binding Company critical-function continuity, replacement, degraded/manual fallback and recovery/reconciliation baseline; incorporates the exact reviewed `0.9.0` proposal by immutable blob reference |
-| `docs/governance/decisions/DECISION-2026-08-21-AC-207-APPROVAL.md` | Approved | Explicit Owner approval record for AC-207 and publication authority for `1.0.0` |
-| `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE.md` | Historical reviewed proposal `0.9.0` | Exact reviewed proposal preserved at blob `425ab4d83098aa3dbc73925305aa5d9981512818`; incorporated in full by the Approved `1.0.0` publication |
-| `docs/reviews/AC-207-CRITICAL-FUNCTION-CONTINUITY-CROSS-REVIEW.md` | Complete / PASS | AC-207 cross-review, `9 of maximum 10`, validating continuity/degraded/fail-closed/recovery semantics without authority transfer or fabricated readiness |
-| `docs/roadmap/ROADMAP.md` | Active `0.20.0` | Canonical Company planning publication; AC-207 Complete / PASS and AC-208 Current |
+| `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md` | `Approved 1.0.0` | Действующая русскоязычная публикация AC-208; фиксирует границу переносимости и закрытие M2 |
+| `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE.md` | Проверенное предложение `0.9.0` | Точная утверждённая содержательная редакция, blob `78b9c3333a23b196f34338c9fec9e9dd2f802d22` |
+| `docs/reviews/AC-208-REFERENCE-MODEL-TRANSFERABILITY-CROSS-REVIEW.md` | `Complete / PASS` | Итоговая перекрёстная проверка AC-208, `10 of maximum 10` |
+| `docs/governance/decisions/DECISION-2026-08-21-AC-208-APPROVAL-AND-M2-CLOSURE.md` | `Approved` | Явное утверждение AC-208 собственником и закрытие M2 |
+| `docs/roadmap/ROADMAP.md` | `Active 0.21.0` | Планирование Company; M2 закрыт, AC-301 — текущее действие |
 
-## 3. Approved continuity baseline
+## 4. Утверждённая граница переносимости
 
-AC-207 establishes:
+AC-208 закрепляет пять классов:
 
-- continuity modes `CM-0 — Normal`, `CM-1 — Bounded Continuity`, `CM-2 — Degraded`, `CM-3 — Fail Closed`, `CM-4 — Recovery / Reconciliation`;
-- evidence states `CE-0` through `CE-3`, distinguishing unresolved, defined/untested, operationally evidenced and tested/reviewed fallback;
-- a strict distinction among runtime, Principal, external-provider, device and legal/corporate replacement;
-- minimum continuity-packet requirements so material workstream state is reconstructable without one Owner memory, one AI session or one device;
-- Position-specific continuity behavior for all six approved Positions;
-- replaceability of the AI-led `POS-004` runtime without making a particular model/agent/vendor the Position or automatically transferring Assignment/access/authority;
-- degraded/manual continuation for hybrid Positions when AI is unavailable and explicit stop/fail-closed behavior when Owner/legal/customer/security gates are unavailable;
-- GitHub/GitVerse/local-copy recovery semantics that preserve canonical authority and require explicit reconciliation;
-- explicit unresolved/untested continuity gaps instead of a false disaster-recovery readiness claim.
+- `TR-1` — повторно используемый метод выведения организации;
+- `TR-2` — повторно используемый управленческий шаблон, который требует параметров конкретной организации;
+- `TR-3` — конкретная организационная конфигурация ООО «Арвектум», которую нельзя копировать автоматически;
+- `TR-4` — кандидат в повторно используемый модуль, который требует отдельного подтверждения;
+- `TR-5` — доменно-нейтральная семантика, относящаяся к Arvectum OS и его собственному пути управления.
 
-## 4. Authority / continuity boundary
+Точные функции, позиции, зарезервированные решения, назначения, права доступа и схема непрерывности Arvectum Company остаются Company-specific состоянием, а не универсальным клиентским шаблоном.
 
-Continuity is not a source of Organizational Authority.
+## 5. Закрытие M2
 
-A runtime, mirror, device, service provider, technical administrator or replacement Principal does not inherit authority merely because the normal executor or dependency is unavailable.
+`M2 — Arvectum Company reference operating model and authority established` имеет статус:
 
-Approved AC-202 `ROD-01` through `ROD-09`, AC-203 delegation/approval semantics, AC-204 Position definitions, AC-205 Assignments and AC-206 access ceilings remain controlling during degraded/recovery operation.
+`Complete / PASS`.
 
-Signing, payment, legal/corporate, customer-rights, trusted-state and security gates may legitimately force `CM-3 — Fail Closed`.
+Это означает, что базовая эталонная организационная модель и система распределения полномочий сформированы и проверены в пределах M2.
 
-AC-207 creates no legal succession instrument, alternate representative, alternate provider, new credential, `AM-3`/`AM-4` authority, customer consent, RTO/RPO/SLA or tested recovery evidence by implication.
+Это не является доказательством спроса, прибыльности, промышленной готовности, готовности непрерывности, клиентского внедрения или экономической эффективности AI-позиции.
 
-## 5. Current evidence boundary
+## 6. Язык и терминологическая стабильность
 
-The approved baseline deliberately preserves multiple `CE-0` and `CE-1` states. Material unresolved or untested areas include extended Owner/legal-representation absence, replacement humans for Owner-held Positions, Company-wide credential recovery/rotation, GitHub/GitVerse restore/reconciliation, actual POS-004 runtime failover, local-device re-bootstrap, commercial operator handoff, accounting-provider replacement, signing-token replacement and customer-data restore/expiry behavior.
+Добавляются следующие канонические источники:
 
-These are future implementation/test requirements and do not invalidate the governance baseline; they do prevent stronger continuity/readiness claims.
+| Источник | Статус | Роль |
+|---|---|---|
+| `docs/governance/decisions/DECISION-2026-08-21-LANGUAGE-AND-TERMINOLOGY-POLICY.md` | `Approved` | Устанавливает русский язык для человекочитаемых Company-документов и правила защиты от смыслового дрейфа при переводе |
+| `docs/governance/TERMINOLOGY-GLOSSARY.md` | `Approved 1.0.0` | Нормативный двуязычный глоссарий системообразующих терминов |
+| `docs/reviews/TERMINOLOGY-GLOSSARY-CROSS-REVIEW.md` | `Complete / PASS` | Проверка смысловой согласованности глоссария, `10 of maximum 10` |
 
-## 6. Company / Product / Arvectum OS boundary
+Основное правило перевода:
 
-Product-specific recovery/release evidence remains product-owned. The Company repository does not become a substitute for product implementation truth during outage.
+```text
+Term ID + канонический EN + утверждённый RU + нормативное определение
+```
 
-Arvectum OS remains a domain-neutral platform dependency only where an admitted Company/product workflow actually relies on its contracts. OS unavailability does not invalidate Company governance, and product-local/manual fallback must not be mislabeled as OS-governed execution.
+Повторный свободный перевод `EN → RU → EN → RU` не должен использоваться для определения значения системообразующего понятия.
 
-Customer/data rights and purpose limitations survive recovery, migration and replacement.
+Особенно запрещено смешивать:
 
-## 7. Current Company planning state
+```text
+полномочия ≠ техническое разрешение ≠ доступ ≠ утверждение
+организационная позиция ≠ субъект ≠ назначение ≠ среда исполнения
+рекомендация ≠ решение ≠ утверждение ≠ исполнение
+непрерывность ≠ доступность ≠ резервный порядок ≠ восстановление ≠ замена
+```
 
-`AC-207 — Critical-function continuity, replacement and manual fallback baseline` is `Complete / PASS`.
+## 7. Текущее планирование
 
-Current canonical Company action:
+Текущее каноническое действие Company:
 
-`AC-208 — Reference-model transferability boundary and operating-model cross-review`.
+`AC-301 — Portfolio product/node identity and ownership reconciliation`.
 
-AC-208 must close Phase 2 by reviewing the combined AC-201–AC-207 operating model for internal coherence, business usefulness and transferability as a derivation method/reference pattern rather than treating Arvectum Company's exact organization instance as a universal customer template.
+Русская формулировка:
+
+**сверка идентичности, границ и владения продуктами и инициативами портфеля**.
+
+AC-301 начинает Phase 3 / M3 и не создаёт автоматически решения о финансировании, закрытии, объединении продуктов или переводе чего-либо в Arvectum OS.
