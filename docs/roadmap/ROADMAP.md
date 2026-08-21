@@ -1,68 +1,57 @@
 # Каноническая дорожная карта Arvectum Company
 
 Статус: `Active`
-Версия: `0.38.0`
+Версия: `0.39.0`
 Создано: `2026-08-19`
 Обновлено: `2026-08-21`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
-Текущее каноническое действие: `AC-503 — Arvectum OS reliance/admission mapping where applicable`
-Русское название текущего действия: `Проверка фактической необходимости и допустимости опоры первого workflow на Arvectum OS`
+Текущее каноническое действие: `AC-504 — Bounded workflow implementation`
+Русское название текущего действия: `Минимальная обратимая реализация первого реального governed workflow`
 
 ## 1. Модель публикации
 
-Эта редакция `0.38.0` сохраняет полное содержание дорожной карты `0.37.0` по immutable git blob и добавляет утверждение/закрытие AC-502 и переход к AC-503.
+Эта редакция `0.39.0` сохраняет полное содержание дорожной карты `0.38.0` по immutable git blob и добавляет утверждение/закрытие AC-503 и переход к AC-504.
 
 Предыдущая редакция:
 
-- версия: `0.37.0`;
+- версия: `0.38.0`;
 - путь: `docs/roadmap/ROADMAP.md`;
-- immutable git blob SHA: `95fe1f98b9f9c93cf90d8999d011eec7b37aca75`.
+- immutable git blob SHA: `44b265a3a1816352eb66bd7e7252328f58bede24`.
 
-Все ранее определённые M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, bounded AC-108 evidence loop, AC-501 workflow selection и конечный AC-901 сохраняются, если прямо не изменены более новым approved decision.
+Все ранее определённые M0–M9, Company priority hierarchy, Company/Product/Arvectum OS boundaries, bounded AC-108 evidence loop, AC-501 workflow selection, AC-502 workflow contract и конечный AC-901 сохраняются, если прямо не изменены более новым approved decision.
 
-## 2. Закрытие AC-502
+## 2. Закрытие AC-503
 
-`AC-502 — Workflow, accountable Position, authority/data/evidence contract` имеет статус:
+`AC-503 — Arvectum OS reliance/admission mapping where applicable` имеет статус:
 
 `Complete / PASS`.
 
 Approved publication:
 
-- `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md` — `Approved 1.0.0`, blob `9b06e02a6d9afa8b6b4533d3a9f71690518c3ce1`;
-- exact reviewed proposal: `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT.md` — `Proposed 0.9.0`, blob `b1df71839422e509cbfa76faec31bf788ca9842d`;
-- cross-review: `docs/reviews/AC-502-FIRST-GOVERNED-WORKFLOW-CONTRACT-CROSS-REVIEW.md` — `10 of maximum 10`, `Complete / PASS for explicit Owner approval`, blob `7c457c2b3145b0f2becb3b6e289d9496e02e2d15`;
-- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-502-APPROVAL.md`, blob `08db32414f9f19c99b281d936a5eccaa0f456ede`;
-- explicit Owner wording at the pending approval gate: `делай`.
+- `docs/operations/FIRST-GOVERNED-WORKFLOW-ARVECTUM-OS-RELIANCE-ADMISSION-MAPPING-v1.0.0.md` — `Approved 1.0.0`, blob `8984d4c094da87a2c9d201fd9cffcd617c641f8f`;
+- exact reviewed proposal: `docs/operations/FIRST-GOVERNED-WORKFLOW-ARVECTUM-OS-RELIANCE-ADMISSION-MAPPING.md` — `Proposed 0.9.0`, blob `3b7bef8f227d17990ced164aa0de16874bb2ec61`;
+- cross-review: `docs/reviews/AC-503-FIRST-GOVERNED-WORKFLOW-ARVECTUM-OS-RELIANCE-CROSS-REVIEW.md` — `10 of 10`, `Complete / PASS for explicit Owner approval`, blob `67623301fbc2a370433d94952ee3ed6c2f0ef608`;
+- Owner decision: `docs/governance/decisions/DECISION-2026-08-21-AC-503-APPROVAL.md`, blob `5197aa78a48d5d4373f6bf24e887bf58607d2d75`;
+- exact Owner wording: `AC-503 утверждаю`.
 
-## 3. Утверждённый contract WF-M5-001
+## 3. Утверждённый AC-503 result
 
-Для выбранного AC-501 workflow:
+Для первого M5 proof `WF-M5-001` в contour `PORT-002 — Discount Parser` утверждено:
 
-`WF-M5-001 — Customer Feedback → Classified Correction → Verified Candidate → Customer Validation / Acceptance`
+**`NO-ADDITIONAL-OS-RELIANCE — no additional Arvectum OS reliance required for the first M5 proof of WF-M5-001`.**
 
-в первом contour `PORT-002 — Discount Parser` утверждены:
+Следствия:
 
-- workflow states `W0…W11`;
-- classification taxonomy `CL-1…CL-7`;
-- `POS-002 — Commercial & Customer Lead` как end-to-end accountable Position;
-- `POS-004 — Engineering & Release Lead` как accountable Position технического сегмента `W4 → W7`;
-- existing `AM-0/AM-1/AM-2` only, без activation `AM-3`/`AM-4`;
-- human-attributable initial `W3 — Classified` через current POS-002 Assignment;
-- AI-led bounded engineering через POS-004 внутри existing Assignment/access ceilings;
-- explicit customer acceptance/data/access/evidence/escalation/failure/continuity boundaries;
-- customer/product/Company/control-register source-of-truth separation;
-- lightweight M5 measurement inputs.
+- AC-504 не обязан делать Arvectum OS execution/history canonical для первого proof;
+- новый/изменённый OS Product Contract не требуется до первого proof, пока implementation не пересекает actual governed-OS reliance trigger;
+- existing `P6.06` не расширяется за controlled Telegram publication/reconstruction scope;
+- CAP-004 не становится WF-M5-001 dependency по импликации;
+- никакой OS Product Contract/Capability lifecycle transition не создаётся;
+- Company/product/customer sources остаются достаточным canonical/evidence contour для первого proof;
+- implementation должен сохранять OS-neutral exact references, чтобы future admission оставался обратимым.
 
-Ключевые инварианты:
-
-`technical PASS ≠ customer-facing approval ≠ customer acceptance`;
-
-`Candidate Ready ≠ permission to deploy/send/promise`;
-
-`customer silence ≠ acceptance` без отдельного authoritative rule;
-
-`technical task closed ≠ Company/customer obligation satisfied`.
+Это bounded решение для первого M5 proof, а не общий отказ Company от Arvectum OS.
 
 ## 4. Status milestones
 
@@ -83,44 +72,62 @@ Approved publication:
 |---|---|---|
 | `AC-501` | First governed workflow candidate selection | `Complete / PASS` |
 | `AC-502` | Workflow, accountable Position, authority/data/evidence contract | `Complete / PASS` |
-| `AC-503` | Arvectum OS reliance/admission mapping where applicable | `Current` |
-| `AC-504` | Bounded workflow implementation | `Planned` |
+| `AC-503` | Arvectum OS reliance/admission mapping where applicable | `Complete / PASS` |
+| `AC-504` | Bounded workflow implementation | `Current` |
 | `AC-505` | Supervised real-operation proof | `Planned` |
 | `AC-506` | Incident, uncertain-outcome, recovery and fallback drill | `Planned` |
 | `AC-507` | Business-value/economic review and continue/change/stop decision | `Planned` |
 
-## 6. Текущее действие — AC-503
+## 6. Текущее действие — AC-504
 
-### AC-503 — Arvectum OS reliance/admission mapping where applicable
+### AC-504 — Bounded workflow implementation
 
 Статус: `Current`.
 
-AC-503 должен определить **фактическую**, а не архитектурно желаемую, необходимость Arvectum OS для `WF-M5-001` до bounded implementation.
+Цель AC-504 — превратить утверждённые AC-501/AC-502/AC-503 semantics в минимально достаточную реальную implementation-механику для одного WF-M5-001 case, не выдавая implementation readiness за empirical proof.
 
 Минимальный scope:
 
-1. re-check current canonical `arvectum/arvectum-os` state: Constitution, Accepted RFC/ADR/policies/Product Contracts/capability lifecycle и current roadmap/code evidence, где это применимо;
-2. определить, какие части approved AC-502 workflow являются Company-owned organizational semantics и не должны переноситься в OS;
-3. определить, есть ли у workflow реальная runtime/record/authority/provenance/document/knowledge/security dependency на OS;
-4. проверить existing PORT-002 ↔ OS correspondence/admission evidence без вывода lifecycle state по импликации;
-5. проверить Product Contract/capability admission requirements, если реальная dependency существует;
-6. проверить sovereignty, portability, fallback and replacement path;
-7. определить минимальный reversible integration/admission path только если он реально создаёт value или необходим для governed execution;
-8. явно зафиксировать один из результатов:
-   - `no additional OS reliance required for first M5 proof`;
-   - `bounded existing OS reliance is sufficient`;
-   - `new/changed OS contract or capability admission is required`, с отдельным OS governance path.
+1. определить exact implementation home для Company-level case/evidence mechanics и product-level technical execution без дублирования canonical truth;
+2. реализовать lightweight case/evidence representation с exact workflow/version reference и safe case identifier;
+3. поддержать material `W0…W11` state transitions и `CL-1…CL-7` classification evidence без превращения их в generic platform DSL;
+4. сохранить attributable POS-002 classification/customer gates и POS-004 bounded technical segment;
+5. связать protected customer-source refs, product issue/PR/commit/test/build/release-candidate refs и Company control refs;
+6. обеспечить fail-closed/blocked/unknown/stale/uncertain representation;
+7. не помещать raw customer DC-2 или DC-3 secrets в public Company repo;
+8. реализовать только реально нужные scripts/templates/records/tests, достаточные для supervised AC-505 proof;
+9. сохранить manual fallback и executor/runtime replaceability;
+10. зафиксировать runbook/acceptance checks для передачи в AC-505.
 
-AC-503 не должен:
+AC-504 должен быть **OS-neutral** в пределах утверждённого AC-503 result. Это значит, что implementation не должна зависеть от OS canonical state/shared history/Execution Context/CAP-004 без повторного admission check.
 
-- внедрять Arvectum OS ради dogfooding;
-- переносить Company-specific Position/customer/workflow semantics в OS;
-- считать техническое соответствие Product Contract admission;
-- создавать hidden cross-repository commitment;
-- менять OS Constitution/RFC/ADR/Product Contract вне OS governance;
-- преждевременно реализовывать AC-504.
+AC-504 не должен:
 
-## 7. M5 exit direction
+- строить generic workflow engine, event bus, Company-wide orchestration platform или локальный substitute Arvectum OS;
+- переносить Company-specific Position/customer/workflow semantics в `arvectum/arvectum-os`;
+- расширять P6.06;
+- создавать новый OS Product Contract/capability transition;
+- активировать AM-3/AM-4;
+- создавать customer promise/acceptance или autonomous consequential external effect;
+- считать unit tests или technical PASS завершением AC-505/M5.
+
+## 7. AC-504 expected evidence
+
+До перехода к AC-505 должны существовать проверяемые evidence того, что implementation:
+
+- может открыть/вести один sanitized workflow case;
+- фиксирует exact workflow/version and current state;
+- сохраняет attributable classification decision;
+- связывает bounded technical work и verification evidence;
+- различает Candidate Ready, customer-facing handoff и customer acceptance;
+- умеет явно остановиться/заблокироваться на ambiguity/missing authority/evidence/access;
+- не требует secrets/raw confidential customer data в public repo;
+- допускает manual fallback;
+- достаточно проста для реального supervised использования.
+
+AC-504 completion не является AC-505 empirical proof.
+
+## 8. M5 exit direction
 
 M5 остаётся открытым. Он может быть закрыт только после AC-504…AC-507 и actual supervised real-operation evidence, включая:
 
@@ -133,10 +140,8 @@ M5 остаётся открытым. Он может быть закрыт то
 - technical/AI quality, cost and reliability evidence;
 - continue/change/stop economic decision.
 
-AC-502 approval — design/control readiness для implementation, а не empirical proof.
-
-## 8. Authority and boundary rule
+## 9. Authority and boundary rule
 
 Roadmap не создаёт Organizational Authority, budget, legal/corporate authority, customer/vendor commitment, Product Contract, access grant, production approval или OS lifecycle transition.
 
-Company workflow semantics остаются Company-owned; product implementation truth — product-owned; Arvectum OS universal platform contracts/lifecycle — OS-owned. Любая новая cross-repository dependency требует явного evidence/authority/governance path.
+Company workflow semantics остаются Company-owned; product implementation truth — product-owned; Arvectum OS universal platform contracts/lifecycle — OS-owned. Если AC-504 обнаружит реальную OS reliance need, работа должна остановиться на соответствующей границе и пройти applicable OS governance/admission path до consequential reliance.
