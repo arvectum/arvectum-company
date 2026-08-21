@@ -1,71 +1,85 @@
 # Arvectum Company
 
-Canonical repository for the durable governance, planning, portfolio and organizational-model artifacts of ООО «Арвектум» as an owner-operated AI-native company.
+Канонический репозиторий долговременных документов управления, планирования, портфеля и организационной модели ООО «Арвектум» как компании, в которой значительная часть повторяемой работы выполняется ИИ и программными средствами, а конечный контроль сохраняется за собственником.
 
-Arvectum Company is a concrete organization. It is **not** Arvectum OS, a standalone AI agent or a universal software platform.
+Arvectum Company — это конкретная организация ООО «Арвектум». Это **не** Arvectum OS, не отдельный ИИ-агент и не универсальная программная платформа.
 
-## Start here
+## С чего начать
 
-- Company Constitution / Founding Charter: `docs/constitution/COMPANY-CONSTITUTION.md`
-- Company ↔ Arvectum OS authority boundary: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md`
-- Canonical source registry: `docs/CANONICAL-SOURCES.md`
-- Canonical Company roadmap: `docs/roadmap/ROADMAP.md`
-- Initial Company portfolio: `docs/portfolio/PORTFOLIO.md`
-- AC-201 function model: `docs/organization/MINIMAL-REAL-ORGANIZATIONAL-FUNCTION-MODEL.md`
-- AC-202 Reserved Owner Decisions: `docs/governance/RESERVED-OWNER-DECISIONS-v1.0.0.md`
-- AC-203 delegated Position authority model: `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md`
-- AC-204 Initial Position Registry: `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md`
-- AC-205 Initial Assignments: `docs/organization/INITIAL-ASSIGNMENTS-AND-EXECUTOR-CLASSIFICATION-v1.0.0.md`
-- AC-206 Company access boundary: `docs/security/COMPANY-DATA-TOOL-CREDENTIAL-ACCESS-BOUNDARY-v1.0.0.md`
-- AC-207 continuity/replacement/fallback baseline: `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE-v1.0.0.md`
-- Formal review evidence: `docs/reviews/`
-- Durable Owner/governance decisions: `docs/governance/decisions/`
+- Конституция / учредительная внутренняя хартия Company: `docs/constitution/COMPANY-CONSTITUTION.md`
+- Граница полномочий Company ↔ Arvectum OS: `docs/governance/COMPANY-OS-AUTHORITY-BOUNDARY.md`
+- Реестр канонических источников: `docs/CANONICAL-SOURCES.md`
+- Каноническая дорожная карта: `docs/roadmap/ROADMAP.md`
+- Карта портфеля: `docs/portfolio/PORTFOLIO.md`
+- Терминологический глоссарий: `docs/governance/TERMINOLOGY-GLOSSARY.md`
+- Решение о языке и терминологии: `docs/governance/decisions/DECISION-2026-08-21-LANGUAGE-AND-TERMINOLOGY-POLICY.md`
+- AC-201 — модель функций: `docs/organization/MINIMAL-REAL-ORGANIZATIONAL-FUNCTION-MODEL.md`
+- AC-202 — решения, зарезервированные за собственником: `docs/governance/RESERVED-OWNER-DECISIONS-v1.0.0.md`
+- AC-203 — модель делегирования полномочий: `docs/governance/DELEGATED-POSITION-AUTHORITY-MODEL-v1.0.0.md`
+- AC-204 — начальный реестр организационных позиций: `docs/organization/INITIAL-POSITION-REGISTRY-v1.0.0.md`
+- AC-205 — начальные назначения исполнителей: `docs/organization/INITIAL-ASSIGNMENTS-AND-EXECUTOR-CLASSIFICATION-v1.0.0.md`
+- AC-206 — границы доступа: `docs/security/COMPANY-DATA-TOOL-CREDENTIAL-ACCESS-BOUNDARY-v1.0.0.md`
+- AC-207 — непрерывность, замена и резервный порядок работы: `docs/operations/CRITICAL-FUNCTION-CONTINUITY-REPLACEMENT-FALLBACK-BASELINE-v1.0.0.md`
+- AC-208 — граница переносимости эталонной модели и закрытие M2: `docs/organization/REFERENCE-MODEL-TRANSFERABILITY-AND-M2-CLOSURE-v1.0.0.md`
+- Материалы перекрёстных проверок: `docs/reviews/`
+- Долговременные решения собственника и управления: `docs/governance/decisions/`
 
-## Current Company state
+## Язык документов
 
-`M0 — Company canonically founded` and `M1 — Business/economic reality and first market-validation plan captured` are `Complete / PASS`.
+Документы, предназначенные для чтения собственником и другими русскоязычными участниками управления, должны быть написаны на полноценном русском языке.
 
-Phase 2 now has a complete operating-model chain through continuity governance:
+Английский язык допустим в коде, API, идентификаторах, именах файлов, технических схемах и документах для ИИ/программных исполнителей. Системообразующие термины при этом не переводятся свободно каждый раз, а связываются через `docs/governance/TERMINOLOGY-GLOSSARY.md`.
+
+Принцип защиты от смыслового дрейфа:
 
 ```text
-AC-201 functions
-→ AC-202 Reserved Owner Decisions
-→ AC-203 delegated Position authority semantics
-→ AC-204 Initial Position Registry
-→ AC-205 Assignments / executor classification
-→ AC-206 access boundary
-→ AC-207 continuity / replacement / fallback
-→ AC-208 transferability / operating-model closure review
+устойчивый идентификатор термина
++ канонический английский термин
++ утверждённый русский эквивалент
++ нормативное определение
 ```
 
-`AC-207 — Critical-function continuity, replacement and manual fallback baseline` is `Complete / PASS` after `9/10` cross-review iterations and explicit Owner approval.
+## Текущее состояние Company
 
-The binding AC-207 baseline establishes five continuity modes (`CM-0` through `CM-4`) and four evidence states (`CE-0` through `CE-3`). It preserves the principle that continuity is not a bypass: runtime replacement, device recovery, mirror use or emergency operation do not transfer Organizational Authority, customer rights or legal/corporate powers.
+`M0 — Company canonically founded`, `M1 — Business/economic reality and first market-validation plan captured` и `M2 — Arvectum Company reference operating model and authority established` имеют статус `Complete / PASS`.
 
-Key operating implications:
+Русская смысловая формулировка M2:
 
-- the current Owner human Principal remains a real continuity concentration for POS-001, POS-002, POS-003, POS-005 and POS-006; AI support does not make those Positions Owner-independent;
-- `POS-004 — Engineering & Release Lead` is designed so a specific AI model/agent/runtime can be replaced without redefining the Position, but a new Principal still requires explicit Assignment/access;
-- future sellers do not become active automatically during Owner absence;
-- outsourced accounting may continue only inside its professional/contractual contour and does not inherit Company spending or management authority;
-- GitVerse/local clones can preserve bounded work/history during GitHub outage but do not become canonical automatically;
-- missing signing, bank/payment, legal/customer-rights or trusted-state gates may correctly force fail-closed behavior;
-- the approved baseline deliberately records unresolved/untested continuity areas rather than claiming disaster-recovery readiness.
+**базовая эталонная организационная модель Arvectum Company и система распределения полномочий сформированы и проверены.**
 
-The current canonical Company action is:
+Цепочка M2:
 
-**`AC-208 — Reference-model transferability boundary and operating-model cross-review`**.
+```text
+AC-201 функции
+→ AC-202 решения, зарезервированные за собственником
+→ AC-203 делегирование полномочий
+→ AC-204 организационные позиции
+→ AC-205 назначения людей / ИИ / сервисов
+→ AC-206 доступ к данным и инструментам
+→ AC-207 непрерывность, замена и резервный порядок работы
+→ AC-208 проверка переносимости и закрытие M2
+```
 
-AC-208 will close Phase 2 by testing the full AC-201–AC-207 chain for internal coherence and by separating what is reusable as the Arvectum organization-design method from what is specific to ООО «Арвектум» and must not be copied mechanically into a customer's organization.
+Ключевой вывод AC-208: переносимым является прежде всего **метод выведения организации**, а не точная структура ООО «Арвектум». Функции, позиции, полномочия, назначения, доступ и резервные схемы для каждого клиента должны выводиться заново из его собственного бизнеса, юридических источников, обязательств, данных, рисков и экономики.
 
-The bounded AC-108 design-partner discovery loop remains separately authorized P1 market-evidence work and does not imply a pilot, price, SLA, privileged access or customer commitment.
+Текущее каноническое действие:
 
-## Repository boundary
+**`AC-301 — Сверка идентичности, границ и владения продуктами и инициативами портфеля`.**
 
-Company-specific governance and organizational semantics belong here when suitable for repository storage. Product implementation remains canonical in the corresponding product repository. Domain-neutral platform architecture and contracts belong in `arvectum/arvectum-os`.
+AC-301 начинает Phase 3 / M3 — управление портфелем продуктов и кандидатами в повторно используемые модули как инвестициями, а не как простым списком репозиториев.
 
-This repository is public. Do **not** commit secrets, reusable credentials, unnecessary personal data, signatures, bank/payment details, non-public customer/supplier/contract material or other restricted operational payloads.
+Параллельный ограниченный цикл AC-108 по поиску и изучению потенциальных design partners продолжает действовать как источник рыночных данных. Сам по себе он не означает пилот, цену, SLA, привилегированный доступ или клиентское обязательство.
 
-## Remotes
+## Граница репозитория
 
-GitHub `arvectum/arvectum-company` is the canonical remote. GitVerse is a resilience/sovereignty mirror and is not an independent source of Organizational Authority.
+Company-специфические правила управления, организационные позиции, назначения, портфельные решения и рабочие процессы принадлежат этому репозиторию, когда их допустимо хранить здесь.
+
+Реализация конкретного продукта остаётся канонической в соответствующем продуктовом репозитории. Доменно-нейтральная архитектура и контракты платформы принадлежат `arvectum/arvectum-os`.
+
+Этот репозиторий публичный. **Запрещено** размещать здесь секреты, повторно используемые учётные данные, избыточные персональные данные, подписи, банковские/платёжные реквизиты, непубличные клиентские/поставщицкие/договорные материалы и другие ограниченные операционные данные.
+
+## Удалённые репозитории
+
+GitHub `arvectum/arvectum-company` — канонический удалённый репозиторий.
+
+GitVerse — зеркало для устойчивости и технологической суверенности. Наличие копии в GitVerse не делает её самостоятельным источником организационных полномочий и не меняет канонический статус автоматически.
