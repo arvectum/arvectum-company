@@ -25,7 +25,10 @@ Arvectum Company — конкретная организация ООО «Арв
 - AC-502 — workflow authority/data/evidence contract: `docs/operations/FIRST-GOVERNED-WORKFLOW-AUTHORITY-DATA-EVIDENCE-CONTRACT-v1.0.0.md`
 - AC-503 — Arvectum OS reliance/admission mapping: `docs/operations/FIRST-GOVERNED-WORKFLOW-ARVECTUM-OS-RELIANCE-ADMISSION-MAPPING-v1.0.0.md`
 - AC-504 — bounded implementation evidence: `docs/operations/AC-504-BOUNDED-WORKFLOW-IMPLEMENTATION-EVIDENCE.md`
+- AC-505 — real-case evidence: `docs/operations/AC-505-WF-M5-001-20260821-AC505001-EVIDENCE.md`
+- AC-506 — recovery/fallback drill evidence: `docs/operations/AC-506-INCIDENT-UNCERTAIN-OUTCOME-RECOVERY-FALLBACK-DRILL-EVIDENCE.md`
 - WF-M5-001 operator runbook: `docs/operations/WF-M5-001-BOUNDED-IMPLEMENTATION-RUNBOOK.md`
+- WF-M5-001 recovery/fallback runbook: `docs/operations/WF-M5-001-RECOVERY-FALLBACK-RUNBOOK.md`
 - WF-M5-001 manual fallback template: `docs/operations/WF-M5-001-CASE-TEMPLATE.json`
 - Cross-reviews: `docs/reviews/`
 - Durable Owner/governance decisions: `docs/governance/decisions/`
@@ -43,7 +46,7 @@ Arvectum Company — конкретная организация ООО «Арв
 - `M4` — Owner control and reference-implementation observability: `Complete / PASS`;
 - `M5` — first real governed Company operating contour: `Current`.
 
-`AC-501`…`AC-504` закрыты как `Complete / PASS`.
+`AC-501`…`AC-504` закрыты как `Complete / PASS`. `AC-506` также закрыт как `Complete / PASS` в параллельном recovery/fallback контуре. `AC-505` остаётся `Current / external evidence wait`.
 
 Утверждён первый M5 workflow:
 
@@ -67,50 +70,82 @@ AC-503 установил:
 
 Это bounded решение для первого M5 proof, а не отказ Company от Arvectum OS.
 
-## Что реализовано в AC-504
+## AC-504 — bounded workflow implementation
 
-Добавлен минимальный OS-neutral helper:
+Основной helper:
 
 `tools/wf_m5_001_case.py`.
 
 Он ведёт локальный reference-oriented case/evidence record и применяет bounded state/authority gates. Реальные case files по умолчанию находятся в `.local/wf-m5-001/` и исключены из git.
 
-Helper:
+Helper pin-ит exact governance/product refs, сохраняет W*/CL* history, ограничивает Company/customer gates POS-002, technical gates POS-004, запрещает AM-3/4, не пропускает non-CL-1 в correction path, требует provenance для Candidate Ready и explicit customer validation для W10. Он не отправляет customer messages, не делает deploy/payment/signing/commitment/acceptance.
 
-- pin-ит exact AC-502/AC-503 governance versions и product baseline;
-- сохраняет `W*` transition history и attributable `CL-*` classification;
-- допускает Company/customer gates только через POS-002 attribution;
-- допускает technical W5–W7 gates через POS-004;
-- не принимает AM-3/AM-4;
-- не пропускает non-CL-1 в обычный correction path;
-- требует test + candidate provenance для Candidate Ready;
-- не позволяет закрыть case без explicit customer validation ref;
-- умеет явно фиксировать blocked/unknown/stale/uncertain;
-- не отправляет customer messages, не делает deploy, payment, signing, commitment или acceptance;
-- имеет manual fallback через JSON template.
+AC-504 scoped tests: **`7/7 PASS`**.
 
-Scoped tests: **`7/7 PASS`** local-equivalent unittest run. Remote GitHub Actions run не заявляется как evidence AC-504.
+## AC-505 — первый real case
 
-Secret-pattern detection в helper — только дополнительный guardrail, не DLP/compliance proof. Raw customer `DC-2` и любые `DC-3` secrets не должны попадать в public Company repository или ordinary model/helper context.
+Current real case:
 
-## Текущее каноническое действие
+`WF-M5-001-20260821-AC505001`.
 
-**`AC-505 — Supervised real-operation proof`.**
-
-Нужен не synthetic/demo run, а один актуальный реальный customer feedback case из `PORT-002 — Discount Parser`.
-
-AC-505 должен связать:
+Фактический attributable outcome:
 
 ```text
 real protected customer feedback
-→ POS-002 attributable classification/admission
-→ bounded POS-004 product work + verification evidence, если CL-1
-→ Candidate Ready
-→ authorized human customer handoff, если применимо
-→ explicit customer validation / rework / change / block evidence
+→ POS-002 human AM-2 classification
+→ CL-3 — Evidence insufficient / not reproduced
+→ W11 — unknown / customer-evidence follow-up required
 ```
 
-Технический PASS сам по себе не является AC-505 PASS. При ambiguous scope/contract/customer rights, missing evidence/access, security/material risk или новой consequential authority работа должна fail closed/escalate, а не расширять полномочия ради milestone.
+Поэтому POS-004 technical correction **не** был открыт. Точный affected build/settings/environment и current reproduction не доказаны, customer validation/acceptance также не доказаны.
+
+Это реальное evidence того, что workflow умеет fail closed вместо превращения недостаточного customer signal в выдуманный defect. Но этого пока недостаточно для полного AC-505 PASS.
+
+## AC-506 — recovery / uncertain outcome / fallback
+
+Добавлен recovery helper:
+
+`tools/wf_m5_001_recovery.py`.
+
+Recovery design:
+
+```text
+immutable W11 predecessor
+→ genuinely new attributable evidence
+→ new linked successor case
+→ fresh exact product baseline
+→ fresh POS-002 classification gate
+```
+
+Старый W11 case не переписывается и не «открывается заново». Recovery helper не классифицирует, не допускает W4, не отправляет customer messages и не создаёт authority.
+
+Проверены:
+
+- immutable predecessor;
+- requirement for genuinely new evidence;
+- no automatic reclassification/admission;
+- non-CL-1 remains outside W4;
+- secret-like evidence rejection;
+- duplicate-successor/retry protection;
+- bounded manual reconstruction when helper/local state is unavailable.
+
+GitHub Actions fresh-runtime drill: **`14/14 PASS`** on Ubuntu 24.04 / CPython 3.12.14, workflow run `32555014701`.
+
+После AC-506 узкие evidence states для WF-M5-001 successor recovery, case-state/manual fallback и helper/process portability достигли `CE-3 — Tested and Reviewed`; real insufficient-evidence fail-closed behavior имеет `CE-2` evidence.
+
+Это **не** означает, что протестирован реальный POS-004 AI model/runtime swap, Company-wide disaster recovery, Owner-independent commercial/legal continuity или customer-system/credential/signing/provider recovery. Эти gaps остаются.
+
+## Текущее каноническое действие и параллельная работа
+
+Основное текущее действие остаётся:
+
+**`AC-505 — Supervised real-operation proof`** — ждёт нового authoritative customer/reproduction evidence либо другого suitable real feedback case.
+
+Параллельно доступна подготовительная часть:
+
+**`AC-507 — Business-value/economic review and continue/change/stop decision`.**
+
+До появления достаточного customer/business evidence можно собирать только реальные измеримые данные: Owner interventions/time, workflow/recovery effort, avoided/incurred engineering work, tool/runtime cost, governance friction и reconstructability. Финальный economic continue/change/stop вывод нельзя подменять гипотезой.
 
 M5:
 
@@ -119,10 +154,12 @@ AC-501 first governed workflow candidate selection       Complete / PASS
 → AC-502 workflow / Position / authority / data contract Complete / PASS
 → AC-503 Arvectum OS reliance/admission mapping          Complete / PASS
 → AC-504 bounded workflow implementation                 Complete / PASS
-→ AC-505 supervised real-operation proof                 Current
-→ AC-506 incident/recovery/fallback drill                Planned
-→ AC-507 business-value/economic continue-change-stop    Planned
+→ AC-505 supervised real-operation proof                 Current / external evidence wait
+↘ AC-506 incident/recovery/fallback drill                Complete / PASS
+→ AC-507 business-value/economic continue-change-stop    Planned / preparation available
 ```
+
+M5 остаётся открытым.
 
 ## Business-first portfolio order
 
@@ -138,7 +175,7 @@ Company-specific Positions, Assignments, authority, portfolio decisions, operati
 
 Product implementation/status остаются в product repositories. Domain-neutral platform architecture, Product Contracts, RFC/ADR и Platform Capability lifecycle принадлежат `arvectum/arvectum-os`.
 
-AC-504 не создаёт новой OS dependency. Если реальный AC-505 case потребует OS canonical state, Governed Execution, CAP-004 или иной admitted platform reliance, applicable AC-503/OS governance boundary должен быть открыт заново до consequential reliance.
+AC-504/AC-506 не создают новой OS dependency. Если реальный AC-505 case потребует OS canonical state, Governed Execution, CAP-004 или иной admitted platform reliance, applicable AC-503/OS governance boundary должен быть открыт заново до consequential reliance.
 
 ## Граница публичного репозитория
 
