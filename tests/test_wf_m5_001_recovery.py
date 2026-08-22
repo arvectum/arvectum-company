@@ -91,7 +91,7 @@ class RecoveryTests(unittest.TestCase):
                 BASELINE,
             )
             wf.save(store, c)
-            with self.assertRaises(wf.CaseError):
+            with self.assertRaises(recovery.wf.CaseError):
                 recovery.recover_successor(
                     store,
                     PRE,
@@ -107,7 +107,7 @@ class RecoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             store = Path(d)
             self.blocked(store)
-            with self.assertRaises(wf.CaseError):
+            with self.assertRaises(recovery.wf.CaseError):
                 recovery.recover_successor(
                     store,
                     PRE,
@@ -162,7 +162,7 @@ class RecoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             store = Path(d)
             self.blocked(store)
-            with self.assertRaises(wf.CaseError):
+            with self.assertRaises(recovery.wf.CaseError):
                 recovery.recover_successor(
                     store,
                     PRE,
