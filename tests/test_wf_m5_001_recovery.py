@@ -174,6 +174,32 @@ class RecoveryTests(unittest.TestCase):
                     case_id=NEXT,
                 )
 
+    def test_duplicate_successor_id_is_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            store = Path(d)
+            self.blocked(store)
+            recovery.recover_successor(
+                store,
+                PRE,
+                "protected://customer-feedback/new-evidence-1",
+                "2026-08-22T05:30:00Z",
+                OWNER,
+                BASELINE,
+                "First recovery attempt.",
+                case_id=NEXT,
+            )
+            with self.assertRaises(recovery.wf.CaseError):
+                recovery.recover_successor(
+                    store,
+                    PRE,
+                    "protected://customer-feedback/new-evidence-2",
+                    "2026-08-22T05:31:00Z",
+                    OWNER,
+                    BASELINE,
+                    "Duplicate successor id must fail closed.",
+                    case_id=NEXT,
+                )
+
 
 if __name__ == "__main__":
     unittest.main()
