@@ -1,22 +1,22 @@
 # Реестр канонических источников Arvectum Company
 
 Статус: `Active`
-Версия: `3.11.0`
+Версия: `3.12.0`
 Обновлено: `2026-08-22`
 Владелец: `ООО «Арвектум»`
 Репозиторий: `arvectum/arvectum-company`
 
 ## 1. Модель публикации
 
-Эта редакция сохраняет полный реестр `3.10.0` по immutable git blob и добавляет AC-507 business/economic proposal, cross-review и roadmap `0.42.0` с явным Owner decision gate.
+Эта редакция сохраняет полный реестр `3.11.0` по immutable git blob и регистрирует attributable Owner decision, Approved publication AC-507 и roadmap `0.44.0`.
 
 Предыдущая редакция:
 
-- версия: `3.10.0`;
+- версия: `3.11.0`;
 - путь: `docs/CANONICAL-SOURCES.md`;
-- immutable git blob SHA: `701dd876daebab3ad10fa9fa835582cfacdc2fc7`.
+- immutable git blob SHA: `c2aebec21da0ee26c6819e073d62155820c38b99`.
 
-Полное нормативное и evidence-содержание предыдущего реестра сохраняется, если прямо не изменено более новым approved artifact, attributable decision или этой planning/source-registry публикацией в пределах её роли.
+Полное содержание предыдущего реестра сохраняется, если прямо не изменено более новым approved artifact, attributable decision или этой source-registry publication в пределах её роли.
 
 ## 2. Порядок приоритета источников
 
@@ -28,143 +28,104 @@
 4. product repositories/decisions в пределах product scope;
 5. verified Company implementation/evidence внутри approved governance boundary;
 6. roadmap как planning source, не источник authority;
-7. chat/model memory/local copies/generated materials как context/evidence до explicit promotion.
-
-Proposal/review evidence не создаёт authority и не заменяет Owner decision.
+7. chat/model memory/local/generated materials как context/evidence до explicit promotion.
 
 ## 3. Действующая дорожная карта
 
-- `docs/roadmap/ROADMAP.md` — `Active 0.42.0`;
-- immutable blob SHA: `57eaca14aae1eeb681b16e5f5cded36ad4a8f8da`.
+- `docs/roadmap/ROADMAP.md` — `Active 0.44.0`;
+- immutable blob SHA: `7da19f28a1363f25205cde3207e8fa52c48a1aa5`.
 
-Current parallel state:
+Current M5 state:
 
-- `AC-505 — Supervised real-operation proof` — `Current / external evidence wait`;
-- `AC-506 — Incident, uncertain-outcome, recovery and fallback drill` — `Complete / PASS`;
-- `AC-507 — Business-value/economic review` — `Current / Owner decision gate`;
-- `M5 — First real governed Company operating contour proven` — `Current`.
+- `AC-505` — `Current / external evidence wait`;
+- `AC-506` — `Complete / PASS`;
+- `AC-507` — `Complete / PASS — CONTINUE WITH CHANGE / bounded evidence phase`;
+- `M5` — `Current`.
 
-## 4. AC-505 real-operation evidence
+## 4. AC-507 authoritative decision
 
-First real case remains:
+Owner decision:
 
-`WF-M5-001-20260821-AC505001`.
+- path: `docs/governance/decisions/DECISION-2026-08-22-AC-507-APPROVAL.md`;
+- explicit wording: `AC-507: CONTINUE WITH CHANGE — bounded evidence phase — утверждаю`;
+- attributable time: `2026-08-22T11:10:00+03:00`;
+- authority: `Owner / ROD-04`;
+- ROD-02 remains applicable to any later material capital/spend.
 
-Current factual outcome:
+Approved publication:
 
-`CL-3 — Evidence insufficient / not reproduced`
-→
-`W11 — unknown / customer-evidence follow-up required`.
+- `docs/business/AC-507-BUSINESS-VALUE-ECONOMIC-REVIEW-v1.0.0.md`;
+- status: `Approved 1.0.0`.
 
-Canonical public-safe evidence remains:
-
-- `docs/operations/AC-505-SUPERVISED-REAL-OPERATION-ADMISSION-EVIDENCE.md` — `0.3.0`;
-- `docs/operations/AC-505-WF-M5-001-20260821-AC505001-EVIDENCE.md` — `1.0.0`;
-- `docs/reviews/AC-505-SUPERVISED-REAL-OPERATION-ADMISSION-CROSS-REVIEW.md` — `1.2.0`, `10/10`.
-
-No POS-004 correction, customer acceptance or reproduction success is inferred.
-
-## 5. AC-506 completion baseline
-
-`AC-506 — Complete / PASS` remains binding evidence within its bounded implementation/test scope.
-
-Canonical artifacts remain:
-
-- `tools/wf_m5_001_recovery.py` — blob `114dec37cf86c2b5e5d20b569126efb133782407`;
-- `tests/test_wf_m5_001_recovery.py` — blob `0e940f3002482fb36288dee1828ee48aa8237db5`;
-- `.github/workflows/wf-m5-001-case.yml` — blob `fc02c94aaaf2464ee839cc754a716f3719d63509`;
-- `docs/operations/WF-M5-001-RECOVERY-FALLBACK-RUNBOOK.md` — blob `f72918271e2195e0e8741ec2f0b8ffb86ba744a1`;
-- `docs/operations/AC-506-INCIDENT-UNCERTAIN-OUTCOME-RECOVERY-FALLBACK-DRILL-EVIDENCE.md` — blob `5af5f0cd44fd0266b2857aa16b1732dcf2644304`;
-- `docs/reviews/AC-506-INCIDENT-UNCERTAIN-OUTCOME-RECOVERY-FALLBACK-CROSS-REVIEW.md` — blob `4659d9ca0b493e1d85566c302ab25d94d5110b82`.
-
-Remote test evidence remains `14/14 PASS` on GitHub Actions run `32555014701`.
-
-## 6. AC-507 proposal and review
-
-Prepared business/economic review:
+Reviewed proposal:
 
 - `docs/business/AC-507-BUSINESS-VALUE-ECONOMIC-REVIEW.md`;
-- status/version: `Proposed 0.9.0`.
+- `Proposed 0.9.0`;
+- blob `fa25d369a604b3f8a0989e2250ff742f347690ed`.
 
 Cross-review:
 
 - `docs/reviews/AC-507-BUSINESS-VALUE-ECONOMIC-REVIEW-CROSS-REVIEW.md`;
 - `10 of 10`;
-- result: `PASS for Owner decision gate`.
+- `PASS for Owner decision gate`;
+- blob `425b7147c5fca2f63d995cbf0c5269b91083d01e`.
 
-Reviewed recommendation:
+## 5. Approved AC-507 direction
 
-**`CONTINUE WITH CHANGE — bounded evidence phase`.**
+The Company continues `WF-M5-001` in a bounded evidence phase.
 
-The recommendation is based on currently evidenced control value:
+The approved direction preserves current fail-closed, authority, customer, data/access and OS boundaries while prioritizing stronger empirical evidence and lightweight measurement of Owner/engineering burden.
 
-- real fail-closed prevention of unsupported engineering admission;
-- attributable human authority at POS-002 classification;
-- no false customer acceptance;
-- reconstructable case state;
-- provenance-preserving recovery.
+No CRM/workflow-service/database/platform construction, cross-product generalization, AM-3/AM-4 or new OS reliance is authorized by implication.
 
-The review also records real/known friction:
+## 6. Economic evidence boundary
 
-- Owner attention at the current human POS-002 gate;
-- evidence/state handling overhead;
-- engineering effort spent on workflow/recovery implementation;
-- inability of governance to manufacture missing customer evidence.
+AC-507 does not establish profitability, revenue/margin uplift, reduced total delivery cost, customer-satisfaction improvement or quantified engineering savings.
 
-## 7. Economic evidence limitations
-
-Current evidence is insufficient to claim:
-
-- profitability;
-- increased revenue/margin;
-- improved customer satisfaction;
-- reduced total delivery cost;
-- quantified engineering savings;
-- cross-product transferability worth platformization;
-- justification for AM-4 or autonomous customer effects.
-
-Owner minutes, engineering effort, per-case runtime/tool cost, customer cycle-time effect and commercial outcome are not measured sufficiently for precise unit economics.
+Owner minutes, engineering effort, per-case tool/runtime cost, customer cycle-time effect and commercial outcome remain insufficiently measured.
 
 Unknown does not mean zero.
 
-## 8. Owner decision boundary
+The next qualifying real case should capture lightweight measurements where practical rather than create heavy administrative overhead.
 
-The AC-507 proposal/cross-review do **not** approve themselves.
+## 7. AC-505 remains authoritative external-evidence gate
 
-Continue/change/stop is treated as a portfolio/investment direction decision under applicable `ROD-04` semantics. Exact proposed approval wording:
+Real case:
 
-`AC-507: CONTINUE WITH CHANGE — bounded evidence phase — утверждаю`.
+`WF-M5-001-20260821-AC505001`.
 
-If approved, the decision would:
+Current state:
 
-- continue WF-M5-001 in bounded evidence mode;
-- preserve current authority/data/customer/OS boundaries;
-- introduce no material budget by itself;
-- keep AM-3/AM-4 inactive;
-- defer platformization/generalization;
-- prioritize stronger real-case evidence and lightweight Owner/engineering burden measurement.
+`CL-3 → W11 / unknown`.
 
-It would **not** close AC-505 or M5 while customer/economic evidence remains insufficient.
+No POS-004 correction or customer acceptance is inferred.
+
+The existing case may progress only on new/recovered authoritative evidence; another qualifying real customer case may also be selected within existing scope/authority/data boundaries.
+
+## 8. AC-506 remains binding bounded evidence
+
+AC-506 remains `Complete / PASS` with narrow CE results for W11 recovery mechanics, case-state/manual fallback and helper/process portability.
+
+It does not prove Company-wide DR, actual POS-004 AI model/runtime swap, Owner-independent continuity or credential/signing/provider/customer-system recovery.
 
 ## 9. Arvectum OS boundary
 
-AC-503 result remains:
+AC-503 remains:
 
 `NO-ADDITIONAL-OS-RELIANCE` for the first M5 proof.
 
-AC-507 does not create Product Contract, Platform Capability lifecycle transition, OS repository commitment or platform funding claim.
+AC-507 approval creates no Product Contract, Platform Capability lifecycle transition, OS repository commitment or platform funding claim.
 
-## 10. Public repository boundary
+## 10. Milestone boundary
+
+`AC-507 — Complete / PASS` does **not** close M5.
+
+`M5 — Current` remains open until the combined real-operation/customer/economic evidence set is sufficient under roadmap `0.44.0`.
+
+No M6 admission follows automatically from AC-507 approval.
+
+## 11. Public repository boundary
 
 The public Company repository must not contain secrets, reusable credentials, private keys/signatures, unnecessary PII, bank/payment payloads, transaction exports, confidential exact cash balances, non-public customer/vendor/contract materials, sensitive tax/accounting documents, privileged payment/fraud/incident/security details or chain-of-thought.
 
-AC-507 uses only public-safe Company/product/workflow evidence and does not duplicate raw customer payload.
-
-## 11. Next valid action
-
-Two independent gates remain:
-
-1. AC-507: explicit Owner decision on the reviewed recommendation;
-2. AC-505: new/recovered authoritative customer/reproduction evidence or another qualifying real case.
-
-Neither gate may be inferred from silence or technical PASS.
+AC-507 artifacts use public-safe evidence only.
